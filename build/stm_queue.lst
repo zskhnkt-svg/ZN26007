@@ -1,0 +1,1941 @@
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm_queue.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.CircularQueue_Init,"ax",%progbits
+  20              		.align	1
+  21              		.global	CircularQueue_Init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	CircularQueue_Init:
+  27              	.LVL0:
+  28              	.LFB1261:
+  29              		.file 1 "Middlewares/ST/STM32_WPAN/utilities/stm_queue.c"
+   1:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+   2:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   ******************************************************************************
+   3:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @file    stm_queue.c
+   4:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @author  MCD Application Team
+   5:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief   Queue management
+   6:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   ******************************************************************************
+   7:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @attention
+   8:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   *
+   9:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * Copyright (c) 2018-2021 STMicroelectronics.
+  10:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * All rights reserved.
+  11:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   *
+  12:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  13:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * in the root directory of this software component.
+  14:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   *
+  16:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   ******************************************************************************
+  17:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+  18:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  19:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Includes ------------------------------------------------------------------*/
+  20:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  21:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Includes ------------------------------------------------------------------*/
+  22:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** #include "utilities_common.h"
+  23:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  24:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** #include "stm_queue.h"
+  25:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  26:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private define ------------------------------------------------------------*/
+  27:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private typedef -------------------------------------------------------------*/
+  28:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private macro -------------------------------------------------------------*/
+  29:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** #define MOD(X,Y) (((X) >= (Y)) ? ((X)-(Y)) : (X))
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 2
+
+
+  30:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  31:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private variables ---------------------------------------------------------*/
+  32:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Global variables ----------------------------------------------------------*/
+  33:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Extern variables ----------------------------------------------------------*/
+  34:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private function prototypes -----------------------------------------------*/
+  35:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private functions ---------------------------------------------------------*/
+  36:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Public functions ----------------------------------------------------------*/
+  37:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  38:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+  39:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief   Initilaiilze queue structure .
+  40:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to initialize the global queue structure.  
+  41:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure to be initialised 
+  42:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  queueBuffer: pointer on Queue Buffer
+  43:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  queueSize:  Size of Queue Buffer
+  44:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize: Size of an element in the queue. if =0, the queue will manage variable siz
+  45:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval   always 0
+  46:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+  47:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** int CircularQueue_Init(queue_t *q, uint8_t* queueBuffer, uint32_t queueSize, uint16_t elementSize, 
+  48:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+  30              		.loc 1 48 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 4, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              		.loc 1 48 1 is_stmt 0 view .LVU1
+  36 0000 9DF800C0 		ldrb	ip, [sp]	@ zero_extendqisi2
+  49:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->qBuff = queueBuffer;
+  37              		.loc 1 49 3 is_stmt 1 view .LVU2
+  38              		.loc 1 49 12 is_stmt 0 view .LVU3
+  39 0004 0160     		str	r1, [r0]
+  50:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->first = 0;
+  40              		.loc 1 50 3 is_stmt 1 view .LVU4
+  41              		.loc 1 50 12 is_stmt 0 view .LVU5
+  42 0006 0021     		movs	r1, #0
+  43              	.LVL1:
+  44              		.loc 1 50 12 view .LVU6
+  45 0008 C160     		str	r1, [r0, #12]
+  51:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->last = 0; /* queueSize-1; */
+  46              		.loc 1 51 3 is_stmt 1 view .LVU7
+  47              		.loc 1 51 11 is_stmt 0 view .LVU8
+  48 000a 0161     		str	r1, [r0, #16]
+  52:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->byteCount = 0;
+  49              		.loc 1 52 3 is_stmt 1 view .LVU9
+  50              		.loc 1 52 16 is_stmt 0 view .LVU10
+  51 000c 4161     		str	r1, [r0, #20]
+  53:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->elementCount = 0;
+  52              		.loc 1 53 3 is_stmt 1 view .LVU11
+  53              		.loc 1 53 19 is_stmt 0 view .LVU12
+  54 000e 8161     		str	r1, [r0, #24]
+  54:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->queueMaxSize = queueSize;
+  55              		.loc 1 54 3 is_stmt 1 view .LVU13
+  56              		.loc 1 54 19 is_stmt 0 view .LVU14
+  57 0010 4260     		str	r2, [r0, #4]
+  55:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->elementSize = elementSize;
+  58              		.loc 1 55 3 is_stmt 1 view .LVU15
+  59              		.loc 1 55 18 is_stmt 0 view .LVU16
+  60 0012 0381     		strh	r3, [r0, #8]	@ movhi
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 3
+
+
+  56:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->optionFlags = optionFlags;
+  61              		.loc 1 56 3 is_stmt 1 view .LVU17
+  62              		.loc 1 56 18 is_stmt 0 view .LVU18
+  63 0014 80F81CC0 		strb	ip, [r0, #28]
+  57:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  58:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    if ((optionFlags & CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FLAG) && q-> elementSize)
+  64              		.loc 1 58 4 is_stmt 1 view .LVU19
+  65              		.loc 1 58 7 is_stmt 0 view .LVU20
+  66 0018 1CF0020F 		tst	ip, #2
+  67 001c 02D0     		beq	.L3
+  68              		.loc 1 58 62 discriminator 1 view .LVU21
+  69 001e 1BB9     		cbnz	r3, .L4
+  59:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    {
+  60:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* can not deal with splitting at the end of buffer with fixed size element */
+  61:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     return -1;
+  62:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+  63:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return 0;
+  70              		.loc 1 63 10 view .LVU22
+  71 0020 0846     		mov	r0, r1
+  72              	.LVL2:
+  73              		.loc 1 63 10 view .LVU23
+  74 0022 7047     		bx	lr
+  75              	.LVL3:
+  76              	.L3:
+  77              		.loc 1 63 10 view .LVU24
+  78 0024 0020     		movs	r0, #0
+  79              	.LVL4:
+  80              		.loc 1 63 10 view .LVU25
+  81 0026 7047     		bx	lr
+  82              	.LVL5:
+  83              	.L4:
+  61:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+  84              		.loc 1 61 12 view .LVU26
+  85 0028 4FF0FF30 		mov	r0, #-1
+  86              	.LVL6:
+  64:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+  87              		.loc 1 64 1 view .LVU27
+  88 002c 7047     		bx	lr
+  89              		.cfi_endproc
+  90              	.LFE1261:
+  92              		.section	.text.CircularQueue_Add,"ax",%progbits
+  93              		.align	1
+  94              		.global	CircularQueue_Add
+  95              		.syntax unified
+  96              		.thumb
+  97              		.thumb_func
+  99              	CircularQueue_Add:
+ 100              	.LVL7:
+ 101              	.LFB1262:
+  65:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  66:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+  67:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief   Add  element to the queue .
+  68:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to add one or more  element(s) to the Circular Queue .  
+  69:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure   to be handled
+  70:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  X; pointer on element(s) to be added 
+  71:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize:  Size of element to be added to the queue. Only used if the queue manage v
+  72:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  nbElements:  number of elements in the in buffer pointed by x
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 4
+
+
+  73:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval  pointer on last element just added to the queue, NULL if the element to be added do no
+  74:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+  75:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Add(queue_t *q, uint8_t* x, uint16_t elementSize, uint32_t nbElements)
+  76:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 102              		.loc 1 76 1 is_stmt 1 view -0
+ 103              		.cfi_startproc
+ 104              		@ args = 0, pretend = 0, frame = 16
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              		.loc 1 76 1 is_stmt 0 view .LVU29
+ 107 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 108              	.LCFI0:
+ 109              		.cfi_def_cfa_offset 36
+ 110              		.cfi_offset 4, -36
+ 111              		.cfi_offset 5, -32
+ 112              		.cfi_offset 6, -28
+ 113              		.cfi_offset 7, -24
+ 114              		.cfi_offset 8, -20
+ 115              		.cfi_offset 9, -16
+ 116              		.cfi_offset 10, -12
+ 117              		.cfi_offset 11, -8
+ 118              		.cfi_offset 14, -4
+ 119 0004 85B0     		sub	sp, sp, #20
+ 120              	.LCFI1:
+ 121              		.cfi_def_cfa_offset 56
+ 122 0006 0446     		mov	r4, r0
+ 123 0008 0291     		str	r1, [sp, #8]
+ 124 000a 9A46     		mov	r10, r3
+  77:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+  78:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t* ptr = NULL;                      /* fct return ptr to the element freshly added, if no r
+ 125              		.loc 1 78 3 is_stmt 1 view .LVU30
+ 126              	.LVL8:
+  79:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t curElementSize = 0;              /* the size of the element currently  stored at q->last
+ 127              		.loc 1 79 3 view .LVU31
+  80:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  elemSizeStorageRoom  = 0 ;       /* Indicate the header (which contain only size) of ele
+ 128              		.loc 1 80 3 view .LVU32
+  81:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t curBuffPosition;                  /* the current position in the queue buffer */
+ 129              		.loc 1 81 3 view .LVU33
+  82:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t i;                               /* loop counter */
+ 130              		.loc 1 82 3 view .LVU34
+  83:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t NbBytesToCopy = 0, NbCopiedBytes = 0 ; /* Indicators for copying bytes in queue */
+ 131              		.loc 1 83 3 view .LVU35
+  84:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t eob_free_size;                         /* Eof End of Quque Buffer Free Size */
+ 132              		.loc 1 84 3 view .LVU36
+  85:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  wrap_will_occur = 0;                   /* indicate if a wrap around will occurs */
+ 133              		.loc 1 85 3 view .LVU37
+  86:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  wrapped_element_eob_size;              /* In case of Wrap around, indicate size of parta
+ 134              		.loc 1 86 3 view .LVU38
+  87:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t overhead = 0;                          /* In case of CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FL
+ 135              		.loc 1 87 3 view .LVU39
+  88:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****                                                      indcate the size overhead that will be generat
+  89:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   
+  90:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   
+  91:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom  = (q->elementSize == 0) ? 2 : 0;
+ 136              		.loc 1 91 3 view .LVU40
+ 137              		.loc 1 91 28 is_stmt 0 view .LVU41
+ 138 000c 0689     		ldrh	r6, [r0, #8]
+ 139              		.loc 1 91 24 view .LVU42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 5
+
+
+ 140 000e C6B9     		cbnz	r6, .L29
+ 141 0010 4FF0020B 		mov	fp, #2
+ 142              	.L6:
+ 143              	.LVL9:
+  92:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   /* retrieve the size of last element sored: the value stored at the beginning of the queue elemen
+  93:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->byteCount)
+ 144              		.loc 1 93 3 is_stmt 1 discriminator 4 view .LVU43
+ 145              		.loc 1 93 8 is_stmt 0 discriminator 4 view .LVU44
+ 146 0014 6169     		ldr	r1, [r4, #20]
+ 147              	.LVL10:
+ 148              		.loc 1 93 6 discriminator 4 view .LVU45
+ 149 0016 B9B1     		cbz	r1, .L30
+  94:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+  95:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     curElementSize = (q->elementSize == 0) ? q->qBuff[q->last] + ((q->qBuff[MOD((q->last+1), q->que
+ 150              		.loc 1 95 5 is_stmt 1 view .LVU46
+ 151              		.loc 1 95 20 is_stmt 0 view .LVU47
+ 152 0018 A6BB     		cbnz	r6, .L31
+ 153              		.loc 1 95 47 discriminator 1 view .LVU48
+ 154 001a 2568     		ldr	r5, [r4]
+ 155              		.loc 1 95 56 discriminator 1 view .LVU49
+ 156 001c 2369     		ldr	r3, [r4, #16]
+ 157              	.LVL11:
+ 158              		.loc 1 95 54 discriminator 1 view .LVU50
+ 159 001e 15F80380 		ldrb	r8, [r5, r3]	@ zero_extendqisi2
+ 160              		.loc 1 95 77 discriminator 1 view .LVU51
+ 161 0022 581C     		adds	r0, r3, #1
+ 162              	.LVL12:
+ 163              		.loc 1 95 77 discriminator 1 view .LVU52
+ 164 0024 6768     		ldr	r7, [r4, #4]
+ 165 0026 B842     		cmp	r0, r7
+ 166 0028 01D3     		bcc	.L8
+ 167              		.loc 1 95 77 discriminator 3 view .LVU53
+ 168 002a DB1B     		subs	r3, r3, r7
+ 169 002c 581C     		adds	r0, r3, #1
+ 170              	.L8:
+ 171              		.loc 1 95 76 discriminator 6 view .LVU54
+ 172 002e 2B5C     		ldrb	r3, [r5, r0]	@ zero_extendqisi2
+ 173              		.loc 1 95 64 discriminator 6 view .LVU55
+ 174 0030 08EB0328 		add	r8, r8, r3, lsl #8
+ 175 0034 1FFA88F8 		uxth	r8, r8
+ 176              		.loc 1 95 20 discriminator 6 view .LVU56
+ 177 0038 08F10208 		add	r8, r8, #2
+ 178 003c 1FFA88F8 		uxth	r8, r8
+ 179 0040 04E0     		b	.L7
+ 180              	.LVL13:
+ 181              	.L29:
+  91:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   /* retrieve the size of last element sored: the value stored at the beginning of the queue elemen
+ 182              		.loc 1 91 24 view .LVU57
+ 183 0042 4FF0000B 		mov	fp, #0
+ 184 0046 E5E7     		b	.L6
+ 185              	.LVL14:
+ 186              	.L30:
+  79:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  elemSizeStorageRoom  = 0 ;       /* Indicate the header (which contain only size) of ele
+ 187              		.loc 1 79 12 view .LVU58
+ 188 0048 4FF00008 		mov	r8, #0
+ 189              	.LVL15:
+ 190              	.L7:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 6
+
+
+  96:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+  97:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   /* if queue element have fixed size , reset the elementSize arg with fixed element size value */
+  98:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->elementSize > 0)               
+ 191              		.loc 1 98 3 is_stmt 1 view .LVU59
+ 192              		.loc 1 98 6 is_stmt 0 view .LVU60
+ 193 004c 06B9     		cbnz	r6, .L9
+ 194 004e 1646     		mov	r6, r2
+ 195              	.L9:
+ 196              	.LVL16:
+  99:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 100:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     elementSize = q->elementSize;
+ 101:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 102:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 103:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    eob_free_size = (q->last >= q->first) ? q->queueMaxSize - (q->last + curElementSize) : 0;
+ 197              		.loc 1 103 4 is_stmt 1 view .LVU61
+ 198              		.loc 1 103 22 is_stmt 0 view .LVU62
+ 199 0050 2269     		ldr	r2, [r4, #16]
+ 200              		.loc 1 103 33 view .LVU63
+ 201 0052 E368     		ldr	r3, [r4, #12]
+ 202              		.loc 1 103 89 view .LVU64
+ 203 0054 9A42     		cmp	r2, r3
+ 204 0056 17D3     		bcc	.L32
+ 205              		.loc 1 103 45 discriminator 1 view .LVU65
+ 206 0058 6368     		ldr	r3, [r4, #4]
+ 207              		.loc 1 103 71 discriminator 1 view .LVU66
+ 208 005a 4244     		add	r2, r2, r8
+ 209              		.loc 1 103 89 discriminator 1 view .LVU67
+ 210 005c 9B1A     		subs	r3, r3, r2
+ 211              	.L10:
+ 212              	.LVL17:
+ 104:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 105:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    /* check how many bytes of wrapped element (if anay) are at end of buffer */
+ 106:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    wrapped_element_eob_size = (((elementSize + elemSizeStorageRoom )*nbElements) < eob_free_size) ?
+ 213              		.loc 1 106 4 is_stmt 1 discriminator 4 view .LVU68
+ 214              		.loc 1 106 46 is_stmt 0 discriminator 4 view .LVU69
+ 215 005e 06EB0B02 		add	r2, r6, fp
+ 216              		.loc 1 106 69 discriminator 4 view .LVU70
+ 217 0062 0AFB02F0 		mul	r0, r10, r2
+ 218              		.loc 1 106 29 discriminator 4 view .LVU71
+ 219 0066 9842     		cmp	r0, r3
+ 220 0068 10D3     		bcc	.L33
+ 221              		.loc 1 106 120 discriminator 1 view .LVU72
+ 222 006a B3FBF2F5 		udiv	r5, r3, r2
+ 223 006e 02FB1533 		mls	r3, r2, r5, r3
+ 224              	.LVL18:
+ 225              		.loc 1 106 29 discriminator 1 view .LVU73
+ 226 0072 DBB2     		uxtb	r3, r3
+ 227              	.L11:
+ 228              	.LVL19:
+ 107:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    wrap_will_occur  = wrapped_element_eob_size > elemSizeStorageRoom;
+ 229              		.loc 1 107 4 is_stmt 1 discriminator 4 view .LVU74
+ 108:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 109:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    overhead = (wrap_will_occur && (q->optionFlags & CIRCULAR_QUEUE_NO_WRAP_FLAG)) ? wrapped_element
+ 230              		.loc 1 109 4 discriminator 4 view .LVU75
+ 231              		.loc 1 109 13 is_stmt 0 discriminator 4 view .LVU76
+ 232 0074 9B45     		cmp	fp, r3
+ 233 0076 0BD2     		bcs	.L34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 7
+
+
+ 234              		.loc 1 109 37 discriminator 1 view .LVU77
+ 235 0078 227F     		ldrb	r2, [r4, #28]	@ zero_extendqisi2
+ 236              		.loc 1 109 32 discriminator 1 view .LVU78
+ 237 007a 12F0010F 		tst	r2, #1
+ 238 007e 1CD0     		beq	.L35
+ 239              		.loc 1 109 13 discriminator 3 view .LVU79
+ 240 0080 9AB2     		uxth	r2, r3
+ 241 0082 06E0     		b	.L12
+ 242              	.LVL20:
+ 243              	.L31:
+  95:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 244              		.loc 1 95 20 view .LVU80
+ 245 0084 B046     		mov	r8, r6
+ 246 0086 E1E7     		b	.L7
+ 247              	.LVL21:
+ 248              	.L32:
+ 103:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 249              		.loc 1 103 89 view .LVU81
+ 250 0088 0023     		movs	r3, #0
+ 251 008a E8E7     		b	.L10
+ 252              	.LVL22:
+ 253              	.L33:
+ 106:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    wrap_will_occur  = wrapped_element_eob_size > elemSizeStorageRoom;
+ 254              		.loc 1 106 29 view .LVU82
+ 255 008c 0023     		movs	r3, #0
+ 256              	.LVL23:
+ 106:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    wrap_will_occur  = wrapped_element_eob_size > elemSizeStorageRoom;
+ 257              		.loc 1 106 29 view .LVU83
+ 258 008e F1E7     		b	.L11
+ 259              	.LVL24:
+ 260              	.L34:
+ 261              		.loc 1 109 13 view .LVU84
+ 262 0090 0022     		movs	r2, #0
+ 263              	.L12:
+ 264              	.LVL25:
+ 110:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    overhead = (wrap_will_occur && (q->optionFlags & CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FLAG)) ? elemS
+ 265              		.loc 1 110 4 is_stmt 1 discriminator 6 view .LVU85
+ 266              		.loc 1 110 13 is_stmt 0 discriminator 6 view .LVU86
+ 267 0092 9B45     		cmp	fp, r3
+ 268 0094 05D2     		bcs	.L13
+ 269              		.loc 1 110 37 discriminator 1 view .LVU87
+ 270 0096 237F     		ldrb	r3, [r4, #28]	@ zero_extendqisi2
+ 271              	.LVL26:
+ 272              		.loc 1 110 32 discriminator 1 view .LVU88
+ 273 0098 13F0020F 		tst	r3, #2
+ 274 009c 01D0     		beq	.L13
+ 275              		.loc 1 110 13 discriminator 3 view .LVU89
+ 276 009e 1FFA8BF2 		uxth	r2, fp
+ 277              	.LVL27:
+ 278              	.L13:
+ 111:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    
+ 112:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    
+ 113:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   /* Store now the elements if ennough room for all elements */
+ 114:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (elementSize && ((q->byteCount + ((elementSize + elemSizeStorageRoom )*nbElements) + overhead)
+ 279              		.loc 1 114 3 is_stmt 1 discriminator 6 view .LVU90
+ 280              		.loc 1 114 6 is_stmt 0 discriminator 6 view .LVU91
+ 281 00a2 002E     		cmp	r6, #0
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 8
+
+
+ 282 00a4 00F0C380 		beq	.L36
+ 283              		.loc 1 114 37 discriminator 1 view .LVU92
+ 284 00a8 0144     		add	r1, r1, r0
+ 285              		.loc 1 114 89 discriminator 1 view .LVU93
+ 286 00aa 1144     		add	r1, r1, r2
+ 287              		.loc 1 114 105 discriminator 1 view .LVU94
+ 288 00ac 6368     		ldr	r3, [r4, #4]
+ 289              		.loc 1 114 19 discriminator 1 view .LVU95
+ 290 00ae 9942     		cmp	r1, r3
+ 291 00b0 05D8     		bhi	.L41
+  83:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t eob_free_size;                         /* Eof End of Quque Buffer Free Size */
+ 292              		.loc 1 83 31 view .LVU96
+ 293 00b2 0023     		movs	r3, #0
+ 294 00b4 0193     		str	r3, [sp, #4]
+ 115:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   { 
+ 116:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* loop to add all elements  */
+ 117:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     for (i=0; i < nbElements; i++) 
+ 295              		.loc 1 117 11 view .LVU97
+ 296 00b6 1F46     		mov	r7, r3
+ 297 00b8 1DE0     		b	.L15
+ 298              	.LVL28:
+ 299              	.L35:
+ 109:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    overhead = (wrap_will_occur && (q->optionFlags & CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FLAG)) ? elemS
+ 300              		.loc 1 109 13 view .LVU98
+ 301 00ba 0022     		movs	r2, #0
+ 302 00bc E9E7     		b	.L12
+ 303              	.LVL29:
+ 304              	.L41:
+ 118:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       q->last = MOD ((q->last + curElementSize),q->queueMaxSize);
+ 120:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
+ 121:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       
+ 122:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* store the element  */
+ 123:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* store first the element size if element size is variable */
+ 124:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       if (q->elementSize == 0) 
+ 125:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 126:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->qBuff[curBuffPosition++]= elementSize & 0xFF;
+ 127:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->qBuff[curBuffPosition++]= (elementSize & 0xFF00) >> 8 ;
+ 129:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 130:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += 2;
+ 131:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 132:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       
+ 133:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* Identify number of bytes of copy takeing account possible wrap, in this case NbBytesToCopy
+ 134:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       NbBytesToCopy = MIN((q->queueMaxSize-curBuffPosition),elementSize);
+ 135:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* check if no wrap (NbBytesToCopy == elementSize) or if Wrap and no spsicf option; 
+ 136:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****          In this case part of data will copied at the end of the buffer and the rest a the beginnin
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       if ((NbBytesToCopy == elementSize) || ((NbBytesToCopy < elementSize) && (q->optionFlags == CI
+ 138:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 139:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Copy First part (or emtire buffer ) from current position up to the end of the buffer qu
+ 140:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         memcpy(&q->qBuff[curBuffPosition],&x[i*elementSize],NbBytesToCopy);
+ 141:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Adjust bytes count */
+ 142:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 143:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Wrap */
+ 144:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = 0; 
+ 145:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set NbCopiedBytes bytes with  ampount copied */
+ 146:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         NbCopiedBytes = NbBytesToCopy;
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 9
+
+
+ 147:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the rest to copy if wrao , if no wrap will be 0 */
+ 148:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         NbBytesToCopy = elementSize - NbBytesToCopy;
+ 149:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the current element Size, will be used to calaculate next last position at beginning
+ 150:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curElementSize = (elementSize) + elemSizeStorageRoom ;
+ 151:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 152:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       else if (NbBytesToCopy)  /* We have a wrap  to manage */
+ 153:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 154:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        /* case of CIRCULAR_QUEUE_NO_WRAP_FLAG option */
+ 155:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****          if (q->optionFlags & CIRCULAR_QUEUE_NO_WRAP_FLAG)
+ 156:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 157:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* if element size are variable and NO_WRAP option, Invalidate end of buffer setting 0xFF
+ 158:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           if (q->elementSize == 0)
+ 159:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 160:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-2] = 0xFF;
+ 161:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = 0xFF;
+ 162:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 163:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           q->byteCount += NbBytesToCopy;  /* invalid data at the end of buffer are take into accoun
+ 164:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* No bytes coped a the end of buffer */
+ 165:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           NbCopiedBytes = 0;
+ 166:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all element to be copied at the begnning of buffer */
+ 167:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           NbBytesToCopy = elementSize; 
+ 168:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Wrap */
+ 169:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           curBuffPosition = 0; 
+ 170:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* if variable size element, invalidate end of buffer setting OxFFFF in element header (s
+ 171:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           if (q->elementSize == 0)
+ 172:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 173:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->qBuff[curBuffPosition++] = NbBytesToCopy & 0xFF;
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 175:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 176:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           } 
+ 177:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            
+ 178:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         }
+ 179:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* case of CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FLAG option */
+ 180:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         else if (q->optionFlags & CIRCULAR_QUEUE_SPLIT_IF_WRAPPING_FLAG)
+ 181:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 182:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           if (q->elementSize == 0)
+ 183:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 184:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             /* reset the size of current element to the nb bytes fitting at the end of buffer */
+ 185:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-2] = NbBytesToCopy & 0xFF;
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 187:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 188:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              memcpy(&q->qBuff[curBuffPosition],&x[i*elementSize],NbBytesToCopy);
+ 189:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += NbBytesToCopy; 
+ 190:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set the number of copied bytes */
+ 191:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              NbCopiedBytes = NbBytesToCopy;             
+ 192:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set rest of data to be copied to begnning of buffer */
+ 193:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              NbBytesToCopy = elementSize - NbBytesToCopy;
+ 194:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* one element more dur to split in 2 elements */
+ 195:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->elementCount++;
+ 196:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Wrap */
+ 197:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              curBuffPosition = 0; 
+ 198:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Set new size for rest of data */
+ 199:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition++] = NbBytesToCopy & 0xFF;
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 201:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 202:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 203:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           else
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 10
+
+
+ 204:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 205:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             /* Should not occur */
+ 206:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             /* can not manage split Flag on Fixed size element */
+ 207:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             /* Buffer is corrupted */
+ 208:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             return NULL;
+ 209:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 210:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         }
+ 211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curElementSize = (NbBytesToCopy) + elemSizeStorageRoom ;
+ 212:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
+ 213:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }  
+ 214:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       
+ 215:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* some remaining byte to copy */
+ 216:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       if (NbBytesToCopy)      
+ 217:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 218:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         memcpy(&q->qBuff[curBuffPosition],&x[(i*elementSize)+NbCopiedBytes],NbBytesToCopy);
+ 219:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 220:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }      
+ 221:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       
+ 222:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* One more element */
+ 223:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       q->elementCount++;
+ 224:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     }
+ 225:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     ptr = q->qBuff + (MOD((q->last+elemSizeStorageRoom ),q->queueMaxSize));
+ 227:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 228:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   /* for Breakpoint only...to remove */
+ 229:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   else
+ 230:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 231:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     return NULL;
+ 305              		.loc 1 231 12 view .LVU99
+ 306 00be 0020     		movs	r0, #0
+ 307 00c0 B2E0     		b	.L5
+ 308              	.LVL30:
+ 309              	.L20:
+ 140:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Adjust bytes count */
+ 310              		.loc 1 140 9 is_stmt 1 view .LVU100
+ 140:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Adjust bytes count */
+ 311              		.loc 1 140 18 is_stmt 0 view .LVU101
+ 312 00c2 2068     		ldr	r0, [r4]
+ 140:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Adjust bytes count */
+ 313              		.loc 1 140 9 view .LVU102
+ 314 00c4 2A46     		mov	r2, r5
+ 315 00c6 0299     		ldr	r1, [sp, #8]
+ 316 00c8 07FB0911 		mla	r1, r7, r9, r1
+ 317 00cc 1844     		add	r0, r0, r3
+ 318 00ce FFF7FEFF 		bl	memcpy
+ 319              	.LVL31:
+ 142:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Wrap */
+ 320              		.loc 1 142 9 is_stmt 1 view .LVU103
+ 142:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* Wrap */
+ 321              		.loc 1 142 22 is_stmt 0 view .LVU104
+ 322 00d2 6369     		ldr	r3, [r4, #20]
+ 323 00d4 2B44     		add	r3, r3, r5
+ 324 00d6 6361     		str	r3, [r4, #20]
+ 144:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set NbCopiedBytes bytes with  ampount copied */
+ 325              		.loc 1 144 9 is_stmt 1 view .LVU105
+ 326              	.LVL32:
+ 146:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the rest to copy if wrao , if no wrap will be 0 */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 11
+
+
+ 327              		.loc 1 146 9 view .LVU106
+ 148:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the current element Size, will be used to calaculate next last position at beginning
+ 328              		.loc 1 148 9 view .LVU107
+ 150:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 329              		.loc 1 150 9 view .LVU108
+ 150:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 330              		.loc 1 150 24 is_stmt 0 view .LVU109
+ 331 00d8 0BEB0608 		add	r8, fp, r6
+ 332              	.LVL33:
+ 150:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 333              		.loc 1 150 24 view .LVU110
+ 334 00dc 1FFA88F8 		uxth	r8, r8
+ 335              	.LVL34:
+ 146:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the rest to copy if wrao , if no wrap will be 0 */
+ 336              		.loc 1 146 23 view .LVU111
+ 337 00e0 0195     		str	r5, [sp, #4]
+ 148:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the current element Size, will be used to calaculate next last position at beginning
+ 338              		.loc 1 148 23 view .LVU112
+ 339 00e2 A9EB0505 		sub	r5, r9, r5
+ 340              	.LVL35:
+ 144:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set NbCopiedBytes bytes with  ampount copied */
+ 341              		.loc 1 144 25 view .LVU113
+ 342 00e6 0023     		movs	r3, #0
+ 343              	.LVL36:
+ 344              	.L22:
+ 216:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 345              		.loc 1 216 7 is_stmt 1 view .LVU114
+ 216:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 346              		.loc 1 216 10 is_stmt 0 view .LVU115
+ 347 00e8 002D     		cmp	r5, #0
+ 348 00ea 40F08480 		bne	.L42
+ 349              	.LVL37:
+ 350              	.L26:
+ 223:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     }
+ 351              		.loc 1 223 7 is_stmt 1 discriminator 2 view .LVU116
+ 223:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     }
+ 352              		.loc 1 223 8 is_stmt 0 discriminator 2 view .LVU117
+ 353 00ee A369     		ldr	r3, [r4, #24]
+ 223:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     }
+ 354              		.loc 1 223 22 discriminator 2 view .LVU118
+ 355 00f0 0133     		adds	r3, r3, #1
+ 356 00f2 A361     		str	r3, [r4, #24]
+ 117:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 357              		.loc 1 117 31 is_stmt 1 discriminator 2 view .LVU119
+ 117:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 358              		.loc 1 117 32 is_stmt 0 discriminator 2 view .LVU120
+ 359 00f4 0137     		adds	r7, r7, #1
+ 360              	.LVL38:
+ 361              	.L15:
+ 117:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 362              		.loc 1 117 15 is_stmt 1 discriminator 1 view .LVU121
+ 117:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 363              		.loc 1 117 5 is_stmt 0 discriminator 1 view .LVU122
+ 364 00f6 5745     		cmp	r7, r10
+ 365 00f8 80F08D80 		bcs	.L43
+ 119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
+ 366              		.loc 1 119 7 is_stmt 1 view .LVU123
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 12
+
+
+ 119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
+ 367              		.loc 1 119 17 is_stmt 0 view .LVU124
+ 368 00fc 2369     		ldr	r3, [r4, #16]
+ 369 00fe 4344     		add	r3, r3, r8
+ 370 0100 6268     		ldr	r2, [r4, #4]
+ 371 0102 9342     		cmp	r3, r2
+ 372 0104 00D3     		bcc	.L16
+ 119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
+ 373              		.loc 1 119 17 discriminator 1 view .LVU125
+ 374 0106 9B1A     		subs	r3, r3, r2
+ 375              	.L16:
+ 119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
+ 376              		.loc 1 119 15 discriminator 4 view .LVU126
+ 377 0108 2361     		str	r3, [r4, #16]
+ 120:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       
+ 378              		.loc 1 120 7 is_stmt 1 discriminator 4 view .LVU127
+ 379              	.LVL39:
+ 124:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 380              		.loc 1 124 7 discriminator 4 view .LVU128
+ 124:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 381              		.loc 1 124 12 is_stmt 0 discriminator 4 view .LVU129
+ 382 010a 2289     		ldrh	r2, [r4, #8]
+ 124:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 383              		.loc 1 124 10 discriminator 4 view .LVU130
+ 384 010c 8AB9     		cbnz	r2, .L17
+ 126:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 385              		.loc 1 126 9 is_stmt 1 view .LVU131
+ 126:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 386              		.loc 1 126 10 is_stmt 0 view .LVU132
+ 387 010e 2168     		ldr	r1, [r4]
+ 126:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 388              		.loc 1 126 33 view .LVU133
+ 389 0110 5A1C     		adds	r2, r3, #1
+ 390              	.LVL40:
+ 126:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 391              		.loc 1 126 36 view .LVU134
+ 392 0112 CE54     		strb	r6, [r1, r3]
+ 127:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->qBuff[curBuffPosition++]= (elementSize & 0xFF00) >> 8 ;
+ 393              		.loc 1 127 9 is_stmt 1 view .LVU135
+ 127:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->qBuff[curBuffPosition++]= (elementSize & 0xFF00) >> 8 ;
+ 394              		.loc 1 127 27 is_stmt 0 view .LVU136
+ 395 0114 6368     		ldr	r3, [r4, #4]
+ 396 0116 9342     		cmp	r3, r2
+ 397 0118 00D8     		bhi	.L18
+ 127:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->qBuff[curBuffPosition++]= (elementSize & 0xFF00) >> 8 ;
+ 398              		.loc 1 127 27 discriminator 1 view .LVU137
+ 399 011a D21A     		subs	r2, r2, r3
+ 400              	.LVL41:
+ 401              	.L18:
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 402              		.loc 1 128 9 is_stmt 1 discriminator 4 view .LVU138
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 403              		.loc 1 128 61 is_stmt 0 discriminator 4 view .LVU139
+ 404 011c 310A     		lsrs	r1, r6, #8
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 405              		.loc 1 128 10 discriminator 4 view .LVU140
+ 406 011e 2068     		ldr	r0, [r4]
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 13
+
+
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 407              		.loc 1 128 33 discriminator 4 view .LVU141
+ 408 0120 531C     		adds	r3, r2, #1
+ 409              	.LVL42:
+ 128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
+ 410              		.loc 1 128 36 discriminator 4 view .LVU142
+ 411 0122 8154     		strb	r1, [r0, r2]
+ 129:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += 2;
+ 412              		.loc 1 129 9 is_stmt 1 discriminator 4 view .LVU143
+ 129:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += 2;
+ 413              		.loc 1 129 27 is_stmt 0 discriminator 4 view .LVU144
+ 414 0124 6268     		ldr	r2, [r4, #4]
+ 415 0126 9A42     		cmp	r2, r3
+ 416 0128 00D8     		bhi	.L19
+ 129:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += 2;
+ 417              		.loc 1 129 27 discriminator 1 view .LVU145
+ 418 012a 9B1A     		subs	r3, r3, r2
+ 419              	.LVL43:
+ 420              	.L19:
+ 130:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 421              		.loc 1 130 9 is_stmt 1 discriminator 4 view .LVU146
+ 130:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 422              		.loc 1 130 22 is_stmt 0 discriminator 4 view .LVU147
+ 423 012c 6269     		ldr	r2, [r4, #20]
+ 424 012e 0232     		adds	r2, r2, #2
+ 425 0130 6261     		str	r2, [r4, #20]
+ 426              	.L17:
+ 134:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* check if no wrap (NbBytesToCopy == elementSize) or if Wrap and no spsicf option; 
+ 427              		.loc 1 134 7 is_stmt 1 view .LVU148
+ 134:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* check if no wrap (NbBytesToCopy == elementSize) or if Wrap and no spsicf option; 
+ 428              		.loc 1 134 23 is_stmt 0 view .LVU149
+ 429 0132 B146     		mov	r9, r6
+ 430 0134 6568     		ldr	r5, [r4, #4]
+ 431 0136 ED1A     		subs	r5, r5, r3
+ 134:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       /* check if no wrap (NbBytesToCopy == elementSize) or if Wrap and no spsicf option; 
+ 432              		.loc 1 134 21 view .LVU150
+ 433 0138 B542     		cmp	r5, r6
+ 434 013a 28BF     		it	cs
+ 435 013c 3546     		movcs	r5, r6
+ 436              	.LVL44:
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 437              		.loc 1 137 7 is_stmt 1 view .LVU151
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 438              		.loc 1 137 10 is_stmt 0 view .LVU152
+ 439 013e AE42     		cmp	r6, r5
+ 440 0140 BFD0     		beq	.L20
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 441              		.loc 1 137 42 discriminator 1 view .LVU153
+ 442 0142 02D9     		bls	.L21
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 443              		.loc 1 137 81 discriminator 2 view .LVU154
+ 444 0144 227F     		ldrb	r2, [r4, #28]	@ zero_extendqisi2
+ 137:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 445              		.loc 1 137 76 discriminator 2 view .LVU155
+ 446 0146 002A     		cmp	r2, #0
+ 447 0148 BBD0     		beq	.L20
+ 448              	.L21:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 14
+
+
+ 152:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 449              		.loc 1 152 12 is_stmt 1 view .LVU156
+ 152:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 450              		.loc 1 152 15 is_stmt 0 view .LVU157
+ 451 014a 002D     		cmp	r5, #0
+ 452 014c CCD0     		beq	.L22
+ 155:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 453              		.loc 1 155 10 is_stmt 1 view .LVU158
+ 155:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 454              		.loc 1 155 15 is_stmt 0 view .LVU159
+ 455 014e 227F     		ldrb	r2, [r4, #28]	@ zero_extendqisi2
+ 155:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 456              		.loc 1 155 13 view .LVU160
+ 457 0150 12F0010F 		tst	r2, #1
+ 458 0154 22D0     		beq	.L23
+ 158:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 459              		.loc 1 158 11 is_stmt 1 view .LVU161
+ 158:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 460              		.loc 1 158 16 is_stmt 0 view .LVU162
+ 461 0156 2289     		ldrh	r2, [r4, #8]
+ 158:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 462              		.loc 1 158 14 view .LVU163
+ 463 0158 32B9     		cbnz	r2, .L24
+ 160:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = 0xFF;
+ 464              		.loc 1 160 14 is_stmt 1 view .LVU164
+ 160:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = 0xFF;
+ 465              		.loc 1 160 15 is_stmt 0 view .LVU165
+ 466 015a 2068     		ldr	r0, [r4]
+ 160:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = 0xFF;
+ 467              		.loc 1 160 22 view .LVU166
+ 468 015c 991E     		subs	r1, r3, #2
+ 160:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = 0xFF;
+ 469              		.loc 1 160 42 view .LVU167
+ 470 015e FF22     		movs	r2, #255
+ 471 0160 4254     		strb	r2, [r0, r1]
+ 161:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 472              		.loc 1 161 14 is_stmt 1 view .LVU168
+ 161:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 473              		.loc 1 161 15 is_stmt 0 view .LVU169
+ 474 0162 2168     		ldr	r1, [r4]
+ 161:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 475              		.loc 1 161 22 view .LVU170
+ 476 0164 013B     		subs	r3, r3, #1
+ 477              	.LVL45:
+ 161:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 478              		.loc 1 161 42 view .LVU171
+ 479 0166 CA54     		strb	r2, [r1, r3]
+ 480              	.LVL46:
+ 481              	.L24:
+ 163:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* No bytes coped a the end of buffer */
+ 482              		.loc 1 163 11 is_stmt 1 view .LVU172
+ 163:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* No bytes coped a the end of buffer */
+ 483              		.loc 1 163 24 is_stmt 0 view .LVU173
+ 484 0168 6369     		ldr	r3, [r4, #20]
+ 485 016a 2B44     		add	r3, r3, r5
+ 486 016c 6361     		str	r3, [r4, #20]
+ 165:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all element to be copied at the begnning of buffer */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 15
+
+
+ 487              		.loc 1 165 11 is_stmt 1 view .LVU174
+ 488              	.LVL47:
+ 167:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Wrap */
+ 489              		.loc 1 167 11 view .LVU175
+ 169:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* if variable size element, invalidate end of buffer setting OxFFFF in element header (s
+ 490              		.loc 1 169 11 view .LVU176
+ 171:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 491              		.loc 1 171 11 view .LVU177
+ 171:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 492              		.loc 1 171 16 is_stmt 0 view .LVU178
+ 493 016e 2389     		ldrh	r3, [r4, #8]
+ 171:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 494              		.loc 1 171 14 view .LVU179
+ 495 0170 002B     		cmp	r3, #0
+ 496 0172 3CD1     		bne	.L38
+ 173:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 497              		.loc 1 173 13 is_stmt 1 view .LVU180
+ 173:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 498              		.loc 1 173 14 is_stmt 0 view .LVU181
+ 499 0174 2368     		ldr	r3, [r4]
+ 500              	.LVL48:
+ 173:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 501              		.loc 1 173 41 view .LVU182
+ 502 0176 1E70     		strb	r6, [r3]
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 503              		.loc 1 174 13 is_stmt 1 view .LVU183
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 504              		.loc 1 174 68 is_stmt 0 view .LVU184
+ 505 0178 4FEA1923 		lsr	r3, r9, #8
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 506              		.loc 1 174 14 view .LVU185
+ 507 017c 2268     		ldr	r2, [r4]
+ 508              	.LVL49:
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 509              		.loc 1 174 41 view .LVU186
+ 510 017e 5370     		strb	r3, [r2, #1]
+ 175:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           } 
+ 511              		.loc 1 175 13 is_stmt 1 view .LVU187
+ 175:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           } 
+ 512              		.loc 1 175 26 is_stmt 0 view .LVU188
+ 513 0180 6369     		ldr	r3, [r4, #20]
+ 514 0182 0233     		adds	r3, r3, #2
+ 515 0184 6361     		str	r3, [r4, #20]
+ 167:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Wrap */
+ 516              		.loc 1 167 25 view .LVU189
+ 517 0186 4D46     		mov	r5, r9
+ 165:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all element to be copied at the begnning of buffer */
+ 518              		.loc 1 165 25 view .LVU190
+ 519 0188 0023     		movs	r3, #0
+ 520 018a 0193     		str	r3, [sp, #4]
+ 174:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****             q->byteCount += 2;   
+ 521              		.loc 1 174 37 view .LVU191
+ 522 018c 0223     		movs	r3, #2
+ 523              	.LVL50:
+ 524              	.L25:
+ 211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
+ 525              		.loc 1 211 9 is_stmt 1 view .LVU192
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 16
+
+
+ 211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
+ 526              		.loc 1 211 24 is_stmt 0 view .LVU193
+ 527 018e 1BFA85F8 		uxtah	r8, fp, r5
+ 528              	.LVL51:
+ 211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
+ 529              		.loc 1 211 24 view .LVU194
+ 530 0192 1FFA88F8 		uxth	r8, r8
+ 531              	.LVL52:
+ 212:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }  
+ 532              		.loc 1 212 9 is_stmt 1 view .LVU195
+ 212:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }  
+ 533              		.loc 1 212 17 is_stmt 0 view .LVU196
+ 534 0196 0022     		movs	r2, #0
+ 535 0198 2261     		str	r2, [r4, #16]
+ 536 019a A5E7     		b	.L22
+ 537              	.L23:
+ 180:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 538              		.loc 1 180 14 is_stmt 1 view .LVU197
+ 180:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         {
+ 539              		.loc 1 180 17 is_stmt 0 view .LVU198
+ 540 019c 12F0020F 		tst	r2, #2
+ 541 01a0 F5D0     		beq	.L25
+ 182:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 542              		.loc 1 182 11 is_stmt 1 view .LVU199
+ 182:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 543              		.loc 1 182 16 is_stmt 0 view .LVU200
+ 544 01a2 2289     		ldrh	r2, [r4, #8]
+ 182:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
+ 545              		.loc 1 182 14 view .LVU201
+ 546 01a4 002A     		cmp	r2, #0
+ 547 01a6 44D1     		bne	.L39
+ 185:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 548              		.loc 1 185 14 is_stmt 1 view .LVU202
+ 185:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 549              		.loc 1 185 15 is_stmt 0 view .LVU203
+ 550 01a8 2168     		ldr	r1, [r4]
+ 185:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 551              		.loc 1 185 22 view .LVU204
+ 552 01aa 9A1E     		subs	r2, r3, #2
+ 185:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition-1] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 553              		.loc 1 185 42 view .LVU205
+ 554 01ac 8D54     		strb	r5, [r1, r2]
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 555              		.loc 1 186 14 is_stmt 1 view .LVU206
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 556              		.loc 1 186 69 is_stmt 0 view .LVU207
+ 557 01ae 280A     		lsrs	r0, r5, #8
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 558              		.loc 1 186 15 view .LVU208
+ 559 01b0 2168     		ldr	r1, [r4]
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 560              		.loc 1 186 22 view .LVU209
+ 561 01b2 5A1E     		subs	r2, r3, #1
+ 186:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* copy the bytes */ 
+ 562              		.loc 1 186 42 view .LVU210
+ 563 01b4 8854     		strb	r0, [r1, r2]
+ 188:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += NbBytesToCopy; 
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 17
+
+
+ 564              		.loc 1 188 14 is_stmt 1 view .LVU211
+ 188:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += NbBytesToCopy; 
+ 565              		.loc 1 188 23 is_stmt 0 view .LVU212
+ 566 01b6 2068     		ldr	r0, [r4]
+ 188:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += NbBytesToCopy; 
+ 567              		.loc 1 188 14 view .LVU213
+ 568 01b8 2A46     		mov	r2, r5
+ 569 01ba 0299     		ldr	r1, [sp, #8]
+ 570 01bc 07FB0911 		mla	r1, r7, r9, r1
+ 571 01c0 1844     		add	r0, r0, r3
+ 572 01c2 FFF7FEFF 		bl	memcpy
+ 573              	.LVL53:
+ 189:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set the number of copied bytes */
+ 574              		.loc 1 189 14 is_stmt 1 view .LVU214
+ 189:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set the number of copied bytes */
+ 575              		.loc 1 189 27 is_stmt 0 view .LVU215
+ 576 01c6 6369     		ldr	r3, [r4, #20]
+ 577 01c8 2B44     		add	r3, r3, r5
+ 578 01ca 6361     		str	r3, [r4, #20]
+ 191:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set rest of data to be copied to begnning of buffer */
+ 579              		.loc 1 191 14 is_stmt 1 view .LVU216
+ 580              	.LVL54:
+ 193:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* one element more dur to split in 2 elements */
+ 581              		.loc 1 193 14 view .LVU217
+ 193:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* one element more dur to split in 2 elements */
+ 582              		.loc 1 193 28 is_stmt 0 view .LVU218
+ 583 01cc A9EB0502 		sub	r2, r9, r5
+ 584              	.LVL55:
+ 195:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Wrap */
+ 585              		.loc 1 195 14 is_stmt 1 view .LVU219
+ 195:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Wrap */
+ 586              		.loc 1 195 15 is_stmt 0 view .LVU220
+ 587 01d0 A369     		ldr	r3, [r4, #24]
+ 195:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Wrap */
+ 588              		.loc 1 195 29 view .LVU221
+ 589 01d2 0133     		adds	r3, r3, #1
+ 590 01d4 A361     		str	r3, [r4, #24]
+ 197:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* Set new size for rest of data */
+ 591              		.loc 1 197 14 is_stmt 1 view .LVU222
+ 592              	.LVL56:
+ 199:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 593              		.loc 1 199 14 view .LVU223
+ 199:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 594              		.loc 1 199 15 is_stmt 0 view .LVU224
+ 595 01d6 2368     		ldr	r3, [r4]
+ 596              	.LVL57:
+ 199:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->qBuff[curBuffPosition++] = (NbBytesToCopy & 0xFF00) >> 8 ;
+ 597              		.loc 1 199 42 view .LVU225
+ 598 01d8 1A70     		strb	r2, [r3]
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 599              		.loc 1 200 14 is_stmt 1 view .LVU226
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 600              		.loc 1 200 69 is_stmt 0 view .LVU227
+ 601 01da 110A     		lsrs	r1, r2, #8
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 602              		.loc 1 200 15 view .LVU228
+ 603 01dc 2368     		ldr	r3, [r4]
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 18
+
+
+ 604              	.LVL58:
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 605              		.loc 1 200 42 view .LVU229
+ 606 01de 5970     		strb	r1, [r3, #1]
+ 201:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 607              		.loc 1 201 14 is_stmt 1 view .LVU230
+ 201:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 608              		.loc 1 201 27 is_stmt 0 view .LVU231
+ 609 01e0 6369     		ldr	r3, [r4, #20]
+ 610 01e2 0233     		adds	r3, r3, #2
+ 611 01e4 6361     		str	r3, [r4, #20]
+ 191:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* set rest of data to be copied to begnning of buffer */
+ 612              		.loc 1 191 28 view .LVU232
+ 613 01e6 0195     		str	r5, [sp, #4]
+ 193:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              /* one element more dur to split in 2 elements */
+ 614              		.loc 1 193 28 view .LVU233
+ 615 01e8 1546     		mov	r5, r2
+ 616              	.LVL59:
+ 200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
+ 617              		.loc 1 200 38 view .LVU234
+ 618 01ea 0223     		movs	r3, #2
+ 619 01ec CFE7     		b	.L25
+ 620              	.LVL60:
+ 621              	.L38:
+ 167:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Wrap */
+ 622              		.loc 1 167 25 view .LVU235
+ 623 01ee 4D46     		mov	r5, r9
+ 165:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all element to be copied at the begnning of buffer */
+ 624              		.loc 1 165 25 view .LVU236
+ 625 01f0 0023     		movs	r3, #0
+ 626 01f2 0193     		str	r3, [sp, #4]
+ 627 01f4 CBE7     		b	.L25
+ 628              	.LVL61:
+ 629              	.L42:
+ 218:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 630              		.loc 1 218 9 is_stmt 1 view .LVU237
+ 218:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 631              		.loc 1 218 18 is_stmt 0 view .LVU238
+ 632 01f6 2068     		ldr	r0, [r4]
+ 633 01f8 0390     		str	r0, [sp, #12]
+ 218:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 634              		.loc 1 218 61 view .LVU239
+ 635 01fa 019A     		ldr	r2, [sp, #4]
+ 636 01fc 07FB0921 		mla	r1, r7, r9, r2
+ 218:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->byteCount += NbBytesToCopy;
+ 637              		.loc 1 218 9 view .LVU240
+ 638 0200 2A46     		mov	r2, r5
+ 639 0202 0298     		ldr	r0, [sp, #8]
+ 640 0204 0144     		add	r1, r1, r0
+ 641 0206 0398     		ldr	r0, [sp, #12]
+ 642 0208 1844     		add	r0, r0, r3
+ 643 020a FFF7FEFF 		bl	memcpy
+ 644              	.LVL62:
+ 219:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }      
+ 645              		.loc 1 219 9 is_stmt 1 view .LVU241
+ 219:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }      
+ 646              		.loc 1 219 22 is_stmt 0 view .LVU242
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 19
+
+
+ 647 020e 6369     		ldr	r3, [r4, #20]
+ 648 0210 2B44     		add	r3, r3, r5
+ 649 0212 6361     		str	r3, [r4, #20]
+ 650 0214 6BE7     		b	.L26
+ 651              	.LVL63:
+ 652              	.L43:
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 653              		.loc 1 226 5 is_stmt 1 view .LVU243
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 654              		.loc 1 226 12 is_stmt 0 view .LVU244
+ 655 0216 2068     		ldr	r0, [r4]
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 656              		.loc 1 226 23 view .LVU245
+ 657 0218 2369     		ldr	r3, [r4, #16]
+ 658 021a 9B44     		add	fp, fp, r3
+ 659              	.LVL64:
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 660              		.loc 1 226 23 view .LVU246
+ 661 021c 6368     		ldr	r3, [r4, #4]
+ 662 021e 9B45     		cmp	fp, r3
+ 663 0220 01D3     		bcc	.L28
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 664              		.loc 1 226 23 discriminator 1 view .LVU247
+ 665 0222 ABEB030B 		sub	fp, fp, r3
+ 666              	.L28:
+ 226:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 667              		.loc 1 226 9 discriminator 4 view .LVU248
+ 668 0226 5844     		add	r0, r0, fp
+ 669              	.LVL65:
+ 232:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 233:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return ptr;
+ 670              		.loc 1 233 3 is_stmt 1 discriminator 4 view .LVU249
+ 671              	.L5:
+ 234:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 672              		.loc 1 234 1 is_stmt 0 view .LVU250
+ 673 0228 05B0     		add	sp, sp, #20
+ 674              	.LCFI2:
+ 675              		.cfi_remember_state
+ 676              		.cfi_def_cfa_offset 36
+ 677              		@ sp needed
+ 678 022a BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 679              	.LVL66:
+ 680              	.L36:
+ 681              	.LCFI3:
+ 682              		.cfi_restore_state
+ 231:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 683              		.loc 1 231 12 view .LVU251
+ 684 022e 0020     		movs	r0, #0
+ 685 0230 FAE7     		b	.L5
+ 686              	.LVL67:
+ 687              	.L39:
+ 208:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
+ 688              		.loc 1 208 20 view .LVU252
+ 689 0232 0020     		movs	r0, #0
+ 690 0234 F8E7     		b	.L5
+ 691              		.cfi_endproc
+ 692              	.LFE1262:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 20
+
+
+ 694              		.section	.text.CircularQueue_Remove_Copy,"ax",%progbits
+ 695              		.align	1
+ 696              		.global	CircularQueue_Remove_Copy
+ 697              		.syntax unified
+ 698              		.thumb
+ 699              		.thumb_func
+ 701              	CircularQueue_Remove_Copy:
+ 702              	.LVL68:
+ 703              	.LFB1263:
+ 235:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 236:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 237:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+ 238:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief  Remove element from  the queue and copy it in provided buffer
+ 239:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to remove and element from  the Circular Queue .  
+ 240:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure  to be handled
+ 241:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize: Pointer to return Size of element to be removed  
+ 242:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  buffer: destination buffer where to copy element  
+ 243:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval Pointer on removed element. NULL if queue was empty
+ 244:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+ 245:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Remove_Copy(queue_t *q, uint16_t* elementSize, uint8_t* buffer)
+ 246:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 704              		.loc 1 246 1 is_stmt 1 view -0
+ 705              		.cfi_startproc
+ 706              		@ args = 0, pretend = 0, frame = 0
+ 707              		@ frame_needed = 0, uses_anonymous_args = 0
+ 708              		@ link register save eliminated.
+ 247:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    return NULL;
+ 709              		.loc 1 247 4 view .LVU254
+ 248:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 710              		.loc 1 248 1 is_stmt 0 view .LVU255
+ 711 0000 0020     		movs	r0, #0
+ 712              	.LVL69:
+ 713              		.loc 1 248 1 view .LVU256
+ 714 0002 7047     		bx	lr
+ 715              		.cfi_endproc
+ 716              	.LFE1263:
+ 718              		.section	.text.CircularQueue_Remove,"ax",%progbits
+ 719              		.align	1
+ 720              		.global	CircularQueue_Remove
+ 721              		.syntax unified
+ 722              		.thumb
+ 723              		.thumb_func
+ 725              	CircularQueue_Remove:
+ 726              	.LVL70:
+ 727              	.LFB1264:
+ 249:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 250:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 251:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 252:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+ 253:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief  Remove element from  the queue.
+ 254:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to remove and element from  the Circular Queue .  
+ 255:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure  to be handled
+ 256:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize: Pointer to return Size of element to be removed (ignored if NULL)
+ 257:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval Pointer on removed element. NULL if queue was empty
+ 258:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+ 259:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Remove(queue_t *q, uint16_t* elementSize)
+ 260:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 21
+
+
+ 728              		.loc 1 260 1 is_stmt 1 view -0
+ 729              		.cfi_startproc
+ 730              		@ args = 0, pretend = 0, frame = 0
+ 731              		@ frame_needed = 0, uses_anonymous_args = 0
+ 732              		.loc 1 260 1 is_stmt 0 view .LVU258
+ 733 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 734              	.LCFI4:
+ 735              		.cfi_def_cfa_offset 20
+ 736              		.cfi_offset 4, -20
+ 737              		.cfi_offset 5, -16
+ 738              		.cfi_offset 6, -12
+ 739              		.cfi_offset 7, -8
+ 740              		.cfi_offset 14, -4
+ 741 0002 0346     		mov	r3, r0
+ 261:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  elemSizeStorageRoom = 0;
+ 742              		.loc 1 261 3 is_stmt 1 view .LVU259
+ 743              	.LVL71:
+ 262:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t* ptr= NULL;
+ 744              		.loc 1 262 3 view .LVU260
+ 263:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom = (q->elementSize == 0) ? 2 : 0;
+ 745              		.loc 1 263 3 view .LVU261
+ 746              		.loc 1 263 27 is_stmt 0 view .LVU262
+ 747 0004 0089     		ldrh	r0, [r0, #8]
+ 748              	.LVL72:
+ 749              		.loc 1 263 23 view .LVU263
+ 750 0006 A8B9     		cbnz	r0, .L58
+ 751 0008 4FF0020C 		mov	ip, #2
+ 752              	.L46:
+ 753              	.LVL73:
+ 264:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t eltSize = 0;
+ 754              		.loc 1 264 3 is_stmt 1 discriminator 4 view .LVU264
+ 265:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->byteCount > 0) 
+ 755              		.loc 1 265 3 discriminator 4 view .LVU265
+ 756              		.loc 1 265 8 is_stmt 0 discriminator 4 view .LVU266
+ 757 000c 5D69     		ldr	r5, [r3, #20]
+ 758              		.loc 1 265 6 discriminator 4 view .LVU267
+ 759 000e 002D     		cmp	r5, #0
+ 760 0010 5DD0     		beq	.L59
+ 266:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 267:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* retrieve element Size */
+ 268:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     eltSize = (q->elementSize == 0) ? q->qBuff[q->first] + ((q->qBuff[MOD((q->first+1), q->queueMax
+ 761              		.loc 1 268 5 is_stmt 1 view .LVU268
+ 762              		.loc 1 268 13 is_stmt 0 view .LVU269
+ 763 0012 90B9     		cbnz	r0, .L60
+ 764              		.loc 1 268 40 discriminator 1 view .LVU270
+ 765 0014 1F68     		ldr	r7, [r3]
+ 766              		.loc 1 268 49 discriminator 1 view .LVU271
+ 767 0016 DC68     		ldr	r4, [r3, #12]
+ 768              		.loc 1 268 47 discriminator 1 view .LVU272
+ 769 0018 3A5D     		ldrb	r2, [r7, r4]	@ zero_extendqisi2
+ 770              		.loc 1 268 71 discriminator 1 view .LVU273
+ 771 001a 661C     		adds	r6, r4, #1
+ 772 001c D3F804E0 		ldr	lr, [r3, #4]
+ 773 0020 7645     		cmp	r6, lr
+ 774 0022 02D3     		bcc	.L49
+ 775              		.loc 1 268 71 discriminator 3 view .LVU274
+ 776 0024 A4EB0E04 		sub	r4, r4, lr
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 22
+
+
+ 777 0028 661C     		adds	r6, r4, #1
+ 778              	.L49:
+ 779              		.loc 1 268 70 discriminator 6 view .LVU275
+ 780 002a BC5D     		ldrb	r4, [r7, r6]	@ zero_extendqisi2
+ 781              		.loc 1 268 13 discriminator 6 view .LVU276
+ 782 002c 02EB0422 		add	r2, r2, r4, lsl #8
+ 783 0030 92B2     		uxth	r2, r2
+ 784 0032 03E0     		b	.L48
+ 785              	.LVL74:
+ 786              	.L58:
+ 263:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t eltSize = 0;
+ 787              		.loc 1 263 23 view .LVU277
+ 788 0034 4FF0000C 		mov	ip, #0
+ 789 0038 E8E7     		b	.L46
+ 790              	.LVL75:
+ 791              	.L60:
+ 792              		.loc 1 268 13 view .LVU278
+ 793 003a 0246     		mov	r2, r0
+ 794              	.L48:
+ 795              	.LVL76:
+ 269:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 270:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****      if ((q->optionFlags & CIRCULAR_QUEUE_NO_WRAP_FLAG) && !(q->optionFlags & CIRCULAR_QUEUE_SPLIT_
+ 796              		.loc 1 270 6 is_stmt 1 discriminator 8 view .LVU279
+ 797              		.loc 1 270 12 is_stmt 0 discriminator 8 view .LVU280
+ 798 003c 1C7F     		ldrb	r4, [r3, #28]	@ zero_extendqisi2
+ 799              		.loc 1 270 9 discriminator 8 view .LVU281
+ 800 003e 04F00304 		and	r4, r4, #3
+ 801 0042 012C     		cmp	r4, #1
+ 802 0044 1BD0     		beq	.L64
+ 803              	.LVL77:
+ 804              	.L50:
+ 271:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****      {
+ 272:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        if (((eltSize == 0xFFFF) && q->elementSize == 0 ) ||
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSiz
+ 274:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 275:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all data from current position up to the end of buffer are invalid */
+ 276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           q->byteCount -= (q->queueMaxSize - q->first);
+ 277:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
+ 278:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           q->first = 0;
+ 279:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* retrieve the right size after the wrap [if variable size element] */
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           eltSize = (q->elementSize == 0) ? q->qBuff[q->first] + ((q->qBuff[MOD((q->first+1), q->qu
+ 281:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 282:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****      }
+ 283:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 284:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* retrieve element */
+ 285:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     ptr = q->qBuff + (MOD((q->first + elemSizeStorageRoom), q->queueMaxSize));
+ 805              		.loc 1 285 5 is_stmt 1 view .LVU282
+ 806              		.loc 1 285 12 is_stmt 0 view .LVU283
+ 807 0046 1C68     		ldr	r4, [r3]
+ 808              		.loc 1 285 23 view .LVU284
+ 809 0048 DD68     		ldr	r5, [r3, #12]
+ 810 004a E646     		mov	lr, ip
+ 811 004c 05EB0C00 		add	r0, r5, ip
+ 812 0050 5E68     		ldr	r6, [r3, #4]
+ 813 0052 B042     		cmp	r0, r6
+ 814 0054 00D3     		bcc	.L54
+ 815              		.loc 1 285 23 discriminator 1 view .LVU285
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 23
+
+
+ 816 0056 801B     		subs	r0, r0, r6
+ 817              	.L54:
+ 818              		.loc 1 285 9 discriminator 4 view .LVU286
+ 819 0058 2044     		add	r0, r0, r4
+ 820              	.LVL78:
+ 286:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 287:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* adjust byte count */
+ 288:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     q->byteCount -= (eltSize + elemSizeStorageRoom) ;
+ 821              		.loc 1 288 5 is_stmt 1 discriminator 4 view .LVU287
+ 822              		.loc 1 288 30 is_stmt 0 discriminator 4 view .LVU288
+ 823 005a 9444     		add	ip, ip, r2
+ 824              	.LVL79:
+ 825              		.loc 1 288 18 discriminator 4 view .LVU289
+ 826 005c 5C69     		ldr	r4, [r3, #20]
+ 827 005e A4EB0C04 		sub	r4, r4, ip
+ 828 0062 5C61     		str	r4, [r3, #20]
+ 289:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     
+ 290:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* Adjust q->first */
+ 291:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     if (q->byteCount > 0)
+ 829              		.loc 1 291 5 is_stmt 1 discriminator 4 view .LVU290
+ 830              		.loc 1 291 8 is_stmt 0 discriminator 4 view .LVU291
+ 831 0064 2CB1     		cbz	r4, .L55
+ 292:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     {
+ 293:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       q->first = MOD((q->first+ eltSize + elemSizeStorageRoom ), q->queueMaxSize);
+ 832              		.loc 1 293 7 is_stmt 1 view .LVU292
+ 833              		.loc 1 293 18 is_stmt 0 view .LVU293
+ 834 0066 1544     		add	r5, r5, r2
+ 835 0068 7544     		add	r5, r5, lr
+ 836 006a AE42     		cmp	r6, r5
+ 837 006c 00D8     		bhi	.L56
+ 838              		.loc 1 293 18 discriminator 1 view .LVU294
+ 839 006e AD1B     		subs	r5, r5, r6
+ 840              	.L56:
+ 841              		.loc 1 293 16 discriminator 4 view .LVU295
+ 842 0070 DD60     		str	r5, [r3, #12]
+ 843              	.L55:
+ 294:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     }    
+ 295:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     /* adjust element count */    
+ 296:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     --q->elementCount;    
+ 844              		.loc 1 296 5 is_stmt 1 view .LVU296
+ 845              		.loc 1 296 8 is_stmt 0 view .LVU297
+ 846 0072 9C69     		ldr	r4, [r3, #24]
+ 847              		.loc 1 296 5 view .LVU298
+ 848 0074 013C     		subs	r4, r4, #1
+ 849 0076 9C61     		str	r4, [r3, #24]
+ 850              	.LVL80:
+ 851              	.L47:
+ 297:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 298:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (elementSize != NULL)
+ 852              		.loc 1 298 3 is_stmt 1 view .LVU299
+ 853              		.loc 1 298 6 is_stmt 0 view .LVU300
+ 854 0078 01B1     		cbz	r1, .L45
+ 299:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 300:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     *elementSize = eltSize;
+ 855              		.loc 1 300 5 is_stmt 1 view .LVU301
+ 856              		.loc 1 300 18 is_stmt 0 view .LVU302
+ 857 007a 0A80     		strh	r2, [r1]	@ movhi
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 24
+
+
+ 301:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 302:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return ptr;
+ 858              		.loc 1 302 3 is_stmt 1 view .LVU303
+ 859              	.L45:
+ 303:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 860              		.loc 1 303 1 is_stmt 0 view .LVU304
+ 861 007c F0BD     		pop	{r4, r5, r6, r7, pc}
+ 862              	.LVL81:
+ 863              	.L64:
+ 272:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSiz
+ 864              		.loc 1 272 8 is_stmt 1 view .LVU305
+ 272:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSiz
+ 865              		.loc 1 272 11 is_stmt 0 view .LVU306
+ 866 007e 4FF6FF74 		movw	r4, #65535
+ 867 0082 A242     		cmp	r2, r4
+ 868 0084 0AD0     		beq	.L65
+ 869              	.L51:
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 870              		.loc 1 273 15 discriminator 3 view .LVU307
+ 871 0086 DC68     		ldr	r4, [r3, #12]
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 872              		.loc 1 273 26 discriminator 3 view .LVU308
+ 873 0088 1E69     		ldr	r6, [r3, #16]
+ 272:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSiz
+ 874              		.loc 1 272 58 discriminator 3 view .LVU309
+ 875 008a B442     		cmp	r4, r6
+ 876 008c DBD9     		bls	.L50
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 877              		.loc 1 273 34 view .LVU310
+ 878 008e 0028     		cmp	r0, #0
+ 879 0090 D9D0     		beq	.L50
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 880              		.loc 1 273 58 discriminator 1 view .LVU311
+ 881 0092 5E68     		ldr	r6, [r3, #4]
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 882              		.loc 1 273 73 discriminator 1 view .LVU312
+ 883 0094 341B     		subs	r4, r6, r4
+ 273:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        {
+ 884              		.loc 1 273 52 discriminator 1 view .LVU313
+ 885 0096 8442     		cmp	r4, r0
+ 886 0098 D5D2     		bcs	.L50
+ 887 009a 01E0     		b	.L52
+ 888              	.L65:
+ 272:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****            ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSiz
+ 889              		.loc 1 272 33 discriminator 1 view .LVU314
+ 890 009c 0028     		cmp	r0, #0
+ 891 009e F2D1     		bne	.L51
+ 892              	.L52:
+ 276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
+ 893              		.loc 1 276 11 is_stmt 1 view .LVU315
+ 276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
+ 894              		.loc 1 276 47 is_stmt 0 view .LVU316
+ 895 00a0 DA68     		ldr	r2, [r3, #12]
+ 896              	.LVL82:
+ 276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
+ 897              		.loc 1 276 29 view .LVU317
+ 898 00a2 5C68     		ldr	r4, [r3, #4]
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 25
+
+
+ 276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
+ 899              		.loc 1 276 24 view .LVU318
+ 900 00a4 121B     		subs	r2, r2, r4
+ 901 00a6 1544     		add	r5, r5, r2
+ 902 00a8 5D61     		str	r5, [r3, #20]
+ 278:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* retrieve the right size after the wrap [if variable size element] */
+ 903              		.loc 1 278 11 is_stmt 1 view .LVU319
+ 278:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* retrieve the right size after the wrap [if variable size element] */
+ 904              		.loc 1 278 20 is_stmt 0 view .LVU320
+ 905 00aa 0022     		movs	r2, #0
+ 906 00ac DA60     		str	r2, [r3, #12]
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 907              		.loc 1 280 11 is_stmt 1 view .LVU321
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 908              		.loc 1 280 19 is_stmt 0 view .LVU322
+ 909 00ae 60B9     		cbnz	r0, .L61
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 910              		.loc 1 280 46 discriminator 1 view .LVU323
+ 911 00b0 1868     		ldr	r0, [r3]
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 912              		.loc 1 280 53 discriminator 1 view .LVU324
+ 913 00b2 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 914              		.loc 1 280 77 discriminator 1 view .LVU325
+ 915 00b4 012C     		cmp	r4, #1
+ 916 00b6 05D9     		bls	.L66
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 917              		.loc 1 280 77 view .LVU326
+ 918 00b8 0124     		movs	r4, #1
+ 919              	.L53:
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 920              		.loc 1 280 76 discriminator 6 view .LVU327
+ 921 00ba 005D     		ldrb	r0, [r0, r4]	@ zero_extendqisi2
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 922              		.loc 1 280 19 discriminator 6 view .LVU328
+ 923 00bc 02EB0022 		add	r2, r2, r0, lsl #8
+ 924 00c0 92B2     		uxth	r2, r2
+ 925 00c2 C0E7     		b	.L50
+ 926              	.L66:
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 927              		.loc 1 280 77 discriminator 3 view .LVU329
+ 928 00c4 C4F10104 		rsb	r4, r4, #1
+ 929 00c8 F7E7     		b	.L53
+ 930              	.L61:
+ 280:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****        }
+ 931              		.loc 1 280 19 view .LVU330
+ 932 00ca 0246     		mov	r2, r0
+ 933 00cc BBE7     		b	.L50
+ 934              	.LVL83:
+ 935              	.L59:
+ 264:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->byteCount > 0) 
+ 936              		.loc 1 264 12 view .LVU331
+ 937 00ce 0022     		movs	r2, #0
+ 262:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom = (q->elementSize == 0) ? 2 : 0;
+ 938              		.loc 1 262 12 view .LVU332
+ 939 00d0 1046     		mov	r0, r2
+ 940 00d2 D1E7     		b	.L47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 26
+
+
+ 941              		.cfi_endproc
+ 942              	.LFE1264:
+ 944              		.section	.text.CircularQueue_Sense_Copy,"ax",%progbits
+ 945              		.align	1
+ 946              		.global	CircularQueue_Sense_Copy
+ 947              		.syntax unified
+ 948              		.thumb
+ 949              		.thumb_func
+ 951              	CircularQueue_Sense_Copy:
+ 952              	.LVL84:
+ 953              	.LFB1265:
+ 304:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 305:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 306:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+ 307:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief  "Sense" first element of the queue, without removing it and copy it in provided buffer
+ 308:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to return a pointer on the first element of the queue without rem
+ 309:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure  to be handled
+ 310:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize:  Pointer to return Size of element to be removed  
+ 311:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  buffer: destination buffer where to copy element
+ 312:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval Pointer on sensed element. NULL if queue was empty
+ 313:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+ 314:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 315:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Sense_Copy(queue_t *q, uint16_t* elementSize, uint8_t* buffer)
+ 316:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 954              		.loc 1 316 1 is_stmt 1 view -0
+ 955              		.cfi_startproc
+ 956              		@ args = 0, pretend = 0, frame = 0
+ 957              		@ frame_needed = 0, uses_anonymous_args = 0
+ 958              		@ link register save eliminated.
+ 317:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     return NULL;
+ 959              		.loc 1 317 5 view .LVU334
+ 318:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 960              		.loc 1 318 1 is_stmt 0 view .LVU335
+ 961 0000 0020     		movs	r0, #0
+ 962              	.LVL85:
+ 963              		.loc 1 318 1 view .LVU336
+ 964 0002 7047     		bx	lr
+ 965              		.cfi_endproc
+ 966              	.LFE1265:
+ 968              		.section	.text.CircularQueue_Sense,"ax",%progbits
+ 969              		.align	1
+ 970              		.global	CircularQueue_Sense
+ 971              		.syntax unified
+ 972              		.thumb
+ 973              		.thumb_func
+ 975              	CircularQueue_Sense:
+ 976              	.LVL86:
+ 977              	.LFB1266:
+ 319:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 320:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 321:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+ 322:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief  "Sense" first element of the queue, without removing it.
+ 323:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note   This function is used to return a pointer on the first element of the queue without rem
+ 324:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure  to be handled
+ 325:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize:  Pointer to return Size of element to be removed (ignored if NULL)
+ 326:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval Pointer on sensed element. NULL if queue was empty
+ 327:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 27
+
+
+ 328:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Sense(queue_t *q, uint16_t* elementSize)
+ 329:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 978              		.loc 1 329 1 is_stmt 1 view -0
+ 979              		.cfi_startproc
+ 980              		@ args = 0, pretend = 0, frame = 0
+ 981              		@ frame_needed = 0, uses_anonymous_args = 0
+ 982              		@ link register save eliminated.
+ 983              		.loc 1 329 1 is_stmt 0 view .LVU338
+ 984 0000 F0B4     		push	{r4, r5, r6, r7}
+ 985              	.LCFI5:
+ 986              		.cfi_def_cfa_offset 16
+ 987              		.cfi_offset 4, -16
+ 988              		.cfi_offset 5, -12
+ 989              		.cfi_offset 6, -8
+ 990              		.cfi_offset 7, -4
+ 330:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t  elemSizeStorageRoom = 0;
+ 991              		.loc 1 330 3 is_stmt 1 view .LVU339
+ 992              	.LVL87:
+ 331:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint8_t* x= NULL;
+ 993              		.loc 1 331 3 view .LVU340
+ 332:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom = (q->elementSize == 0) ? 2 : 0;
+ 994              		.loc 1 332 3 view .LVU341
+ 995              		.loc 1 332 27 is_stmt 0 view .LVU342
+ 996 0002 0589     		ldrh	r5, [r0, #8]
+ 997              		.loc 1 332 23 view .LVU343
+ 998 0004 ADB9     		cbnz	r5, .L79
+ 999 0006 0223     		movs	r3, #2
+ 1000              	.L69:
+ 1001              	.LVL88:
+ 333:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t eltSize = 0;
+ 1002              		.loc 1 333 3 is_stmt 1 discriminator 4 view .LVU344
+ 334:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t FirstElemetPos = 0;
+ 1003              		.loc 1 334 3 discriminator 4 view .LVU345
+ 335:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     
+ 336:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->byteCount > 0) 
+ 1004              		.loc 1 336 3 discriminator 4 view .LVU346
+ 1005              		.loc 1 336 8 is_stmt 0 discriminator 4 view .LVU347
+ 1006 0008 4269     		ldr	r2, [r0, #20]
+ 1007              		.loc 1 336 6 discriminator 4 view .LVU348
+ 1008 000a 002A     		cmp	r2, #0
+ 1009 000c 47D0     		beq	.L80
+ 337:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 338:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     FirstElemetPos = q->first;
+ 1010              		.loc 1 338 5 is_stmt 1 view .LVU349
+ 1011              		.loc 1 338 20 is_stmt 0 view .LVU350
+ 1012 000e C668     		ldr	r6, [r0, #12]
+ 1013              	.LVL89:
+ 339:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     eltSize = (q->elementSize == 0) ? q->qBuff[q->first] + ((q->qBuff[MOD((q->first+1), q->queueMax
+ 1014              		.loc 1 339 5 is_stmt 1 view .LVU351
+ 1015              		.loc 1 339 13 is_stmt 0 view .LVU352
+ 1016 0010 8DB9     		cbnz	r5, .L81
+ 1017              		.loc 1 339 40 discriminator 1 view .LVU353
+ 1018 0012 D0F800C0 		ldr	ip, [r0]
+ 1019              		.loc 1 339 47 discriminator 1 view .LVU354
+ 1020 0016 1CF80620 		ldrb	r2, [ip, r6]	@ zero_extendqisi2
+ 1021              		.loc 1 339 71 discriminator 1 view .LVU355
+ 1022 001a 741C     		adds	r4, r6, #1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 28
+
+
+ 1023 001c 4768     		ldr	r7, [r0, #4]
+ 1024 001e BC42     		cmp	r4, r7
+ 1025 0020 01D3     		bcc	.L72
+ 1026              		.loc 1 339 71 discriminator 3 view .LVU356
+ 1027 0022 F41B     		subs	r4, r6, r7
+ 1028 0024 0134     		adds	r4, r4, #1
+ 1029              	.L72:
+ 1030              		.loc 1 339 70 discriminator 6 view .LVU357
+ 1031 0026 1CF80440 		ldrb	r4, [ip, r4]	@ zero_extendqisi2
+ 1032              		.loc 1 339 13 discriminator 6 view .LVU358
+ 1033 002a 02EB0422 		add	r2, r2, r4, lsl #8
+ 1034 002e 92B2     		uxth	r2, r2
+ 1035 0030 02E0     		b	.L71
+ 1036              	.LVL90:
+ 1037              	.L79:
+ 332:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint16_t eltSize = 0;
+ 1038              		.loc 1 332 23 view .LVU359
+ 1039 0032 0023     		movs	r3, #0
+ 1040 0034 E8E7     		b	.L69
+ 1041              	.LVL91:
+ 1042              	.L81:
+ 1043              		.loc 1 339 13 view .LVU360
+ 1044 0036 2A46     		mov	r2, r5
+ 1045              	.L71:
+ 1046              	.LVL92:
+ 340:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     
+ 341:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     if ((q->optionFlags & CIRCULAR_QUEUE_NO_WRAP_FLAG) && !(q->optionFlags & CIRCULAR_QUEUE_SPLIT_I
+ 1047              		.loc 1 341 5 is_stmt 1 discriminator 8 view .LVU361
+ 1048              		.loc 1 341 11 is_stmt 0 discriminator 8 view .LVU362
+ 1049 0038 047F     		ldrb	r4, [r0, #28]	@ zero_extendqisi2
+ 1050              		.loc 1 341 8 discriminator 8 view .LVU363
+ 1051 003a 04F00304 		and	r4, r4, #3
+ 1052 003e 012C     		cmp	r4, #1
+ 1053 0040 0AD0     		beq	.L85
+ 1054              	.LVL93:
+ 1055              	.L73:
+ 342:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     { 
+ 343:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       if (((eltSize == 0xFFFF) && q->elementSize == 0 ) ||
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSize
+ 345:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 346:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
+ 347:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* all data from current position up to the end of buffer are invalid */
+ 348:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         FirstElemetPos = 0; /* wrap to the begiining of buffer */
+ 349:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 350:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* retrieve the right size after the wrap [if variable size element] */
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         eltSize = (q->elementSize == 0) ? q->qBuff[FirstElemetPos]+ ((q->qBuff[MOD((FirstElemetPos+
+ 352:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 353:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    }
+ 354:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****    /* retrieve element */
+ 355:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     x = q->qBuff + (MOD((FirstElemetPos + elemSizeStorageRoom), q->queueMaxSize));
+ 1056              		.loc 1 355 5 is_stmt 1 view .LVU364
+ 1057              		.loc 1 355 10 is_stmt 0 view .LVU365
+ 1058 0042 0468     		ldr	r4, [r0]
+ 1059              		.loc 1 355 21 view .LVU366
+ 1060 0044 3344     		add	r3, r3, r6
+ 1061              	.LVL94:
+ 1062              		.loc 1 355 21 view .LVU367
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 29
+
+
+ 1063 0046 4068     		ldr	r0, [r0, #4]
+ 1064              	.LVL95:
+ 1065              		.loc 1 355 21 view .LVU368
+ 1066 0048 8342     		cmp	r3, r0
+ 1067 004a 00D3     		bcc	.L77
+ 1068              		.loc 1 355 21 discriminator 1 view .LVU369
+ 1069 004c 1B1A     		subs	r3, r3, r0
+ 1070              	.L77:
+ 1071              		.loc 1 355 7 discriminator 4 view .LVU370
+ 1072 004e E018     		adds	r0, r4, r3
+ 1073              	.LVL96:
+ 1074              	.L70:
+ 356:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 357:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (elementSize != NULL)
+ 1075              		.loc 1 357 3 is_stmt 1 view .LVU371
+ 1076              		.loc 1 357 6 is_stmt 0 view .LVU372
+ 1077 0050 01B1     		cbz	r1, .L68
+ 358:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 359:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     *elementSize = eltSize;
+ 1078              		.loc 1 359 5 is_stmt 1 view .LVU373
+ 1079              		.loc 1 359 18 is_stmt 0 view .LVU374
+ 1080 0052 0A80     		strh	r2, [r1]	@ movhi
+ 360:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
+ 361:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return x;
+ 1081              		.loc 1 361 3 is_stmt 1 view .LVU375
+ 1082              	.L68:
+ 362:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 1083              		.loc 1 362 1 is_stmt 0 view .LVU376
+ 1084 0054 F0BC     		pop	{r4, r5, r6, r7}
+ 1085              	.LCFI6:
+ 1086              		.cfi_remember_state
+ 1087              		.cfi_restore 7
+ 1088              		.cfi_restore 6
+ 1089              		.cfi_restore 5
+ 1090              		.cfi_restore 4
+ 1091              		.cfi_def_cfa_offset 0
+ 1092 0056 7047     		bx	lr
+ 1093              	.LVL97:
+ 1094              	.L85:
+ 1095              	.LCFI7:
+ 1096              		.cfi_restore_state
+ 343:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSize
+ 1097              		.loc 1 343 7 is_stmt 1 view .LVU377
+ 343:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSize
+ 1098              		.loc 1 343 10 is_stmt 0 view .LVU378
+ 1099 0058 4FF6FF74 		movw	r4, #65535
+ 1100 005c A242     		cmp	r2, r4
+ 1101 005e 09D0     		beq	.L86
+ 1102              	.L74:
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1103              		.loc 1 344 25 discriminator 3 view .LVU379
+ 1104 0060 0469     		ldr	r4, [r0, #16]
+ 343:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSize
+ 1105              		.loc 1 343 57 discriminator 3 view .LVU380
+ 1106 0062 B442     		cmp	r4, r6
+ 1107 0064 EDD2     		bcs	.L73
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 30
+
+
+ 1108              		.loc 1 344 33 view .LVU381
+ 1109 0066 002D     		cmp	r5, #0
+ 1110 0068 EBD0     		beq	.L73
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1111              		.loc 1 344 57 discriminator 1 view .LVU382
+ 1112 006a 4468     		ldr	r4, [r0, #4]
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1113              		.loc 1 344 72 discriminator 1 view .LVU383
+ 1114 006c A41B     		subs	r4, r4, r6
+ 344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1115              		.loc 1 344 51 discriminator 1 view .LVU384
+ 1116 006e AC42     		cmp	r4, r5
+ 1117 0070 E7D2     		bcs	.L73
+ 1118 0072 01E0     		b	.L75
+ 1119              	.L86:
+ 343:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           ((q->first > q->last) && q->elementSize && ((q->queueMaxSize - q->first) < q->elementSize
+ 1120              		.loc 1 343 32 discriminator 1 view .LVU385
+ 1121 0074 002D     		cmp	r5, #0
+ 1122 0076 F3D1     		bne	.L74
+ 1123              	.L75:
+ 348:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1124              		.loc 1 348 9 is_stmt 1 view .LVU386
+ 1125              	.LVL98:
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1126              		.loc 1 351 9 view .LVU387
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1127              		.loc 1 351 17 is_stmt 0 view .LVU388
+ 1128 0078 75B9     		cbnz	r5, .L82
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1129              		.loc 1 351 44 discriminator 1 view .LVU389
+ 1130 007a 0568     		ldr	r5, [r0]
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1131              		.loc 1 351 51 discriminator 1 view .LVU390
+ 1132 007c 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ 1133              	.LVL99:
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1134              		.loc 1 351 80 discriminator 1 view .LVU391
+ 1135 007e 4468     		ldr	r4, [r0, #4]
+ 1136 0080 012C     		cmp	r4, #1
+ 1137 0082 06D9     		bls	.L87
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1138              		.loc 1 351 80 view .LVU392
+ 1139 0084 0124     		movs	r4, #1
+ 1140              	.L76:
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1141              		.loc 1 351 79 discriminator 6 view .LVU393
+ 1142 0086 2C5D     		ldrb	r4, [r5, r4]	@ zero_extendqisi2
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1143              		.loc 1 351 17 discriminator 6 view .LVU394
+ 1144 0088 02EB0422 		add	r2, r2, r4, lsl #8
+ 1145 008c 92B2     		uxth	r2, r2
+ 348:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1146              		.loc 1 348 24 discriminator 6 view .LVU395
+ 1147 008e 0026     		movs	r6, #0
+ 1148 0090 D7E7     		b	.L73
+ 1149              	.L87:
+ 1150 0092 C4F10104 		rsb	r4, r4, #1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 31
+
+
+ 1151 0096 F6E7     		b	.L76
+ 1152              	.LVL100:
+ 1153              	.L82:
+ 351:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }
+ 1154              		.loc 1 351 17 view .LVU396
+ 1155 0098 2A46     		mov	r2, r5
+ 1156              	.LVL101:
+ 348:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 1157              		.loc 1 348 24 view .LVU397
+ 1158 009a 0026     		movs	r6, #0
+ 1159 009c D1E7     		b	.L73
+ 1160              	.LVL102:
+ 1161              	.L80:
+ 333:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   uint32_t FirstElemetPos = 0;
+ 1162              		.loc 1 333 12 view .LVU398
+ 1163 009e 0022     		movs	r2, #0
+ 331:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom = (q->elementSize == 0) ? 2 : 0;
+ 1164              		.loc 1 331 12 view .LVU399
+ 1165 00a0 1046     		mov	r0, r2
+ 1166              	.LVL103:
+ 331:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   elemSizeStorageRoom = (q->elementSize == 0) ? 2 : 0;
+ 1167              		.loc 1 331 12 view .LVU400
+ 1168 00a2 D5E7     		b	.L70
+ 1169              		.cfi_endproc
+ 1170              	.LFE1266:
+ 1172              		.section	.text.CircularQueue_Empty,"ax",%progbits
+ 1173              		.align	1
+ 1174              		.global	CircularQueue_Empty
+ 1175              		.syntax unified
+ 1176              		.thumb
+ 1177              		.thumb_func
+ 1179              	CircularQueue_Empty:
+ 1180              	.LVL104:
+ 1181              	.LFB1267:
+ 363:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 364:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /**
+ 365:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @brief   Check if queue is empty.
+ 366:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @note    This function is used to to check if the queue is empty.  
+ 367:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  q: pointer on queue structure  to be handled
+ 368:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval   TRUE (!0) if the queue is empyu otherwise FALSE (0)
+ 369:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
+ 370:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** int CircularQueue_Empty(queue_t *q)
+ 371:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 1182              		.loc 1 371 1 is_stmt 1 view -0
+ 1183              		.cfi_startproc
+ 1184              		@ args = 0, pretend = 0, frame = 0
+ 1185              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1186              		@ link register save eliminated.
+ 372:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   int ret=FALSE;
+ 1187              		.loc 1 372 3 view .LVU402
+ 373:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   if (q->byteCount <= 0) 
+ 1188              		.loc 1 373 3 view .LVU403
+ 1189              		.loc 1 373 8 is_stmt 0 view .LVU404
+ 1190 0000 4369     		ldr	r3, [r0, #20]
+ 1191              		.loc 1 373 6 view .LVU405
+ 1192 0002 0BB1     		cbz	r3, .L90
+ 372:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   int ret=FALSE;
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 32
+
+
+ 1193              		.loc 1 372 7 view .LVU406
+ 1194 0004 0020     		movs	r0, #0
+ 1195              	.LVL105:
+ 372:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   int ret=FALSE;
+ 1196              		.loc 1 372 7 view .LVU407
+ 1197 0006 7047     		bx	lr
+ 1198              	.LVL106:
+ 1199              	.L90:
+ 374:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   {
+ 375:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****     ret=TRUE;
+ 1200              		.loc 1 375 8 view .LVU408
+ 1201 0008 0120     		movs	r0, #1
+ 1202              	.LVL107:
+ 376:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   } 
+ 377:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return ret;
+ 1203              		.loc 1 377 3 is_stmt 1 view .LVU409
+ 378:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 1204              		.loc 1 378 1 is_stmt 0 view .LVU410
+ 1205 000a 7047     		bx	lr
+ 1206              		.cfi_endproc
+ 1207              	.LFE1267:
+ 1209              		.section	.text.CircularQueue_NbElement,"ax",%progbits
+ 1210              		.align	1
+ 1211              		.global	CircularQueue_NbElement
+ 1212              		.syntax unified
+ 1213              		.thumb
+ 1214              		.thumb_func
+ 1216              	CircularQueue_NbElement:
+ 1217              	.LVL108:
+ 1218              	.LFB1268:
+ 379:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
+ 380:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** int CircularQueue_NbElement(queue_t *q)
+ 381:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
+ 1219              		.loc 1 381 1 is_stmt 1 view -0
+ 1220              		.cfi_startproc
+ 1221              		@ args = 0, pretend = 0, frame = 0
+ 1222              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1223              		@ link register save eliminated.
+ 382:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   return q->elementCount;
+ 1224              		.loc 1 382 3 view .LVU412
+ 383:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** }
+ 1225              		.loc 1 383 1 is_stmt 0 view .LVU413
+ 1226 0000 8069     		ldr	r0, [r0, #24]
+ 1227              	.LVL109:
+ 1228              		.loc 1 383 1 view .LVU414
+ 1229 0002 7047     		bx	lr
+ 1230              		.cfi_endproc
+ 1231              	.LFE1268:
+ 1233              		.text
+ 1234              	.Letext0:
+ 1235              		.file 2 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1236              		.file 3 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1237              		.file 4 "Middlewares/ST/STM32_WPAN/utilities/stm_queue.h"
+ 1238              		.file 5 "<built-in>"
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 33
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm_queue.c
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:20     .text.CircularQueue_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:26     .text.CircularQueue_Init:00000000 CircularQueue_Init
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:93     .text.CircularQueue_Add:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:99     .text.CircularQueue_Add:00000000 CircularQueue_Add
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:695    .text.CircularQueue_Remove_Copy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:701    .text.CircularQueue_Remove_Copy:00000000 CircularQueue_Remove_Copy
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:719    .text.CircularQueue_Remove:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:725    .text.CircularQueue_Remove:00000000 CircularQueue_Remove
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:945    .text.CircularQueue_Sense_Copy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:951    .text.CircularQueue_Sense_Copy:00000000 CircularQueue_Sense_Copy
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:969    .text.CircularQueue_Sense:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:975    .text.CircularQueue_Sense:00000000 CircularQueue_Sense
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1173   .text.CircularQueue_Empty:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1179   .text.CircularQueue_Empty:00000000 CircularQueue_Empty
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1210   .text.CircularQueue_NbElement:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1216   .text.CircularQueue_NbElement:00000000 CircularQueue_NbElement
+
+UNDEFINED SYMBOLS
+memcpy

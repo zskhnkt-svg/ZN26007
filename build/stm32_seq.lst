@@ -1,0 +1,3115 @@
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32_seq.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.UTIL_SEQ_Init,"ax",%progbits
+  20              		.align	1
+  21              		.global	UTIL_SEQ_Init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	UTIL_SEQ_Init:
+  27              	.LFB104:
+  28              		.file 1 "Utilities/sequencer/stm32_seq.c"
+   1:Utilities/sequencer/stm32_seq.c **** /**
+   2:Utilities/sequencer/stm32_seq.c ****  ******************************************************************************
+   3:Utilities/sequencer/stm32_seq.c ****  * @file    stm32_seq.c
+   4:Utilities/sequencer/stm32_seq.c ****  * @author  MCD Application Team
+   5:Utilities/sequencer/stm32_seq.c ****  * @brief   Simple sequencer implementation
+   6:Utilities/sequencer/stm32_seq.c ****  ******************************************************************************
+   7:Utilities/sequencer/stm32_seq.c ****  * @attention
+   8:Utilities/sequencer/stm32_seq.c ****  *
+   9:Utilities/sequencer/stm32_seq.c ****  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  10:Utilities/sequencer/stm32_seq.c ****  * All rights reserved.</center></h2>
+  11:Utilities/sequencer/stm32_seq.c ****  *
+  12:Utilities/sequencer/stm32_seq.c ****  * This software is licensed under terms that can be found in the LICENSE file
+  13:Utilities/sequencer/stm32_seq.c ****  * in the root directory of this software component.
+  14:Utilities/sequencer/stm32_seq.c ****  * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:Utilities/sequencer/stm32_seq.c ****  *
+  16:Utilities/sequencer/stm32_seq.c ****  ******************************************************************************
+  17:Utilities/sequencer/stm32_seq.c ****  */
+  18:Utilities/sequencer/stm32_seq.c **** 
+  19:Utilities/sequencer/stm32_seq.c **** /* Includes ------------------------------------------------------------------*/
+  20:Utilities/sequencer/stm32_seq.c **** #include "stm32_seq.h"
+  21:Utilities/sequencer/stm32_seq.c **** #include "utilities_conf.h"
+  22:Utilities/sequencer/stm32_seq.c **** 
+  23:Utilities/sequencer/stm32_seq.c **** /** @addtogroup SEQUENCER
+  24:Utilities/sequencer/stm32_seq.c ****   * @{
+  25:Utilities/sequencer/stm32_seq.c ****   */
+  26:Utilities/sequencer/stm32_seq.c **** 
+  27:Utilities/sequencer/stm32_seq.c **** /* Private typedef -----------------------------------------------------------*/
+  28:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_type SEQUENCER private type
+  29:Utilities/sequencer/stm32_seq.c ****  *  @{
+  30:Utilities/sequencer/stm32_seq.c ****  */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 2
+
+
+  31:Utilities/sequencer/stm32_seq.c **** 
+  32:Utilities/sequencer/stm32_seq.c **** /**
+  33:Utilities/sequencer/stm32_seq.c ****  * @brief structure used to manage task scheduling
+  34:Utilities/sequencer/stm32_seq.c ****  */
+  35:Utilities/sequencer/stm32_seq.c **** typedef struct
+  36:Utilities/sequencer/stm32_seq.c **** {
+  37:Utilities/sequencer/stm32_seq.c ****   uint32_t priority;    /*!<bit field of the enabled task.          */
+  38:Utilities/sequencer/stm32_seq.c ****   uint32_t round_robin; /*!<mask on the allowed task to be running. */
+  39:Utilities/sequencer/stm32_seq.c **** } UTIL_SEQ_Priority_t;
+  40:Utilities/sequencer/stm32_seq.c **** 
+  41:Utilities/sequencer/stm32_seq.c **** /**
+  42:Utilities/sequencer/stm32_seq.c ****  * @}
+  43:Utilities/sequencer/stm32_seq.c ****  */
+  44:Utilities/sequencer/stm32_seq.c **** 
+  45:Utilities/sequencer/stm32_seq.c **** /* Private defines -----------------------------------------------------------*/
+  46:Utilities/sequencer/stm32_seq.c **** 
+  47:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_define SEQUENCER private defines
+  48:Utilities/sequencer/stm32_seq.c ****  *  @{
+  49:Utilities/sequencer/stm32_seq.c ****  */
+  50:Utilities/sequencer/stm32_seq.c **** 
+  51:Utilities/sequencer/stm32_seq.c **** /**
+  52:Utilities/sequencer/stm32_seq.c ****  * @brief macro used to enter the critical section before calling the IDLE function
+  53:Utilities/sequencer/stm32_seq.c ****  * @note  in a basic configuration shall be identical to the macro
+  54:Utilities/sequencer/stm32_seq.c ****  *        UTIL_SEQ_ENTER_CRITICAL_SECTION. The redefinition of this macro will allow
+  55:Utilities/sequencer/stm32_seq.c ****  *        to perform specific operation
+  56:Utilities/sequencer/stm32_seq.c **** 
+  57:Utilities/sequencer/stm32_seq.c ****  */
+  58:Utilities/sequencer/stm32_seq.c **** #ifndef UTIL_SEQ_ENTER_CRITICAL_SECTION_IDLE
+  59:Utilities/sequencer/stm32_seq.c ****   #define UTIL_SEQ_ENTER_CRITICAL_SECTION_IDLE( )    UTIL_SEQ_ENTER_CRITICAL_SECTION( )
+  60:Utilities/sequencer/stm32_seq.c **** #endif
+  61:Utilities/sequencer/stm32_seq.c **** 
+  62:Utilities/sequencer/stm32_seq.c **** /**
+  63:Utilities/sequencer/stm32_seq.c ****  * @brief macro used to exit the critical section when exiting the IDLE function
+  64:Utilities/sequencer/stm32_seq.c ****  * @note  the behavior of the macro shall be symmetrical with the macro
+  65:Utilities/sequencer/stm32_seq.c ****  *        UTIL_SEQ_ENTER_CRITICAL_SECTION_IDLE
+  66:Utilities/sequencer/stm32_seq.c ****  */
+  67:Utilities/sequencer/stm32_seq.c **** #ifndef UTIL_SEQ_EXIT_CRITICAL_SECTION_IDLE
+  68:Utilities/sequencer/stm32_seq.c ****   #define UTIL_SEQ_EXIT_CRITICAL_SECTION_IDLE( )     UTIL_SEQ_EXIT_CRITICAL_SECTION( )
+  69:Utilities/sequencer/stm32_seq.c **** #endif
+  70:Utilities/sequencer/stm32_seq.c **** 
+  71:Utilities/sequencer/stm32_seq.c **** /**
+  72:Utilities/sequencer/stm32_seq.c ****  * @brief define to represent no task running
+  73:Utilities/sequencer/stm32_seq.c ****  */
+  74:Utilities/sequencer/stm32_seq.c **** #define UTIL_SEQ_NOTASKRUNNING       (0xFFFFFFFFU)
+  75:Utilities/sequencer/stm32_seq.c **** 
+  76:Utilities/sequencer/stm32_seq.c **** /**
+  77:Utilities/sequencer/stm32_seq.c ****  * @brief define to represent no bit set inside uint32_t mapping
+  78:Utilities/sequencer/stm32_seq.c ****  */
+  79:Utilities/sequencer/stm32_seq.c **** #define UTIL_SEQ_NO_BIT_SET     (0U)
+  80:Utilities/sequencer/stm32_seq.c **** 
+  81:Utilities/sequencer/stm32_seq.c **** /**
+  82:Utilities/sequencer/stm32_seq.c ****  * @brief define to represent all bits set inside uint32_t mapping
+  83:Utilities/sequencer/stm32_seq.c ****  */
+  84:Utilities/sequencer/stm32_seq.c **** #define UTIL_SEQ_ALL_BIT_SET    (~0U)
+  85:Utilities/sequencer/stm32_seq.c **** 
+  86:Utilities/sequencer/stm32_seq.c **** /**
+  87:Utilities/sequencer/stm32_seq.c ****  * @brief default number of task is default 32 (maximum), can be reduced by redefining in utilities
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 3
+
+
+  88:Utilities/sequencer/stm32_seq.c ****  */
+  89:Utilities/sequencer/stm32_seq.c **** #ifndef UTIL_SEQ_CONF_TASK_NBR
+  90:Utilities/sequencer/stm32_seq.c **** 	#define UTIL_SEQ_CONF_TASK_NBR  (32)
+  91:Utilities/sequencer/stm32_seq.c **** #endif
+  92:Utilities/sequencer/stm32_seq.c **** 
+  93:Utilities/sequencer/stm32_seq.c **** #if UTIL_SEQ_CONF_TASK_NBR > 32
+  94:Utilities/sequencer/stm32_seq.c **** #error "UTIL_SEQ_CONF_PRIO_NBR must be less of equal then 32"
+  95:Utilities/sequencer/stm32_seq.c **** #endif
+  96:Utilities/sequencer/stm32_seq.c **** 
+  97:Utilities/sequencer/stm32_seq.c **** /**
+  98:Utilities/sequencer/stm32_seq.c ****  * @brief default value of priority number.
+  99:Utilities/sequencer/stm32_seq.c ****  */
+ 100:Utilities/sequencer/stm32_seq.c **** #ifndef UTIL_SEQ_CONF_PRIO_NBR
+ 101:Utilities/sequencer/stm32_seq.c ****   #define UTIL_SEQ_CONF_PRIO_NBR  (2)
+ 102:Utilities/sequencer/stm32_seq.c **** #endif
+ 103:Utilities/sequencer/stm32_seq.c **** 
+ 104:Utilities/sequencer/stm32_seq.c **** /**
+ 105:Utilities/sequencer/stm32_seq.c ****  * @brief default memset function.
+ 106:Utilities/sequencer/stm32_seq.c ****  */
+ 107:Utilities/sequencer/stm32_seq.c **** #ifndef UTIL_SEQ_MEMSET8
+ 108:Utilities/sequencer/stm32_seq.c **** #define UTIL_SEQ_MEMSET8( dest, value, size )   UTILS_MEMSET8( dest, value, size )
+ 109:Utilities/sequencer/stm32_seq.c **** #endif
+ 110:Utilities/sequencer/stm32_seq.c **** 
+ 111:Utilities/sequencer/stm32_seq.c **** /**
+ 112:Utilities/sequencer/stm32_seq.c ****  * @}
+ 113:Utilities/sequencer/stm32_seq.c ****  */
+ 114:Utilities/sequencer/stm32_seq.c **** 
+ 115:Utilities/sequencer/stm32_seq.c **** /* Private variables ---------------------------------------------------------*/
+ 116:Utilities/sequencer/stm32_seq.c **** 
+ 117:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_varaible SEQUENCER private variables
+ 118:Utilities/sequencer/stm32_seq.c ****  *  @{
+ 119:Utilities/sequencer/stm32_seq.c ****  */
+ 120:Utilities/sequencer/stm32_seq.c **** 
+ 121:Utilities/sequencer/stm32_seq.c **** /**
+ 122:Utilities/sequencer/stm32_seq.c ****  * @brief task set.
+ 123:Utilities/sequencer/stm32_seq.c ****  */
+ 124:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_bm_t TaskSet;
+ 125:Utilities/sequencer/stm32_seq.c **** 
+ 126:Utilities/sequencer/stm32_seq.c **** /**
+ 127:Utilities/sequencer/stm32_seq.c ****  * @brief task mask.
+ 128:Utilities/sequencer/stm32_seq.c ****  */
+ 129:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_bm_t TaskMask = UTIL_SEQ_ALL_BIT_SET;
+ 130:Utilities/sequencer/stm32_seq.c **** 
+ 131:Utilities/sequencer/stm32_seq.c **** /**
+ 132:Utilities/sequencer/stm32_seq.c ****  * @brief super mask.
+ 133:Utilities/sequencer/stm32_seq.c ****  */
+ 134:Utilities/sequencer/stm32_seq.c **** static UTIL_SEQ_bm_t SuperMask = UTIL_SEQ_ALL_BIT_SET;
+ 135:Utilities/sequencer/stm32_seq.c **** 
+ 136:Utilities/sequencer/stm32_seq.c **** /**
+ 137:Utilities/sequencer/stm32_seq.c ****  * @brief evt set mask.
+ 138:Utilities/sequencer/stm32_seq.c ****  */
+ 139:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_bm_t EvtSet = UTIL_SEQ_NO_BIT_SET;
+ 140:Utilities/sequencer/stm32_seq.c **** 
+ 141:Utilities/sequencer/stm32_seq.c **** /**
+ 142:Utilities/sequencer/stm32_seq.c ****  * @brief evt expected mask.
+ 143:Utilities/sequencer/stm32_seq.c ****  */
+ 144:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_bm_t EvtWaited = UTIL_SEQ_NO_BIT_SET;
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 4
+
+
+ 145:Utilities/sequencer/stm32_seq.c **** 
+ 146:Utilities/sequencer/stm32_seq.c **** /**
+ 147:Utilities/sequencer/stm32_seq.c ****  * @brief current task id.
+ 148:Utilities/sequencer/stm32_seq.c ****  */
+ 149:Utilities/sequencer/stm32_seq.c **** static uint32_t CurrentTaskIdx = 0U;
+ 150:Utilities/sequencer/stm32_seq.c **** 
+ 151:Utilities/sequencer/stm32_seq.c **** /**
+ 152:Utilities/sequencer/stm32_seq.c ****  * @brief task function registered.
+ 153:Utilities/sequencer/stm32_seq.c ****  */
+ 154:Utilities/sequencer/stm32_seq.c **** static void (*TaskCb[UTIL_SEQ_CONF_TASK_NBR])( void );
+ 155:Utilities/sequencer/stm32_seq.c **** 
+ 156:Utilities/sequencer/stm32_seq.c **** /**
+ 157:Utilities/sequencer/stm32_seq.c ****  * @brief task prio management.
+ 158:Utilities/sequencer/stm32_seq.c ****  */
+ 159:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_Priority_t TaskPrio[UTIL_SEQ_CONF_PRIO_NBR];
+ 160:Utilities/sequencer/stm32_seq.c **** 
+ 161:Utilities/sequencer/stm32_seq.c **** /**
+ 162:Utilities/sequencer/stm32_seq.c ****  * @}
+ 163:Utilities/sequencer/stm32_seq.c ****  */
+ 164:Utilities/sequencer/stm32_seq.c **** 
+ 165:Utilities/sequencer/stm32_seq.c **** /* Private function prototypes -----------------------------------------------*/
+ 166:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_function SEQUENCER private functions
+ 167:Utilities/sequencer/stm32_seq.c ****  *  @{
+ 168:Utilities/sequencer/stm32_seq.c ****  */
+ 169:Utilities/sequencer/stm32_seq.c **** uint8_t SEQ_BitPosition(uint32_t Value);
+ 170:Utilities/sequencer/stm32_seq.c **** 
+ 171:Utilities/sequencer/stm32_seq.c **** /**
+ 172:Utilities/sequencer/stm32_seq.c ****  * @}
+ 173:Utilities/sequencer/stm32_seq.c ****  */
+ 174:Utilities/sequencer/stm32_seq.c **** 
+ 175:Utilities/sequencer/stm32_seq.c **** /* Functions Definition ------------------------------------------------------*/
+ 176:Utilities/sequencer/stm32_seq.c **** 
+ 177:Utilities/sequencer/stm32_seq.c **** /** @addtogroup SEQUENCER_Exported_function SEQUENCER exported functions
+ 178:Utilities/sequencer/stm32_seq.c ****  *  @{
+ 179:Utilities/sequencer/stm32_seq.c ****  */
+ 180:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_Init( void )
+ 181:Utilities/sequencer/stm32_seq.c **** {
+  29              		.loc 1 181 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+ 182:Utilities/sequencer/stm32_seq.c ****   TaskSet = UTIL_SEQ_NO_BIT_SET;
+  38              		.loc 1 182 3 view .LVU1
+  39              		.loc 1 182 11 is_stmt 0 view .LVU2
+  40 0002 0024     		movs	r4, #0
+  41 0004 0F4B     		ldr	r3, .L5
+  42 0006 1C60     		str	r4, [r3]
+ 183:Utilities/sequencer/stm32_seq.c ****   TaskMask = UTIL_SEQ_ALL_BIT_SET;
+  43              		.loc 1 183 3 is_stmt 1 view .LVU3
+  44              		.loc 1 183 12 is_stmt 0 view .LVU4
+  45 0008 4FF0FF33 		mov	r3, #-1
+  46 000c 0E4A     		ldr	r2, .L5+4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 5
+
+
+  47 000e 1360     		str	r3, [r2]
+ 184:Utilities/sequencer/stm32_seq.c ****   SuperMask = UTIL_SEQ_ALL_BIT_SET;
+  48              		.loc 1 184 3 is_stmt 1 view .LVU5
+  49              		.loc 1 184 13 is_stmt 0 view .LVU6
+  50 0010 0E4A     		ldr	r2, .L5+8
+  51 0012 1360     		str	r3, [r2]
+ 185:Utilities/sequencer/stm32_seq.c ****   EvtSet = UTIL_SEQ_NO_BIT_SET;
+  52              		.loc 1 185 3 is_stmt 1 view .LVU7
+  53              		.loc 1 185 10 is_stmt 0 view .LVU8
+  54 0014 0E4B     		ldr	r3, .L5+12
+  55 0016 1C60     		str	r4, [r3]
+ 186:Utilities/sequencer/stm32_seq.c ****   EvtWaited = UTIL_SEQ_NO_BIT_SET;
+  56              		.loc 1 186 3 is_stmt 1 view .LVU9
+  57              		.loc 1 186 13 is_stmt 0 view .LVU10
+  58 0018 0E4B     		ldr	r3, .L5+16
+  59 001a 1C60     		str	r4, [r3]
+ 187:Utilities/sequencer/stm32_seq.c ****   CurrentTaskIdx = 0U;
+  60              		.loc 1 187 3 is_stmt 1 view .LVU11
+  61              		.loc 1 187 18 is_stmt 0 view .LVU12
+  62 001c 0E4B     		ldr	r3, .L5+20
+  63 001e 1C60     		str	r4, [r3]
+ 188:Utilities/sequencer/stm32_seq.c ****   (void)UTIL_SEQ_MEMSET8((uint8_t *)TaskCb, 0, sizeof(TaskCb));
+  64              		.loc 1 188 3 is_stmt 1 view .LVU13
+  65              		.loc 1 188 9 is_stmt 0 view .LVU14
+  66 0020 8022     		movs	r2, #128
+  67 0022 2146     		mov	r1, r4
+  68 0024 0D48     		ldr	r0, .L5+24
+  69 0026 FFF7FEFF 		bl	memset
+  70              	.LVL0:
+  71              		.loc 1 188 63 is_stmt 1 view .LVU15
+ 189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
+  72              		.loc 1 189 3 view .LVU16
+  73              	.LBB69:
+  74              		.loc 1 189 7 view .LVU17
+  75              		.loc 1 189 16 is_stmt 0 view .LVU18
+  76 002a 2146     		mov	r1, r4
+  77              		.loc 1 189 3 view .LVU19
+  78 002c 07E0     		b	.L2
+  79              	.LVL1:
+  80              	.L3:
+ 190:Utilities/sequencer/stm32_seq.c ****   {
+ 191:Utilities/sequencer/stm32_seq.c ****       TaskPrio[index].priority = 0;
+  81              		.loc 1 191 7 is_stmt 1 discriminator 3 view .LVU20
+  82              		.loc 1 191 32 is_stmt 0 discriminator 3 view .LVU21
+  83 002e 0C4B     		ldr	r3, .L5+28
+  84 0030 0022     		movs	r2, #0
+  85 0032 43F83120 		str	r2, [r3, r1, lsl #3]
+ 192:Utilities/sequencer/stm32_seq.c ****       TaskPrio[index].round_robin = 0;
+  86              		.loc 1 192 7 is_stmt 1 discriminator 3 view .LVU22
+  87              		.loc 1 192 35 is_stmt 0 discriminator 3 view .LVU23
+  88 0036 03EBC103 		add	r3, r3, r1, lsl #3
+  89 003a 5A60     		str	r2, [r3, #4]
+ 189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
+  90              		.loc 1 189 59 is_stmt 1 discriminator 3 view .LVU24
+ 189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
+  91              		.loc 1 189 64 is_stmt 0 discriminator 3 view .LVU25
+  92 003c 0131     		adds	r1, r1, #1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 6
+
+
+  93              	.LVL2:
+  94              	.L2:
+ 189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
+  95              		.loc 1 189 27 is_stmt 1 discriminator 1 view .LVU26
+ 189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
+  96              		.loc 1 189 3 is_stmt 0 discriminator 1 view .LVU27
+  97 003e 0129     		cmp	r1, #1
+  98 0040 F5D9     		bls	.L3
+  99              	.LBE69:
+ 193:Utilities/sequencer/stm32_seq.c ****   }
+ 194:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_INIT_CRITICAL_SECTION( );
+ 195:Utilities/sequencer/stm32_seq.c **** }
+ 100              		.loc 1 195 1 view .LVU28
+ 101 0042 10BD     		pop	{r4, pc}
+ 102              	.L6:
+ 103              		.align	2
+ 104              	.L5:
+ 105 0044 00000000 		.word	.LANCHOR0
+ 106 0048 00000000 		.word	.LANCHOR1
+ 107 004c 00000000 		.word	.LANCHOR2
+ 108 0050 00000000 		.word	.LANCHOR3
+ 109 0054 00000000 		.word	.LANCHOR4
+ 110 0058 00000000 		.word	.LANCHOR5
+ 111 005c 00000000 		.word	.LANCHOR6
+ 112 0060 00000000 		.word	.LANCHOR7
+ 113              		.cfi_endproc
+ 114              	.LFE104:
+ 116              		.section	.text.UTIL_SEQ_DeInit,"ax",%progbits
+ 117              		.align	1
+ 118              		.global	UTIL_SEQ_DeInit
+ 119              		.syntax unified
+ 120              		.thumb
+ 121              		.thumb_func
+ 123              	UTIL_SEQ_DeInit:
+ 124              	.LFB105:
+ 196:Utilities/sequencer/stm32_seq.c **** 
+ 197:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_DeInit( void )
+ 198:Utilities/sequencer/stm32_seq.c **** {
+ 125              		.loc 1 198 1 is_stmt 1 view -0
+ 126              		.cfi_startproc
+ 127              		@ args = 0, pretend = 0, frame = 0
+ 128              		@ frame_needed = 0, uses_anonymous_args = 0
+ 129              		@ link register save eliminated.
+ 199:Utilities/sequencer/stm32_seq.c **** }
+ 130              		.loc 1 199 1 view .LVU30
+ 131 0000 7047     		bx	lr
+ 132              		.cfi_endproc
+ 133              	.LFE105:
+ 135              		.section	.text.UTIL_SEQ_SetTask,"ax",%progbits
+ 136              		.align	1
+ 137              		.global	UTIL_SEQ_SetTask
+ 138              		.syntax unified
+ 139              		.thumb
+ 140              		.thumb_func
+ 142              	UTIL_SEQ_SetTask:
+ 143              	.LVL3:
+ 144              	.LFB108:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 7
+
+
+ 200:Utilities/sequencer/stm32_seq.c **** 
+ 201:Utilities/sequencer/stm32_seq.c **** /**
+ 202:Utilities/sequencer/stm32_seq.c ****  * This function can be nested.
+ 203:Utilities/sequencer/stm32_seq.c ****  * That is the reason why many variables that are used only in that function are declared static.
+ 204:Utilities/sequencer/stm32_seq.c ****  * Note: These variables could have been declared static in the function.
+ 205:Utilities/sequencer/stm32_seq.c ****  *
+ 206:Utilities/sequencer/stm32_seq.c ****  */
+ 207:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_Run( UTIL_SEQ_bm_t Mask_bm )
+ 208:Utilities/sequencer/stm32_seq.c **** {
+ 209:Utilities/sequencer/stm32_seq.c ****   uint32_t counter;
+ 210:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t current_task_set;
+ 211:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t super_mask_backup;
+ 212:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_taskset;
+ 213:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_evtset;
+ 214:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_taskmask;
+ 215:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_evtwaited;
+ 216:Utilities/sequencer/stm32_seq.c **** 
+ 217:Utilities/sequencer/stm32_seq.c ****   /*
+ 218:Utilities/sequencer/stm32_seq.c ****    * When this function is nested, the mask to be applied cannot be larger than the first call
+ 219:Utilities/sequencer/stm32_seq.c ****    * The mask is always getting smaller and smaller
+ 220:Utilities/sequencer/stm32_seq.c ****    * A copy is made of the mask set by UTIL_SEQ_Run() in case it is called again in the task
+ 221:Utilities/sequencer/stm32_seq.c ****    */
+ 222:Utilities/sequencer/stm32_seq.c ****   super_mask_backup = SuperMask;
+ 223:Utilities/sequencer/stm32_seq.c ****   SuperMask &= Mask_bm;
+ 224:Utilities/sequencer/stm32_seq.c **** 
+ 225:Utilities/sequencer/stm32_seq.c ****   /*
+ 226:Utilities/sequencer/stm32_seq.c ****    * There are two independent mask to check:
+ 227:Utilities/sequencer/stm32_seq.c ****    * TaskMask that comes from UTIL_SEQ_PauseTask() / UTIL_SEQ_ResumeTask
+ 228:Utilities/sequencer/stm32_seq.c ****    * SuperMask that comes from UTIL_SEQ_Run
+ 229:Utilities/sequencer/stm32_seq.c ****    * If the waited event is there, exit from  UTIL_SEQ_Run() to return to the
+ 230:Utilities/sequencer/stm32_seq.c ****    * waiting task
+ 231:Utilities/sequencer/stm32_seq.c ****    */
+ 232:Utilities/sequencer/stm32_seq.c ****   local_taskset = TaskSet;
+ 233:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 234:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 235:Utilities/sequencer/stm32_seq.c ****   local_evtwaited =  EvtWaited;
+ 236:Utilities/sequencer/stm32_seq.c ****   while(((local_taskset & local_taskmask & SuperMask) != 0U) && ((local_evtset & local_evtwaited)==
+ 237:Utilities/sequencer/stm32_seq.c ****   {
+ 238:Utilities/sequencer/stm32_seq.c ****     counter = 0U;
+ 239:Utilities/sequencer/stm32_seq.c ****     /*
+ 240:Utilities/sequencer/stm32_seq.c ****      * When a flag is set, the associated bit is set in TaskPrio[counter].priority mask depending
+ 241:Utilities/sequencer/stm32_seq.c ****      * on the priority parameter given from UTIL_SEQ_SetTask()
+ 242:Utilities/sequencer/stm32_seq.c ****      * The while loop is looking for a flag set from the highest priority maskr to the lower
+ 243:Utilities/sequencer/stm32_seq.c ****      */
+ 244:Utilities/sequencer/stm32_seq.c ****     while((TaskPrio[counter].priority & local_taskmask & SuperMask)== 0U)
+ 245:Utilities/sequencer/stm32_seq.c ****     {
+ 246:Utilities/sequencer/stm32_seq.c ****       counter++;
+ 247:Utilities/sequencer/stm32_seq.c ****     }
+ 248:Utilities/sequencer/stm32_seq.c **** 
+ 249:Utilities/sequencer/stm32_seq.c ****     current_task_set = TaskPrio[counter].priority & local_taskmask & SuperMask;
+ 250:Utilities/sequencer/stm32_seq.c **** 
+ 251:Utilities/sequencer/stm32_seq.c ****     /*
+ 252:Utilities/sequencer/stm32_seq.c ****      * The round_robin register is a mask of allowed flags to be evaluated.
+ 253:Utilities/sequencer/stm32_seq.c ****      * The concept is to make sure that on each round on UTIL_SEQ_Run(), if two same flags are alwa
+ 254:Utilities/sequencer/stm32_seq.c ****      * the sequencer does not run always only the first one.
+ 255:Utilities/sequencer/stm32_seq.c ****      * When a task has been executed, The flag is removed from the round_robin mask.
+ 256:Utilities/sequencer/stm32_seq.c ****      * If on the next UTIL_SEQ_RUN(), the two same flags are set again, the round_robin mask will m
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 8
+
+
+ 257:Utilities/sequencer/stm32_seq.c ****      * so that the second one can be executed.
+ 258:Utilities/sequencer/stm32_seq.c ****      * Note that the first flag is not removed from the list of pending task but just masked by the
+ 259:Utilities/sequencer/stm32_seq.c ****      *
+ 260:Utilities/sequencer/stm32_seq.c ****      * In the check below, the round_robin mask is reinitialize in case all pending tasks haven bee
+ 261:Utilities/sequencer/stm32_seq.c ****      */
+ 262:Utilities/sequencer/stm32_seq.c ****     if ((TaskPrio[counter].round_robin & current_task_set) == 0U)
+ 263:Utilities/sequencer/stm32_seq.c ****     {
+ 264:Utilities/sequencer/stm32_seq.c ****       TaskPrio[counter].round_robin = UTIL_SEQ_ALL_BIT_SET;
+ 265:Utilities/sequencer/stm32_seq.c ****     }
+ 266:Utilities/sequencer/stm32_seq.c **** 
+ 267:Utilities/sequencer/stm32_seq.c ****   /*
+ 268:Utilities/sequencer/stm32_seq.c ****    * Read the flag index of the task to be executed
+ 269:Utilities/sequencer/stm32_seq.c **** 	 * Once the index is read, the associated task will be executed even though a higher priority stac
+ 270:Utilities/sequencer/stm32_seq.c **** 	 * before task execution.
+ 271:Utilities/sequencer/stm32_seq.c **** 	 */
+ 272:Utilities/sequencer/stm32_seq.c ****     CurrentTaskIdx = (SEQ_BitPosition(current_task_set & TaskPrio[counter].round_robin));
+ 273:Utilities/sequencer/stm32_seq.c **** 
+ 274:Utilities/sequencer/stm32_seq.c ****     /*
+ 275:Utilities/sequencer/stm32_seq.c ****      * remove from the roun_robin mask the task that has been selected to be executed
+ 276:Utilities/sequencer/stm32_seq.c ****      */
+ 277:Utilities/sequencer/stm32_seq.c ****     TaskPrio[counter].round_robin &= ~(1U << CurrentTaskIdx);
+ 278:Utilities/sequencer/stm32_seq.c **** 
+ 279:Utilities/sequencer/stm32_seq.c ****     UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 280:Utilities/sequencer/stm32_seq.c ****     /* remove from the list or pending task the one that has been selected to be executed */
+ 281:Utilities/sequencer/stm32_seq.c ****     TaskSet &= ~(1U << CurrentTaskIdx);
+ 282:Utilities/sequencer/stm32_seq.c ****     /* remove from all priority mask the task that has been selected to be executed */
+ 283:Utilities/sequencer/stm32_seq.c ****     for (counter = UTIL_SEQ_CONF_PRIO_NBR; counter != 0U; counter--)
+ 284:Utilities/sequencer/stm32_seq.c ****     {
+ 285:Utilities/sequencer/stm32_seq.c ****       TaskPrio[counter - 1U].priority &= ~(1U << CurrentTaskIdx);
+ 286:Utilities/sequencer/stm32_seq.c ****     }
+ 287:Utilities/sequencer/stm32_seq.c ****     UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 288:Utilities/sequencer/stm32_seq.c **** 
+ 289:Utilities/sequencer/stm32_seq.c ****     /* Execute the task */
+ 290:Utilities/sequencer/stm32_seq.c ****     TaskCb[CurrentTaskIdx]( );
+ 291:Utilities/sequencer/stm32_seq.c **** 
+ 292:Utilities/sequencer/stm32_seq.c ****     local_taskset = TaskSet;
+ 293:Utilities/sequencer/stm32_seq.c ****     local_evtset = EvtSet;
+ 294:Utilities/sequencer/stm32_seq.c ****     local_taskmask = TaskMask;
+ 295:Utilities/sequencer/stm32_seq.c ****     local_evtwaited = EvtWaited;
+ 296:Utilities/sequencer/stm32_seq.c ****   }
+ 297:Utilities/sequencer/stm32_seq.c **** 
+ 298:Utilities/sequencer/stm32_seq.c ****   /* the set of CurrentTaskIdx to no task running allows to call WaitEvt in the Pre/Post ilde conte
+ 299:Utilities/sequencer/stm32_seq.c ****   CurrentTaskIdx = UTIL_SEQ_NOTASKRUNNING;
+ 300:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_PreIdle( );
+ 301:Utilities/sequencer/stm32_seq.c **** 
+ 302:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION_IDLE( );
+ 303:Utilities/sequencer/stm32_seq.c ****   local_taskset = TaskSet;
+ 304:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 305:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 306:Utilities/sequencer/stm32_seq.c ****   if ((local_taskset & local_taskmask & SuperMask) == 0U)
+ 307:Utilities/sequencer/stm32_seq.c ****   {
+ 308:Utilities/sequencer/stm32_seq.c ****     if ((local_evtset & EvtWaited)== 0U)
+ 309:Utilities/sequencer/stm32_seq.c ****     {
+ 310:Utilities/sequencer/stm32_seq.c ****       UTIL_SEQ_Idle( );
+ 311:Utilities/sequencer/stm32_seq.c ****     }
+ 312:Utilities/sequencer/stm32_seq.c ****   }
+ 313:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION_IDLE( );
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 9
+
+
+ 314:Utilities/sequencer/stm32_seq.c **** 
+ 315:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_PostIdle( );
+ 316:Utilities/sequencer/stm32_seq.c **** 
+ 317:Utilities/sequencer/stm32_seq.c ****   /* restore the mask from UTIL_SEQ_Run() */
+ 318:Utilities/sequencer/stm32_seq.c ****   SuperMask = super_mask_backup;
+ 319:Utilities/sequencer/stm32_seq.c **** 
+ 320:Utilities/sequencer/stm32_seq.c ****   return;
+ 321:Utilities/sequencer/stm32_seq.c **** }
+ 322:Utilities/sequencer/stm32_seq.c **** 
+ 323:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_RegTask(UTIL_SEQ_bm_t TaskId_bm, uint32_t Flags, void (*Task)( void ))
+ 324:Utilities/sequencer/stm32_seq.c **** {
+ 325:Utilities/sequencer/stm32_seq.c ****   (void)Flags;
+ 326:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION();
+ 327:Utilities/sequencer/stm32_seq.c **** 
+ 328:Utilities/sequencer/stm32_seq.c ****   TaskCb[SEQ_BitPosition(TaskId_bm)] = Task;
+ 329:Utilities/sequencer/stm32_seq.c **** 
+ 330:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION();
+ 331:Utilities/sequencer/stm32_seq.c **** 
+ 332:Utilities/sequencer/stm32_seq.c ****   return;
+ 333:Utilities/sequencer/stm32_seq.c **** }
+ 334:Utilities/sequencer/stm32_seq.c **** 
+ 335:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_SetTask( UTIL_SEQ_bm_t TaskId_bm , uint32_t Task_Prio )
+ 336:Utilities/sequencer/stm32_seq.c **** {
+ 145              		.loc 1 336 1 view -0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 337:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 150              		.loc 1 337 3 view .LVU32
+ 151              	.LBB70:
+ 152              	.LBI70:
+ 153              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
+   1:Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
+   2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
+   4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.2.0
+   5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     08. May 2019
+   6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
+   7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
+   8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
+   9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
+  11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  12:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  13:Drivers/CMSIS/Include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
+  14:Drivers/CMSIS/Include/cmsis_gcc.h ****  * You may obtain a copy of the License at
+  15:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
+  17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+  18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
+  19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
+  22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
+  23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  24:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 10
+
+
+  25:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  26:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
+  27:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
+  29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  30:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  31:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  32:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  33:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  34:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Fallback for __has_builtin */
+  35:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __has_builtin
+  36:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
+  37:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  38:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  39:Drivers/CMSIS/Include/cmsis_gcc.h **** /* CMSIS compiler specific defines */
+  40:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ASM
+  41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
+  42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
+  44:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __INLINE                               inline
+  45:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
+  47:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
+  48:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  49:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_FORCEINLINE                 
+  50:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+  51:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif                                           
+  52:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __NO_RETURN
+  53:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
+  54:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  55:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __USED
+  56:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __USED                                 __attribute__((used))
+  57:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  58:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __WEAK
+  59:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
+  60:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
+  62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
+  63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
+  65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
+  66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
+  68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
+  69:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  70:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32        /* deprecated */
+  71:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  72:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+  75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
+  77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
+  79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  81:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 11
+
+
+  82:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
+  83:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  84:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
+  85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
+  87:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  88:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  89:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  90:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_READ { uint16_t v; };
+  91:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  92:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(add
+  93:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  94:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
+  95:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  96:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  97:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
+  99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
+ 101:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 102:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
+ 103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+ 104:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+ 105:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+ 106:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_READ { uint32_t v; };
+ 107:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 108:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_READ(addr)          (((const struct T_UINT32_READ *)(const void *)(add
+ 109:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 110:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ALIGNED
+ 111:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
+ 112:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 113:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __RESTRICT
+ 114:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __RESTRICT                             __restrict
+ 115:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 116:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __COMPILER_BARRIER
+ 117:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __COMPILER_BARRIER()                   __ASM volatile("":::"memory")
+ 118:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 119:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 120:Drivers/CMSIS/Include/cmsis_gcc.h **** /* #########################  Startup and Lowlevel Init  ######################## */
+ 121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
+ 123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
+ 126:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details This default implementations initialized all data and additional bss
+ 127:Drivers/CMSIS/Include/cmsis_gcc.h ****            sections relying on .copy.table and .zero.table specified properly
+ 128:Drivers/CMSIS/Include/cmsis_gcc.h ****            in the used linker script.
+ 129:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 130:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 131:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE __NO_RETURN void __cmsis_start(void)
+ 132:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 133:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern void _start(void) __NO_RETURN;
+ 134:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 135:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
+ 136:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t const* src;
+ 137:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
+ 138:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 12
+
+
+ 139:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __copy_table_t;
+ 140:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 141:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
+ 142:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
+ 143:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
+ 144:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __zero_table_t;
+ 145:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 146:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __copy_table_t __copy_table_start__;
+ 147:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __copy_table_t __copy_table_end__;
+ 148:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_start__;
+ 149:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __zero_table_t __zero_table_end__;
+ 150:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 151:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__copy_table_t const* pTable = &__copy_table_start__; pTable < &__copy_table_end__; ++pTable
+ 152:Drivers/CMSIS/Include/cmsis_gcc.h ****     for(uint32_t i=0u; i<pTable->wlen; ++i) {
+ 153:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = pTable->src[i];
+ 154:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
+ 155:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
+ 156:Drivers/CMSIS/Include/cmsis_gcc.h ****  
+ 157:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__zero_table_t const* pTable = &__zero_table_start__; pTable < &__zero_table_end__; ++pTable
+ 158:Drivers/CMSIS/Include/cmsis_gcc.h ****     for(uint32_t i=0u; i<pTable->wlen; ++i) {
+ 159:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = 0u;
+ 160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
+ 161:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
+ 162:Drivers/CMSIS/Include/cmsis_gcc.h ****  
+ 163:Drivers/CMSIS/Include/cmsis_gcc.h ****   _start();
+ 164:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 165:Drivers/CMSIS/Include/cmsis_gcc.h ****   
+ 166:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __PROGRAM_START           __cmsis_start
+ 167:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 168:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 169:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __INITIAL_SP
+ 170:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __INITIAL_SP              __StackTop
+ 171:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 172:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 173:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __STACK_LIMIT
+ 174:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __STACK_LIMIT             __StackLimit
+ 175:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 176:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 177:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE
+ 178:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE            __Vectors
+ 179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
+ 182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute((used, section(".vectors")))
+ 183:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 184:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 185:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+ 186:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+ 187:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+ 188:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
+ 189:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 190:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 191:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 192:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+ 193:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+ 194:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 195:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 13
+
+
+ 196:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
+ 197:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 198:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+ 199:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 200:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 201:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 202:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 203:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
+ 204:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
+ 205:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 206:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
+ 208:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
+ 210:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 211:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 212:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 213:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 214:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Control Register
+ 215:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the Control Register.
+ 216:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Control Register value
+ 217:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 218:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+ 219:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 220:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 221:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 222:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control" : "=r" (result) );
+ 223:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 224:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 225:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 226:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 227:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 228:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 229:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Control Register (non-secure)
+ 230:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the non-secure Control Register when in secure mode.
+ 231:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               non-secure Control Register value
+ 232:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 233:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_CONTROL_NS(void)
+ 234:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 235:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 236:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 237:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control_ns" : "=r" (result) );
+ 238:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 239:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 240:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 241:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 242:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 243:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 244:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register
+ 245:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the Control Register.
+ 246:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
+ 247:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 248:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
+ 249:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 250:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
+ 251:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 252:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 14
+
+
+ 253:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 254:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 255:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 256:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
+ 257:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
+ 258:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
+ 259:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 260:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_CONTROL_NS(uint32_t control)
+ 261:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 262:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control_ns, %0" : : "r" (control) : "memory");
+ 263:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 264:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 265:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 266:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 267:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 268:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get IPSR Register
+ 269:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the IPSR Register.
+ 270:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               IPSR Register value
+ 271:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 272:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_IPSR(void)
+ 273:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 274:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 275:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 276:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
+ 277:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 278:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 279:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 280:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 281:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 282:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get APSR Register
+ 283:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the APSR Register.
+ 284:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               APSR Register value
+ 285:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 286:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_APSR(void)
+ 287:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 288:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 289:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 290:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
+ 291:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 292:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 293:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 294:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 295:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 296:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get xPSR Register
+ 297:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the xPSR Register.
+ 298:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               xPSR Register value
+ 299:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 300:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_xPSR(void)
+ 301:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 302:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 303:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 304:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, xpsr" : "=r" (result) );
+ 305:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 306:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 307:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 308:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 309:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 15
+
+
+ 310:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer
+ 311:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
+ 312:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
+ 313:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 314:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
+ 315:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 316:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 317:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 318:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp"  : "=r" (result) );
+ 319:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 320:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 321:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 322:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 323:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 324:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 325:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer (non-secure)
+ 326:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Process Stack Pointer (PSP) when in secure s
+ 327:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
+ 328:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 329:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PSP_NS(void)
+ 330:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 331:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 332:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 333:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp_ns"  : "=r" (result) );
+ 334:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 335:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 336:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 337:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 338:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 339:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 340:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer
+ 341:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Process Stack Pointer (PSP).
+ 342:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
+ 343:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 344:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_PSP(uint32_t topOfProcStack)
+ 345:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 346:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp, %0" : : "r" (topOfProcStack) : );
+ 347:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 348:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 349:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 350:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 351:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 352:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer (non-secure)
+ 353:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Process Stack Pointer (PSP) when in secure sta
+ 354:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
+ 355:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 356:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PSP_NS(uint32_t topOfProcStack)
+ 357:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 358:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp_ns, %0" : : "r" (topOfProcStack) : );
+ 359:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 360:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 361:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 362:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 363:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 364:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer
+ 365:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Main Stack Pointer (MSP).
+ 366:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 16
+
+
+ 367:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 368:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSP(void)
+ 369:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 370:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 371:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 372:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp" : "=r" (result) );
+ 373:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 374:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 375:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 376:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 377:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 378:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 379:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer (non-secure)
+ 380:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Main Stack Pointer (MSP) when in secure stat
+ 381:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
+ 382:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 383:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_MSP_NS(void)
+ 384:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 385:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 386:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 387:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp_ns" : "=r" (result) );
+ 388:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 389:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 390:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 391:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 392:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 393:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 394:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer
+ 395:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Main Stack Pointer (MSP).
+ 396:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfMainStack  Main Stack Pointer value to set
+ 397:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 398:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_MSP(uint32_t topOfMainStack)
+ 399:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 400:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR msp, %0" : : "r" (topOfMainStack) : );
+ 401:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 402:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 403:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 404:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 405:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 406:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
+ 407:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
+ 408:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfMainStack  Main Stack Pointer value to set
+ 409:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 410:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_MSP_NS(uint32_t topOfMainStack)
+ 411:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 412:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR msp_ns, %0" : : "r" (topOfMainStack) : );
+ 413:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 414:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 415:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 416:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 417:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 418:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 419:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Stack Pointer (non-secure)
+ 420:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Stack Pointer (SP) when in secure state.
+ 421:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               SP Register value
+ 422:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 423:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_SP_NS(void)
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 17
+
+
+ 424:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 425:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 426:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 427:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, sp_ns" : "=r" (result) );
+ 428:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 429:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 430:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 431:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 432:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 433:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Stack Pointer (non-secure)
+ 434:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Stack Pointer (SP) when in secure state.
+ 435:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfStack  Stack Pointer value to set
+ 436:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 437:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_SP_NS(uint32_t topOfStack)
+ 438:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 439:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR sp_ns, %0" : : "r" (topOfStack) : );
+ 440:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 441:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 442:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 443:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 444:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 445:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask
+ 446:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the priority mask bit from the Priority Mask Register.
+ 447:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
+ 448:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PRIMASK(void)
+ 154              		.loc 2 449 31 view .LVU33
+ 155              	.LBB71:
+ 450:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 156              		.loc 2 451 3 view .LVU34
+ 452:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask" : "=r" (result) :: "memory");
+ 157              		.loc 2 453 3 view .LVU35
+ 158              		.syntax unified
+ 159              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 160 0000 EFF3108C 		MRS ip, primask
+ 161              	@ 0 "" 2
+ 162              	.LVL4:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 163              		.loc 2 454 3 view .LVU36
+ 164              		.loc 2 454 3 is_stmt 0 view .LVU37
+ 165              		.thumb
+ 166              		.syntax unified
+ 167              	.LBE71:
+ 168              	.LBE70:
+ 169              		.loc 1 337 3 is_stmt 1 view .LVU38
+ 170              	.LBB72:
+ 171              	.LBI72:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 172              		.loc 2 207 27 view .LVU39
+ 173              	.LBB73:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 174              		.loc 2 209 3 view .LVU40
+ 175              		.syntax unified
+ 176              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 177 0004 72B6     		cpsid i
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 18
+
+
+ 178              	@ 0 "" 2
+ 179              		.thumb
+ 180              		.syntax unified
+ 181              	.LBE73:
+ 182              	.LBE72:
+ 338:Utilities/sequencer/stm32_seq.c **** 
+ 339:Utilities/sequencer/stm32_seq.c ****   TaskSet |= TaskId_bm;
+ 183              		.loc 1 339 3 view .LVU41
+ 184              		.loc 1 339 11 is_stmt 0 view .LVU42
+ 185 0006 064A     		ldr	r2, .L9
+ 186 0008 1368     		ldr	r3, [r2]
+ 187 000a 0343     		orrs	r3, r3, r0
+ 188 000c 1360     		str	r3, [r2]
+ 340:Utilities/sequencer/stm32_seq.c ****   TaskPrio[Task_Prio].priority |= TaskId_bm;
+ 189              		.loc 1 340 3 is_stmt 1 view .LVU43
+ 190              		.loc 1 340 32 is_stmt 0 view .LVU44
+ 191 000e 054A     		ldr	r2, .L9+4
+ 192 0010 52F83130 		ldr	r3, [r2, r1, lsl #3]
+ 193 0014 1843     		orrs	r0, r0, r3
+ 194              	.LVL5:
+ 195              		.loc 1 340 32 view .LVU45
+ 196 0016 42F83100 		str	r0, [r2, r1, lsl #3]
+ 341:Utilities/sequencer/stm32_seq.c **** 
+ 342:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 197              		.loc 1 342 3 is_stmt 1 view .LVU46
+ 198              	.LVL6:
+ 199              	.LBB74:
+ 200              	.LBI74:
+ 455:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 456:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 457:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 458:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ 459:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 460:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask (non-secure)
+ 461:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the non-secure priority mask bit from the Priority Mask Reg
+ 462:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
+ 463:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 464:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PRIMASK_NS(void)
+ 465:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 466:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 467:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 468:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask_ns" : "=r" (result) :: "memory");
+ 469:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 470:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 471:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 472:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 473:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 474:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 475:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Priority Mask
+ 476:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Priority Mask Register.
+ 477:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    priMask  Priority Mask
+ 478:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_PRIMASK(uint32_t priMask)
+ 201              		.loc 2 479 27 view .LVU47
+ 202              	.LBB75:
+ 480:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 481:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 19
+
+
+ 203              		.loc 2 481 3 view .LVU48
+ 204              		.syntax unified
+ 205              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 206 001a 8CF31088 		MSR primask, ip
+ 207              	@ 0 "" 2
+ 208              	.LVL7:
+ 209              		.loc 2 481 3 is_stmt 0 view .LVU49
+ 210              		.thumb
+ 211              		.syntax unified
+ 212              	.LBE75:
+ 213              	.LBE74:
+ 343:Utilities/sequencer/stm32_seq.c **** 
+ 344:Utilities/sequencer/stm32_seq.c ****   return;
+ 214              		.loc 1 344 3 is_stmt 1 view .LVU50
+ 345:Utilities/sequencer/stm32_seq.c **** }
+ 215              		.loc 1 345 1 is_stmt 0 view .LVU51
+ 216 001e 7047     		bx	lr
+ 217              	.L10:
+ 218              		.align	2
+ 219              	.L9:
+ 220 0020 00000000 		.word	.LANCHOR0
+ 221 0024 00000000 		.word	.LANCHOR7
+ 222              		.cfi_endproc
+ 223              	.LFE108:
+ 225              		.section	.text.UTIL_SEQ_IsSchedulableTask,"ax",%progbits
+ 226              		.align	1
+ 227              		.global	UTIL_SEQ_IsSchedulableTask
+ 228              		.syntax unified
+ 229              		.thumb
+ 230              		.thumb_func
+ 232              	UTIL_SEQ_IsSchedulableTask:
+ 233              	.LVL8:
+ 234              	.LFB109:
+ 346:Utilities/sequencer/stm32_seq.c **** 
+ 347:Utilities/sequencer/stm32_seq.c **** uint32_t UTIL_SEQ_IsSchedulableTask( UTIL_SEQ_bm_t TaskId_bm)
+ 348:Utilities/sequencer/stm32_seq.c **** {
+ 235              		.loc 1 348 1 is_stmt 1 view -0
+ 236              		.cfi_startproc
+ 237              		@ args = 0, pretend = 0, frame = 0
+ 238              		@ frame_needed = 0, uses_anonymous_args = 0
+ 239              		@ link register save eliminated.
+ 349:Utilities/sequencer/stm32_seq.c ****   uint32_t _status;
+ 240              		.loc 1 349 3 view .LVU53
+ 350:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_taskset;
+ 241              		.loc 1 350 3 view .LVU54
+ 351:Utilities/sequencer/stm32_seq.c **** 
+ 352:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION();
+ 242              		.loc 1 352 3 view .LVU55
+ 243              	.LBB76:
+ 244              	.LBI76:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 245              		.loc 2 449 31 view .LVU56
+ 246              	.LBB77:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 247              		.loc 2 451 3 view .LVU57
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 248              		.loc 2 453 3 view .LVU58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 20
+
+
+ 249              		.syntax unified
+ 250              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 251 0000 EFF31082 		MRS r2, primask
+ 252              	@ 0 "" 2
+ 253              	.LVL9:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 254              		.loc 2 454 3 view .LVU59
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 255              		.loc 2 454 3 is_stmt 0 view .LVU60
+ 256              		.thumb
+ 257              		.syntax unified
+ 258              	.LBE77:
+ 259              	.LBE76:
+ 260              		.loc 1 352 3 is_stmt 1 view .LVU61
+ 261              	.LBB78:
+ 262              	.LBI78:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 263              		.loc 2 207 27 view .LVU62
+ 264              	.LBB79:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 265              		.loc 2 209 3 view .LVU63
+ 266              		.syntax unified
+ 267              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 268 0004 72B6     		cpsid i
+ 269              	@ 0 "" 2
+ 270              		.thumb
+ 271              		.syntax unified
+ 272              	.LBE79:
+ 273              	.LBE78:
+ 353:Utilities/sequencer/stm32_seq.c **** 
+ 354:Utilities/sequencer/stm32_seq.c ****   local_taskset = TaskSet;
+ 274              		.loc 1 354 3 view .LVU64
+ 275              		.loc 1 354 17 is_stmt 0 view .LVU65
+ 276 0006 084B     		ldr	r3, .L15
+ 277 0008 1968     		ldr	r1, [r3]
+ 278              	.LVL10:
+ 355:Utilities/sequencer/stm32_seq.c ****   _status = ((local_taskset & TaskMask & SuperMask & TaskId_bm) == TaskId_bm)? 1U: 0U;
+ 279              		.loc 1 355 3 is_stmt 1 view .LVU66
+ 280              		.loc 1 355 29 is_stmt 0 view .LVU67
+ 281 000a 084B     		ldr	r3, .L15+4
+ 282 000c 1B68     		ldr	r3, [r3]
+ 283 000e 0B40     		ands	r3, r3, r1
+ 284              		.loc 1 355 40 view .LVU68
+ 285 0010 0749     		ldr	r1, .L15+8
+ 286              	.LVL11:
+ 287              		.loc 1 355 40 view .LVU69
+ 288 0012 0968     		ldr	r1, [r1]
+ 289 0014 0B40     		ands	r3, r3, r1
+ 290              		.loc 1 355 82 view .LVU70
+ 291 0016 30EA0303 		bics	r3, r0, r3
+ 292 001a 03D0     		beq	.L14
+ 293 001c 0020     		movs	r0, #0
+ 294              	.LVL12:
+ 295              	.L12:
+ 356:Utilities/sequencer/stm32_seq.c **** 
+ 357:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION();
+ 296              		.loc 1 357 3 is_stmt 1 discriminator 4 view .LVU71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 21
+
+
+ 297              	.LBB80:
+ 298              	.LBI80:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 299              		.loc 2 479 27 discriminator 4 view .LVU72
+ 300              	.LBB81:
+ 301              		.loc 2 481 3 discriminator 4 view .LVU73
+ 302              		.syntax unified
+ 303              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 304 001e 82F31088 		MSR primask, r2
+ 305              	@ 0 "" 2
+ 306              	.LVL13:
+ 307              		.loc 2 481 3 is_stmt 0 discriminator 4 view .LVU74
+ 308              		.thumb
+ 309              		.syntax unified
+ 310              	.LBE81:
+ 311              	.LBE80:
+ 358:Utilities/sequencer/stm32_seq.c ****   return _status;
+ 312              		.loc 1 358 3 is_stmt 1 discriminator 4 view .LVU75
+ 359:Utilities/sequencer/stm32_seq.c **** }
+ 313              		.loc 1 359 1 is_stmt 0 discriminator 4 view .LVU76
+ 314 0022 7047     		bx	lr
+ 315              	.LVL14:
+ 316              	.L14:
+ 355:Utilities/sequencer/stm32_seq.c **** 
+ 317              		.loc 1 355 82 view .LVU77
+ 318 0024 0120     		movs	r0, #1
+ 319              	.LVL15:
+ 355:Utilities/sequencer/stm32_seq.c **** 
+ 320              		.loc 1 355 82 view .LVU78
+ 321 0026 FAE7     		b	.L12
+ 322              	.L16:
+ 323              		.align	2
+ 324              	.L15:
+ 325 0028 00000000 		.word	.LANCHOR0
+ 326 002c 00000000 		.word	.LANCHOR1
+ 327 0030 00000000 		.word	.LANCHOR2
+ 328              		.cfi_endproc
+ 329              	.LFE109:
+ 331              		.section	.text.UTIL_SEQ_PauseTask,"ax",%progbits
+ 332              		.align	1
+ 333              		.global	UTIL_SEQ_PauseTask
+ 334              		.syntax unified
+ 335              		.thumb
+ 336              		.thumb_func
+ 338              	UTIL_SEQ_PauseTask:
+ 339              	.LVL16:
+ 340              	.LFB110:
+ 360:Utilities/sequencer/stm32_seq.c **** 
+ 361:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_PauseTask( UTIL_SEQ_bm_t TaskId_bm )
+ 362:Utilities/sequencer/stm32_seq.c **** {
+ 341              		.loc 1 362 1 is_stmt 1 view -0
+ 342              		.cfi_startproc
+ 343              		@ args = 0, pretend = 0, frame = 0
+ 344              		@ frame_needed = 0, uses_anonymous_args = 0
+ 345              		@ link register save eliminated.
+ 363:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 346              		.loc 1 363 3 view .LVU80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 22
+
+
+ 347              	.LBB82:
+ 348              	.LBI82:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 349              		.loc 2 449 31 view .LVU81
+ 350              	.LBB83:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 351              		.loc 2 451 3 view .LVU82
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 352              		.loc 2 453 3 view .LVU83
+ 353              		.syntax unified
+ 354              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 355 0000 EFF31081 		MRS r1, primask
+ 356              	@ 0 "" 2
+ 357              	.LVL17:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 358              		.loc 2 454 3 view .LVU84
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 359              		.loc 2 454 3 is_stmt 0 view .LVU85
+ 360              		.thumb
+ 361              		.syntax unified
+ 362              	.LBE83:
+ 363              	.LBE82:
+ 364              		.loc 1 363 3 is_stmt 1 view .LVU86
+ 365              	.LBB84:
+ 366              	.LBI84:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 367              		.loc 2 207 27 view .LVU87
+ 368              	.LBB85:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 369              		.loc 2 209 3 view .LVU88
+ 370              		.syntax unified
+ 371              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 372 0004 72B6     		cpsid i
+ 373              	@ 0 "" 2
+ 374              		.thumb
+ 375              		.syntax unified
+ 376              	.LBE85:
+ 377              	.LBE84:
+ 364:Utilities/sequencer/stm32_seq.c **** 
+ 365:Utilities/sequencer/stm32_seq.c ****   TaskMask &= (~TaskId_bm);
+ 378              		.loc 1 365 3 view .LVU89
+ 379              		.loc 1 365 12 is_stmt 0 view .LVU90
+ 380 0006 044A     		ldr	r2, .L18
+ 381 0008 1368     		ldr	r3, [r2]
+ 382 000a 23EA0000 		bic	r0, r3, r0
+ 383              	.LVL18:
+ 384              		.loc 1 365 12 view .LVU91
+ 385 000e 1060     		str	r0, [r2]
+ 366:Utilities/sequencer/stm32_seq.c **** 
+ 367:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 386              		.loc 1 367 3 is_stmt 1 view .LVU92
+ 387              	.LVL19:
+ 388              	.LBB86:
+ 389              	.LBI86:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 390              		.loc 2 479 27 view .LVU93
+ 391              	.LBB87:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 23
+
+
+ 392              		.loc 2 481 3 view .LVU94
+ 393              		.syntax unified
+ 394              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 395 0010 81F31088 		MSR primask, r1
+ 396              	@ 0 "" 2
+ 397              	.LVL20:
+ 398              		.loc 2 481 3 is_stmt 0 view .LVU95
+ 399              		.thumb
+ 400              		.syntax unified
+ 401              	.LBE87:
+ 402              	.LBE86:
+ 368:Utilities/sequencer/stm32_seq.c **** 
+ 369:Utilities/sequencer/stm32_seq.c ****   return;
+ 403              		.loc 1 369 3 is_stmt 1 view .LVU96
+ 370:Utilities/sequencer/stm32_seq.c **** }
+ 404              		.loc 1 370 1 is_stmt 0 view .LVU97
+ 405 0014 7047     		bx	lr
+ 406              	.L19:
+ 407 0016 00BF     		.align	2
+ 408              	.L18:
+ 409 0018 00000000 		.word	.LANCHOR1
+ 410              		.cfi_endproc
+ 411              	.LFE110:
+ 413              		.section	.text.UTIL_SEQ_IsPauseTask,"ax",%progbits
+ 414              		.align	1
+ 415              		.global	UTIL_SEQ_IsPauseTask
+ 416              		.syntax unified
+ 417              		.thumb
+ 418              		.thumb_func
+ 420              	UTIL_SEQ_IsPauseTask:
+ 421              	.LVL21:
+ 422              	.LFB111:
+ 371:Utilities/sequencer/stm32_seq.c **** 
+ 372:Utilities/sequencer/stm32_seq.c **** uint32_t UTIL_SEQ_IsPauseTask( UTIL_SEQ_bm_t TaskId_bm )
+ 373:Utilities/sequencer/stm32_seq.c **** {
+ 423              		.loc 1 373 1 is_stmt 1 view -0
+ 424              		.cfi_startproc
+ 425              		@ args = 0, pretend = 0, frame = 0
+ 426              		@ frame_needed = 0, uses_anonymous_args = 0
+ 427              		@ link register save eliminated.
+ 374:Utilities/sequencer/stm32_seq.c ****   uint32_t _status;
+ 428              		.loc 1 374 3 view .LVU99
+ 375:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 429              		.loc 1 375 3 view .LVU100
+ 430              	.LBB88:
+ 431              	.LBI88:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 432              		.loc 2 449 31 view .LVU101
+ 433              	.LBB89:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 434              		.loc 2 451 3 view .LVU102
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 435              		.loc 2 453 3 view .LVU103
+ 436              		.syntax unified
+ 437              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 438 0000 EFF31083 		MRS r3, primask
+ 439              	@ 0 "" 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 24
+
+
+ 440              	.LVL22:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 441              		.loc 2 454 3 view .LVU104
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 442              		.loc 2 454 3 is_stmt 0 view .LVU105
+ 443              		.thumb
+ 444              		.syntax unified
+ 445              	.LBE89:
+ 446              	.LBE88:
+ 447              		.loc 1 375 3 is_stmt 1 view .LVU106
+ 448              	.LBB90:
+ 449              	.LBI90:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 450              		.loc 2 207 27 view .LVU107
+ 451              	.LBB91:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 452              		.loc 2 209 3 view .LVU108
+ 453              		.syntax unified
+ 454              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 455 0004 72B6     		cpsid i
+ 456              	@ 0 "" 2
+ 457              		.thumb
+ 458              		.syntax unified
+ 459              	.LBE91:
+ 460              	.LBE90:
+ 376:Utilities/sequencer/stm32_seq.c **** 
+ 377:Utilities/sequencer/stm32_seq.c ****   _status = ((TaskMask & TaskId_bm) == TaskId_bm) ? 0u:1u;
+ 461              		.loc 1 377 3 view .LVU109
+ 462              		.loc 1 377 24 is_stmt 0 view .LVU110
+ 463 0006 054A     		ldr	r2, .L21
+ 464 0008 1268     		ldr	r2, [r2]
+ 465              		.loc 1 377 55 view .LVU111
+ 466 000a 30EA0202 		bics	r2, r0, r2
+ 467 000e 14BF     		ite	ne
+ 468 0010 0120     		movne	r0, #1
+ 469              	.LVL23:
+ 470              		.loc 1 377 55 view .LVU112
+ 471 0012 0020     		moveq	r0, #0
+ 472              	.LVL24:
+ 378:Utilities/sequencer/stm32_seq.c **** 
+ 379:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 473              		.loc 1 379 3 is_stmt 1 view .LVU113
+ 474              	.LBB92:
+ 475              	.LBI92:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 476              		.loc 2 479 27 view .LVU114
+ 477              	.LBB93:
+ 478              		.loc 2 481 3 view .LVU115
+ 479              		.syntax unified
+ 480              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 481 0014 83F31088 		MSR primask, r3
+ 482              	@ 0 "" 2
+ 483              	.LVL25:
+ 484              		.loc 2 481 3 is_stmt 0 view .LVU116
+ 485              		.thumb
+ 486              		.syntax unified
+ 487              	.LBE93:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 25
+
+
+ 488              	.LBE92:
+ 380:Utilities/sequencer/stm32_seq.c ****   return _status;
+ 489              		.loc 1 380 3 is_stmt 1 view .LVU117
+ 381:Utilities/sequencer/stm32_seq.c **** }
+ 490              		.loc 1 381 1 is_stmt 0 view .LVU118
+ 491 0018 7047     		bx	lr
+ 492              	.L22:
+ 493 001a 00BF     		.align	2
+ 494              	.L21:
+ 495 001c 00000000 		.word	.LANCHOR1
+ 496              		.cfi_endproc
+ 497              	.LFE111:
+ 499              		.section	.text.UTIL_SEQ_ResumeTask,"ax",%progbits
+ 500              		.align	1
+ 501              		.global	UTIL_SEQ_ResumeTask
+ 502              		.syntax unified
+ 503              		.thumb
+ 504              		.thumb_func
+ 506              	UTIL_SEQ_ResumeTask:
+ 507              	.LVL26:
+ 508              	.LFB112:
+ 382:Utilities/sequencer/stm32_seq.c **** 
+ 383:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_ResumeTask( UTIL_SEQ_bm_t TaskId_bm )
+ 384:Utilities/sequencer/stm32_seq.c **** {
+ 509              		.loc 1 384 1 is_stmt 1 view -0
+ 510              		.cfi_startproc
+ 511              		@ args = 0, pretend = 0, frame = 0
+ 512              		@ frame_needed = 0, uses_anonymous_args = 0
+ 513              		@ link register save eliminated.
+ 385:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 514              		.loc 1 385 3 view .LVU120
+ 515              	.LBB94:
+ 516              	.LBI94:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 517              		.loc 2 449 31 view .LVU121
+ 518              	.LBB95:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 519              		.loc 2 451 3 view .LVU122
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 520              		.loc 2 453 3 view .LVU123
+ 521              		.syntax unified
+ 522              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 523 0000 EFF31081 		MRS r1, primask
+ 524              	@ 0 "" 2
+ 525              	.LVL27:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 526              		.loc 2 454 3 view .LVU124
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 527              		.loc 2 454 3 is_stmt 0 view .LVU125
+ 528              		.thumb
+ 529              		.syntax unified
+ 530              	.LBE95:
+ 531              	.LBE94:
+ 532              		.loc 1 385 3 is_stmt 1 view .LVU126
+ 533              	.LBB96:
+ 534              	.LBI96:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 26
+
+
+ 535              		.loc 2 207 27 view .LVU127
+ 536              	.LBB97:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 537              		.loc 2 209 3 view .LVU128
+ 538              		.syntax unified
+ 539              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 540 0004 72B6     		cpsid i
+ 541              	@ 0 "" 2
+ 542              		.thumb
+ 543              		.syntax unified
+ 544              	.LBE97:
+ 545              	.LBE96:
+ 386:Utilities/sequencer/stm32_seq.c **** 
+ 387:Utilities/sequencer/stm32_seq.c ****   TaskMask |= TaskId_bm;
+ 546              		.loc 1 387 3 view .LVU129
+ 547              		.loc 1 387 12 is_stmt 0 view .LVU130
+ 548 0006 034A     		ldr	r2, .L24
+ 549 0008 1368     		ldr	r3, [r2]
+ 550 000a 1843     		orrs	r0, r0, r3
+ 551              	.LVL28:
+ 552              		.loc 1 387 12 view .LVU131
+ 553 000c 1060     		str	r0, [r2]
+ 388:Utilities/sequencer/stm32_seq.c **** 
+ 389:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 554              		.loc 1 389 3 is_stmt 1 view .LVU132
+ 555              	.LVL29:
+ 556              	.LBB98:
+ 557              	.LBI98:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 558              		.loc 2 479 27 view .LVU133
+ 559              	.LBB99:
+ 560              		.loc 2 481 3 view .LVU134
+ 561              		.syntax unified
+ 562              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 563 000e 81F31088 		MSR primask, r1
+ 564              	@ 0 "" 2
+ 565              	.LVL30:
+ 566              		.loc 2 481 3 is_stmt 0 view .LVU135
+ 567              		.thumb
+ 568              		.syntax unified
+ 569              	.LBE99:
+ 570              	.LBE98:
+ 390:Utilities/sequencer/stm32_seq.c **** 
+ 391:Utilities/sequencer/stm32_seq.c ****   return;
+ 571              		.loc 1 391 3 is_stmt 1 view .LVU136
+ 392:Utilities/sequencer/stm32_seq.c **** }
+ 572              		.loc 1 392 1 is_stmt 0 view .LVU137
+ 573 0012 7047     		bx	lr
+ 574              	.L25:
+ 575              		.align	2
+ 576              	.L24:
+ 577 0014 00000000 		.word	.LANCHOR1
+ 578              		.cfi_endproc
+ 579              	.LFE112:
+ 581              		.section	.text.UTIL_SEQ_SetEvt,"ax",%progbits
+ 582              		.align	1
+ 583              		.global	UTIL_SEQ_SetEvt
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 27
+
+
+ 584              		.syntax unified
+ 585              		.thumb
+ 586              		.thumb_func
+ 588              	UTIL_SEQ_SetEvt:
+ 589              	.LVL31:
+ 590              	.LFB113:
+ 393:Utilities/sequencer/stm32_seq.c **** 
+ 394:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_SetEvt( UTIL_SEQ_bm_t EvtId_bm )
+ 395:Utilities/sequencer/stm32_seq.c **** {
+ 591              		.loc 1 395 1 is_stmt 1 view -0
+ 592              		.cfi_startproc
+ 593              		@ args = 0, pretend = 0, frame = 0
+ 594              		@ frame_needed = 0, uses_anonymous_args = 0
+ 595              		@ link register save eliminated.
+ 396:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 596              		.loc 1 396 3 view .LVU139
+ 597              	.LBB100:
+ 598              	.LBI100:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 599              		.loc 2 449 31 view .LVU140
+ 600              	.LBB101:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 601              		.loc 2 451 3 view .LVU141
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 602              		.loc 2 453 3 view .LVU142
+ 603              		.syntax unified
+ 604              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 605 0000 EFF31081 		MRS r1, primask
+ 606              	@ 0 "" 2
+ 607              	.LVL32:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 608              		.loc 2 454 3 view .LVU143
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 609              		.loc 2 454 3 is_stmt 0 view .LVU144
+ 610              		.thumb
+ 611              		.syntax unified
+ 612              	.LBE101:
+ 613              	.LBE100:
+ 614              		.loc 1 396 3 is_stmt 1 view .LVU145
+ 615              	.LBB102:
+ 616              	.LBI102:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 617              		.loc 2 207 27 view .LVU146
+ 618              	.LBB103:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 619              		.loc 2 209 3 view .LVU147
+ 620              		.syntax unified
+ 621              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 622 0004 72B6     		cpsid i
+ 623              	@ 0 "" 2
+ 624              		.thumb
+ 625              		.syntax unified
+ 626              	.LBE103:
+ 627              	.LBE102:
+ 397:Utilities/sequencer/stm32_seq.c **** 
+ 398:Utilities/sequencer/stm32_seq.c ****   EvtSet |= EvtId_bm;
+ 628              		.loc 1 398 3 view .LVU148
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 28
+
+
+ 629              		.loc 1 398 10 is_stmt 0 view .LVU149
+ 630 0006 034A     		ldr	r2, .L27
+ 631 0008 1368     		ldr	r3, [r2]
+ 632 000a 1843     		orrs	r0, r0, r3
+ 633              	.LVL33:
+ 634              		.loc 1 398 10 view .LVU150
+ 635 000c 1060     		str	r0, [r2]
+ 399:Utilities/sequencer/stm32_seq.c **** 
+ 400:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 636              		.loc 1 400 3 is_stmt 1 view .LVU151
+ 637              	.LVL34:
+ 638              	.LBB104:
+ 639              	.LBI104:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 640              		.loc 2 479 27 view .LVU152
+ 641              	.LBB105:
+ 642              		.loc 2 481 3 view .LVU153
+ 643              		.syntax unified
+ 644              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 645 000e 81F31088 		MSR primask, r1
+ 646              	@ 0 "" 2
+ 647              	.LVL35:
+ 648              		.loc 2 481 3 is_stmt 0 view .LVU154
+ 649              		.thumb
+ 650              		.syntax unified
+ 651              	.LBE105:
+ 652              	.LBE104:
+ 401:Utilities/sequencer/stm32_seq.c **** 
+ 402:Utilities/sequencer/stm32_seq.c ****   return;
+ 653              		.loc 1 402 3 is_stmt 1 view .LVU155
+ 403:Utilities/sequencer/stm32_seq.c **** }
+ 654              		.loc 1 403 1 is_stmt 0 view .LVU156
+ 655 0012 7047     		bx	lr
+ 656              	.L28:
+ 657              		.align	2
+ 658              	.L27:
+ 659 0014 00000000 		.word	.LANCHOR3
+ 660              		.cfi_endproc
+ 661              	.LFE113:
+ 663              		.section	.text.UTIL_SEQ_ClrEvt,"ax",%progbits
+ 664              		.align	1
+ 665              		.global	UTIL_SEQ_ClrEvt
+ 666              		.syntax unified
+ 667              		.thumb
+ 668              		.thumb_func
+ 670              	UTIL_SEQ_ClrEvt:
+ 671              	.LVL36:
+ 672              	.LFB114:
+ 404:Utilities/sequencer/stm32_seq.c **** 
+ 405:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_ClrEvt( UTIL_SEQ_bm_t EvtId_bm )
+ 406:Utilities/sequencer/stm32_seq.c **** {
+ 673              		.loc 1 406 1 is_stmt 1 view -0
+ 674              		.cfi_startproc
+ 675              		@ args = 0, pretend = 0, frame = 0
+ 676              		@ frame_needed = 0, uses_anonymous_args = 0
+ 677              		@ link register save eliminated.
+ 407:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 29
+
+
+ 678              		.loc 1 407 3 view .LVU158
+ 679              	.LBB106:
+ 680              	.LBI106:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 681              		.loc 2 449 31 view .LVU159
+ 682              	.LBB107:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 683              		.loc 2 451 3 view .LVU160
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 684              		.loc 2 453 3 view .LVU161
+ 685              		.syntax unified
+ 686              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 687 0000 EFF31081 		MRS r1, primask
+ 688              	@ 0 "" 2
+ 689              	.LVL37:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 690              		.loc 2 454 3 view .LVU162
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 691              		.loc 2 454 3 is_stmt 0 view .LVU163
+ 692              		.thumb
+ 693              		.syntax unified
+ 694              	.LBE107:
+ 695              	.LBE106:
+ 696              		.loc 1 407 3 is_stmt 1 view .LVU164
+ 697              	.LBB108:
+ 698              	.LBI108:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 699              		.loc 2 207 27 view .LVU165
+ 700              	.LBB109:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 701              		.loc 2 209 3 view .LVU166
+ 702              		.syntax unified
+ 703              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 704 0004 72B6     		cpsid i
+ 705              	@ 0 "" 2
+ 706              		.thumb
+ 707              		.syntax unified
+ 708              	.LBE109:
+ 709              	.LBE108:
+ 408:Utilities/sequencer/stm32_seq.c **** 
+ 409:Utilities/sequencer/stm32_seq.c ****   EvtSet &= (~EvtId_bm);
+ 710              		.loc 1 409 3 view .LVU167
+ 711              		.loc 1 409 10 is_stmt 0 view .LVU168
+ 712 0006 044A     		ldr	r2, .L30
+ 713 0008 1368     		ldr	r3, [r2]
+ 714 000a 23EA0000 		bic	r0, r3, r0
+ 715              	.LVL38:
+ 716              		.loc 1 409 10 view .LVU169
+ 717 000e 1060     		str	r0, [r2]
+ 410:Utilities/sequencer/stm32_seq.c **** 
+ 411:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 718              		.loc 1 411 3 is_stmt 1 view .LVU170
+ 719              	.LVL39:
+ 720              	.LBB110:
+ 721              	.LBI110:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 722              		.loc 2 479 27 view .LVU171
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 30
+
+
+ 723              	.LBB111:
+ 724              		.loc 2 481 3 view .LVU172
+ 725              		.syntax unified
+ 726              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 727 0010 81F31088 		MSR primask, r1
+ 728              	@ 0 "" 2
+ 729              	.LVL40:
+ 730              		.loc 2 481 3 is_stmt 0 view .LVU173
+ 731              		.thumb
+ 732              		.syntax unified
+ 733              	.LBE111:
+ 734              	.LBE110:
+ 412:Utilities/sequencer/stm32_seq.c **** 
+ 413:Utilities/sequencer/stm32_seq.c ****   return;
+ 735              		.loc 1 413 3 is_stmt 1 view .LVU174
+ 414:Utilities/sequencer/stm32_seq.c **** }
+ 736              		.loc 1 414 1 is_stmt 0 view .LVU175
+ 737 0014 7047     		bx	lr
+ 738              	.L31:
+ 739 0016 00BF     		.align	2
+ 740              	.L30:
+ 741 0018 00000000 		.word	.LANCHOR3
+ 742              		.cfi_endproc
+ 743              	.LFE114:
+ 745              		.section	.text.UTIL_SEQ_IsEvtPend,"ax",%progbits
+ 746              		.align	1
+ 747              		.global	UTIL_SEQ_IsEvtPend
+ 748              		.syntax unified
+ 749              		.thumb
+ 750              		.thumb_func
+ 752              	UTIL_SEQ_IsEvtPend:
+ 753              	.LFB116:
+ 415:Utilities/sequencer/stm32_seq.c **** 
+ 416:Utilities/sequencer/stm32_seq.c **** void UTIL_SEQ_WaitEvt(UTIL_SEQ_bm_t EvtId_bm)
+ 417:Utilities/sequencer/stm32_seq.c **** {
+ 418:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t event_waited_id_backup;
+ 419:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t current_task_idx;
+ 420:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t wait_task_idx;
+ 421:Utilities/sequencer/stm32_seq.c ****   /*
+ 422:Utilities/sequencer/stm32_seq.c ****    * store in local the current_task_id_bm as the global variable CurrentTaskIdx
+ 423:Utilities/sequencer/stm32_seq.c ****    * may be overwritten in case there are nested call of UTIL_SEQ_Run()
+ 424:Utilities/sequencer/stm32_seq.c ****    */
+ 425:Utilities/sequencer/stm32_seq.c ****   current_task_idx = CurrentTaskIdx;
+ 426:Utilities/sequencer/stm32_seq.c ****   if(UTIL_SEQ_NOTASKRUNNING == CurrentTaskIdx)
+ 427:Utilities/sequencer/stm32_seq.c ****   {
+ 428:Utilities/sequencer/stm32_seq.c ****     wait_task_idx = 0u;
+ 429:Utilities/sequencer/stm32_seq.c ****   }
+ 430:Utilities/sequencer/stm32_seq.c ****   else
+ 431:Utilities/sequencer/stm32_seq.c ****   {
+ 432:Utilities/sequencer/stm32_seq.c ****     wait_task_idx = (uint32_t)1u << CurrentTaskIdx;
+ 433:Utilities/sequencer/stm32_seq.c ****   }
+ 434:Utilities/sequencer/stm32_seq.c **** 
+ 435:Utilities/sequencer/stm32_seq.c ****   /* backup the event id that was currently waited */
+ 436:Utilities/sequencer/stm32_seq.c ****   event_waited_id_backup = EvtWaited;
+ 437:Utilities/sequencer/stm32_seq.c ****   EvtWaited = EvtId_bm;
+ 438:Utilities/sequencer/stm32_seq.c ****   /*
+ 439:Utilities/sequencer/stm32_seq.c ****    * wait for the new event
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 31
+
+
+ 440:Utilities/sequencer/stm32_seq.c ****    * note: that means that if the previous waited event occurs, it will not exit
+ 441:Utilities/sequencer/stm32_seq.c ****    * the while loop below.
+ 442:Utilities/sequencer/stm32_seq.c ****    * The system is waiting only for the last waited event.
+ 443:Utilities/sequencer/stm32_seq.c ****    * When it will go out, it will wait again from the previous one.
+ 444:Utilities/sequencer/stm32_seq.c ****    * It case it occurs while waiting for the second one, the while loop will exit immediately
+ 445:Utilities/sequencer/stm32_seq.c ****    */
+ 446:Utilities/sequencer/stm32_seq.c **** 
+ 447:Utilities/sequencer/stm32_seq.c ****   while ((EvtSet & EvtId_bm) == 0U)
+ 448:Utilities/sequencer/stm32_seq.c ****   {
+ 449:Utilities/sequencer/stm32_seq.c ****     UTIL_SEQ_EvtIdle(wait_task_idx, EvtId_bm);
+ 450:Utilities/sequencer/stm32_seq.c ****   }
+ 451:Utilities/sequencer/stm32_seq.c **** 
+ 452:Utilities/sequencer/stm32_seq.c ****   /*
+ 453:Utilities/sequencer/stm32_seq.c ****    * Restore the CurrentTaskIdx that may have been modified by call of UTIL_SEQ_Run() from UTIL_SEQ
+ 454:Utilities/sequencer/stm32_seq.c ****    * This is required so that a second call of UTIL_SEQ_WaitEvt() in the same process pass the corr
+ 455:Utilities/sequencer/stm32_seq.c ****    * in the call of UTIL_SEQ_EvtIdle()
+ 456:Utilities/sequencer/stm32_seq.c ****    */
+ 457:Utilities/sequencer/stm32_seq.c ****   CurrentTaskIdx = current_task_idx;
+ 458:Utilities/sequencer/stm32_seq.c **** 
+ 459:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
+ 460:Utilities/sequencer/stm32_seq.c **** 
+ 461:Utilities/sequencer/stm32_seq.c ****   EvtSet &= (~EvtId_bm);
+ 462:Utilities/sequencer/stm32_seq.c **** 
+ 463:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION( );
+ 464:Utilities/sequencer/stm32_seq.c **** 
+ 465:Utilities/sequencer/stm32_seq.c ****   EvtWaited = event_waited_id_backup;
+ 466:Utilities/sequencer/stm32_seq.c ****   return;
+ 467:Utilities/sequencer/stm32_seq.c **** }
+ 468:Utilities/sequencer/stm32_seq.c **** 
+ 469:Utilities/sequencer/stm32_seq.c **** UTIL_SEQ_bm_t UTIL_SEQ_IsEvtPend( void )
+ 470:Utilities/sequencer/stm32_seq.c **** {
+ 754              		.loc 1 470 1 is_stmt 1 view -0
+ 755              		.cfi_startproc
+ 756              		@ args = 0, pretend = 0, frame = 0
+ 757              		@ frame_needed = 0, uses_anonymous_args = 0
+ 758              		@ link register save eliminated.
+ 471:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_evtwaited = EvtWaited;
+ 759              		.loc 1 471 3 view .LVU177
+ 760              		.loc 1 471 17 is_stmt 0 view .LVU178
+ 761 0000 024B     		ldr	r3, .L33
+ 762 0002 1B68     		ldr	r3, [r3]
+ 763              	.LVL41:
+ 472:Utilities/sequencer/stm32_seq.c ****   return (EvtSet & local_evtwaited);
+ 764              		.loc 1 472 3 is_stmt 1 view .LVU179
+ 765              		.loc 1 472 18 is_stmt 0 view .LVU180
+ 766 0004 024A     		ldr	r2, .L33+4
+ 767 0006 1068     		ldr	r0, [r2]
+ 473:Utilities/sequencer/stm32_seq.c **** }
+ 768              		.loc 1 473 1 view .LVU181
+ 769 0008 1840     		ands	r0, r0, r3
+ 770 000a 7047     		bx	lr
+ 771              	.L34:
+ 772              		.align	2
+ 773              	.L33:
+ 774 000c 00000000 		.word	.LANCHOR4
+ 775 0010 00000000 		.word	.LANCHOR3
+ 776              		.cfi_endproc
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 32
+
+
+ 777              	.LFE116:
+ 779              		.section	.text.UTIL_SEQ_Idle,"ax",%progbits
+ 780              		.align	1
+ 781              		.weak	UTIL_SEQ_Idle
+ 782              		.syntax unified
+ 783              		.thumb
+ 784              		.thumb_func
+ 786              	UTIL_SEQ_Idle:
+ 787              	.LFB118:
+ 474:Utilities/sequencer/stm32_seq.c **** 
+ 475:Utilities/sequencer/stm32_seq.c **** __WEAK void UTIL_SEQ_EvtIdle( UTIL_SEQ_bm_t TaskId_bm, UTIL_SEQ_bm_t EvtWaited_bm )
+ 476:Utilities/sequencer/stm32_seq.c **** {
+ 477:Utilities/sequencer/stm32_seq.c ****   (void)EvtWaited_bm;
+ 478:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_Run(~TaskId_bm);
+ 479:Utilities/sequencer/stm32_seq.c ****   return;
+ 480:Utilities/sequencer/stm32_seq.c **** }
+ 481:Utilities/sequencer/stm32_seq.c **** 
+ 482:Utilities/sequencer/stm32_seq.c **** __WEAK void UTIL_SEQ_Idle( void )
+ 483:Utilities/sequencer/stm32_seq.c **** {
+ 788              		.loc 1 483 1 is_stmt 1 view -0
+ 789              		.cfi_startproc
+ 790              		@ args = 0, pretend = 0, frame = 0
+ 791              		@ frame_needed = 0, uses_anonymous_args = 0
+ 792              		@ link register save eliminated.
+ 484:Utilities/sequencer/stm32_seq.c ****   return;
+ 793              		.loc 1 484 3 view .LVU183
+ 485:Utilities/sequencer/stm32_seq.c **** }
+ 794              		.loc 1 485 1 is_stmt 0 view .LVU184
+ 795 0000 7047     		bx	lr
+ 796              		.cfi_endproc
+ 797              	.LFE118:
+ 799              		.section	.text.UTIL_SEQ_PreIdle,"ax",%progbits
+ 800              		.align	1
+ 801              		.weak	UTIL_SEQ_PreIdle
+ 802              		.syntax unified
+ 803              		.thumb
+ 804              		.thumb_func
+ 806              	UTIL_SEQ_PreIdle:
+ 807              	.LFB119:
+ 486:Utilities/sequencer/stm32_seq.c **** 
+ 487:Utilities/sequencer/stm32_seq.c **** __WEAK void UTIL_SEQ_PreIdle( void )
+ 488:Utilities/sequencer/stm32_seq.c **** {
+ 808              		.loc 1 488 1 is_stmt 1 view -0
+ 809              		.cfi_startproc
+ 810              		@ args = 0, pretend = 0, frame = 0
+ 811              		@ frame_needed = 0, uses_anonymous_args = 0
+ 812              		@ link register save eliminated.
+ 489:Utilities/sequencer/stm32_seq.c ****   /*
+ 490:Utilities/sequencer/stm32_seq.c ****    * Unless specified by the application, there is nothing to be done
+ 491:Utilities/sequencer/stm32_seq.c ****    */
+ 492:Utilities/sequencer/stm32_seq.c ****   return;
+ 813              		.loc 1 492 3 view .LVU186
+ 493:Utilities/sequencer/stm32_seq.c **** }
+ 814              		.loc 1 493 1 is_stmt 0 view .LVU187
+ 815 0000 7047     		bx	lr
+ 816              		.cfi_endproc
+ 817              	.LFE119:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 33
+
+
+ 819              		.section	.text.UTIL_SEQ_PostIdle,"ax",%progbits
+ 820              		.align	1
+ 821              		.weak	UTIL_SEQ_PostIdle
+ 822              		.syntax unified
+ 823              		.thumb
+ 824              		.thumb_func
+ 826              	UTIL_SEQ_PostIdle:
+ 827              	.LFB120:
+ 494:Utilities/sequencer/stm32_seq.c **** 
+ 495:Utilities/sequencer/stm32_seq.c **** __WEAK void UTIL_SEQ_PostIdle( void )
+ 496:Utilities/sequencer/stm32_seq.c **** {
+ 828              		.loc 1 496 1 is_stmt 1 view -0
+ 829              		.cfi_startproc
+ 830              		@ args = 0, pretend = 0, frame = 0
+ 831              		@ frame_needed = 0, uses_anonymous_args = 0
+ 832              		@ link register save eliminated.
+ 497:Utilities/sequencer/stm32_seq.c ****   /*
+ 498:Utilities/sequencer/stm32_seq.c ****    * Unless specified by the application, there is nothing to be done
+ 499:Utilities/sequencer/stm32_seq.c ****    */
+ 500:Utilities/sequencer/stm32_seq.c ****   return;
+ 833              		.loc 1 500 3 view .LVU189
+ 501:Utilities/sequencer/stm32_seq.c **** }
+ 834              		.loc 1 501 1 is_stmt 0 view .LVU190
+ 835 0000 7047     		bx	lr
+ 836              		.cfi_endproc
+ 837              	.LFE120:
+ 839              		.section	.text.SEQ_BitPosition,"ax",%progbits
+ 840              		.align	1
+ 841              		.global	SEQ_BitPosition
+ 842              		.syntax unified
+ 843              		.thumb
+ 844              		.thumb_func
+ 846              	SEQ_BitPosition:
+ 847              	.LVL42:
+ 848              	.LFB121:
+ 502:Utilities/sequencer/stm32_seq.c **** 
+ 503:Utilities/sequencer/stm32_seq.c **** /**
+ 504:Utilities/sequencer/stm32_seq.c ****   * @}
+ 505:Utilities/sequencer/stm32_seq.c ****   */
+ 506:Utilities/sequencer/stm32_seq.c **** 
+ 507:Utilities/sequencer/stm32_seq.c **** /** @addtogroup SEQUENCER_Private_function
+ 508:Utilities/sequencer/stm32_seq.c ****  *  @{
+ 509:Utilities/sequencer/stm32_seq.c ****  */
+ 510:Utilities/sequencer/stm32_seq.c **** 
+ 511:Utilities/sequencer/stm32_seq.c **** #if( __CORTEX_M == 0)
+ 512:Utilities/sequencer/stm32_seq.c **** const uint8_t SEQ_clz_table_4bit[16U] = { 4U, 3U, 2U, 2U, 1U, 1U, 1U, 1U, 0U, 0U, 0U, 0U, 0U, 0U, 0
+ 513:Utilities/sequencer/stm32_seq.c **** /**
+ 514:Utilities/sequencer/stm32_seq.c ****  * @brief return the position of the first bit set to 1
+ 515:Utilities/sequencer/stm32_seq.c ****  * @param Value 32 bit value
+ 516:Utilities/sequencer/stm32_seq.c ****  * @retval bit position
+ 517:Utilities/sequencer/stm32_seq.c ****  */
+ 518:Utilities/sequencer/stm32_seq.c **** uint8_t SEQ_BitPosition(uint32_t Value)
+ 519:Utilities/sequencer/stm32_seq.c **** {
+ 849              		.loc 1 519 1 is_stmt 1 view -0
+ 850              		.cfi_startproc
+ 851              		@ args = 0, pretend = 0, frame = 0
+ 852              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 34
+
+
+ 853              		@ link register save eliminated.
+ 520:Utilities/sequencer/stm32_seq.c **** uint8_t n = 0U;
+ 854              		.loc 1 520 1 view .LVU192
+ 521:Utilities/sequencer/stm32_seq.c **** uint32_t lvalue = Value;
+ 855              		.loc 1 521 1 view .LVU193
+ 522:Utilities/sequencer/stm32_seq.c **** 
+ 523:Utilities/sequencer/stm32_seq.c ****   if ((lvalue & 0xFFFF0000U) == 0U)  { n  = 16U; lvalue <<= 16U;  }
+ 856              		.loc 1 523 3 view .LVU194
+ 857              		.loc 1 523 15 is_stmt 0 view .LVU195
+ 858 0000 030C     		lsrs	r3, r0, #16
+ 859 0002 1B04     		lsls	r3, r3, #16
+ 860              		.loc 1 523 6 view .LVU196
+ 861 0004 B3B9     		cbnz	r3, .L42
+ 862              		.loc 1 523 40 is_stmt 1 discriminator 1 view .LVU197
+ 863              	.LVL43:
+ 864              		.loc 1 523 50 discriminator 1 view .LVU198
+ 865              		.loc 1 523 57 is_stmt 0 discriminator 1 view .LVU199
+ 866 0006 0004     		lsls	r0, r0, #16
+ 867              	.LVL44:
+ 868              		.loc 1 523 43 discriminator 1 view .LVU200
+ 869 0008 1023     		movs	r3, #16
+ 870              	.LVL45:
+ 871              	.L39:
+ 524:Utilities/sequencer/stm32_seq.c ****   if ((lvalue & 0xFF000000U) == 0U)  { n +=  8U; lvalue <<=  8U;  }
+ 872              		.loc 1 524 3 is_stmt 1 view .LVU201
+ 873              		.loc 1 524 6 is_stmt 0 view .LVU202
+ 874 000a 10F07F4F 		tst	r0, #-16777216
+ 875 000e 02D1     		bne	.L40
+ 876              		.loc 1 524 40 is_stmt 1 discriminator 1 view .LVU203
+ 877              		.loc 1 524 42 is_stmt 0 discriminator 1 view .LVU204
+ 878 0010 0833     		adds	r3, r3, #8
+ 879              	.LVL46:
+ 880              		.loc 1 524 42 discriminator 1 view .LVU205
+ 881 0012 DBB2     		uxtb	r3, r3
+ 882              	.LVL47:
+ 883              		.loc 1 524 50 is_stmt 1 discriminator 1 view .LVU206
+ 884              		.loc 1 524 57 is_stmt 0 discriminator 1 view .LVU207
+ 885 0014 0002     		lsls	r0, r0, #8
+ 886              	.LVL48:
+ 887              	.L40:
+ 525:Utilities/sequencer/stm32_seq.c ****   if ((lvalue & 0xF0000000U) == 0U)  { n +=  4U; lvalue <<=  4U;  }
+ 888              		.loc 1 525 3 is_stmt 1 view .LVU208
+ 889              		.loc 1 525 6 is_stmt 0 view .LVU209
+ 890 0016 10F0704F 		tst	r0, #-268435456
+ 891 001a 02D1     		bne	.L41
+ 892              		.loc 1 525 40 is_stmt 1 discriminator 1 view .LVU210
+ 893              		.loc 1 525 42 is_stmt 0 discriminator 1 view .LVU211
+ 894 001c 0433     		adds	r3, r3, #4
+ 895              	.LVL49:
+ 896              		.loc 1 525 42 discriminator 1 view .LVU212
+ 897 001e DBB2     		uxtb	r3, r3
+ 898              	.LVL50:
+ 899              		.loc 1 525 50 is_stmt 1 discriminator 1 view .LVU213
+ 900              		.loc 1 525 57 is_stmt 0 discriminator 1 view .LVU214
+ 901 0020 0001     		lsls	r0, r0, #4
+ 902              	.LVL51:
+ 903              	.L41:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 35
+
+
+ 526:Utilities/sequencer/stm32_seq.c **** 
+ 527:Utilities/sequencer/stm32_seq.c ****   n += SEQ_clz_table_4bit[lvalue >> (32-4)];
+ 904              		.loc 1 527 3 is_stmt 1 view .LVU215
+ 905              		.loc 1 527 34 is_stmt 0 view .LVU216
+ 906 0022 000F     		lsrs	r0, r0, #28
+ 907              	.LVL52:
+ 908              		.loc 1 527 26 view .LVU217
+ 909 0024 044A     		ldr	r2, .L43
+ 910 0026 105C     		ldrb	r0, [r2, r0]	@ zero_extendqisi2
+ 911              		.loc 1 527 5 view .LVU218
+ 912 0028 1844     		add	r0, r0, r3
+ 913 002a C0B2     		uxtb	r0, r0
+ 914              	.LVL53:
+ 528:Utilities/sequencer/stm32_seq.c **** 
+ 529:Utilities/sequencer/stm32_seq.c ****   return (uint8_t)(31U-n);
+ 915              		.loc 1 529 3 is_stmt 1 view .LVU219
+ 916              		.loc 1 529 10 is_stmt 0 view .LVU220
+ 917 002c C0F11F00 		rsb	r0, r0, #31
+ 918              	.LVL54:
+ 530:Utilities/sequencer/stm32_seq.c **** }
+ 919              		.loc 1 530 1 view .LVU221
+ 920 0030 C0B2     		uxtb	r0, r0
+ 921 0032 7047     		bx	lr
+ 922              	.LVL55:
+ 923              	.L42:
+ 520:Utilities/sequencer/stm32_seq.c **** uint32_t lvalue = Value;
+ 924              		.loc 1 520 9 view .LVU222
+ 925 0034 0023     		movs	r3, #0
+ 926 0036 E8E7     		b	.L39
+ 927              	.L44:
+ 928              		.align	2
+ 929              	.L43:
+ 930 0038 00000000 		.word	.LANCHOR8
+ 931              		.cfi_endproc
+ 932              	.LFE121:
+ 934              		.section	.text.UTIL_SEQ_Run,"ax",%progbits
+ 935              		.align	1
+ 936              		.global	UTIL_SEQ_Run
+ 937              		.syntax unified
+ 938              		.thumb
+ 939              		.thumb_func
+ 941              	UTIL_SEQ_Run:
+ 942              	.LVL56:
+ 943              	.LFB106:
+ 208:Utilities/sequencer/stm32_seq.c ****   uint32_t counter;
+ 944              		.loc 1 208 1 is_stmt 1 view -0
+ 945              		.cfi_startproc
+ 946              		@ args = 0, pretend = 0, frame = 0
+ 947              		@ frame_needed = 0, uses_anonymous_args = 0
+ 208:Utilities/sequencer/stm32_seq.c ****   uint32_t counter;
+ 948              		.loc 1 208 1 is_stmt 0 view .LVU224
+ 949 0000 38B5     		push	{r3, r4, r5, lr}
+ 950              	.LCFI1:
+ 951              		.cfi_def_cfa_offset 16
+ 952              		.cfi_offset 3, -16
+ 953              		.cfi_offset 4, -12
+ 954              		.cfi_offset 5, -8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 36
+
+
+ 955              		.cfi_offset 14, -4
+ 209:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t current_task_set;
+ 956              		.loc 1 209 3 is_stmt 1 view .LVU225
+ 210:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t super_mask_backup;
+ 957              		.loc 1 210 3 view .LVU226
+ 211:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_taskset;
+ 958              		.loc 1 211 3 view .LVU227
+ 212:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_evtset;
+ 959              		.loc 1 212 3 view .LVU228
+ 213:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_taskmask;
+ 960              		.loc 1 213 3 view .LVU229
+ 214:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t local_evtwaited;
+ 961              		.loc 1 214 3 view .LVU230
+ 215:Utilities/sequencer/stm32_seq.c **** 
+ 962              		.loc 1 215 3 view .LVU231
+ 222:Utilities/sequencer/stm32_seq.c ****   SuperMask &= Mask_bm;
+ 963              		.loc 1 222 3 view .LVU232
+ 222:Utilities/sequencer/stm32_seq.c ****   SuperMask &= Mask_bm;
+ 964              		.loc 1 222 21 is_stmt 0 view .LVU233
+ 965 0002 404B     		ldr	r3, .L56
+ 966 0004 1C68     		ldr	r4, [r3]
+ 967              	.LVL57:
+ 223:Utilities/sequencer/stm32_seq.c **** 
+ 968              		.loc 1 223 3 is_stmt 1 view .LVU234
+ 223:Utilities/sequencer/stm32_seq.c **** 
+ 969              		.loc 1 223 13 is_stmt 0 view .LVU235
+ 970 0006 2040     		ands	r0, r0, r4
+ 971              	.LVL58:
+ 223:Utilities/sequencer/stm32_seq.c **** 
+ 972              		.loc 1 223 13 view .LVU236
+ 973 0008 1860     		str	r0, [r3]
+ 232:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 974              		.loc 1 232 3 is_stmt 1 view .LVU237
+ 232:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 975              		.loc 1 232 17 is_stmt 0 view .LVU238
+ 976 000a 3F4B     		ldr	r3, .L56+4
+ 977 000c 1A68     		ldr	r2, [r3]
+ 978              	.LVL59:
+ 233:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 979              		.loc 1 233 3 is_stmt 1 view .LVU239
+ 233:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 980              		.loc 1 233 16 is_stmt 0 view .LVU240
+ 981 000e 3F4B     		ldr	r3, .L56+8
+ 982 0010 1B68     		ldr	r3, [r3]
+ 983              	.LVL60:
+ 234:Utilities/sequencer/stm32_seq.c ****   local_evtwaited =  EvtWaited;
+ 984              		.loc 1 234 3 is_stmt 1 view .LVU241
+ 234:Utilities/sequencer/stm32_seq.c ****   local_evtwaited =  EvtWaited;
+ 985              		.loc 1 234 18 is_stmt 0 view .LVU242
+ 986 0012 3F49     		ldr	r1, .L56+12
+ 987 0014 0968     		ldr	r1, [r1]
+ 988              	.LVL61:
+ 235:Utilities/sequencer/stm32_seq.c ****   while(((local_taskset & local_taskmask & SuperMask) != 0U) && ((local_evtset & local_evtwaited)==
+ 989              		.loc 1 235 3 is_stmt 1 view .LVU243
+ 235:Utilities/sequencer/stm32_seq.c ****   while(((local_taskset & local_taskmask & SuperMask) != 0U) && ((local_evtset & local_evtwaited)==
+ 990              		.loc 1 235 19 is_stmt 0 view .LVU244
+ 991 0016 3F48     		ldr	r0, .L56+16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 37
+
+
+ 992 0018 0568     		ldr	r5, [r0]
+ 993              	.LVL62:
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 994              		.loc 1 236 3 is_stmt 1 view .LVU245
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 995              		.loc 1 236 8 is_stmt 0 view .LVU246
+ 996 001a 49E0     		b	.L46
+ 997              	.LVL63:
+ 998              	.L47:
+ 999              	.LBB112:
+ 246:Utilities/sequencer/stm32_seq.c ****     }
+ 1000              		.loc 1 246 7 is_stmt 1 view .LVU247
+ 246:Utilities/sequencer/stm32_seq.c ****     }
+ 1001              		.loc 1 246 14 is_stmt 0 view .LVU248
+ 1002 001c 0133     		adds	r3, r3, #1
+ 1003              	.LVL64:
+ 1004              	.L52:
+ 244:Utilities/sequencer/stm32_seq.c ****     {
+ 1005              		.loc 1 244 10 is_stmt 1 view .LVU249
+ 244:Utilities/sequencer/stm32_seq.c ****     {
+ 1006              		.loc 1 244 29 is_stmt 0 view .LVU250
+ 1007 001e 3E4A     		ldr	r2, .L56+20
+ 1008 0020 52F83320 		ldr	r2, [r2, r3, lsl #3]
+ 244:Utilities/sequencer/stm32_seq.c ****     {
+ 1009              		.loc 1 244 39 view .LVU251
+ 1010 0024 0A40     		ands	r2, r2, r1
+ 244:Utilities/sequencer/stm32_seq.c ****     {
+ 1011              		.loc 1 244 10 view .LVU252
+ 1012 0026 0242     		tst	r2, r0
+ 1013 0028 F8D0     		beq	.L47
+ 249:Utilities/sequencer/stm32_seq.c **** 
+ 1014              		.loc 1 249 5 is_stmt 1 view .LVU253
+ 249:Utilities/sequencer/stm32_seq.c **** 
+ 1015              		.loc 1 249 41 is_stmt 0 view .LVU254
+ 1016 002a 3B4D     		ldr	r5, .L56+20
+ 1017              	.LVL65:
+ 249:Utilities/sequencer/stm32_seq.c **** 
+ 1018              		.loc 1 249 41 view .LVU255
+ 1019 002c 55F83320 		ldr	r2, [r5, r3, lsl #3]
+ 249:Utilities/sequencer/stm32_seq.c **** 
+ 1020              		.loc 1 249 51 view .LVU256
+ 1021 0030 0A40     		ands	r2, r2, r1
+ 249:Utilities/sequencer/stm32_seq.c **** 
+ 1022              		.loc 1 249 22 view .LVU257
+ 1023 0032 0240     		ands	r2, r2, r0
+ 1024              	.LVL66:
+ 262:Utilities/sequencer/stm32_seq.c ****     {
+ 1025              		.loc 1 262 5 is_stmt 1 view .LVU258
+ 262:Utilities/sequencer/stm32_seq.c ****     {
+ 1026              		.loc 1 262 27 is_stmt 0 view .LVU259
+ 1027 0034 05EBC305 		add	r5, r5, r3, lsl #3
+ 1028 0038 6968     		ldr	r1, [r5, #4]
+ 1029              	.LVL67:
+ 262:Utilities/sequencer/stm32_seq.c ****     {
+ 1030              		.loc 1 262 8 view .LVU260
+ 1031 003a 1142     		tst	r1, r2
+ 1032 003c 02D1     		bne	.L48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 38
+
+
+ 264:Utilities/sequencer/stm32_seq.c ****     }
+ 1033              		.loc 1 264 7 is_stmt 1 view .LVU261
+ 264:Utilities/sequencer/stm32_seq.c ****     }
+ 1034              		.loc 1 264 37 is_stmt 0 view .LVU262
+ 1035 003e 4FF0FF30 		mov	r0, #-1
+ 1036 0042 6860     		str	r0, [r5, #4]
+ 1037              	.L48:
+ 272:Utilities/sequencer/stm32_seq.c **** 
+ 1038              		.loc 1 272 5 is_stmt 1 view .LVU263
+ 272:Utilities/sequencer/stm32_seq.c **** 
+ 1039              		.loc 1 272 75 is_stmt 0 view .LVU264
+ 1040 0044 344D     		ldr	r5, .L56+20
+ 1041 0046 05EBC305 		add	r5, r5, r3, lsl #3
+ 1042 004a 6868     		ldr	r0, [r5, #4]
+ 272:Utilities/sequencer/stm32_seq.c **** 
+ 1043              		.loc 1 272 23 view .LVU265
+ 1044 004c 1040     		ands	r0, r0, r2
+ 1045 004e FFF7FEFF 		bl	SEQ_BitPosition
+ 1046              	.LVL68:
+ 272:Utilities/sequencer/stm32_seq.c **** 
+ 1047              		.loc 1 272 20 view .LVU266
+ 1048 0052 3249     		ldr	r1, .L56+24
+ 1049 0054 0860     		str	r0, [r1]
+ 277:Utilities/sequencer/stm32_seq.c **** 
+ 1050              		.loc 1 277 5 is_stmt 1 view .LVU267
+ 277:Utilities/sequencer/stm32_seq.c **** 
+ 1051              		.loc 1 277 35 is_stmt 0 view .LVU268
+ 1052 0056 6A68     		ldr	r2, [r5, #4]
+ 277:Utilities/sequencer/stm32_seq.c **** 
+ 1053              		.loc 1 277 43 view .LVU269
+ 1054 0058 0123     		movs	r3, #1
+ 1055 005a 03FA00F0 		lsl	r0, r3, r0
+ 277:Utilities/sequencer/stm32_seq.c **** 
+ 1056              		.loc 1 277 35 view .LVU270
+ 1057 005e 22EA0000 		bic	r0, r2, r0
+ 1058 0062 6860     		str	r0, [r5, #4]
+ 279:Utilities/sequencer/stm32_seq.c ****     /* remove from the list or pending task the one that has been selected to be executed */
+ 1059              		.loc 1 279 5 is_stmt 1 view .LVU271
+ 1060              	.LBB113:
+ 1061              	.LBI113:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1062              		.loc 2 449 31 view .LVU272
+ 1063              	.LBB114:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 1064              		.loc 2 451 3 view .LVU273
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 1065              		.loc 2 453 3 view .LVU274
+ 1066              		.syntax unified
+ 1067              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1068 0064 EFF31085 		MRS r5, primask
+ 1069              	@ 0 "" 2
+ 1070              	.LVL69:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1071              		.loc 2 454 3 view .LVU275
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1072              		.loc 2 454 3 is_stmt 0 view .LVU276
+ 1073              		.thumb
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 39
+
+
+ 1074              		.syntax unified
+ 1075              	.LBE114:
+ 1076              	.LBE113:
+ 279:Utilities/sequencer/stm32_seq.c ****     /* remove from the list or pending task the one that has been selected to be executed */
+ 1077              		.loc 1 279 5 is_stmt 1 view .LVU277
+ 1078              	.LBB115:
+ 1079              	.LBI115:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1080              		.loc 2 207 27 view .LVU278
+ 1081              	.LBB116:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1082              		.loc 2 209 3 view .LVU279
+ 1083              		.syntax unified
+ 1084              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1085 0068 72B6     		cpsid i
+ 1086              	@ 0 "" 2
+ 1087              		.thumb
+ 1088              		.syntax unified
+ 1089              	.LBE116:
+ 1090              	.LBE115:
+ 281:Utilities/sequencer/stm32_seq.c ****     /* remove from all priority mask the task that has been selected to be executed */
+ 1091              		.loc 1 281 5 view .LVU280
+ 281:Utilities/sequencer/stm32_seq.c ****     /* remove from all priority mask the task that has been selected to be executed */
+ 1092              		.loc 1 281 21 is_stmt 0 view .LVU281
+ 1093 006a 0A68     		ldr	r2, [r1]
+ 1094 006c 9340     		lsls	r3, r3, r2
+ 281:Utilities/sequencer/stm32_seq.c ****     /* remove from all priority mask the task that has been selected to be executed */
+ 1095              		.loc 1 281 16 view .LVU282
+ 1096 006e D843     		mvns	r0, r3
+ 281:Utilities/sequencer/stm32_seq.c ****     /* remove from all priority mask the task that has been selected to be executed */
+ 1097              		.loc 1 281 13 view .LVU283
+ 1098 0070 2549     		ldr	r1, .L56+4
+ 1099 0072 0A68     		ldr	r2, [r1]
+ 1100 0074 22EA0303 		bic	r3, r2, r3
+ 1101 0078 0B60     		str	r3, [r1]
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1102              		.loc 1 283 5 is_stmt 1 view .LVU284
+ 1103              	.LVL70:
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1104              		.loc 1 283 18 is_stmt 0 view .LVU285
+ 1105 007a 0223     		movs	r3, #2
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1106              		.loc 1 283 5 view .LVU286
+ 1107 007c 06E0     		b	.L49
+ 1108              	.LVL71:
+ 1109              	.L50:
+ 285:Utilities/sequencer/stm32_seq.c ****     }
+ 1110              		.loc 1 285 7 is_stmt 1 discriminator 3 view .LVU287
+ 285:Utilities/sequencer/stm32_seq.c ****     }
+ 1111              		.loc 1 285 39 is_stmt 0 discriminator 3 view .LVU288
+ 1112 007e 013B     		subs	r3, r3, #1
+ 1113              	.LVL72:
+ 285:Utilities/sequencer/stm32_seq.c ****     }
+ 1114              		.loc 1 285 39 discriminator 3 view .LVU289
+ 1115 0080 2549     		ldr	r1, .L56+20
+ 1116 0082 51F83320 		ldr	r2, [r1, r3, lsl #3]
+ 1117 0086 0240     		ands	r2, r2, r0
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 40
+
+
+ 1118 0088 41F83320 		str	r2, [r1, r3, lsl #3]
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1119              		.loc 1 283 59 is_stmt 1 discriminator 3 view .LVU290
+ 1120              	.LVL73:
+ 1121              	.L49:
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1122              		.loc 1 283 44 discriminator 1 view .LVU291
+ 283:Utilities/sequencer/stm32_seq.c ****     {
+ 1123              		.loc 1 283 5 is_stmt 0 discriminator 1 view .LVU292
+ 1124 008c 002B     		cmp	r3, #0
+ 1125 008e F6D1     		bne	.L50
+ 287:Utilities/sequencer/stm32_seq.c **** 
+ 1126              		.loc 1 287 5 is_stmt 1 view .LVU293
+ 1127              	.LVL74:
+ 1128              	.LBB117:
+ 1129              	.LBI117:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1130              		.loc 2 479 27 view .LVU294
+ 1131              	.LBB118:
+ 1132              		.loc 2 481 3 view .LVU295
+ 1133              		.syntax unified
+ 1134              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1135 0090 85F31088 		MSR primask, r5
+ 1136              	@ 0 "" 2
+ 1137              	.LVL75:
+ 1138              		.loc 2 481 3 is_stmt 0 view .LVU296
+ 1139              		.thumb
+ 1140              		.syntax unified
+ 1141              	.LBE118:
+ 1142              	.LBE117:
+ 290:Utilities/sequencer/stm32_seq.c **** 
+ 1143              		.loc 1 290 5 is_stmt 1 view .LVU297
+ 290:Utilities/sequencer/stm32_seq.c **** 
+ 1144              		.loc 1 290 11 is_stmt 0 view .LVU298
+ 1145 0094 214B     		ldr	r3, .L56+24
+ 1146              	.LVL76:
+ 290:Utilities/sequencer/stm32_seq.c **** 
+ 1147              		.loc 1 290 11 view .LVU299
+ 1148 0096 1A68     		ldr	r2, [r3]
+ 1149 0098 214B     		ldr	r3, .L56+28
+ 1150 009a 53F82230 		ldr	r3, [r3, r2, lsl #2]
+ 290:Utilities/sequencer/stm32_seq.c **** 
+ 1151              		.loc 1 290 5 view .LVU300
+ 1152 009e 9847     		blx	r3
+ 1153              	.LVL77:
+ 292:Utilities/sequencer/stm32_seq.c ****     local_evtset = EvtSet;
+ 1154              		.loc 1 292 5 is_stmt 1 view .LVU301
+ 292:Utilities/sequencer/stm32_seq.c ****     local_evtset = EvtSet;
+ 1155              		.loc 1 292 19 is_stmt 0 view .LVU302
+ 1156 00a0 194B     		ldr	r3, .L56+4
+ 1157 00a2 1A68     		ldr	r2, [r3]
+ 1158              	.LVL78:
+ 293:Utilities/sequencer/stm32_seq.c ****     local_taskmask = TaskMask;
+ 1159              		.loc 1 293 5 is_stmt 1 view .LVU303
+ 293:Utilities/sequencer/stm32_seq.c ****     local_taskmask = TaskMask;
+ 1160              		.loc 1 293 18 is_stmt 0 view .LVU304
+ 1161 00a4 194B     		ldr	r3, .L56+8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 41
+
+
+ 1162 00a6 1B68     		ldr	r3, [r3]
+ 1163              	.LVL79:
+ 294:Utilities/sequencer/stm32_seq.c ****     local_evtwaited = EvtWaited;
+ 1164              		.loc 1 294 5 is_stmt 1 view .LVU305
+ 294:Utilities/sequencer/stm32_seq.c ****     local_evtwaited = EvtWaited;
+ 1165              		.loc 1 294 20 is_stmt 0 view .LVU306
+ 1166 00a8 1949     		ldr	r1, .L56+12
+ 1167 00aa 0968     		ldr	r1, [r1]
+ 1168              	.LVL80:
+ 295:Utilities/sequencer/stm32_seq.c ****   }
+ 1169              		.loc 1 295 5 is_stmt 1 view .LVU307
+ 295:Utilities/sequencer/stm32_seq.c ****   }
+ 1170              		.loc 1 295 21 is_stmt 0 view .LVU308
+ 1171 00ac 1948     		ldr	r0, .L56+16
+ 1172 00ae 0568     		ldr	r5, [r0]
+ 1173              	.LVL81:
+ 1174              	.L46:
+ 295:Utilities/sequencer/stm32_seq.c ****   }
+ 1175              		.loc 1 295 21 view .LVU309
+ 1176              	.LBE112:
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1177              		.loc 1 236 8 is_stmt 1 view .LVU310
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1178              		.loc 1 236 25 is_stmt 0 view .LVU311
+ 1179 00b0 0A40     		ands	r2, r2, r1
+ 1180              	.LVL82:
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1181              		.loc 1 236 42 view .LVU312
+ 1182 00b2 1448     		ldr	r0, .L56
+ 1183 00b4 0068     		ldr	r0, [r0]
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1184              		.loc 1 236 8 view .LVU313
+ 1185 00b6 0242     		tst	r2, r0
+ 1186 00b8 01D0     		beq	.L51
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1187              		.loc 1 236 62 discriminator 1 view .LVU314
+ 1188 00ba 2B40     		ands	r3, r3, r5
+ 1189              	.LVL83:
+ 236:Utilities/sequencer/stm32_seq.c ****   {
+ 1190              		.loc 1 236 62 discriminator 1 view .LVU315
+ 1191 00bc AFD0     		beq	.L52
+ 1192              	.L51:
+ 299:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_PreIdle( );
+ 1193              		.loc 1 299 3 is_stmt 1 view .LVU316
+ 299:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_PreIdle( );
+ 1194              		.loc 1 299 18 is_stmt 0 view .LVU317
+ 1195 00be 174B     		ldr	r3, .L56+24
+ 1196 00c0 4FF0FF32 		mov	r2, #-1
+ 1197 00c4 1A60     		str	r2, [r3]
+ 300:Utilities/sequencer/stm32_seq.c **** 
+ 1198              		.loc 1 300 3 is_stmt 1 view .LVU318
+ 1199 00c6 FFF7FEFF 		bl	UTIL_SEQ_PreIdle
+ 1200              	.LVL84:
+ 302:Utilities/sequencer/stm32_seq.c ****   local_taskset = TaskSet;
+ 1201              		.loc 1 302 3 view .LVU319
+ 1202              	.LBB119:
+ 1203              	.LBI119:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 42
+
+
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1204              		.loc 2 449 31 view .LVU320
+ 1205              	.LBB120:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 1206              		.loc 2 451 3 view .LVU321
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 1207              		.loc 2 453 3 view .LVU322
+ 1208              		.syntax unified
+ 1209              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1210 00ca EFF31085 		MRS r5, primask
+ 1211              	@ 0 "" 2
+ 1212              	.LVL85:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1213              		.loc 2 454 3 view .LVU323
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1214              		.loc 2 454 3 is_stmt 0 view .LVU324
+ 1215              		.thumb
+ 1216              		.syntax unified
+ 1217              	.LBE120:
+ 1218              	.LBE119:
+ 302:Utilities/sequencer/stm32_seq.c ****   local_taskset = TaskSet;
+ 1219              		.loc 1 302 3 is_stmt 1 view .LVU325
+ 1220              	.LBB121:
+ 1221              	.LBI121:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1222              		.loc 2 207 27 view .LVU326
+ 1223              	.LBB122:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1224              		.loc 2 209 3 view .LVU327
+ 1225              		.syntax unified
+ 1226              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1227 00ce 72B6     		cpsid i
+ 1228              	@ 0 "" 2
+ 1229              		.thumb
+ 1230              		.syntax unified
+ 1231              	.LBE122:
+ 1232              	.LBE121:
+ 303:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 1233              		.loc 1 303 3 view .LVU328
+ 303:Utilities/sequencer/stm32_seq.c ****   local_evtset = EvtSet;
+ 1234              		.loc 1 303 17 is_stmt 0 view .LVU329
+ 1235 00d0 0D4B     		ldr	r3, .L56+4
+ 1236 00d2 1B68     		ldr	r3, [r3]
+ 1237              	.LVL86:
+ 304:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 1238              		.loc 1 304 3 is_stmt 1 view .LVU330
+ 304:Utilities/sequencer/stm32_seq.c ****   local_taskmask = TaskMask;
+ 1239              		.loc 1 304 16 is_stmt 0 view .LVU331
+ 1240 00d4 0D4A     		ldr	r2, .L56+8
+ 1241 00d6 1168     		ldr	r1, [r2]
+ 1242              	.LVL87:
+ 305:Utilities/sequencer/stm32_seq.c ****   if ((local_taskset & local_taskmask & SuperMask) == 0U)
+ 1243              		.loc 1 305 3 is_stmt 1 view .LVU332
+ 305:Utilities/sequencer/stm32_seq.c ****   if ((local_taskset & local_taskmask & SuperMask) == 0U)
+ 1244              		.loc 1 305 18 is_stmt 0 view .LVU333
+ 1245 00d8 0D4A     		ldr	r2, .L56+12
+ 1246 00da 1268     		ldr	r2, [r2]
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 43
+
+
+ 1247              	.LVL88:
+ 306:Utilities/sequencer/stm32_seq.c ****   {
+ 1248              		.loc 1 306 3 is_stmt 1 view .LVU334
+ 306:Utilities/sequencer/stm32_seq.c ****   {
+ 1249              		.loc 1 306 22 is_stmt 0 view .LVU335
+ 1250 00dc 1340     		ands	r3, r3, r2
+ 1251              	.LVL89:
+ 306:Utilities/sequencer/stm32_seq.c ****   {
+ 1252              		.loc 1 306 39 view .LVU336
+ 1253 00de 094A     		ldr	r2, .L56
+ 1254              	.LVL90:
+ 306:Utilities/sequencer/stm32_seq.c ****   {
+ 1255              		.loc 1 306 39 view .LVU337
+ 1256 00e0 1268     		ldr	r2, [r2]
+ 306:Utilities/sequencer/stm32_seq.c ****   {
+ 1257              		.loc 1 306 6 view .LVU338
+ 1258 00e2 1342     		tst	r3, r2
+ 1259 00e4 03D1     		bne	.L53
+ 308:Utilities/sequencer/stm32_seq.c ****     {
+ 1260              		.loc 1 308 5 is_stmt 1 view .LVU339
+ 308:Utilities/sequencer/stm32_seq.c ****     {
+ 1261              		.loc 1 308 23 is_stmt 0 view .LVU340
+ 1262 00e6 0B4B     		ldr	r3, .L56+16
+ 1263 00e8 1B68     		ldr	r3, [r3]
+ 308:Utilities/sequencer/stm32_seq.c ****     {
+ 1264              		.loc 1 308 8 view .LVU341
+ 1265 00ea 0B42     		tst	r3, r1
+ 1266 00ec 06D0     		beq	.L55
+ 1267              	.LVL91:
+ 1268              	.L53:
+ 313:Utilities/sequencer/stm32_seq.c **** 
+ 1269              		.loc 1 313 3 is_stmt 1 view .LVU342
+ 1270              	.LBB123:
+ 1271              	.LBI123:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1272              		.loc 2 479 27 view .LVU343
+ 1273              	.LBB124:
+ 1274              		.loc 2 481 3 view .LVU344
+ 1275              		.syntax unified
+ 1276              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1277 00ee 85F31088 		MSR primask, r5
+ 1278              	@ 0 "" 2
+ 1279              	.LVL92:
+ 1280              		.loc 2 481 3 is_stmt 0 view .LVU345
+ 1281              		.thumb
+ 1282              		.syntax unified
+ 1283              	.LBE124:
+ 1284              	.LBE123:
+ 315:Utilities/sequencer/stm32_seq.c **** 
+ 1285              		.loc 1 315 3 is_stmt 1 view .LVU346
+ 1286 00f2 FFF7FEFF 		bl	UTIL_SEQ_PostIdle
+ 1287              	.LVL93:
+ 318:Utilities/sequencer/stm32_seq.c **** 
+ 1288              		.loc 1 318 3 view .LVU347
+ 318:Utilities/sequencer/stm32_seq.c **** 
+ 1289              		.loc 1 318 13 is_stmt 0 view .LVU348
+ 1290 00f6 034B     		ldr	r3, .L56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 44
+
+
+ 1291 00f8 1C60     		str	r4, [r3]
+ 320:Utilities/sequencer/stm32_seq.c **** }
+ 1292              		.loc 1 320 3 is_stmt 1 view .LVU349
+ 321:Utilities/sequencer/stm32_seq.c **** 
+ 1293              		.loc 1 321 1 is_stmt 0 view .LVU350
+ 1294 00fa 38BD     		pop	{r3, r4, r5, pc}
+ 1295              	.LVL94:
+ 1296              	.L55:
+ 310:Utilities/sequencer/stm32_seq.c ****     }
+ 1297              		.loc 1 310 7 is_stmt 1 view .LVU351
+ 1298 00fc FFF7FEFF 		bl	UTIL_SEQ_Idle
+ 1299              	.LVL95:
+ 310:Utilities/sequencer/stm32_seq.c ****     }
+ 1300              		.loc 1 310 7 is_stmt 0 view .LVU352
+ 1301 0100 F5E7     		b	.L53
+ 1302              	.L57:
+ 1303 0102 00BF     		.align	2
+ 1304              	.L56:
+ 1305 0104 00000000 		.word	.LANCHOR2
+ 1306 0108 00000000 		.word	.LANCHOR0
+ 1307 010c 00000000 		.word	.LANCHOR3
+ 1308 0110 00000000 		.word	.LANCHOR1
+ 1309 0114 00000000 		.word	.LANCHOR4
+ 1310 0118 00000000 		.word	.LANCHOR7
+ 1311 011c 00000000 		.word	.LANCHOR5
+ 1312 0120 00000000 		.word	.LANCHOR6
+ 1313              		.cfi_endproc
+ 1314              	.LFE106:
+ 1316              		.section	.text.UTIL_SEQ_EvtIdle,"ax",%progbits
+ 1317              		.align	1
+ 1318              		.weak	UTIL_SEQ_EvtIdle
+ 1319              		.syntax unified
+ 1320              		.thumb
+ 1321              		.thumb_func
+ 1323              	UTIL_SEQ_EvtIdle:
+ 1324              	.LVL96:
+ 1325              	.LFB117:
+ 476:Utilities/sequencer/stm32_seq.c ****   (void)EvtWaited_bm;
+ 1326              		.loc 1 476 1 is_stmt 1 view -0
+ 1327              		.cfi_startproc
+ 1328              		@ args = 0, pretend = 0, frame = 0
+ 1329              		@ frame_needed = 0, uses_anonymous_args = 0
+ 476:Utilities/sequencer/stm32_seq.c ****   (void)EvtWaited_bm;
+ 1330              		.loc 1 476 1 is_stmt 0 view .LVU354
+ 1331 0000 08B5     		push	{r3, lr}
+ 1332              	.LCFI2:
+ 1333              		.cfi_def_cfa_offset 8
+ 1334              		.cfi_offset 3, -8
+ 1335              		.cfi_offset 14, -4
+ 477:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_Run(~TaskId_bm);
+ 1336              		.loc 1 477 3 is_stmt 1 view .LVU355
+ 478:Utilities/sequencer/stm32_seq.c ****   return;
+ 1337              		.loc 1 478 3 view .LVU356
+ 1338 0002 C043     		mvns	r0, r0
+ 1339              	.LVL97:
+ 478:Utilities/sequencer/stm32_seq.c ****   return;
+ 1340              		.loc 1 478 3 is_stmt 0 view .LVU357
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 45
+
+
+ 1341 0004 FFF7FEFF 		bl	UTIL_SEQ_Run
+ 1342              	.LVL98:
+ 479:Utilities/sequencer/stm32_seq.c **** }
+ 1343              		.loc 1 479 3 is_stmt 1 view .LVU358
+ 480:Utilities/sequencer/stm32_seq.c **** 
+ 1344              		.loc 1 480 1 is_stmt 0 view .LVU359
+ 1345 0008 08BD     		pop	{r3, pc}
+ 1346              		.cfi_endproc
+ 1347              	.LFE117:
+ 1349              		.section	.text.UTIL_SEQ_WaitEvt,"ax",%progbits
+ 1350              		.align	1
+ 1351              		.global	UTIL_SEQ_WaitEvt
+ 1352              		.syntax unified
+ 1353              		.thumb
+ 1354              		.thumb_func
+ 1356              	UTIL_SEQ_WaitEvt:
+ 1357              	.LVL99:
+ 1358              	.LFB115:
+ 417:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t event_waited_id_backup;
+ 1359              		.loc 1 417 1 is_stmt 1 view -0
+ 1360              		.cfi_startproc
+ 1361              		@ args = 0, pretend = 0, frame = 0
+ 1362              		@ frame_needed = 0, uses_anonymous_args = 0
+ 417:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t event_waited_id_backup;
+ 1363              		.loc 1 417 1 is_stmt 0 view .LVU361
+ 1364 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 1365              	.LCFI3:
+ 1366              		.cfi_def_cfa_offset 24
+ 1367              		.cfi_offset 3, -24
+ 1368              		.cfi_offset 4, -20
+ 1369              		.cfi_offset 5, -16
+ 1370              		.cfi_offset 6, -12
+ 1371              		.cfi_offset 7, -8
+ 1372              		.cfi_offset 14, -4
+ 1373 0002 0446     		mov	r4, r0
+ 418:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t current_task_idx;
+ 1374              		.loc 1 418 3 is_stmt 1 view .LVU362
+ 419:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_bm_t wait_task_idx;
+ 1375              		.loc 1 419 3 view .LVU363
+ 420:Utilities/sequencer/stm32_seq.c ****   /*
+ 1376              		.loc 1 420 3 view .LVU364
+ 425:Utilities/sequencer/stm32_seq.c ****   if(UTIL_SEQ_NOTASKRUNNING == CurrentTaskIdx)
+ 1377              		.loc 1 425 3 view .LVU365
+ 425:Utilities/sequencer/stm32_seq.c ****   if(UTIL_SEQ_NOTASKRUNNING == CurrentTaskIdx)
+ 1378              		.loc 1 425 20 is_stmt 0 view .LVU366
+ 1379 0004 114B     		ldr	r3, .L66
+ 1380 0006 1E68     		ldr	r6, [r3]
+ 1381              	.LVL100:
+ 426:Utilities/sequencer/stm32_seq.c ****   {
+ 1382              		.loc 1 426 3 is_stmt 1 view .LVU367
+ 426:Utilities/sequencer/stm32_seq.c ****   {
+ 1383              		.loc 1 426 5 is_stmt 0 view .LVU368
+ 1384 0008 B6F1FF3F 		cmp	r6, #-1
+ 1385 000c 05D0     		beq	.L64
+ 432:Utilities/sequencer/stm32_seq.c ****   }
+ 1386              		.loc 1 432 5 is_stmt 1 view .LVU369
+ 432:Utilities/sequencer/stm32_seq.c ****   }
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 46
+
+
+ 1387              		.loc 1 432 19 is_stmt 0 view .LVU370
+ 1388 000e 0125     		movs	r5, #1
+ 1389 0010 B540     		lsls	r5, r5, r6
+ 1390              	.LVL101:
+ 1391              	.L61:
+ 436:Utilities/sequencer/stm32_seq.c ****   EvtWaited = EvtId_bm;
+ 1392              		.loc 1 436 3 is_stmt 1 view .LVU371
+ 436:Utilities/sequencer/stm32_seq.c ****   EvtWaited = EvtId_bm;
+ 1393              		.loc 1 436 26 is_stmt 0 view .LVU372
+ 1394 0012 0F4B     		ldr	r3, .L66+4
+ 1395 0014 1F68     		ldr	r7, [r3]
+ 1396              	.LVL102:
+ 437:Utilities/sequencer/stm32_seq.c ****   /*
+ 1397              		.loc 1 437 3 is_stmt 1 view .LVU373
+ 437:Utilities/sequencer/stm32_seq.c ****   /*
+ 1398              		.loc 1 437 13 is_stmt 0 view .LVU374
+ 1399 0016 1C60     		str	r4, [r3]
+ 447:Utilities/sequencer/stm32_seq.c ****   {
+ 1400              		.loc 1 447 3 is_stmt 1 view .LVU375
+ 447:Utilities/sequencer/stm32_seq.c ****   {
+ 1401              		.loc 1 447 9 is_stmt 0 view .LVU376
+ 1402 0018 05E0     		b	.L62
+ 1403              	.LVL103:
+ 1404              	.L64:
+ 428:Utilities/sequencer/stm32_seq.c ****   }
+ 1405              		.loc 1 428 19 view .LVU377
+ 1406 001a 0025     		movs	r5, #0
+ 1407 001c F9E7     		b	.L61
+ 1408              	.LVL104:
+ 1409              	.L63:
+ 449:Utilities/sequencer/stm32_seq.c ****   }
+ 1410              		.loc 1 449 5 is_stmt 1 view .LVU378
+ 1411 001e 2146     		mov	r1, r4
+ 1412 0020 2846     		mov	r0, r5
+ 1413 0022 FFF7FEFF 		bl	UTIL_SEQ_EvtIdle
+ 1414              	.LVL105:
+ 1415              	.L62:
+ 447:Utilities/sequencer/stm32_seq.c ****   {
+ 1416              		.loc 1 447 9 view .LVU379
+ 447:Utilities/sequencer/stm32_seq.c ****   {
+ 1417              		.loc 1 447 18 is_stmt 0 view .LVU380
+ 1418 0026 0B4B     		ldr	r3, .L66+8
+ 1419 0028 1B68     		ldr	r3, [r3]
+ 447:Utilities/sequencer/stm32_seq.c ****   {
+ 1420              		.loc 1 447 9 view .LVU381
+ 1421 002a 2342     		tst	r3, r4
+ 1422 002c F7D0     		beq	.L63
+ 457:Utilities/sequencer/stm32_seq.c **** 
+ 1423              		.loc 1 457 3 is_stmt 1 view .LVU382
+ 457:Utilities/sequencer/stm32_seq.c **** 
+ 1424              		.loc 1 457 18 is_stmt 0 view .LVU383
+ 1425 002e 074B     		ldr	r3, .L66
+ 1426 0030 1E60     		str	r6, [r3]
+ 459:Utilities/sequencer/stm32_seq.c **** 
+ 1427              		.loc 1 459 3 is_stmt 1 view .LVU384
+ 1428              	.LBB125:
+ 1429              	.LBI125:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 47
+
+
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1430              		.loc 2 449 31 view .LVU385
+ 1431              	.LBB126:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 1432              		.loc 2 451 3 view .LVU386
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 1433              		.loc 2 453 3 view .LVU387
+ 1434              		.syntax unified
+ 1435              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1436 0032 EFF31082 		MRS r2, primask
+ 1437              	@ 0 "" 2
+ 1438              	.LVL106:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1439              		.loc 2 454 3 view .LVU388
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1440              		.loc 2 454 3 is_stmt 0 view .LVU389
+ 1441              		.thumb
+ 1442              		.syntax unified
+ 1443              	.LBE126:
+ 1444              	.LBE125:
+ 459:Utilities/sequencer/stm32_seq.c **** 
+ 1445              		.loc 1 459 3 is_stmt 1 view .LVU390
+ 1446              	.LBB127:
+ 1447              	.LBI127:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1448              		.loc 2 207 27 view .LVU391
+ 1449              	.LBB128:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1450              		.loc 2 209 3 view .LVU392
+ 1451              		.syntax unified
+ 1452              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1453 0036 72B6     		cpsid i
+ 1454              	@ 0 "" 2
+ 1455              		.thumb
+ 1456              		.syntax unified
+ 1457              	.LBE128:
+ 1458              	.LBE127:
+ 461:Utilities/sequencer/stm32_seq.c **** 
+ 1459              		.loc 1 461 3 view .LVU393
+ 461:Utilities/sequencer/stm32_seq.c **** 
+ 1460              		.loc 1 461 10 is_stmt 0 view .LVU394
+ 1461 0038 064B     		ldr	r3, .L66+8
+ 1462 003a 1868     		ldr	r0, [r3]
+ 1463 003c 20EA0404 		bic	r4, r0, r4
+ 1464              	.LVL107:
+ 461:Utilities/sequencer/stm32_seq.c **** 
+ 1465              		.loc 1 461 10 view .LVU395
+ 1466 0040 1C60     		str	r4, [r3]
+ 463:Utilities/sequencer/stm32_seq.c **** 
+ 1467              		.loc 1 463 3 is_stmt 1 view .LVU396
+ 1468              	.LVL108:
+ 1469              	.LBB129:
+ 1470              	.LBI129:
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1471              		.loc 2 479 27 view .LVU397
+ 1472              	.LBB130:
+ 1473              		.loc 2 481 3 view .LVU398
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 48
+
+
+ 1474              		.syntax unified
+ 1475              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1476 0042 82F31088 		MSR primask, r2
+ 1477              	@ 0 "" 2
+ 1478              	.LVL109:
+ 1479              		.loc 2 481 3 is_stmt 0 view .LVU399
+ 1480              		.thumb
+ 1481              		.syntax unified
+ 1482              	.LBE130:
+ 1483              	.LBE129:
+ 465:Utilities/sequencer/stm32_seq.c ****   return;
+ 1484              		.loc 1 465 3 is_stmt 1 view .LVU400
+ 465:Utilities/sequencer/stm32_seq.c ****   return;
+ 1485              		.loc 1 465 13 is_stmt 0 view .LVU401
+ 1486 0046 024B     		ldr	r3, .L66+4
+ 1487 0048 1F60     		str	r7, [r3]
+ 466:Utilities/sequencer/stm32_seq.c **** }
+ 1488              		.loc 1 466 3 is_stmt 1 view .LVU402
+ 467:Utilities/sequencer/stm32_seq.c **** 
+ 1489              		.loc 1 467 1 is_stmt 0 view .LVU403
+ 1490 004a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 1491              	.LVL110:
+ 1492              	.L67:
+ 467:Utilities/sequencer/stm32_seq.c **** 
+ 1493              		.loc 1 467 1 view .LVU404
+ 1494              		.align	2
+ 1495              	.L66:
+ 1496 004c 00000000 		.word	.LANCHOR5
+ 1497 0050 00000000 		.word	.LANCHOR4
+ 1498 0054 00000000 		.word	.LANCHOR3
+ 1499              		.cfi_endproc
+ 1500              	.LFE115:
+ 1502              		.section	.text.UTIL_SEQ_RegTask,"ax",%progbits
+ 1503              		.align	1
+ 1504              		.global	UTIL_SEQ_RegTask
+ 1505              		.syntax unified
+ 1506              		.thumb
+ 1507              		.thumb_func
+ 1509              	UTIL_SEQ_RegTask:
+ 1510              	.LVL111:
+ 1511              	.LFB107:
+ 324:Utilities/sequencer/stm32_seq.c ****   (void)Flags;
+ 1512              		.loc 1 324 1 is_stmt 1 view -0
+ 1513              		.cfi_startproc
+ 1514              		@ args = 0, pretend = 0, frame = 0
+ 1515              		@ frame_needed = 0, uses_anonymous_args = 0
+ 324:Utilities/sequencer/stm32_seq.c ****   (void)Flags;
+ 1516              		.loc 1 324 1 is_stmt 0 view .LVU406
+ 1517 0000 38B5     		push	{r3, r4, r5, lr}
+ 1518              	.LCFI4:
+ 1519              		.cfi_def_cfa_offset 16
+ 1520              		.cfi_offset 3, -16
+ 1521              		.cfi_offset 4, -12
+ 1522              		.cfi_offset 5, -8
+ 1523              		.cfi_offset 14, -4
+ 1524 0002 1446     		mov	r4, r2
+ 325:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION();
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 49
+
+
+ 1525              		.loc 1 325 3 is_stmt 1 view .LVU407
+ 326:Utilities/sequencer/stm32_seq.c **** 
+ 1526              		.loc 1 326 3 view .LVU408
+ 1527              	.LBB131:
+ 1528              	.LBI131:
+ 449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1529              		.loc 2 449 31 view .LVU409
+ 1530              	.LBB132:
+ 451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 1531              		.loc 2 451 3 view .LVU410
+ 453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 1532              		.loc 2 453 3 view .LVU411
+ 1533              		.syntax unified
+ 1534              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1535 0004 EFF31085 		MRS r5, primask
+ 1536              	@ 0 "" 2
+ 1537              	.LVL112:
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1538              		.loc 2 454 3 view .LVU412
+ 454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1539              		.loc 2 454 3 is_stmt 0 view .LVU413
+ 1540              		.thumb
+ 1541              		.syntax unified
+ 1542              	.LBE132:
+ 1543              	.LBE131:
+ 326:Utilities/sequencer/stm32_seq.c **** 
+ 1544              		.loc 1 326 3 is_stmt 1 view .LVU414
+ 1545              	.LBB133:
+ 1546              	.LBI133:
+ 207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1547              		.loc 2 207 27 view .LVU415
+ 1548              	.LBB134:
+ 209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1549              		.loc 2 209 3 view .LVU416
+ 1550              		.syntax unified
+ 1551              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1552 0008 72B6     		cpsid i
+ 1553              	@ 0 "" 2
+ 1554              		.thumb
+ 1555              		.syntax unified
+ 1556              	.LBE134:
+ 1557              	.LBE133:
+ 328:Utilities/sequencer/stm32_seq.c **** 
+ 1558              		.loc 1 328 3 view .LVU417
+ 328:Utilities/sequencer/stm32_seq.c **** 
+ 1559              		.loc 1 328 10 is_stmt 0 view .LVU418
+ 1560 000a FFF7FEFF 		bl	SEQ_BitPosition
+ 1561              	.LVL113:
+ 328:Utilities/sequencer/stm32_seq.c **** 
+ 1562              		.loc 1 328 38 view .LVU419
+ 1563 000e 034B     		ldr	r3, .L70
+ 1564 0010 43F82040 		str	r4, [r3, r0, lsl #2]
+ 330:Utilities/sequencer/stm32_seq.c **** 
+ 1565              		.loc 1 330 3 is_stmt 1 view .LVU420
+ 1566              	.LVL114:
+ 1567              	.LBB135:
+ 1568              	.LBI135:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 50
+
+
+ 479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 1569              		.loc 2 479 27 view .LVU421
+ 1570              	.LBB136:
+ 1571              		.loc 2 481 3 view .LVU422
+ 1572              		.syntax unified
+ 1573              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1574 0014 85F31088 		MSR primask, r5
+ 1575              	@ 0 "" 2
+ 1576              	.LVL115:
+ 1577              		.loc 2 481 3 is_stmt 0 view .LVU423
+ 1578              		.thumb
+ 1579              		.syntax unified
+ 1580              	.LBE136:
+ 1581              	.LBE135:
+ 332:Utilities/sequencer/stm32_seq.c **** }
+ 1582              		.loc 1 332 3 is_stmt 1 view .LVU424
+ 333:Utilities/sequencer/stm32_seq.c **** 
+ 1583              		.loc 1 333 1 is_stmt 0 view .LVU425
+ 1584 0018 38BD     		pop	{r3, r4, r5, pc}
+ 1585              	.LVL116:
+ 1586              	.L71:
+ 333:Utilities/sequencer/stm32_seq.c **** 
+ 1587              		.loc 1 333 1 view .LVU426
+ 1588 001a 00BF     		.align	2
+ 1589              	.L70:
+ 1590 001c 00000000 		.word	.LANCHOR6
+ 1591              		.cfi_endproc
+ 1592              	.LFE107:
+ 1594              		.global	SEQ_clz_table_4bit
+ 1595              		.section	.bss.CurrentTaskIdx,"aw",%nobits
+ 1596              		.align	2
+ 1597              		.set	.LANCHOR5,. + 0
+ 1600              	CurrentTaskIdx:
+ 1601 0000 00000000 		.space	4
+ 1602              		.section	.bss.EvtSet,"aw",%nobits
+ 1603              		.align	2
+ 1604              		.set	.LANCHOR3,. + 0
+ 1607              	EvtSet:
+ 1608 0000 00000000 		.space	4
+ 1609              		.section	.bss.EvtWaited,"aw",%nobits
+ 1610              		.align	2
+ 1611              		.set	.LANCHOR4,. + 0
+ 1614              	EvtWaited:
+ 1615 0000 00000000 		.space	4
+ 1616              		.section	.bss.TaskCb,"aw",%nobits
+ 1617              		.align	2
+ 1618              		.set	.LANCHOR6,. + 0
+ 1621              	TaskCb:
+ 1622 0000 00000000 		.space	128
+ 1622      00000000 
+ 1622      00000000 
+ 1622      00000000 
+ 1622      00000000 
+ 1623              		.section	.bss.TaskPrio,"aw",%nobits
+ 1624              		.align	2
+ 1625              		.set	.LANCHOR7,. + 0
+ 1628              	TaskPrio:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 51
+
+
+ 1629 0000 00000000 		.space	16
+ 1629      00000000 
+ 1629      00000000 
+ 1629      00000000 
+ 1630              		.section	.bss.TaskSet,"aw",%nobits
+ 1631              		.align	2
+ 1632              		.set	.LANCHOR0,. + 0
+ 1635              	TaskSet:
+ 1636 0000 00000000 		.space	4
+ 1637              		.section	.data.SuperMask,"aw"
+ 1638              		.align	2
+ 1639              		.set	.LANCHOR2,. + 0
+ 1642              	SuperMask:
+ 1643 0000 FFFFFFFF 		.word	-1
+ 1644              		.section	.data.TaskMask,"aw"
+ 1645              		.align	2
+ 1646              		.set	.LANCHOR1,. + 0
+ 1649              	TaskMask:
+ 1650 0000 FFFFFFFF 		.word	-1
+ 1651              		.section	.rodata.SEQ_clz_table_4bit,"a"
+ 1652              		.align	2
+ 1653              		.set	.LANCHOR8,. + 0
+ 1656              	SEQ_clz_table_4bit:
+ 1657 0000 04030202 		.ascii	"\004\003\002\002\001\001\001\001\000\000\000\000\000"
+ 1657      01010101 
+ 1657      00000000 
+ 1657      00
+ 1658 000d 000000   		.ascii	"\000\000\000"
+ 1659              		.text
+ 1660              	.Letext0:
+ 1661              		.file 3 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1662              		.file 4 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1663              		.file 5 "Utilities/sequencer/stm32_seq.h"
+ 1664              		.file 6 "<built-in>"
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 52
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32_seq.c
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:20     .text.UTIL_SEQ_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:26     .text.UTIL_SEQ_Init:00000000 UTIL_SEQ_Init
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:105    .text.UTIL_SEQ_Init:00000044 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:117    .text.UTIL_SEQ_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:123    .text.UTIL_SEQ_DeInit:00000000 UTIL_SEQ_DeInit
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:136    .text.UTIL_SEQ_SetTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:142    .text.UTIL_SEQ_SetTask:00000000 UTIL_SEQ_SetTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:220    .text.UTIL_SEQ_SetTask:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:226    .text.UTIL_SEQ_IsSchedulableTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:232    .text.UTIL_SEQ_IsSchedulableTask:00000000 UTIL_SEQ_IsSchedulableTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:325    .text.UTIL_SEQ_IsSchedulableTask:00000028 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:332    .text.UTIL_SEQ_PauseTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:338    .text.UTIL_SEQ_PauseTask:00000000 UTIL_SEQ_PauseTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:409    .text.UTIL_SEQ_PauseTask:00000018 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:414    .text.UTIL_SEQ_IsPauseTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:420    .text.UTIL_SEQ_IsPauseTask:00000000 UTIL_SEQ_IsPauseTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:495    .text.UTIL_SEQ_IsPauseTask:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:500    .text.UTIL_SEQ_ResumeTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:506    .text.UTIL_SEQ_ResumeTask:00000000 UTIL_SEQ_ResumeTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:577    .text.UTIL_SEQ_ResumeTask:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:582    .text.UTIL_SEQ_SetEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:588    .text.UTIL_SEQ_SetEvt:00000000 UTIL_SEQ_SetEvt
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:659    .text.UTIL_SEQ_SetEvt:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:664    .text.UTIL_SEQ_ClrEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:670    .text.UTIL_SEQ_ClrEvt:00000000 UTIL_SEQ_ClrEvt
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:741    .text.UTIL_SEQ_ClrEvt:00000018 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:746    .text.UTIL_SEQ_IsEvtPend:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:752    .text.UTIL_SEQ_IsEvtPend:00000000 UTIL_SEQ_IsEvtPend
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:774    .text.UTIL_SEQ_IsEvtPend:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:780    .text.UTIL_SEQ_Idle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:786    .text.UTIL_SEQ_Idle:00000000 UTIL_SEQ_Idle
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:800    .text.UTIL_SEQ_PreIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:806    .text.UTIL_SEQ_PreIdle:00000000 UTIL_SEQ_PreIdle
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:820    .text.UTIL_SEQ_PostIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:826    .text.UTIL_SEQ_PostIdle:00000000 UTIL_SEQ_PostIdle
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:840    .text.SEQ_BitPosition:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:846    .text.SEQ_BitPosition:00000000 SEQ_BitPosition
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:930    .text.SEQ_BitPosition:00000038 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:935    .text.UTIL_SEQ_Run:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:941    .text.UTIL_SEQ_Run:00000000 UTIL_SEQ_Run
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1305   .text.UTIL_SEQ_Run:00000104 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1317   .text.UTIL_SEQ_EvtIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1323   .text.UTIL_SEQ_EvtIdle:00000000 UTIL_SEQ_EvtIdle
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1350   .text.UTIL_SEQ_WaitEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1356   .text.UTIL_SEQ_WaitEvt:00000000 UTIL_SEQ_WaitEvt
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1496   .text.UTIL_SEQ_WaitEvt:0000004c $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1503   .text.UTIL_SEQ_RegTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1509   .text.UTIL_SEQ_RegTask:00000000 UTIL_SEQ_RegTask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1590   .text.UTIL_SEQ_RegTask:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1656   .rodata.SEQ_clz_table_4bit:00000000 SEQ_clz_table_4bit
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1596   .bss.CurrentTaskIdx:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1600   .bss.CurrentTaskIdx:00000000 CurrentTaskIdx
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1603   .bss.EvtSet:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1607   .bss.EvtSet:00000000 EvtSet
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1610   .bss.EvtWaited:00000000 $d
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 53
+
+
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1614   .bss.EvtWaited:00000000 EvtWaited
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1617   .bss.TaskCb:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1621   .bss.TaskCb:00000000 TaskCb
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1624   .bss.TaskPrio:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1628   .bss.TaskPrio:00000000 TaskPrio
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1631   .bss.TaskSet:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1635   .bss.TaskSet:00000000 TaskSet
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1638   .data.SuperMask:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1642   .data.SuperMask:00000000 SuperMask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1645   .data.TaskMask:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1649   .data.TaskMask:00000000 TaskMask
+C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1652   .rodata.SEQ_clz_table_4bit:00000000 $d
+
+UNDEFINED SYMBOLS
+memset

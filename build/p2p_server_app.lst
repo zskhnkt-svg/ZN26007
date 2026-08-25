@@ -1,0 +1,374 @@
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"p2p_server_app.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.rodata.P2PS_STM_App_Notification.str1.4,"aMS",%progbits,1
+  20              		.align	2
+  21              	.LC0:
+  22 0000 424C453A 		.ascii	"BLE: Notification ENABLED\015\012\000"
+  22      204E6F74 
+  22      69666963 
+  22      6174696F 
+  22      6E20454E 
+  23              		.align	2
+  24              	.LC1:
+  25 001c 424C453A 		.ascii	"BLE: Notification DISABLED\015\012\000"
+  25      204E6F74 
+  25      69666963 
+  25      6174696F 
+  25      6E204449 
+  26              		.section	.text.P2PS_STM_App_Notification,"ax",%progbits
+  27              		.align	1
+  28              		.global	P2PS_STM_App_Notification
+  29              		.syntax unified
+  30              		.thumb
+  31              		.thumb_func
+  33              	P2PS_STM_App_Notification:
+  34              	.LVL0:
+  35              	.LFB1261:
+  36              		.file 1 "STM32_WPAN/App/p2p_server_app.c"
+   1:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN Header */
+   2:STM32_WPAN/App/p2p_server_app.c **** /**
+   3:STM32_WPAN/App/p2p_server_app.c ****   ******************************************************************************
+   4:STM32_WPAN/App/p2p_server_app.c ****   * @file    App/p2p_server_app.c
+   5:STM32_WPAN/App/p2p_server_app.c ****   * @author  MCD Application Team
+   6:STM32_WPAN/App/p2p_server_app.c ****   * @brief   Peer to peer Server Application
+   7:STM32_WPAN/App/p2p_server_app.c ****   ******************************************************************************
+   8:STM32_WPAN/App/p2p_server_app.c ****   * @attention
+   9:STM32_WPAN/App/p2p_server_app.c ****   *
+  10:STM32_WPAN/App/p2p_server_app.c ****   * Copyright (c) 2024 STMicroelectronics.
+  11:STM32_WPAN/App/p2p_server_app.c ****   * All rights reserved.
+  12:STM32_WPAN/App/p2p_server_app.c ****   *
+  13:STM32_WPAN/App/p2p_server_app.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  14:STM32_WPAN/App/p2p_server_app.c ****   * in the root directory of this software component.
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 2
+
+
+  15:STM32_WPAN/App/p2p_server_app.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  16:STM32_WPAN/App/p2p_server_app.c ****   *
+  17:STM32_WPAN/App/p2p_server_app.c ****   ******************************************************************************
+  18:STM32_WPAN/App/p2p_server_app.c ****   */
+  19:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END Header */
+  20:STM32_WPAN/App/p2p_server_app.c **** 
+  21:STM32_WPAN/App/p2p_server_app.c **** /* Includes ------------------------------------------------------------------*/
+  22:STM32_WPAN/App/p2p_server_app.c **** #include "main.h"
+  23:STM32_WPAN/App/p2p_server_app.c **** #include "app_common.h"
+  24:STM32_WPAN/App/p2p_server_app.c **** #include "dbg_trace.h"
+  25:STM32_WPAN/App/p2p_server_app.c **** #include "ble.h"
+  26:STM32_WPAN/App/p2p_server_app.c **** #include "p2p_server_app.h"
+  27:STM32_WPAN/App/p2p_server_app.c **** #include "stm32_seq.h"
+  28:STM32_WPAN/App/p2p_server_app.c **** extern void Dbg_Print(const char *fmt, ...);
+  29:STM32_WPAN/App/p2p_server_app.c **** 
+  30:STM32_WPAN/App/p2p_server_app.c **** /* Private includes ----------------------------------------------------------*/
+  31:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN Includes */
+  32:STM32_WPAN/App/p2p_server_app.c **** 
+  33:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END Includes */
+  34:STM32_WPAN/App/p2p_server_app.c **** 
+  35:STM32_WPAN/App/p2p_server_app.c **** /* Private typedef -----------------------------------------------------------*/
+  36:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PTD */
+  37:STM32_WPAN/App/p2p_server_app.c **** 
+  38:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PTD */
+  39:STM32_WPAN/App/p2p_server_app.c **** 
+  40:STM32_WPAN/App/p2p_server_app.c **** /* Private defines ------------------------------------------------------------*/
+  41:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PD */
+  42:STM32_WPAN/App/p2p_server_app.c **** 
+  43:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PD */
+  44:STM32_WPAN/App/p2p_server_app.c **** 
+  45:STM32_WPAN/App/p2p_server_app.c **** /* Private macros -------------------------------------------------------------*/
+  46:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PM */
+  47:STM32_WPAN/App/p2p_server_app.c **** 
+  48:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PM */
+  49:STM32_WPAN/App/p2p_server_app.c **** 
+  50:STM32_WPAN/App/p2p_server_app.c **** /* Private variables ---------------------------------------------------------*/
+  51:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PV */
+  52:STM32_WPAN/App/p2p_server_app.c **** 
+  53:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PV */
+  54:STM32_WPAN/App/p2p_server_app.c **** 
+  55:STM32_WPAN/App/p2p_server_app.c **** /* Private function prototypes -----------------------------------------------*/
+  56:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PFP */
+  57:STM32_WPAN/App/p2p_server_app.c **** uint8_t led_blink_en = 1;
+  58:STM32_WPAN/App/p2p_server_app.c **** uint8_t Notification_Status = 0;
+  59:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PFP */
+  60:STM32_WPAN/App/p2p_server_app.c **** 
+  61:STM32_WPAN/App/p2p_server_app.c **** /* Functions Definition ------------------------------------------------------*/
+  62:STM32_WPAN/App/p2p_server_app.c **** void P2PS_STM_App_Notification(P2PS_STM_App_Notification_evt_t *pNotification)
+  63:STM32_WPAN/App/p2p_server_app.c **** {
+  37              		.loc 1 63 1 view -0
+  38              		.cfi_startproc
+  39              		@ args = 0, pretend = 0, frame = 0
+  40              		@ frame_needed = 0, uses_anonymous_args = 0
+  41              		.loc 1 63 1 is_stmt 0 view .LVU1
+  42 0000 08B5     		push	{r3, lr}
+  43              	.LCFI0:
+  44              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 3
+
+
+  45              		.cfi_offset 3, -8
+  46              		.cfi_offset 14, -4
+  64:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_App_Notification_1 */
+  65:STM32_WPAN/App/p2p_server_app.c **** 
+  66:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_App_Notification_1 */
+  67:STM32_WPAN/App/p2p_server_app.c ****   switch(pNotification->P2P_Evt_Opcode)
+  47              		.loc 1 67 3 is_stmt 1 view .LVU2
+  48              		.loc 1 67 23 is_stmt 0 view .LVU3
+  49 0002 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+  50              		.loc 1 67 3 view .LVU4
+  51 0004 012B     		cmp	r3, #1
+  52 0006 0AD0     		beq	.L2
+  53 0008 032B     		cmp	r3, #3
+  54 000a 0FD0     		beq	.L3
+  55 000c 03B1     		cbz	r3, .L6
+  56              	.LVL1:
+  57              	.L1:
+  68:STM32_WPAN/App/p2p_server_app.c ****   {
+  69:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_App_Notification_P2P_Evt_Opcode */
+  70:STM32_WPAN/App/p2p_server_app.c **** 
+  71:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_App_Notification_P2P_Evt_Opcode */
+  72:STM32_WPAN/App/p2p_server_app.c **** 
+  73:STM32_WPAN/App/p2p_server_app.c ****     case P2PS_STM__NOTIFY_ENABLED_EVT:
+  74:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM__NOTIFY_ENABLED_EVT */
+  75:STM32_WPAN/App/p2p_server_app.c **** 			Notification_Status = 1;
+  76:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification ENABLED\r\n");
+  77:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM__NOTIFY_ENABLED_EVT */
+  78:STM32_WPAN/App/p2p_server_app.c ****       break;
+  79:STM32_WPAN/App/p2p_server_app.c **** 
+  80:STM32_WPAN/App/p2p_server_app.c ****     case P2PS_STM_NOTIFY_DISABLED_EVT:
+  81:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_NOTIFY_DISABLED_EVT */
+  82:STM32_WPAN/App/p2p_server_app.c **** 			Notification_Status = 0;
+  83:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification DISABLED\r\n");
+  84:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_NOTIFY_DISABLED_EVT */
+  85:STM32_WPAN/App/p2p_server_app.c ****       break;
+  86:STM32_WPAN/App/p2p_server_app.c **** 
+  87:STM32_WPAN/App/p2p_server_app.c ****     case P2PS_STM_WRITE_EVT:
+  88:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_WRITE_EVT */
+  89:STM32_WPAN/App/p2p_server_app.c **** 		led_blink_en = pNotification->DataTransfered.pPayload[0];
+  90:STM32_WPAN/App/p2p_server_app.c **** 		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.
+  91:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_WRITE_EVT */
+  92:STM32_WPAN/App/p2p_server_app.c ****       break;
+  93:STM32_WPAN/App/p2p_server_app.c **** 
+  94:STM32_WPAN/App/p2p_server_app.c ****     default:
+  95:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_App_Notification_default */
+  96:STM32_WPAN/App/p2p_server_app.c **** 
+  97:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_App_Notification_default */
+  98:STM32_WPAN/App/p2p_server_app.c ****       break;
+  99:STM32_WPAN/App/p2p_server_app.c ****   }
+ 100:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_STM_App_Notification_2 */
+ 101:STM32_WPAN/App/p2p_server_app.c **** 
+ 102:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_App_Notification_2 */
+ 103:STM32_WPAN/App/p2p_server_app.c ****   return;
+ 104:STM32_WPAN/App/p2p_server_app.c **** }
+  58              		.loc 1 104 1 view .LVU5
+  59 000e 08BD     		pop	{r3, pc}
+  60              	.LVL2:
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 4
+
+
+  61              	.L6:
+  75:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification ENABLED\r\n");
+  62              		.loc 1 75 4 is_stmt 1 view .LVU6
+  75:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification ENABLED\r\n");
+  63              		.loc 1 75 24 is_stmt 0 view .LVU7
+  64 0010 094B     		ldr	r3, .L7
+  65 0012 0122     		movs	r2, #1
+  66 0014 1A70     		strb	r2, [r3]
+  76:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM__NOTIFY_ENABLED_EVT */
+  67              		.loc 1 76 7 is_stmt 1 view .LVU8
+  68 0016 0948     		ldr	r0, .L7+4
+  69              	.LVL3:
+  76:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM__NOTIFY_ENABLED_EVT */
+  70              		.loc 1 76 7 is_stmt 0 view .LVU9
+  71 0018 FFF7FEFF 		bl	Dbg_Print
+  72              	.LVL4:
+  78:STM32_WPAN/App/p2p_server_app.c **** 
+  73              		.loc 1 78 7 is_stmt 1 view .LVU10
+  74 001c F7E7     		b	.L1
+  75              	.LVL5:
+  76              	.L2:
+  82:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification DISABLED\r\n");
+  77              		.loc 1 82 4 view .LVU11
+  82:STM32_WPAN/App/p2p_server_app.c ****       Dbg_Print("BLE: Notification DISABLED\r\n");
+  78              		.loc 1 82 24 is_stmt 0 view .LVU12
+  79 001e 064B     		ldr	r3, .L7
+  80 0020 0022     		movs	r2, #0
+  81 0022 1A70     		strb	r2, [r3]
+  83:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_NOTIFY_DISABLED_EVT */
+  82              		.loc 1 83 7 is_stmt 1 view .LVU13
+  83 0024 0648     		ldr	r0, .L7+8
+  84              	.LVL6:
+  83:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_NOTIFY_DISABLED_EVT */
+  85              		.loc 1 83 7 is_stmt 0 view .LVU14
+  86 0026 FFF7FEFF 		bl	Dbg_Print
+  87              	.LVL7:
+  85:STM32_WPAN/App/p2p_server_app.c **** 
+  88              		.loc 1 85 7 is_stmt 1 view .LVU15
+  89 002a F0E7     		b	.L1
+  90              	.LVL8:
+  91              	.L3:
+  89:STM32_WPAN/App/p2p_server_app.c **** 		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.
+  92              		.loc 1 89 3 view .LVU16
+  89:STM32_WPAN/App/p2p_server_app.c **** 		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.
+  93              		.loc 1 89 47 is_stmt 0 view .LVU17
+  94 002c 4368     		ldr	r3, [r0, #4]
+  89:STM32_WPAN/App/p2p_server_app.c **** 		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.
+  95              		.loc 1 89 56 view .LVU18
+  96 002e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  89:STM32_WPAN/App/p2p_server_app.c **** 		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.
+  97              		.loc 1 89 16 view .LVU19
+  98 0030 044B     		ldr	r3, .L7+12
+  99 0032 1A70     		strb	r2, [r3]
+  90:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_STM_WRITE_EVT */
+ 100              		.loc 1 90 112 is_stmt 1 view .LVU20
+  92:STM32_WPAN/App/p2p_server_app.c **** 
+ 101              		.loc 1 92 7 view .LVU21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 5
+
+
+ 103:STM32_WPAN/App/p2p_server_app.c **** }
+ 102              		.loc 1 103 3 view .LVU22
+ 103 0034 EBE7     		b	.L1
+ 104              	.L8:
+ 105 0036 00BF     		.align	2
+ 106              	.L7:
+ 107 0038 00000000 		.word	.LANCHOR0
+ 108 003c 00000000 		.word	.LC0
+ 109 0040 1C000000 		.word	.LC1
+ 110 0044 00000000 		.word	.LANCHOR1
+ 111              		.cfi_endproc
+ 112              	.LFE1261:
+ 114              		.section	.text.P2PS_APP_Notification,"ax",%progbits
+ 115              		.align	1
+ 116              		.global	P2PS_APP_Notification
+ 117              		.syntax unified
+ 118              		.thumb
+ 119              		.thumb_func
+ 121              	P2PS_APP_Notification:
+ 122              	.LVL9:
+ 123              	.LFB1262:
+ 105:STM32_WPAN/App/p2p_server_app.c **** 
+ 106:STM32_WPAN/App/p2p_server_app.c **** void P2PS_APP_Notification(P2PS_APP_ConnHandle_Not_evt_t *pNotification)
+ 107:STM32_WPAN/App/p2p_server_app.c **** {
+ 124              		.loc 1 107 1 view -0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
+ 108:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_APP_Notification_1 */
+ 109:STM32_WPAN/App/p2p_server_app.c **** 
+ 110:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_APP_Notification_1 */
+ 111:STM32_WPAN/App/p2p_server_app.c ****   switch(pNotification->P2P_Evt_Opcode)
+ 129              		.loc 1 111 3 view .LVU24
+ 112:STM32_WPAN/App/p2p_server_app.c ****   {
+ 113:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_APP_Notification_P2P_Evt_Opcode */
+ 114:STM32_WPAN/App/p2p_server_app.c **** 
+ 115:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_APP_Notification_P2P_Evt_Opcode */
+ 116:STM32_WPAN/App/p2p_server_app.c ****   case PEER_CONN_HANDLE_EVT :
+ 117:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PEER_CONN_HANDLE_EVT */
+ 118:STM32_WPAN/App/p2p_server_app.c **** 
+ 119:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PEER_CONN_HANDLE_EVT */
+ 120:STM32_WPAN/App/p2p_server_app.c ****     break;
+ 121:STM32_WPAN/App/p2p_server_app.c **** 
+ 122:STM32_WPAN/App/p2p_server_app.c ****     case PEER_DISCON_HANDLE_EVT :
+ 123:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN PEER_DISCON_HANDLE_EVT */
+ 124:STM32_WPAN/App/p2p_server_app.c **** 
+ 125:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END PEER_DISCON_HANDLE_EVT */
+ 126:STM32_WPAN/App/p2p_server_app.c ****     break;
+ 127:STM32_WPAN/App/p2p_server_app.c **** 
+ 128:STM32_WPAN/App/p2p_server_app.c ****     default:
+ 129:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_APP_Notification_default */
+ 130:STM32_WPAN/App/p2p_server_app.c **** 
+ 131:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_APP_Notification_default */
+ 132:STM32_WPAN/App/p2p_server_app.c ****       break;
+ 133:STM32_WPAN/App/p2p_server_app.c ****   }
+ 134:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_APP_Notification_2 */
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 6
+
+
+ 135:STM32_WPAN/App/p2p_server_app.c **** 
+ 136:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_APP_Notification_2 */
+ 137:STM32_WPAN/App/p2p_server_app.c ****   return;
+ 130              		.loc 1 137 3 view .LVU25
+ 138:STM32_WPAN/App/p2p_server_app.c **** }
+ 131              		.loc 1 138 1 is_stmt 0 view .LVU26
+ 132 0000 7047     		bx	lr
+ 133              		.cfi_endproc
+ 134              	.LFE1262:
+ 136              		.section	.text.P2PS_APP_Init,"ax",%progbits
+ 137              		.align	1
+ 138              		.global	P2PS_APP_Init
+ 139              		.syntax unified
+ 140              		.thumb
+ 141              		.thumb_func
+ 143              	P2PS_APP_Init:
+ 144              	.LFB1263:
+ 139:STM32_WPAN/App/p2p_server_app.c **** 
+ 140:STM32_WPAN/App/p2p_server_app.c **** void P2PS_APP_Init(void)
+ 141:STM32_WPAN/App/p2p_server_app.c **** {
+ 145              		.loc 1 141 1 is_stmt 1 view -0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 142:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE BEGIN P2PS_APP_Init */
+ 143:STM32_WPAN/App/p2p_server_app.c **** 
+ 144:STM32_WPAN/App/p2p_server_app.c **** /* USER CODE END P2PS_APP_Init */
+ 145:STM32_WPAN/App/p2p_server_app.c ****   return;
+ 150              		.loc 1 145 3 view .LVU28
+ 146:STM32_WPAN/App/p2p_server_app.c **** }
+ 151              		.loc 1 146 1 is_stmt 0 view .LVU29
+ 152 0000 7047     		bx	lr
+ 153              		.cfi_endproc
+ 154              	.LFE1263:
+ 156              		.global	Notification_Status
+ 157              		.global	led_blink_en
+ 158              		.section	.bss.Notification_Status,"aw",%nobits
+ 159              		.set	.LANCHOR0,. + 0
+ 162              	Notification_Status:
+ 163 0000 00       		.space	1
+ 164              		.section	.data.led_blink_en,"aw"
+ 165              		.set	.LANCHOR1,. + 0
+ 168              	led_blink_en:
+ 169 0000 01       		.byte	1
+ 170              		.text
+ 171              	.Letext0:
+ 172              		.file 2 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 173              		.file 3 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 174              		.file 4 "Core/Inc/app_conf.h"
+ 175              		.file 5 "Middlewares/ST/STM32_WPAN/ble/svc/Inc/p2p_stm.h"
+ 176              		.file 6 "STM32_WPAN/App/p2p_server_app.h"
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 p2p_server_app.c
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:20     .rodata.P2PS_STM_App_Notification.str1.4:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:27     .text.P2PS_STM_App_Notification:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:33     .text.P2PS_STM_App_Notification:00000000 P2PS_STM_App_Notification
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:107    .text.P2PS_STM_App_Notification:00000038 $d
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:115    .text.P2PS_APP_Notification:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:121    .text.P2PS_APP_Notification:00000000 P2PS_APP_Notification
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:137    .text.P2PS_APP_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:143    .text.P2PS_APP_Init:00000000 P2PS_APP_Init
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:162    .bss.Notification_Status:00000000 Notification_Status
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:168    .data.led_blink_en:00000000 led_blink_en
+C:\Users\843E~1\AppData\Local\Temp\ccgo7oKh.s:163    .bss.Notification_Status:00000000 $d
+
+UNDEFINED SYMBOLS
+Dbg_Print

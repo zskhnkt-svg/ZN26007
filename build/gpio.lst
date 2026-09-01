@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
   28:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   29:Core/Src/gpio.c **** /* Configure GPIO                                                             */
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 2
 
 
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
   12:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * This software is licensed under terms that can be found in the LICENSE file
   13:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * in the root directory of this software component.
   14:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * If no LICENSE file comes with this software, it is provided AS-IS.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 3
 
 
   15:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
   69:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
   70:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
   71:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_AHB1_GRP1_PERIPH  AHB1 GRP1 PERIPH
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 4
 
 
   72:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB3_GRP1_PERIPH_FLASH          RCC_AHB3ENR_FLASHEN
  127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
  128:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 5
 
 
  129:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_USART1         RCC_APB2ENR_USART1EN
  184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(TIM16)
  185:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_TIM16          RCC_APB2ENR_TIM16EN
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 6
 
 
  186:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* TIM16 */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  240:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_AES1         RCC_C2AHB2ENR_AES1EN
  241:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* AES1 */
  242:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 7
 
 
  243:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  297:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_C2_APB2_GRP1_PERIPH  C2 APB2 GRP1 PERIPH
  298:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
  299:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 8
 
 
  300:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(ADC_SUPPORT_2_5_MSPS)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  354:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1ENR      TSCEN         LL_AHB1_GRP1_EnableClock
  355:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
  356:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 9
 
 
  357:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA2 (*)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  411:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  412:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB1ENR, Periphs);
  413:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 10
 
 
  414:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  468:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA1
  469:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA2 (*)
  470:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMAMUX1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 11
 
 
  471:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_SRAM1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  525:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      ADCEN         LL_AHB2_GRP1_EnableClock\n
  526:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      AES1EN        LL_AHB2_GRP1_EnableClock
  527:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 12
 
 
  528:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOA
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
   85              		.loc 2 544 12 is_stmt 0 view .LVU17
   86 002e DA6C     		ldr	r2, [r3, #76]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 13
 
 
   87 0030 02F00202 		and	r2, r2, #2
@@ -762,23 +762,23 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  117              	.LBE12:
   51:Core/Src/gpio.c **** 
   52:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
-  53:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+  53:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4|GPIO_PIN_10, GPIO_PIN_RESET);
  118              		.loc 1 53 3 is_stmt 1 view .LVU30
  119 004a 2246     		mov	r2, r4
- 120 004c 4FF48061 		mov	r1, #1024
+ 120 004c 4FF48261 		mov	r1, #1040
  121 0050 4FF09040 		mov	r0, #1207959552
  122 0054 FFF7FEFF 		bl	HAL_GPIO_WritePin
  123              	.LVL4:
   54:Core/Src/gpio.c **** 
-  55:Core/Src/gpio.c ****   /*Configure GPIO pin : PA10 */
-  56:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_10;
+  55:Core/Src/gpio.c ****   /*Configure GPIO pins : PA4 PA10 */
+  56:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_10;
  124              		.loc 1 56 3 view .LVU31
  125              		.loc 1 56 23 is_stmt 0 view .LVU32
- 126 0058 4FF48063 		mov	r3, #1024
+ 126 0058 4FF48263 		mov	r3, #1040
  127 005c 0393     		str	r3, [sp, #12]
   57:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
  128              		.loc 1 57 3 is_stmt 1 view .LVU33
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 14
 
 
  129              		.loc 1 57 24 is_stmt 0 view .LVU34
@@ -814,13 +814,13 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 1
  155              		.file 4 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
  156              		.file 5 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h"
  157              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s:20     .text.MX_GPIO_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccGOZcsA.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s:20     .text.MX_GPIO_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc8G2q6H.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

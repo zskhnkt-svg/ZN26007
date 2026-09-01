@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     [..]
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       The PCD HAL driver can be used as follows:
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 2
 
 
   31:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****      (#) Declare a PCD_HandleTypeDef handle structure, for example:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
   85:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** /* Private functions prototypes ----------------------------------------------*/
   86:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** /** @defgroup PCD_Private_Functions PCD Private Functions
   87:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @{
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 3
 
 
   88:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  142:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->SOFCallback = HAL_PCD_SOFCallback;
  144:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->SetupStageCallback = HAL_PCD_SetupStageCallback;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 4
 
 
  145:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->ResetCallback = HAL_PCD_ResetCallback;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  199:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* Init Device */
  200:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   (void)USB_DevInit(hpcd->Instance, hpcd->Init);
  201:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 5
 
 
  202:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   hpcd->USB_Address = 0U;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  256:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval None
  257:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
  258:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** __weak void HAL_PCD_MspInit(PCD_HandleTypeDef *hpcd)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 6
 
 
  259:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  313:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  314:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* Process locked */
  315:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_LOCK(hpcd);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 7
 
 
  316:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  370:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         hpcd->MspInitCallback = pCallback;
  371:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         break;
  372:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 8
 
 
  373:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       case HAL_PCD_MSPDEINIT_CB_ID :
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  427:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       case HAL_PCD_SOF_CB_ID :
  428:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         hpcd->SOFCallback = HAL_PCD_SOFCallback;
  429:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         break;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 9
 
 
  430:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  484:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       default :
  485:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         /* Update the error code */
  486:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         hpcd->ErrorCode |= HAL_PCD_ERROR_INVALID_CALLBACK;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 10
 
 
  487:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  541:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  542:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  543:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* Release Lock */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 11
 
 
  544:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_UNLOCK(hpcd);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  598:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     return HAL_ERROR;
  599:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  600:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 12
 
 
  601:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* Process locked */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  655:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** /**
  656:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @brief  Register USB PCD Iso OUT incomplete Callback
  657:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   *         To be used instead of the weak HAL_PCD_ISOOUTIncompleteCallback() predefined callback
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 13
 
 
  658:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  hpcd PCD handle
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  712:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
  713:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->ISOOUTIncompleteCallback = HAL_PCD_ISOOUTIncompleteCallback; /* Legacy weak ISOOUTIncompl
  714:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 14
 
 
  715:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   else
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  769:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   return status;
  770:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** }
  771:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 15
 
 
  772:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** /**
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  826:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  827:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   if (hpcd->State == HAL_PCD_STATE_READY)
  828:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 16
 
 
  829:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->BCDCallback = pCallback;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  883:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval HAL status
  884:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
  885:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** HAL_StatusTypeDef HAL_PCD_RegisterLpmCallback(PCD_HandleTypeDef *hpcd, pPCD_LpmCallbackTypeDef pCal
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 17
 
 
  886:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  940:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  941:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     /* Return error status */
  942:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     status =  HAL_ERROR;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 18
 
 
  943:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  997:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  998:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   return HAL_OK;
  999:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 19
 
 
 1000:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1054:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     if (hpcd->LPM_State == LPM_L1)
 1055:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     {
 1056:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       hpcd->LPM_State = LPM_L0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 20
 
 
 1057:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1111:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
 1112:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     else
 1113:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 21
 
 
 1114:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1168:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval None
 1169:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
 1170:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** __weak void HAL_PCD_DataInStageCallback(PCD_HandleTypeDef *hpcd, uint8_t epnum)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 22
 
 
 1171:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** {
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1225:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** /**
 1226:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @brief  Suspend event callback.
 1227:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  hpcd PCD handle
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 23
 
 
 1228:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval None
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1282:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   UNUSED(epnum);
 1283:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 1284:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* NOTE : This function should not be modified, when the callback is needed,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 24
 
 
 1285:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             the HAL_PCD_ISOINIncompleteCallback could be implemented in the user file
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1339:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @brief  Connect the USB device
 1340:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  hpcd PCD handle
 1341:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval HAL status
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 25
 
 
 1342:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1396:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
 1397:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     ep = &hpcd->IN_ep[ep_addr & EP_ADDR_MSK];
 1398:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     ep->is_in = 1U;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 26
 
 
 1399:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1453:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @brief  Receive an amount of data.
 1454:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  hpcd PCD handle
 1455:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  ep_addr endpoint address
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 27
 
 
 1456:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  pBuf pointer to the reception buffer
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1510:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 1511:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   (void)USB_EPStartXfer(hpcd->Instance, ep);
 1512:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 28
 
 
 1513:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   return HAL_OK;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1567:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
 1568:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 1569:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   if ((0x80U & ep_addr) == 0x80U)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 29
 
 
 1570:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1624:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_LOCK(hpcd);
 1625:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 1626:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   if ((ep_addr & 0x80U) == 0x80U)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 30
 
 
 1627:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1681:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @param  hpcd PCD handle
 1682:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   * @retval HAL state
 1683:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 31
 
 
 1684:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** PCD_StateTypeDef HAL_PCD_GetState(PCD_HandleTypeDef const *hpcd)
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1738:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         /* DIR = 0 => IN  int */
 1739:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         /* DIR = 0 implies that (EP_CTR_TX = 1) always */
 1740:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         PCD_CLEAR_TX_EP_CTR(hpcd->Instance, PCD_ENDP0);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 32
 
 
 1741:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         ep = &hpcd->IN_ep[0];
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1795:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             USB_ReadPMA(hpcd->Instance, ep->xfer_buff,
 1796:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****                         ep->pmaadress, (uint16_t)ep->xfer_count);
 1797:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 33
 
 
 1798:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             ep->xfer_buff += ep->xfer_count;
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1852:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 1853:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             if ((PCD_GET_ENDPOINT(hpcd->Instance, ep->num) & USB_EP_DTOG_RX) != 0U)
 1854:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 34
 
 
 1855:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****               /* read from endpoint BUF0Addr buffer */
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1909:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           {
 1910:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             if ((wEPVal & USB_EP_DTOG_TX) != 0U)
 1911:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 35
 
 
 1912:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****               PCD_SET_EP_DBUF0_CNT(hpcd->Instance, ep->num, ep->is_in, 0U);
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1966:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           {
 1967:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             (void)HAL_PCD_EP_DB_Transmit(hpcd, ep, wEPVal);
 1968:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 36
 
 
 1969:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #endif /* (USE_USB_DOUBLE_BUFFER == 1U) */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
   55              		.loc 1 1996 11 view .LVU7
   56 0020 C4F30904 		ubfx	r4, r4, #0, #10
   57              	.LVL1:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 37
 
 
 1997:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
   98              		.loc 1 2010 7 is_stmt 1 discriminator 7 view .LVU25
 2011:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
 2012:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 38
 
 
 2013:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     /* Check if Buffer1 is in blocked state which requires to toggle */
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2032:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       ep->xfer_len -= count;
 2033:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
 2034:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     else
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 39
 
 
 2035:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     {
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  159              	.LVL14:
  160              	.L2:
 2028:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 40
 
 
  161              		.loc 1 2028 5 is_stmt 1 view .LVU48
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  200              		.loc 1 2042 7 view .LVU63
 2042:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
  201              		.loc 1 2042 7 view .LVU64
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 41
 
 
  202 00ca 83F40053 		eor	r3, r3, #8192
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  241              	.L11:
 2048:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
  242              		.loc 1 2048 7 discriminator 6 view .LVU80
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 42
 
 
 2048:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     }
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  288              		.cfi_endproc
  289              	.LFE952:
  291              		.section	.text.HAL_PCD_Init,"ax",%progbits
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 43
 
 
  292              		.align	1
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  176:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
  334              		.loc 1 176 10 is_stmt 0 view .LVU105
  335 001a 0023     		movs	r3, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 44
 
 
  176:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  185:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  373              		.loc 1 185 29 discriminator 3 view .LVU123
  374 0040 03EB8302 		add	r2, r3, r3, lsl #2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 45
 
 
  375              	.LVL34:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  195:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->OUT_ep[i].xfer_len = 0U;
  413              		.loc 1 195 5 is_stmt 1 discriminator 3 view .LVU140
  195:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->OUT_ep[i].xfer_len = 0U;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 46
 
 
  414              		.loc 1 195 31 is_stmt 0 discriminator 3 view .LVU141
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  206:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
  452              		.loc 1 206 17 is_stmt 0 view .LVU158
  453 009e A37A     		ldrb	r3, [r4, #10]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 47
 
 
  206:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  276:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  501              		.loc 1 276 3 view .LVU168
  281:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 48
 
 
  502              		.loc 1 281 1 is_stmt 0 view .LVU169
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  547              		.loc 1 232 12 view .LVU180
  548 0016 0125     		movs	r5, #1
  549              	.LVL51:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 49
 
 
  550              	.L32:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  595 0008 10B5     		push	{r4, lr}
  596              	.LCFI4:
  597              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 50
 
 
  598              		.cfi_offset 4, -8
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  640              		.global	HAL_PCD_Stop
  641              		.syntax unified
  642              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 51
 
 
  643              		.thumb_func
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  684              		.loc 1 998 3 discriminator 2 view .LVU218
  999:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  685              		.loc 1 999 1 is_stmt 0 discriminator 2 view .LVU219
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 52
 
 
  686 0024 10BD     		pop	{r4, pc}
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  737              		@ link register save eliminated.
 1173:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   UNUSED(epnum);
  738              		.loc 1 1173 3 view .LVU227
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 53
 
 
 1174:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2077:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     /* multi-packet on the NON control IN endpoint */
 2078:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     TxPctSize = (uint16_t)PCD_GET_EP_DBUF0_CNT(hpcd->Instance, ep->num);
  775              		.loc 1 2078 5 is_stmt 1 view .LVU236
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 54
 
 
  776              		.loc 1 2078 27 is_stmt 0 view .LVU237
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  816              	.LBB6:
  817              		.loc 1 2092 7 discriminator 1 view .LVU253
  818 003e 2A68     		ldr	r2, [r5]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 55
 
 
  819              	.LVL74:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  872              	.LVL81:
  873              		.loc 1 2093 7 discriminator 1 view .LVU275
  874              	.LBB10:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 56
 
 
  875              		.loc 1 2093 7 discriminator 1 view .LVU276
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  918              		.loc 1 2104 9 discriminator 4 view .LVU292
  919 00bc 43F44043 		orr	r3, r3, #49152
  920              	.LVL85:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 57
 
 
  921              		.loc 1 2104 9 is_stmt 0 discriminator 4 view .LVU293
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  963              		.loc 1 2093 7 discriminator 16 view .LVU306
  964 00ec B1F85030 		ldrh	r3, [r1, #80]
  965 00f0 11FA83F3 		uxtah	r3, r1, r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 58
 
 
  966              	.LVL91:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2115:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       /* Still there is data to Fill in the next Buffer */
 2116:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       if (ep->xfer_fill_db == 1U)
  1007              		.loc 1 2116 7 discriminator 6 view .LVU323
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 59
 
 
  1008              		.loc 1 2116 13 is_stmt 0 discriminator 6 view .LVU324
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2164:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     {
 2165:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       PCD_SET_EP_DBUF0_CNT(hpcd->Instance, ep->num, ep->is_in, 0U);
 2166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       PCD_SET_EP_DBUF1_CNT(hpcd->Instance, ep->num, ep->is_in, 0U);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 60
 
 
 2167:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2221:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
 2222:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /*enable endpoint IN*/
 2223:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   PCD_SET_EP_TX_STATUS(hpcd->Instance, ep->num, USB_EP_TX_VALID);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 61
 
 
  1015              		.loc 1 2223 3 is_stmt 1 view .LVU326
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1059              		.loc 1 2122 34 view .LVU344
  1060 0160 2369     		ldr	r3, [r4, #16]
 2122:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 62
 
 
  1061              		.loc 1 2122 12 view .LVU345
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1100 018c 3E2B     		cmp	r3, #62
  1101 018e 1BD9     		bls	.L68
 2141:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 63
 
 
  1102              		.loc 1 2141 9 discriminator 3 view .LVU361
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1143              	.L66:
 2134:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           len = ep->xfer_len_db;
  1144              		.loc 1 2134 11 is_stmt 1 view .LVU375
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 64
 
 
 2134:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           len = ep->xfer_len_db;
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1186              		.loc 1 2141 9 is_stmt 0 discriminator 14 view .LVU388
  1187 01f0 89B2     		uxth	r1, r1
  1188 01f2 0143     		orrs	r1, r1, r0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 65
 
 
  1189 01f4 A2F80214 		strh	r1, [r2, #1026]	@ movhi
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1231 0222 ECE7     		b	.L70
  1232              	.LVL124:
  1233              	.L54:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 66
 
 
 2141:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2165:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       PCD_SET_EP_DBUF1_CNT(hpcd->Instance, ep->num, ep->is_in, 0U);
  1272              		.loc 1 2165 7 view .LVU417
  1273 024c 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 67
 
 
  1274 024e 002B     		cmp	r3, #0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1313              		.loc 1 2166 7 discriminator 18 view .LVU433
  1314              	.LBB23:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 68
 
 
 2166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1354              	.LBE25:
  1355              	.LBE24:
  1356              	.LBE23:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 69
 
 
 2166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1396 02e4 AFE7     		b	.L74
  1397              	.L76:
 2165:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       PCD_SET_EP_DBUF1_CNT(hpcd->Instance, ep->num, ep->is_in, 0U);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 70
 
 
  1398              		.loc 1 2165 7 is_stmt 1 discriminator 2 view .LVU464
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1440              	.LVL150:
  1441              	.L75:
 2166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 71
 
 
  1442              		.loc 1 2166 7 is_stmt 0 discriminator 16 view .LVU477
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2192:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         ep->xfer_count += TxPctSize;
  1479              		.loc 1 2192 23 is_stmt 0 view .LVU495
  1480 0344 6369     		ldr	r3, [r4, #20]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 72
 
 
  1481 0346 1344     		add	r3, r3, r2
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2214:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1519              		.loc 1 2214 9 discriminator 1 view .LVU512
 2214:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 73
 
 
  1520              		.loc 1 2214 9 discriminator 1 view .LVU513
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 2214:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1562              		.loc 1 2214 9 is_stmt 1 discriminator 7 view .LVU526
  1563 03a0 26E0     		b	.L87
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 74
 
 
  1564              	.LVL164:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1603 03bc B2F80614 		ldrh	r1, [r2, #1030]
  1604 03c0 6FEA4141 		mvn	r1, r1, lsl #17
  1605 03c4 6FEA5141 		mvn	r1, r1, lsr #17
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 75
 
 
  1606 03c8 89B2     		uxth	r1, r1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1648 03f2 6289     		ldrh	r2, [r4, #10]
  1649 03f4 6169     		ldr	r1, [r4, #20]
  1650 03f6 2868     		ldr	r0, [r5]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 76
 
 
  1651 03f8 FFF7FEFF 		bl	USB_WritePMA
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1709:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   PCD_EPTypeDef *ep;
  1703              		.loc 1 1709 1 is_stmt 1 view -0
  1704              		.cfi_startproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 77
 
 
  1705              		@ args = 0, pretend = 0, frame = 0
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1742              		.loc 1 1729 8 is_stmt 0 view .LVU577
  1743 001a 14F00F04 		ands	r4, r4, #15
  1744              	.LVL182:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 78
 
 
 1729:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     {
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1788:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1783              		.loc 1 1788 11 is_stmt 1 view .LVU594
 1791:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 79
 
 
  1784              		.loc 1 1791 11 view .LVU595
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1824 008e 2A68     		ldr	r2, [r5]
 1808:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1825              		.loc 1 1808 18 view .LVU610
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 80
 
 
  1826 0090 1388     		ldrh	r3, [r2]
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1864 00c0 5909     		lsrs	r1, r3, #5
  1865              	.LVL196:
 1812:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             PCD_SET_EP_RX_STATUS(hpcd->Instance, PCD_ENDP0, USB_EP_RX_VALID);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 81
 
 
  1866              		.loc 1 1812 13 discriminator 1 view .LVU627
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1905              		.loc 1 1813 13 discriminator 13 view .LVU642
  1906 00ec 83F44053 		eor	r3, r3, #12288
  1907              	.LVL201:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 82
 
 
 1813:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           }
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  1949 0124 B3F80234 		ldrh	r3, [r3, #1026]
  1950 0128 C3F30903 		ubfx	r3, r3, #0, #10
 1743:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****         ep->xfer_buff += ep->xfer_count;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 83
 
 
  1951              		.loc 1 1743 24 view .LVU656
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1771:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  1990              		.loc 1 1771 28 is_stmt 0 view .LVU672
  1991 015e B0F85030 		ldrh	r3, [r0, #80]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 84
 
 
  1992 0162 95F85021 		ldrb	r2, [r5, #336]	@ zero_extendqisi2
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1812:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             PCD_SET_EP_RX_STATUS(hpcd->Instance, PCD_ENDP0, USB_EP_RX_VALID);
  2035              		.loc 1 1812 13 discriminator 7 view .LVU684
  2036 01a2 B2F80634 		ldrh	r3, [r2, #1030]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 85
 
 
  2037 01a6 6FEA4343 		mvn	r3, r3, lsl #17
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2079              		.loc 1 1896 7 is_stmt 1 view .LVU696
 1896:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****       {
  2080              		.loc 1 1896 10 is_stmt 0 view .LVU697
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 86
 
 
  2081 01de 16F0800F 		tst	r6, #128
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2121              		.loc 1 1934 13 is_stmt 1 view .LVU711
 1934:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  2122              		.loc 1 1934 35 is_stmt 0 view .LVU712
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 87
 
 
  2123 0226 2868     		ldr	r0, [r5]
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2165 0276 FFF7FEFF 		bl	HAL_PCD_DataInStageCallback
  2166              	.LVL227:
 1952:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 88
 
 
  2167              		.loc 1 1952 15 view .LVU725
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2208 02bc 92F85021 		ldrb	r2, [r2, #336]	@ zero_extendqisi2
  2209 02c0 D200     		lsls	r2, r2, #3
  2210 02c2 12FA83F3 		uxtah	r3, r2, r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 89
 
 
  2211 02c6 0344     		add	r3, r3, r0
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2252 0316 62E7     		b	.L107
  2253              	.L130:
 1837:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****           }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 90
 
 
  2254              		.loc 1 1837 13 view .LVU752
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2296              		.loc 1 1851 13 discriminator 1 view .LVU764
 1851:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  2297              		.loc 1 1851 13 discriminator 1 view .LVU765
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 91
 
 
 1853:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             {
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2340              		.loc 1 1846 21 view .LVU777
  2341 03b4 8DE7     		b	.L109
  2342              	.LVL243:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 92
 
 
  2343              	.L111:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2385              		.loc 1 1908 17 is_stmt 0 view .LVU789
  2386 03fc 04EB8403 		add	r3, r4, r4, lsl #2
  2387 0400 05EBC303 		add	r3, r5, r3, lsl #3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 93
 
 
  2388 0404 1B7F     		ldrb	r3, [r3, #28]	@ zero_extendqisi2
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2426              		.loc 1 1912 15 discriminator 1 view .LVU805
  2427 043e B3F80224 		ldrh	r2, [r3, #1026]
  2428 0442 6FEA4242 		mvn	r2, r2, lsl #17
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 94
 
 
  2429 0446 6FEA5242 		mvn	r2, r2, lsr #17
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2472 0484 E4E7     		b	.L115
  2473              	.LVL258:
  2474              	.L116:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 95
 
 
 1912:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             }
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1916:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             }
  2514              		.loc 1 1916 15 discriminator 1 view .LVU832
 1916:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****             }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 96
 
 
  2515              		.loc 1 1916 15 discriminator 1 view .LVU833
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2559 04fa 04EB8402 		add	r2, r4, r4, lsl #2
  2560 04fe 05EBC202 		add	r2, r5, r2, lsl #3
  2561 0502 566A     		ldr	r6, [r2, #36]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 97
 
 
  2562 0504 1E44     		add	r6, r6, r3
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2605              		.thumb_func
  2607              	HAL_PCD_SOFCallback:
  2608              	.LVL274:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 98
 
 
  2609              	.LFB960:
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2658              		.loc 1 1238 1 is_stmt 0 view .LVU864
  2659 0000 7047     		bx	lr
  2660              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 99
 
 
  2661              	.LFE962:
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2714              	.LVL279:
  2715              	.LFB965:
 1279:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   /* Prevent unused argument(s) compilation warning */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 100
 
 
  2716              		.loc 1 1279 1 is_stmt 1 view -0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2765              		.loc 1 1317 1 is_stmt 0 view .LVU881
  2766 0000 7047     		bx	lr
  2767              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 101
 
 
  2768              	.LFE967:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1349:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** }
  2812              		.loc 1 1349 3 discriminator 2 view .LVU894
 1350:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 102
 
 
  2813              		.loc 1 1350 1 is_stmt 0 discriminator 2 view .LVU895
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1360:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_UNLOCK(hpcd);
  2860              		.loc 1 1360 9 is_stmt 0 discriminator 2 view .LVU905
  2861 0012 0068     		ldr	r0, [r0]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 103
 
 
  2862              	.LVL288:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1373:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_LOCK(hpcd);
  2907              		.loc 1 1373 1 is_stmt 0 discriminator 2 view .LVU917
  2908 0008 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 104
 
 
  2909              	.LCFI14:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2950              		.section	.text.HAL_PCD_IRQHandler,"ax",%progbits
  2951              		.align	1
  2952              		.global	HAL_PCD_IRQHandler
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 105
 
 
  2953              		.syntax unified
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  2994              		.loc 1 1049 3 is_stmt 1 view .LVU945
 1049:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
  2995              		.loc 1 1049 6 is_stmt 0 view .LVU946
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 106
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 106
 
 
  2996 0022 10F4805F 		tst	r0, #4096
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3035              		.loc 1 1022 5 view .LVU961
  3036 0060 2268     		ldr	r2, [r4]
  3037 0062 B2F84430 		ldrh	r3, [r2, #68]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 107
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 107
 
 
  3038 0066 9BB2     		uxth	r3, r3
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1051:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->Instance->CNTR &= (uint16_t) ~(USB_CNTR_FSUSP);
  3082              		.loc 1 1051 5 view .LVU972
 1051:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     hpcd->Instance->CNTR &= (uint16_t) ~(USB_CNTR_FSUSP);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 108
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 108
 
 
  3083              		.loc 1 1051 9 is_stmt 0 view .LVU973
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3125 00f0 0021     		movs	r1, #0
  3126 00f2 84F8C812 		strb	r1, [r4, #712]
 1060:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 109
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 109
 
 
  3127              		.loc 1 1060 7 is_stmt 1 view .LVU986
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3169              		.loc 1 1097 5 view .LVU998
  3170 0138 2268     		ldr	r2, [r4]
  3171 013a B2F84430 		ldrh	r3, [r2, #68]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 110
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 110
 
 
  3172 013e 9BB2     		uxth	r3, r3
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3210 0184 C4F8CC32 		str	r3, [r4, #716]
 1109:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
  3211              		.loc 1 1109 7 is_stmt 1 view .LVU1015
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 111
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 111
 
 
  3212 0188 2046     		mov	r0, r4
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3259              		.cfi_startproc
  3260              		@ args = 0, pretend = 0, frame = 0
  3261              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 112
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 112
 
 
 1391:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   HAL_StatusTypeDef  ret = HAL_OK;
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1408:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  3301              		.loc 1 1408 3 is_stmt 1 view .LVU1040
 1408:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 113
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 113
 
 
  3302              		.loc 1 1408 12 is_stmt 0 view .LVU1041
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3340 005e 0CEB8C01 		add	r1, ip, ip, lsl #2
  3341              	.LVL333:
 1397:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****     ep->is_in = 1U;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 114
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 114
 
 
  3342              		.loc 1 1397 8 view .LVU1058
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3390 0004 0A46     		mov	r2, r1
 1431:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  3391              		.loc 1 1431 3 is_stmt 1 view .LVU1067
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 115
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 115
 
 
 1433:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   {
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3430 0040 FFF7FEFF 		bl	USB_DeactivateEndpoint
  3431              	.LVL339:
 1447:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   return HAL_OK;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 116
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 116
 
 
  3432              		.loc 1 1447 3 is_stmt 1 discriminator 2 view .LVU1084
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3477              		.loc 1 1461 1 is_stmt 1 view -0
  3478              		.cfi_startproc
  3479              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 117
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 117
 
 
  3480              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3517 002e 0144     		add	r1, r1, r0
  3518              	.LVL346:
 1473:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 118
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 118
 
 
  3519              		.loc 1 1473 9 view .LVU1113
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3567              		.thumb_func
  3569              	HAL_PCD_EP_Transmit:
  3570              	.LVL352:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 119
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 119
 
 
  3571              	.LFB975:
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3611              		.loc 1 1506 3 is_stmt 1 view .LVU1136
 1506:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   ep->xfer_count = 0U;
  3612              		.loc 1 1506 19 is_stmt 0 view .LVU1137
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 120
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 120
 
 
  3613 002c CEF83030 		str	r3, [lr, #48]
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1523:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   PCD_EPTypeDef *ep;
  3656              		.loc 1 1523 1 is_stmt 0 view .LVU1151
  3657 0000 0B46     		mov	r3, r1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 121
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 121
 
 
 1524:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1543:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
  3698              		.loc 1 1543 3 is_stmt 1 view .LVU1166
 1543:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 122
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 122
 
 
  3699              		.loc 1 1543 11 is_stmt 0 view .LVU1167
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3738              	.LVL367:
 1534:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  3739              		.loc 1 1534 15 view .LVU1183
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 123
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 123
 
 
  3740 0066 5874     		strb	r0, [r3, #17]
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3787 0004 03F00F02 		and	r2, r3, #15
  3788 0008 9142     		cmp	r1, r2
  3789 000a 34D3     		bcc	.L220
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 124
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 124
 
 
 1561:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   PCD_EPTypeDef *ep;
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1583:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   (void)USB_EPClearStall(hpcd->Instance, ep);
  3829              		.loc 1 1583 3 view .LVU1208
  3830 003e 94F89032 		ldrb	r3, [r4, #656]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 125
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 125
 
 
  3831 0042 012B     		cmp	r3, #1
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3870 0074 DEE7     		b	.L219
  3871              	.LVL379:
  3872              	.L220:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 126
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 126
 
 
  3873              	.LCFI25:
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
 1607:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
  3920              		.loc 1 1607 5 is_stmt 1 view .LVU1233
 1607:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 127
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 127
 
 
  3921              		.loc 1 1607 32 is_stmt 0 view .LVU1234
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  3967              	.LFB979:
 1623:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   __HAL_LOCK(hpcd);
  3968              		.loc 1 1623 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 128
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 128
 
 
  3969              		.cfi_startproc
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  4008              	.LVL393:
  4009              	.L241:
 1628:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 129
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 129
 
 
  4010              		.loc 1 1628 5 is_stmt 1 view .LVU1261
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  4057 0002 0068     		ldr	r0, [r0]
  4058              	.LVL400:
 1647:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 130
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 130
 
 
  4059              		.loc 1 1647 11 view .LVU1271
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  4109              		.loc 1 1685 1 is_stmt 1 view -0
  4110              		.cfi_startproc
  4111              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 131
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 131
 
 
  4112              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -7823,86 +7823,86 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 1
  4129              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h"
  4130              		.file 7 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h"
  4131              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 132
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 132
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wbxx_hal_pcd.c
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:20     .text.HAL_PCD_EP_DB_Receive:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:25     .text.HAL_PCD_EP_DB_Receive:00000000 HAL_PCD_EP_DB_Receive
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:271    .text.HAL_PCD_MspInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:277    .text.HAL_PCD_MspInit:00000000 HAL_PCD_MspInit
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:292    .text.HAL_PCD_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:298    .text.HAL_PCD_Init:00000000 HAL_PCD_Init
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:487    .text.HAL_PCD_MspDeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:493    .text.HAL_PCD_MspDeInit:00000000 HAL_PCD_MspDeInit
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:508    .text.HAL_PCD_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:514    .text.HAL_PCD_DeInit:00000000 HAL_PCD_DeInit
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:576    .text.HAL_PCD_Start:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:582    .text.HAL_PCD_Start:00000000 HAL_PCD_Start
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:639    .text.HAL_PCD_Stop:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:645    .text.HAL_PCD_Stop:00000000 HAL_PCD_Stop
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:702    .text.HAL_PCD_DataOutStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:708    .text.HAL_PCD_DataOutStageCallback:00000000 HAL_PCD_DataOutStageCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:724    .text.HAL_PCD_DataInStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:730    .text.HAL_PCD_DataInStageCallback:00000000 HAL_PCD_DataInStageCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:746    .text.HAL_PCD_EP_DB_Transmit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:751    .text.HAL_PCD_EP_DB_Transmit:00000000 HAL_PCD_EP_DB_Transmit
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:1674   .text.HAL_PCD_SetupStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:1680   .text.HAL_PCD_SetupStageCallback:00000000 HAL_PCD_SetupStageCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:1695   .text.PCD_EP_ISR_Handler:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:1700   .text.PCD_EP_ISR_Handler:00000000 PCD_EP_ISR_Handler
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2601   .text.HAL_PCD_SOFCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2607   .text.HAL_PCD_SOFCallback:00000000 HAL_PCD_SOFCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2622   .text.HAL_PCD_ResetCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2628   .text.HAL_PCD_ResetCallback:00000000 HAL_PCD_ResetCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2643   .text.HAL_PCD_SuspendCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2649   .text.HAL_PCD_SuspendCallback:00000000 HAL_PCD_SuspendCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2664   .text.HAL_PCD_ResumeCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2670   .text.HAL_PCD_ResumeCallback:00000000 HAL_PCD_ResumeCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2685   .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2691   .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 HAL_PCD_ISOOUTIncompleteCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2707   .text.HAL_PCD_ISOINIncompleteCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2713   .text.HAL_PCD_ISOINIncompleteCallback:00000000 HAL_PCD_ISOINIncompleteCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2729   .text.HAL_PCD_ConnectCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2735   .text.HAL_PCD_ConnectCallback:00000000 HAL_PCD_ConnectCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2750   .text.HAL_PCD_DisconnectCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2756   .text.HAL_PCD_DisconnectCallback:00000000 HAL_PCD_DisconnectCallback
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2771   .text.HAL_PCD_DevConnect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2777   .text.HAL_PCD_DevConnect:00000000 HAL_PCD_DevConnect
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2830   .text.HAL_PCD_DevDisconnect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2836   .text.HAL_PCD_DevDisconnect:00000000 HAL_PCD_DevDisconnect
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2889   .text.HAL_PCD_SetAddress:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2895   .text.HAL_PCD_SetAddress:00000000 HAL_PCD_SetAddress
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2951   .text.HAL_PCD_IRQHandler:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:2957   .text.HAL_PCD_IRQHandler:00000000 HAL_PCD_IRQHandler
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3249   .text.HAL_PCD_EP_Open:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3255   .text.HAL_PCD_EP_Open:00000000 HAL_PCD_EP_Open
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3370   .text.HAL_PCD_EP_Close:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3376   .text.HAL_PCD_EP_Close:00000000 HAL_PCD_EP_Close
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3468   .text.HAL_PCD_EP_Receive:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3474   .text.HAL_PCD_EP_Receive:00000000 HAL_PCD_EP_Receive
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3533   .text.HAL_PCD_EP_GetRxCount:00000000 $t
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s 			page 133
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:20     .text.HAL_PCD_EP_DB_Receive:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:25     .text.HAL_PCD_EP_DB_Receive:00000000 HAL_PCD_EP_DB_Receive
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:271    .text.HAL_PCD_MspInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:277    .text.HAL_PCD_MspInit:00000000 HAL_PCD_MspInit
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:292    .text.HAL_PCD_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:298    .text.HAL_PCD_Init:00000000 HAL_PCD_Init
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:487    .text.HAL_PCD_MspDeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:493    .text.HAL_PCD_MspDeInit:00000000 HAL_PCD_MspDeInit
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:508    .text.HAL_PCD_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:514    .text.HAL_PCD_DeInit:00000000 HAL_PCD_DeInit
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:576    .text.HAL_PCD_Start:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:582    .text.HAL_PCD_Start:00000000 HAL_PCD_Start
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:639    .text.HAL_PCD_Stop:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:645    .text.HAL_PCD_Stop:00000000 HAL_PCD_Stop
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:702    .text.HAL_PCD_DataOutStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:708    .text.HAL_PCD_DataOutStageCallback:00000000 HAL_PCD_DataOutStageCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:724    .text.HAL_PCD_DataInStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:730    .text.HAL_PCD_DataInStageCallback:00000000 HAL_PCD_DataInStageCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:746    .text.HAL_PCD_EP_DB_Transmit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:751    .text.HAL_PCD_EP_DB_Transmit:00000000 HAL_PCD_EP_DB_Transmit
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:1674   .text.HAL_PCD_SetupStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:1680   .text.HAL_PCD_SetupStageCallback:00000000 HAL_PCD_SetupStageCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:1695   .text.PCD_EP_ISR_Handler:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:1700   .text.PCD_EP_ISR_Handler:00000000 PCD_EP_ISR_Handler
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2601   .text.HAL_PCD_SOFCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2607   .text.HAL_PCD_SOFCallback:00000000 HAL_PCD_SOFCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2622   .text.HAL_PCD_ResetCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2628   .text.HAL_PCD_ResetCallback:00000000 HAL_PCD_ResetCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2643   .text.HAL_PCD_SuspendCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2649   .text.HAL_PCD_SuspendCallback:00000000 HAL_PCD_SuspendCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2664   .text.HAL_PCD_ResumeCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2670   .text.HAL_PCD_ResumeCallback:00000000 HAL_PCD_ResumeCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2685   .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2691   .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 HAL_PCD_ISOOUTIncompleteCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2707   .text.HAL_PCD_ISOINIncompleteCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2713   .text.HAL_PCD_ISOINIncompleteCallback:00000000 HAL_PCD_ISOINIncompleteCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2729   .text.HAL_PCD_ConnectCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2735   .text.HAL_PCD_ConnectCallback:00000000 HAL_PCD_ConnectCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2750   .text.HAL_PCD_DisconnectCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2756   .text.HAL_PCD_DisconnectCallback:00000000 HAL_PCD_DisconnectCallback
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2771   .text.HAL_PCD_DevConnect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2777   .text.HAL_PCD_DevConnect:00000000 HAL_PCD_DevConnect
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2830   .text.HAL_PCD_DevDisconnect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2836   .text.HAL_PCD_DevDisconnect:00000000 HAL_PCD_DevDisconnect
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2889   .text.HAL_PCD_SetAddress:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2895   .text.HAL_PCD_SetAddress:00000000 HAL_PCD_SetAddress
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2951   .text.HAL_PCD_IRQHandler:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:2957   .text.HAL_PCD_IRQHandler:00000000 HAL_PCD_IRQHandler
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3249   .text.HAL_PCD_EP_Open:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3255   .text.HAL_PCD_EP_Open:00000000 HAL_PCD_EP_Open
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3370   .text.HAL_PCD_EP_Close:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3376   .text.HAL_PCD_EP_Close:00000000 HAL_PCD_EP_Close
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3468   .text.HAL_PCD_EP_Receive:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3474   .text.HAL_PCD_EP_Receive:00000000 HAL_PCD_EP_Receive
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3533   .text.HAL_PCD_EP_GetRxCount:00000000 $t
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s 			page 133
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3539   .text.HAL_PCD_EP_GetRxCount:00000000 HAL_PCD_EP_GetRxCount
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3563   .text.HAL_PCD_EP_Transmit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3569   .text.HAL_PCD_EP_Transmit:00000000 HAL_PCD_EP_Transmit
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3643   .text.HAL_PCD_EP_SetStall:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3649   .text.HAL_PCD_EP_SetStall:00000000 HAL_PCD_EP_SetStall
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3766   .text.HAL_PCD_EP_ClrStall:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3772   .text.HAL_PCD_EP_ClrStall:00000000 HAL_PCD_EP_ClrStall
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3895   .text.HAL_PCD_EP_Abort:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3901   .text.HAL_PCD_EP_Abort:00000000 HAL_PCD_EP_Abort
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3959   .text.HAL_PCD_EP_Flush:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:3965   .text.HAL_PCD_EP_Flush:00000000 HAL_PCD_EP_Flush
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4036   .text.HAL_PCD_ActivateRemoteWakeup:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4042   .text.HAL_PCD_ActivateRemoteWakeup:00000000 HAL_PCD_ActivateRemoteWakeup
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4068   .text.HAL_PCD_DeActivateRemoteWakeup:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4074   .text.HAL_PCD_DeActivateRemoteWakeup:00000000 HAL_PCD_DeActivateRemoteWakeup
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4100   .text.HAL_PCD_GetState:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOf6XKr.s:4106   .text.HAL_PCD_GetState:00000000 HAL_PCD_GetState
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3539   .text.HAL_PCD_EP_GetRxCount:00000000 HAL_PCD_EP_GetRxCount
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3563   .text.HAL_PCD_EP_Transmit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3569   .text.HAL_PCD_EP_Transmit:00000000 HAL_PCD_EP_Transmit
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3643   .text.HAL_PCD_EP_SetStall:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3649   .text.HAL_PCD_EP_SetStall:00000000 HAL_PCD_EP_SetStall
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3766   .text.HAL_PCD_EP_ClrStall:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3772   .text.HAL_PCD_EP_ClrStall:00000000 HAL_PCD_EP_ClrStall
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3895   .text.HAL_PCD_EP_Abort:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3901   .text.HAL_PCD_EP_Abort:00000000 HAL_PCD_EP_Abort
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3959   .text.HAL_PCD_EP_Flush:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:3965   .text.HAL_PCD_EP_Flush:00000000 HAL_PCD_EP_Flush
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4036   .text.HAL_PCD_ActivateRemoteWakeup:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4042   .text.HAL_PCD_ActivateRemoteWakeup:00000000 HAL_PCD_ActivateRemoteWakeup
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4068   .text.HAL_PCD_DeActivateRemoteWakeup:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4074   .text.HAL_PCD_DeActivateRemoteWakeup:00000000 HAL_PCD_DeActivateRemoteWakeup
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4100   .text.HAL_PCD_GetState:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccK38QOo.s:4106   .text.HAL_PCD_GetState:00000000 HAL_PCD_GetState
 
 UNDEFINED SYMBOLS
 USB_ReadPMA

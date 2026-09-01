@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
   28:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** /* Private typedef -----------------------------------------------------------*/
   29:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** typedef enum
   30:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 2
 
 
   31:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   HCI_TL_CMD_RESP_RELEASE,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
   85:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   /**
   86:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    * Up to release version v1.2.0, a while loop was implemented to read out events from the queue a
   87:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    * it is not empty. However, in a bare metal implementation, this leads to calling in a "blocking
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 3
 
 
   88:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    * hci_user_evt_proc() as long as events are received without giving the opportunity to run other
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  142:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   /**
  143:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    * It is better to go through the background process as it is not sure from which context this AP
  144:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    * be called
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 4
 
 
  145:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****    */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  199:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****           p_cmd->rlen = MIN(hci_cmd_complete_return_parameters_length, p_cmd->rlen);
  200:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****           memcpy(p_cmd->rparam, pcommand_complete_event->payload, p_cmd->rlen);
  201:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****         }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 5
 
 
  202:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  256:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** {
   29              		.loc 1 256 1 view -0
   30              		.cfi_startproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 6
 
 
   31              		@ args = 0, pretend = 0, frame = 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
   64 0016 0120     		movs	r0, #1
   65              	.LVL3:
  268:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****     }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 7
 
 
   66              		.loc 1 268 7 is_stmt 0 view .LVU13
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  228:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** 
  114              		.loc 1 228 3 is_stmt 1 view .LVU22
  115 0014 FFF7FEFF 		bl	LST_init_head
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 8
 
 
  116              	.LVL8:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  158              		.section	.text.SendCmd,"ax",%progbits
  159              		.align	1
  160              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 9
 
 
  161              		.thumb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  203 001e 0021     		movs	r1, #0
  204 0020 0846     		mov	r0, r1
  205 0022 9847     		blx	r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 10
 
 
  206              	.LVL16:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
   73:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** 
  252              		.loc 1 73 3 is_stmt 0 view .LVU59
  253 0010 FFF7FEFF 		bl	hci_register_io_bus
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 11
 
 
  254              	.LVL19:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  300 000a 10B9     		cbnz	r0, .L21
  100:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   {
  301              		.loc 1 100 70 discriminator 1 view .LVU70
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 12
 
 
  302 000c 1A4B     		ldr	r3, .L29+4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  343 0034 039A     		ldr	r2, [sp, #12]
  344 0036 0292     		str	r2, [sp, #8]
  107:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****       hciContext.UserEvtRx((void *)&UserEvtRxParam);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 13
 
 
  345              		.loc 1 107 7 is_stmt 1 view .LVU84
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  386              		.loc 1 131 5 view .LVU97
  387 006a 0248     		ldr	r0, .L29
  388 006c FFF7FEFF 		bl	hci_notify_asynch_evt
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 14
 
 
  389              	.LVL28:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  439              		.align	1
  440              		.weak	hci_cmd_resp_wait
  441              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 15
 
 
  442              		.thumb
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  472              		.align	1
  473              		.global	hci_send_req
  474              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 16
 
 
  475              		.thumb
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  515              		.loc 1 163 26 view .LVU125
  516 0010 C5F30905 		ubfx	r5, r5, #0, #10
  163:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 17
 
 
  517              		.loc 1 163 45 view .LVU126
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  556              		.loc 1 182 11 view .LVU141
  557 0040 AB42     		cmp	r3, r5
  558 0042 16D0     		beq	.L52
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 18
 
 
  559              	.L43:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  597              		.loc 1 203 9 is_stmt 1 view .LVU157
  203:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****         {
  598              		.loc 1 203 35 is_stmt 0 view .LVU158
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 19
 
 
  599 0068 E37A     		ldrb	r3, [r4, #11]	@ zero_extendqisi2
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  639 008e 3869     		ldr	r0, [r7, #16]
  640 0090 FFF7FEFF 		bl	memcpy
  641              	.LVL49:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 20
 
 
  642 0094 E8E7     		b	.L45
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  303:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   (void)flag;
  689              		.loc 1 303 3 view .LVU180
  304:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 21
 
 
  305:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****   CmdRspStatusFlag = HCI_TL_CMD_RESP_RELEASE;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  735 000e 074C     		ldr	r4, .L65
  736 0010 2046     		mov	r0, r4
  737              	.LVL57:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 22
 
 
  284:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c ****     hci_notify_asynch_evt((void*) &HciAsynchEventQueue); /**< Notify the application a full HCI eve
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  791              		.section	.bss.hciContext,"aw",%nobits
  792              		.align	2
  793              		.set	.LANCHOR3,. + 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 23
 
 
  796              	hciContext:
@@ -1349,54 +1349,54 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 1
  824              		.file 7 "Core/Inc/app_conf.h"
  825              		.file 8 "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h"
  826              		.file 9 "<built-in>"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hci_tl.c
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:20     .text.NotifyCmdStatus:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:25     .text.NotifyCmdStatus:00000000 NotifyCmdStatus
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:74     .text.NotifyCmdStatus:0000001c $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:79     .text.TlInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:84     .text.TlInit:00000000 TlInit
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:151    .text.TlInit:00000030 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:711    .text.TlEvtReceived:00000000 TlEvtReceived
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:159    .text.SendCmd:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:164    .text.SendCmd:00000000 SendCmd
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:213    .text.SendCmd:00000028 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:219    .text.hci_init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:225    .text.hci_init:00000000 hci_init
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:267    .text.hci_init:0000001c $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:273    .text.hci_user_evt_proc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:279    .text.hci_user_evt_proc:00000000 hci_user_evt_proc
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:395    .text.hci_user_evt_proc:00000074 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:402    .text.hci_resume_flow:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:408    .text.hci_resume_flow:00000000 hci_resume_flow
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:434    .text.hci_resume_flow:00000010 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:439    .text.hci_cmd_resp_wait:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:445    .text.hci_cmd_resp_wait:00000000 hci_cmd_resp_wait
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:467    .text.hci_cmd_resp_wait:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:472    .text.hci_send_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:478    .text.hci_send_req:00000000 hci_send_req
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:669    .text.hci_send_req:000000a8 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:675    .text.hci_cmd_resp_release:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:681    .text.hci_cmd_resp_release:00000000 hci_cmd_resp_release
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:701    .text.hci_cmd_resp_release:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:706    .text.TlEvtReceived:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:765    .text.TlEvtReceived:0000002c $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:811    BLE_DRIVER_CONTEXT:0000000c UserEventFlow
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:775    .bss.CmdRspStatusFlag:00000000 CmdRspStatusFlag
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:776    .bss.CmdRspStatusFlag:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:778    .bss.HciCmdEventQueue:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:782    .bss.HciCmdEventQueue:00000000 HciCmdEventQueue
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:785    .bss.StatusNotCallBackFunction:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:789    .bss.StatusNotCallBackFunction:00000000 StatusNotCallBackFunction
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:792    .bss.hciContext:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:796    .bss.hciContext:00000000 hciContext
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:799    BLE_DRIVER_CONTEXT:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:803    BLE_DRIVER_CONTEXT:00000000 pCmdBuffer
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:807    BLE_DRIVER_CONTEXT:00000004 HciAsynchEventQueue
-C:\Users\843E~1\AppData\Local\Temp\ccTxqGxJ.s:815    BLE_DRIVER_CONTEXT:0000000d hci_timer_id
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:20     .text.NotifyCmdStatus:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:25     .text.NotifyCmdStatus:00000000 NotifyCmdStatus
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:74     .text.NotifyCmdStatus:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:79     .text.TlInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:84     .text.TlInit:00000000 TlInit
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:151    .text.TlInit:00000030 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:711    .text.TlEvtReceived:00000000 TlEvtReceived
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:159    .text.SendCmd:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:164    .text.SendCmd:00000000 SendCmd
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:213    .text.SendCmd:00000028 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:219    .text.hci_init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:225    .text.hci_init:00000000 hci_init
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:267    .text.hci_init:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:273    .text.hci_user_evt_proc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:279    .text.hci_user_evt_proc:00000000 hci_user_evt_proc
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:395    .text.hci_user_evt_proc:00000074 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:402    .text.hci_resume_flow:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:408    .text.hci_resume_flow:00000000 hci_resume_flow
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:434    .text.hci_resume_flow:00000010 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:439    .text.hci_cmd_resp_wait:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:445    .text.hci_cmd_resp_wait:00000000 hci_cmd_resp_wait
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:467    .text.hci_cmd_resp_wait:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:472    .text.hci_send_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:478    .text.hci_send_req:00000000 hci_send_req
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:669    .text.hci_send_req:000000a8 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:675    .text.hci_cmd_resp_release:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:681    .text.hci_cmd_resp_release:00000000 hci_cmd_resp_release
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:701    .text.hci_cmd_resp_release:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:706    .text.TlEvtReceived:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:765    .text.TlEvtReceived:0000002c $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:811    BLE_DRIVER_CONTEXT:0000000c UserEventFlow
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:775    .bss.CmdRspStatusFlag:00000000 CmdRspStatusFlag
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:776    .bss.CmdRspStatusFlag:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:778    .bss.HciCmdEventQueue:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:782    .bss.HciCmdEventQueue:00000000 HciCmdEventQueue
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:785    .bss.StatusNotCallBackFunction:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:789    .bss.StatusNotCallBackFunction:00000000 StatusNotCallBackFunction
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:792    .bss.hciContext:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:796    .bss.hciContext:00000000 hciContext
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:799    BLE_DRIVER_CONTEXT:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:803    BLE_DRIVER_CONTEXT:00000000 pCmdBuffer
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:807    BLE_DRIVER_CONTEXT:00000004 HciAsynchEventQueue
+C:\Users\843E~1\AppData\Local\Temp\ccnBzQU5.s:815    BLE_DRIVER_CONTEXT:0000000d hci_timer_id
 
 UNDEFINED SYMBOLS
 LST_init_head

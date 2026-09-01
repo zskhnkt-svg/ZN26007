@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
   28:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_type SEQUENCER private type
   29:Utilities/sequencer/stm32_seq.c ****  *  @{
   30:Utilities/sequencer/stm32_seq.c ****  */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 2
 
 
   31:Utilities/sequencer/stm32_seq.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
   85:Utilities/sequencer/stm32_seq.c **** 
   86:Utilities/sequencer/stm32_seq.c **** /**
   87:Utilities/sequencer/stm32_seq.c ****  * @brief default number of task is default 32 (maximum), can be reduced by redefining in utilities
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 3
 
 
   88:Utilities/sequencer/stm32_seq.c ****  */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  142:Utilities/sequencer/stm32_seq.c ****  * @brief evt expected mask.
  143:Utilities/sequencer/stm32_seq.c ****  */
  144:Utilities/sequencer/stm32_seq.c **** static volatile UTIL_SEQ_bm_t EvtWaited = UTIL_SEQ_NO_BIT_SET;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 4
 
 
  145:Utilities/sequencer/stm32_seq.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
   44              		.loc 1 183 12 is_stmt 0 view .LVU4
   45 0008 4FF0FF33 		mov	r3, #-1
   46 000c 0E4A     		ldr	r2, .L5+4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 5
 
 
   47 000e 1360     		str	r3, [r2]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  189:Utilities/sequencer/stm32_seq.c ****   for(uint32_t index = 0; index < UTIL_SEQ_CONF_PRIO_NBR; index++)
   91              		.loc 1 189 64 is_stmt 0 discriminator 3 view .LVU25
   92 003c 0131     		adds	r1, r1, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 6
 
 
   93              	.LVL2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  142              	UTIL_SEQ_SetTask:
  143              	.LVL3:
  144              	.LFB108:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 7
 
 
  200:Utilities/sequencer/stm32_seq.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  254:Utilities/sequencer/stm32_seq.c ****      * the sequencer does not run always only the first one.
  255:Utilities/sequencer/stm32_seq.c ****      * When a task has been executed, The flag is removed from the round_robin mask.
  256:Utilities/sequencer/stm32_seq.c ****      * If on the next UTIL_SEQ_RUN(), the two same flags are set again, the round_robin mask will m
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 8
 
 
  257:Utilities/sequencer/stm32_seq.c ****      * so that the second one can be executed.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  311:Utilities/sequencer/stm32_seq.c ****     }
  312:Utilities/sequencer/stm32_seq.c ****   }
  313:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION_IDLE( );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 9
 
 
  314:Utilities/sequencer/stm32_seq.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
   23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
   24:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 10
 
 
   25:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
   80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
   81:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 11
 
 
   82:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t const* src;
  137:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t* dest;
  138:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 12
 
 
  139:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __copy_table_t;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  193:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
  194:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  195:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 13
 
 
  196:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  250:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
  251:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  252:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 14
 
 
  253:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  308:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  309:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 15
 
 
  310:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  364:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer
  365:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Main Stack Pointer (MSP).
  366:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 16
 
 
  367:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  421:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               SP Register value
  422:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  423:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_SP_NS(void)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 17
 
 
  424:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  175              		.syntax unified
  176              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  177 0004 72B6     		cpsid i
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 18
 
 
  178              	@ 0 "" 2
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  202              	.LBB75:
  480:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  481:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 19
 
 
  203              		.loc 2 481 3 view .LVU48
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  247              		.loc 2 451 3 view .LVU57
  453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  248              		.loc 2 453 3 view .LVU58
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 20
 
 
  249              		.syntax unified
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  356:Utilities/sequencer/stm32_seq.c **** 
  357:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_EXIT_CRITICAL_SECTION();
  296              		.loc 1 357 3 is_stmt 1 discriminator 4 view .LVU71
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 21
 
 
  297              	.LBB80:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  345              		@ link register save eliminated.
  363:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
  346              		.loc 1 363 3 view .LVU80
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 22
 
 
  347              	.LBB82:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  390              		.loc 2 479 27 view .LVU93
  391              	.LBB87:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 23
 
 
  392              		.loc 2 481 3 view .LVU94
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  437              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  438 0000 EFF31083 		MRS r3, primask
  439              	@ 0 "" 2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 24
 
 
  440              	.LVL22:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  485              		.thumb
  486              		.syntax unified
  487              	.LBE93:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 25
 
 
  488              	.LBE92:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  533              	.LBB96:
  534              	.LBI96:
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 26
 
 
  535              		.loc 2 207 27 view .LVU127
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  581              		.section	.text.UTIL_SEQ_SetEvt,"ax",%progbits
  582              		.align	1
  583              		.global	UTIL_SEQ_SetEvt
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 27
 
 
  584              		.syntax unified
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  397:Utilities/sequencer/stm32_seq.c **** 
  398:Utilities/sequencer/stm32_seq.c ****   EvtSet |= EvtId_bm;
  628              		.loc 1 398 3 view .LVU148
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 28
 
 
  629              		.loc 1 398 10 is_stmt 0 view .LVU149
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  676              		@ frame_needed = 0, uses_anonymous_args = 0
  677              		@ link register save eliminated.
  407:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION( );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 29
 
 
  678              		.loc 1 407 3 view .LVU158
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  721              	.LBI110:
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  722              		.loc 2 479 27 view .LVU171
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 30
 
 
  723              	.LBB111:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  437:Utilities/sequencer/stm32_seq.c ****   EvtWaited = EvtId_bm;
  438:Utilities/sequencer/stm32_seq.c ****   /*
  439:Utilities/sequencer/stm32_seq.c ****    * wait for the new event
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 31
 
 
  440:Utilities/sequencer/stm32_seq.c ****    * note: that means that if the previous waited event occurs, it will not exit
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  774 000c 00000000 		.word	.LANCHOR4
  775 0010 00000000 		.word	.LANCHOR3
  776              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 32
 
 
  777              	.LFE116:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  815 0000 7047     		bx	lr
  816              		.cfi_endproc
  817              	.LFE119:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 33
 
 
  819              		.section	.text.UTIL_SEQ_PostIdle,"ax",%progbits
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  850              		.cfi_startproc
  851              		@ args = 0, pretend = 0, frame = 0
  852              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 34
 
 
  853              		@ link register save eliminated.
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  901 0020 0001     		lsls	r0, r0, #4
  902              	.LVL51:
  903              	.L41:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 35
 
 
  526:Utilities/sequencer/stm32_seq.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  952              		.cfi_offset 3, -16
  953              		.cfi_offset 4, -12
  954              		.cfi_offset 5, -8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 36
 
 
  955              		.cfi_offset 14, -4
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  235:Utilities/sequencer/stm32_seq.c ****   while(((local_taskset & local_taskmask & SuperMask) != 0U) && ((local_evtset & local_evtwaited)==
  990              		.loc 1 235 19 is_stmt 0 view .LVU244
  991 0016 3F48     		ldr	r0, .L56+16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 37
 
 
  992 0018 0568     		ldr	r5, [r0]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1030              		.loc 1 262 8 view .LVU260
  1031 003a 1142     		tst	r1, r2
  1032 003c 02D1     		bne	.L48
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 38
 
 
  264:Utilities/sequencer/stm32_seq.c ****     }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  1072              		.loc 2 454 3 is_stmt 0 view .LVU276
  1073              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 39
 
 
  1074              		.syntax unified
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1115 0080 2549     		ldr	r1, .L56+20
  1116 0082 51F83320 		ldr	r2, [r1, r3, lsl #3]
  1117 0086 0240     		ands	r2, r2, r0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 40
 
 
  1118 0088 41F83320 		str	r2, [r1, r3, lsl #3]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  293:Utilities/sequencer/stm32_seq.c ****     local_taskmask = TaskMask;
  1160              		.loc 1 293 18 is_stmt 0 view .LVU304
  1161 00a4 194B     		ldr	r3, .L56+8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 41
 
 
  1162 00a6 1B68     		ldr	r3, [r3]
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1201              		.loc 1 302 3 view .LVU319
  1202              	.LBB119:
  1203              	.LBI119:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 42
 
 
  449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1244              		.loc 1 305 18 is_stmt 0 view .LVU333
  1245 00d8 0D4A     		ldr	r2, .L56+12
  1246 00da 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 43
 
 
  1247              	.LVL88:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  318:Utilities/sequencer/stm32_seq.c **** 
  1289              		.loc 1 318 13 is_stmt 0 view .LVU348
  1290 00f6 034B     		ldr	r3, .L56
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 44
 
 
  1291 00f8 1C60     		str	r4, [r3]
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1339              	.LVL97:
  478:Utilities/sequencer/stm32_seq.c ****   return;
  1340              		.loc 1 478 3 is_stmt 0 view .LVU357
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 45
 
 
  1341 0004 FFF7FEFF 		bl	UTIL_SEQ_Run
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  432:Utilities/sequencer/stm32_seq.c ****   }
  1386              		.loc 1 432 5 is_stmt 1 view .LVU369
  432:Utilities/sequencer/stm32_seq.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 46
 
 
  1387              		.loc 1 432 19 is_stmt 0 view .LVU370
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1427              		.loc 1 459 3 is_stmt 1 view .LVU384
  1428              	.LBB125:
  1429              	.LBI125:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 47
 
 
  449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1471              		.loc 2 479 27 view .LVU397
  1472              	.LBB130:
  1473              		.loc 2 481 3 view .LVU398
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 48
 
 
  1474              		.syntax unified
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1523              		.cfi_offset 14, -4
  1524 0002 1446     		mov	r4, r2
  325:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION();
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 49
 
 
  1525              		.loc 1 325 3 is_stmt 1 view .LVU407
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1566              	.LVL114:
  1567              	.LBB135:
  1568              	.LBI135:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 50
 
 
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1624              		.align	2
  1625              		.set	.LANCHOR7,. + 0
  1628              	TaskPrio:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 51
 
 
  1629 0000 00000000 		.space	16
@@ -3035,81 +3035,81 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 1
  1662              		.file 4 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
  1663              		.file 5 "Utilities/sequencer/stm32_seq.h"
  1664              		.file 6 "<built-in>"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 52
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32_seq.c
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:20     .text.UTIL_SEQ_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:26     .text.UTIL_SEQ_Init:00000000 UTIL_SEQ_Init
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:105    .text.UTIL_SEQ_Init:00000044 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:117    .text.UTIL_SEQ_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:123    .text.UTIL_SEQ_DeInit:00000000 UTIL_SEQ_DeInit
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:136    .text.UTIL_SEQ_SetTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:142    .text.UTIL_SEQ_SetTask:00000000 UTIL_SEQ_SetTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:220    .text.UTIL_SEQ_SetTask:00000020 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:226    .text.UTIL_SEQ_IsSchedulableTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:232    .text.UTIL_SEQ_IsSchedulableTask:00000000 UTIL_SEQ_IsSchedulableTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:325    .text.UTIL_SEQ_IsSchedulableTask:00000028 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:332    .text.UTIL_SEQ_PauseTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:338    .text.UTIL_SEQ_PauseTask:00000000 UTIL_SEQ_PauseTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:409    .text.UTIL_SEQ_PauseTask:00000018 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:414    .text.UTIL_SEQ_IsPauseTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:420    .text.UTIL_SEQ_IsPauseTask:00000000 UTIL_SEQ_IsPauseTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:495    .text.UTIL_SEQ_IsPauseTask:0000001c $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:500    .text.UTIL_SEQ_ResumeTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:506    .text.UTIL_SEQ_ResumeTask:00000000 UTIL_SEQ_ResumeTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:577    .text.UTIL_SEQ_ResumeTask:00000014 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:582    .text.UTIL_SEQ_SetEvt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:588    .text.UTIL_SEQ_SetEvt:00000000 UTIL_SEQ_SetEvt
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:659    .text.UTIL_SEQ_SetEvt:00000014 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:664    .text.UTIL_SEQ_ClrEvt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:670    .text.UTIL_SEQ_ClrEvt:00000000 UTIL_SEQ_ClrEvt
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:741    .text.UTIL_SEQ_ClrEvt:00000018 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:746    .text.UTIL_SEQ_IsEvtPend:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:752    .text.UTIL_SEQ_IsEvtPend:00000000 UTIL_SEQ_IsEvtPend
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:774    .text.UTIL_SEQ_IsEvtPend:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:780    .text.UTIL_SEQ_Idle:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:786    .text.UTIL_SEQ_Idle:00000000 UTIL_SEQ_Idle
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:800    .text.UTIL_SEQ_PreIdle:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:806    .text.UTIL_SEQ_PreIdle:00000000 UTIL_SEQ_PreIdle
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:820    .text.UTIL_SEQ_PostIdle:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:826    .text.UTIL_SEQ_PostIdle:00000000 UTIL_SEQ_PostIdle
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:840    .text.SEQ_BitPosition:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:846    .text.SEQ_BitPosition:00000000 SEQ_BitPosition
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:930    .text.SEQ_BitPosition:00000038 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:935    .text.UTIL_SEQ_Run:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:941    .text.UTIL_SEQ_Run:00000000 UTIL_SEQ_Run
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1305   .text.UTIL_SEQ_Run:00000104 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1317   .text.UTIL_SEQ_EvtIdle:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1323   .text.UTIL_SEQ_EvtIdle:00000000 UTIL_SEQ_EvtIdle
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1350   .text.UTIL_SEQ_WaitEvt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1356   .text.UTIL_SEQ_WaitEvt:00000000 UTIL_SEQ_WaitEvt
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1496   .text.UTIL_SEQ_WaitEvt:0000004c $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1503   .text.UTIL_SEQ_RegTask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1509   .text.UTIL_SEQ_RegTask:00000000 UTIL_SEQ_RegTask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1590   .text.UTIL_SEQ_RegTask:0000001c $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1656   .rodata.SEQ_clz_table_4bit:00000000 SEQ_clz_table_4bit
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1596   .bss.CurrentTaskIdx:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1600   .bss.CurrentTaskIdx:00000000 CurrentTaskIdx
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1603   .bss.EvtSet:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1607   .bss.EvtSet:00000000 EvtSet
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1610   .bss.EvtWaited:00000000 $d
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s 			page 53
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:20     .text.UTIL_SEQ_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:26     .text.UTIL_SEQ_Init:00000000 UTIL_SEQ_Init
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:105    .text.UTIL_SEQ_Init:00000044 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:117    .text.UTIL_SEQ_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:123    .text.UTIL_SEQ_DeInit:00000000 UTIL_SEQ_DeInit
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:136    .text.UTIL_SEQ_SetTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:142    .text.UTIL_SEQ_SetTask:00000000 UTIL_SEQ_SetTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:220    .text.UTIL_SEQ_SetTask:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:226    .text.UTIL_SEQ_IsSchedulableTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:232    .text.UTIL_SEQ_IsSchedulableTask:00000000 UTIL_SEQ_IsSchedulableTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:325    .text.UTIL_SEQ_IsSchedulableTask:00000028 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:332    .text.UTIL_SEQ_PauseTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:338    .text.UTIL_SEQ_PauseTask:00000000 UTIL_SEQ_PauseTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:409    .text.UTIL_SEQ_PauseTask:00000018 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:414    .text.UTIL_SEQ_IsPauseTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:420    .text.UTIL_SEQ_IsPauseTask:00000000 UTIL_SEQ_IsPauseTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:495    .text.UTIL_SEQ_IsPauseTask:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:500    .text.UTIL_SEQ_ResumeTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:506    .text.UTIL_SEQ_ResumeTask:00000000 UTIL_SEQ_ResumeTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:577    .text.UTIL_SEQ_ResumeTask:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:582    .text.UTIL_SEQ_SetEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:588    .text.UTIL_SEQ_SetEvt:00000000 UTIL_SEQ_SetEvt
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:659    .text.UTIL_SEQ_SetEvt:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:664    .text.UTIL_SEQ_ClrEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:670    .text.UTIL_SEQ_ClrEvt:00000000 UTIL_SEQ_ClrEvt
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:741    .text.UTIL_SEQ_ClrEvt:00000018 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:746    .text.UTIL_SEQ_IsEvtPend:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:752    .text.UTIL_SEQ_IsEvtPend:00000000 UTIL_SEQ_IsEvtPend
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:774    .text.UTIL_SEQ_IsEvtPend:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:780    .text.UTIL_SEQ_Idle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:786    .text.UTIL_SEQ_Idle:00000000 UTIL_SEQ_Idle
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:800    .text.UTIL_SEQ_PreIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:806    .text.UTIL_SEQ_PreIdle:00000000 UTIL_SEQ_PreIdle
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:820    .text.UTIL_SEQ_PostIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:826    .text.UTIL_SEQ_PostIdle:00000000 UTIL_SEQ_PostIdle
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:840    .text.SEQ_BitPosition:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:846    .text.SEQ_BitPosition:00000000 SEQ_BitPosition
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:930    .text.SEQ_BitPosition:00000038 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:935    .text.UTIL_SEQ_Run:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:941    .text.UTIL_SEQ_Run:00000000 UTIL_SEQ_Run
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1305   .text.UTIL_SEQ_Run:00000104 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1317   .text.UTIL_SEQ_EvtIdle:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1323   .text.UTIL_SEQ_EvtIdle:00000000 UTIL_SEQ_EvtIdle
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1350   .text.UTIL_SEQ_WaitEvt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1356   .text.UTIL_SEQ_WaitEvt:00000000 UTIL_SEQ_WaitEvt
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1496   .text.UTIL_SEQ_WaitEvt:0000004c $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1503   .text.UTIL_SEQ_RegTask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1509   .text.UTIL_SEQ_RegTask:00000000 UTIL_SEQ_RegTask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1590   .text.UTIL_SEQ_RegTask:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1656   .rodata.SEQ_clz_table_4bit:00000000 SEQ_clz_table_4bit
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1596   .bss.CurrentTaskIdx:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1600   .bss.CurrentTaskIdx:00000000 CurrentTaskIdx
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1603   .bss.EvtSet:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1607   .bss.EvtSet:00000000 EvtSet
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1610   .bss.EvtWaited:00000000 $d
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s 			page 53
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1614   .bss.EvtWaited:00000000 EvtWaited
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1617   .bss.TaskCb:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1621   .bss.TaskCb:00000000 TaskCb
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1624   .bss.TaskPrio:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1628   .bss.TaskPrio:00000000 TaskPrio
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1631   .bss.TaskSet:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1635   .bss.TaskSet:00000000 TaskSet
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1638   .data.SuperMask:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1642   .data.SuperMask:00000000 SuperMask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1645   .data.TaskMask:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1649   .data.TaskMask:00000000 TaskMask
-C:\Users\843E~1\AppData\Local\Temp\ccgjEjrR.s:1652   .rodata.SEQ_clz_table_4bit:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1614   .bss.EvtWaited:00000000 EvtWaited
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1617   .bss.TaskCb:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1621   .bss.TaskCb:00000000 TaskCb
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1624   .bss.TaskPrio:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1628   .bss.TaskPrio:00000000 TaskPrio
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1631   .bss.TaskSet:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1635   .bss.TaskSet:00000000 TaskSet
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1638   .data.SuperMask:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1642   .data.SuperMask:00000000 SuperMask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1645   .data.TaskMask:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1649   .data.TaskMask:00000000 TaskMask
+C:\Users\843E~1\AppData\Local\Temp\ccP4YDpV.s:1652   .rodata.SEQ_clz_table_4bit:00000000 $d
 
 UNDEFINED SYMBOLS
 memset

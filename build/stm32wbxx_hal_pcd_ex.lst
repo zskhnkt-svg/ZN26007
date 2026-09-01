@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
   27:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   * @{
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   */
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 2
 
 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** /** @defgroup PCDEx PCDEx
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
   31              		.cfi_startproc
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 3
 
 
   34              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  109:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****     ep->pmaaddr0 = (uint16_t)(pmaadress & 0xFFFFU);
  110:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****     ep->pmaaddr1 = (uint16_t)((pmaadress & 0xFFFF0000U) >> 16);
  111:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 4
 
 
  112:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** #endif /* (USE_USB_DOUBLE_BUFFER == 1U) */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  101              		.section	.text.HAL_PCDEx_ActivateBCD,"ax",%progbits
  102              		.align	1
  103              		.global	HAL_PCDEx_ActivateBCD
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 5
 
 
  104              		.syntax unified
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  142 0030 92B2     		uxth	r2, r2
  143 0032 A3F85820 		strh	r2, [r3, #88]	@ movhi
  133:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   USBx->BCDR |= USB_BCDR_DCDEN;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 6
 
 
  144              		.loc 1 133 3 is_stmt 1 view .LVU39
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  148:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   /* Disable BCD feature */
  149:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   USBx->BCDR &= ~(USB_BCDR_BCDEN);
  186              		.loc 1 149 3 is_stmt 1 view .LVU51
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 7
 
 
  187              		.loc 1 149 14 is_stmt 0 view .LVU52
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  182:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** 
  183:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   /* If Charger detect ? */
  184:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   if ((USBx->BCDR & USB_BCDR_PDET) == USB_BCDR_PDET)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 8
 
 
  185:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  239:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** #else
  240:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****     HAL_PCDEx_BCD_Callback(hpcd, PCD_BCD_DISCOVERY_COMPLETED);
  241:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 9
 
 
  242:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  261:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   return HAL_OK;
  246              		.loc 1 261 3 is_stmt 1 view .LVU70
  262:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 10
 
 
  247              		.loc 1 262 1 is_stmt 0 view .LVU71
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  289              		.loc 1 276 16 is_stmt 0 view .LVU83
  290 001a B2F85430 		ldrh	r3, [r2, #84]
  291 001e 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 11
 
 
  292 0020 23F00203 		bic	r3, r3, #2
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  327              		.thumb
  328              		.thumb_func
  330              	HAL_PCDEx_BCD_Callback:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 12
 
 
  331              	.LVL26:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  161:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   uint32_t tickstart = HAL_GetTick();
  368              		.loc 1 161 3 is_stmt 1 view .LVU96
  161:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c ****   uint32_t tickstart = HAL_GetTick();
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 13
 
 
  369              		.loc 1 161 16 is_stmt 0 view .LVU97
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  409              		.loc 1 181 3 is_stmt 1 view .LVU111
  410 0042 3220     		movs	r0, #50
  411 0044 FFF7FEFF 		bl	HAL_Delay
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 14
 
 
  412              	.LVL34:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  173:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
  453              		.loc 1 173 5 view .LVU125
  454 0090 FE21     		movs	r1, #254
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 15
 
 
  455 0092 2846     		mov	r0, r5
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  498              		.loc 1 240 5 is_stmt 1 view .LVU136
  499 00c8 0021     		movs	r1, #0
  500 00ca 2846     		mov	r0, r5
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 16
 
 
  501 00cc FFF7FEFF 		bl	HAL_PCDEx_BCD_Callback
@@ -917,27 +917,27 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 1
  514              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h"
  515              		.file 7 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h"
  516              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wbxx_hal_pcd_ex.c
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:20     .text.HAL_PCDEx_PMAConfig:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:26     .text.HAL_PCDEx_PMAConfig:00000000 HAL_PCDEx_PMAConfig
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:102    .text.HAL_PCDEx_ActivateBCD:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:108    .text.HAL_PCDEx_ActivateBCD:00000000 HAL_PCDEx_ActivateBCD
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:160    .text.HAL_PCDEx_DeActivateBCD:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:166    .text.HAL_PCDEx_DeActivateBCD:00000000 HAL_PCDEx_DeActivateBCD
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:202    .text.HAL_PCDEx_ActivateLPM:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:208    .text.HAL_PCDEx_ActivateLPM:00000000 HAL_PCDEx_ActivateLPM
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:253    .text.HAL_PCDEx_DeActivateLPM:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:259    .text.HAL_PCDEx_DeActivateLPM:00000000 HAL_PCDEx_DeActivateLPM
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:302    .text.HAL_PCDEx_LPM_Callback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:308    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:324    .text.HAL_PCDEx_BCD_Callback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:330    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:346    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccS1RERN.s:352    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 HAL_PCDEx_BCD_VBUSDetect
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:20     .text.HAL_PCDEx_PMAConfig:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:26     .text.HAL_PCDEx_PMAConfig:00000000 HAL_PCDEx_PMAConfig
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:102    .text.HAL_PCDEx_ActivateBCD:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:108    .text.HAL_PCDEx_ActivateBCD:00000000 HAL_PCDEx_ActivateBCD
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:160    .text.HAL_PCDEx_DeActivateBCD:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:166    .text.HAL_PCDEx_DeActivateBCD:00000000 HAL_PCDEx_DeActivateBCD
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:202    .text.HAL_PCDEx_ActivateLPM:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:208    .text.HAL_PCDEx_ActivateLPM:00000000 HAL_PCDEx_ActivateLPM
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:253    .text.HAL_PCDEx_DeActivateLPM:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:259    .text.HAL_PCDEx_DeActivateLPM:00000000 HAL_PCDEx_DeActivateLPM
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:302    .text.HAL_PCDEx_LPM_Callback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:308    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:324    .text.HAL_PCDEx_BCD_Callback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:330    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:346    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccBe3N0i.s:352    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 HAL_PCDEx_BCD_VBUSDetect
 
 UNDEFINED SYMBOLS
 HAL_GetTick

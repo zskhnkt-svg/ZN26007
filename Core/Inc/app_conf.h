@@ -481,7 +481,7 @@
  *  When set to 1, the low power mode is enable
  *  When set to 0, the device stays in RUN mode
  */
-#define CFG_LPM_SUPPORTED    0
+#define CFG_LPM_SUPPORTED    1
 
 /******************************************************************************
  * RTC interface

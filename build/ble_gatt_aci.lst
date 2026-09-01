@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   35              		.cfi_def_cfa_offset 8
   36              		.cfi_offset 4, -8
   37              		.cfi_offset 14, -4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 2
 
 
   38 0002 88B0     		sub	sp, sp, #32
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   81              		.loc 1 32 1 view .LVU18
   82 003c 08B0     		add	sp, sp, #32
   83              	.LCFI2:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 3
 
 
   84              		.cfi_remember_state
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   42:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   aci_gatt_add_service_cp0 *cp0 = (aci_gatt_add_service_cp0*)(cmd_buffer);
  130              		.loc 1 42 3 view .LVU24
  131              	.LVL3:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 4
 
 
   43:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   aci_gatt_add_service_cp1 *cp1 = (aci_gatt_add_service_cp1*)(cmd_buffer + 1 + (Service_UUID_Type =
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   54:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****       case 1: size = 2; break;
   55:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****       case 2: size = 16; break;
  175              		.loc 1 55 20 view .LVU43
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 5
 
 
  176 0032 1024     		movs	r4, #16
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   72:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
  214              		.loc 1 72 3 is_stmt 1 view .LVU59
  215              		.loc 1 72 13 is_stmt 0 view .LVU60
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 6
 
 
  216 005e 02AB     		add	r3, sp, #8
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  260 008a C5E7     		b	.L6
  261              	.L9:
  262 008c 0325     		movs	r5, #3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 7
 
 
  263 008e C3E7     		b	.L6
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  307              		.loc 1 90 1 is_stmt 0 view .LVU86
  308 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
  309              	.LCFI8:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 8
 
 
  310              		.cfi_def_cfa_offset 28
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
   99:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 2;
  356              		.loc 1 99 3 is_stmt 1 discriminator 4 view .LVU101
  357              	.LVL31:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 9
 
 
  100:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Include_Start_Handle = Include_Start_Handle;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  112:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.clen = index_input;
  400              		.loc 1 112 3 is_stmt 1 discriminator 4 view .LVU121
  401              		.loc 1 112 11 is_stmt 0 discriminator 4 view .LVU122
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 10
 
 
  402 0058 4595     		str	r5, [sp, #276]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  446 0084 CBE7     		b	.L17
  447              	.LVL40:
  448              	.L20:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 11
 
 
  116:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   if ( resp.Status )
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  489              	.LVL42:
  137:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   aci_gatt_add_char_cp1 *cp1 = (aci_gatt_add_char_cp1*)(cmd_buffer + 2 + 1 + (Char_UUID_Type == 1 ?
  490              		.loc 1 137 3 view .LVU145
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 12
 
 
  491              		.loc 1 137 76 is_stmt 0 view .LVU146
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  534 0030 3ED0     		beq	.L29
  535              		.loc 1 148 5 is_stmt 0 view .LVU165
  536 0032 022C     		cmp	r4, #2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 13
 
 
  537 0034 3ED1     		bne	.L30
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  170:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     }
  171:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     index_input += 1;
  570              		.loc 1 171 5 is_stmt 1 view .LVU180
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 14
 
 
  571              	.LVL56:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  186:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rparam = &resp;
  611              		.loc 1 186 3 is_stmt 1 view .LVU199
  612              		.loc 1 186 13 is_stmt 0 view .LVU200
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 15
 
 
  613 0084 01AB     		add	r3, sp, #4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  658              	.L30:
  659 00b4 9720     		movs	r0, #151
  660              	.LVL65:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 16
 
 
  661              	.L26:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  699              		.cfi_offset 4, -36
  700              		.cfi_offset 5, -32
  701              		.cfi_offset 6, -28
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 17
 
 
  702              		.cfi_offset 7, -24
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  751 002e 03EB070A 		add	r10, r3, r7
  752              	.LVL71:
  215:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   aci_gatt_add_char_desc_rp0 resp;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 18
 
 
  753              		.loc 1 215 3 is_stmt 1 discriminator 8 view .LVU238
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  792              	.L37:
  793              	.LVL79:
  231:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****       default: return BLE_STATUS_ERROR;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 19
 
 
  232:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     }
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  831              		.loc 1 248 5 is_stmt 1 view .LVU272
  832              	.LVL86:
  249:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 20
 
 
  250:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****       cp2->Access_Permissions = Access_Permissions;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  869              		.loc 1 267 3 is_stmt 1 view .LVU289
  870              		.loc 1 267 10 is_stmt 0 view .LVU290
  871 00a8 3F23     		movs	r3, #63
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 21
 
 
  872 00aa ADF80831 		strh	r3, [sp, #264]	@ movhi
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  278:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   return BLE_STATUS_SUCCESS;
  916              		.loc 1 278 3 is_stmt 1 view .LVU312
  917              		.loc 1 278 10 is_stmt 0 view .LVU313
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 22
 
 
  918 00de 0AE0     		b	.L38
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  967              		.syntax unified
  968              		.thumb
  969              		.thumb_func
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 23
 
 
  971              	aci_gatt_update_char_value:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1010              		.loc 1 294 3 view .LVU332
  1011              		.loc 1 294 20 is_stmt 0 view .LVU333
  1012 0016 ADF80A10 		strh	r1, [sp, #10]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 24
 
 
  295:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 2;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1056              		.loc 1 305 13 is_stmt 0 view .LVU353
  1057 0048 4495     		str	r5, [sp, #272]
  306:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.clen = index_input;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 25
 
 
  1058              		.loc 1 306 3 is_stmt 1 view .LVU354
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1107              	.LFB6:
  313:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** 
  314:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** tBleStatus aci_gatt_del_char( uint16_t Serv_Handle,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 26
 
 
  315:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****                               uint16_t Char_Handle )
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1150              	.LVL123:
  1151              		.loc 1 326 3 is_stmt 0 view .LVU383
  1152 001c 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 27
 
 
  1153              	.LVL124:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1197              		@ sp needed
  1198 004e 70BD     		pop	{r4, r5, r6, pc}
  1199              	.LVL127:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 28
 
 
  1200              	.L55:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1246              		.loc 1 345 20 is_stmt 0 view .LVU413
  1247 000e 02AE     		add	r6, sp, #8
  1248              	.LVL131:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 29
 
 
  1249              		.loc 1 345 20 view .LVU414
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1292              		.loc 1 356 3 is_stmt 1 view .LVU433
  1293              		.loc 1 356 10 is_stmt 0 view .LVU434
  1294 0044 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 30
 
 
  1295              	.L58:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  365:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
  1342              		.loc 1 365 3 view .LVU442
  1343              		.loc 1 365 14 is_stmt 0 view .LVU443
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 31
 
 
  1344 0004 0DF10706 		add	r6, sp, #7
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1387              		.loc 1 376 3 is_stmt 1 view .LVU463
  1388              		.loc 1 376 13 is_stmt 0 view .LVU464
  1389 0036 4696     		str	r6, [sp, #280]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 32
 
 
  377:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = 1;
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1437              		@ frame_needed = 0, uses_anonymous_args = 0
  1438              		.loc 1 384 1 is_stmt 0 view .LVU475
  1439 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 33
 
 
  1440              	.LCFI36:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  395:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
  1484              		.loc 1 395 3 is_stmt 1 view .LVU492
  1485              		.loc 1 395 13 is_stmt 0 view .LVU493
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 34
 
 
  1486 002a 4496     		str	r6, [sp, #272]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1533              		.thumb_func
  1535              	aci_gatt_exchange_config:
  1536              	.LVL157:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 35
 
 
  1537              	.LFB10:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  414:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ogf = 0x3f;
  1580              		.loc 1 414 3 is_stmt 1 view .LVU521
  1581              		.loc 1 414 10 is_stmt 0 view .LVU522
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 36
 
 
  1582 001e 3F23     		movs	r3, #63
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1626              	.LVL165:
  1627              	.L71:
  1628              	.LCFI43:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 37
 
 
  1629              		.cfi_restore_state
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1673              		.loc 1 435 26 is_stmt 0 view .LVU551
  1674 000e 02AC     		add	r4, sp, #8
  1675              	.LVL169:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 38
 
 
  1676              		.loc 1 435 26 view .LVU552
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1719 003a 0623     		movs	r3, #6
  1720 003c 4593     		str	r3, [sp, #276]
  447:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rparam = &status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 39
 
 
  1721              		.loc 1 447 3 is_stmt 1 view .LVU574
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  456:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****                                            uint16_t End_Handle,
  457:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****                                            uint16_t UUID,
  458:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****                                            uint8_t Attribute_Val_Length,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 40
 
 
  459:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****                                            const uint8_t* Attribute_Val )
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1810              		.loc 1 470 19 is_stmt 0 view .LVU601
  1811 001c ADF80C20 		strh	r2, [sp, #12]	@ movhi
  471:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 2;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 41
 
 
  1812              		.loc 1 471 3 is_stmt 1 view .LVU602
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1856 004e 0F23     		movs	r3, #15
  1857 0050 4393     		str	r3, [sp, #268]
  482:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 42
 
 
  1858              		.loc 1 482 3 is_stmt 1 view .LVU622
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1905              		.thumb
  1906              		.thumb_func
  1908              	aci_att_read_by_type_req:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 43
 
 
  1909              	.LVL196:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1948              		.loc 1 504 3 is_stmt 1 discriminator 4 view .LVU650
  1949              	.LVL201:
  505:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Start_Handle = Start_Handle;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 44
 
 
  1950              		.loc 1 505 3 discriminator 4 view .LVU651
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  1994 0044 ADF80A31 		strh	r3, [sp, #266]	@ movhi
  516:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.event = 0x0F;
  1995              		.loc 1 516 3 is_stmt 1 discriminator 4 view .LVU671
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 45
 
 
  1996              		.loc 1 516 12 is_stmt 0 discriminator 4 view .LVU672
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2041              	.L85:
  522:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     return BLE_STATUS_TIMEOUT;
  2042              		.loc 1 522 12 view .LVU688
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 46
 
 
  2043 0072 FF20     		movs	r0, #255
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2086 000e 0225     		movs	r5, #2
  2087              	.L89:
  2088              	.LVL217:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 47
 
 
  538:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Connection_Handle = Connection_Handle;
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2132 0036 FFF7FEFF 		bl	Osal_MemSet
  2133              	.LVL228:
  549:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ogf = 0x3f;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 48
 
 
  2134              		.loc 1 549 3 discriminator 4 view .LVU719
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2178              		@ sp needed
  2179 006c 30BD     		pop	{r4, r5, pc}
  2180              	.LVL230:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 49
 
 
  2181              	.L94:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2225              	.LVL233:
  570:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
  2226              		.loc 1 570 3 view .LVU746
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 50
 
 
  2227              		.loc 1 570 14 is_stmt 0 view .LVU747
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2270 002e 0734     		adds	r4, r4, #7
  2271              	.LVL244:
  582:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 51
 
 
  2272              		.loc 1 582 3 is_stmt 1 view .LVU768
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  593:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** }
  2316              		.loc 1 593 1 view .LVU788
  2317 0066 49B0     		add	sp, sp, #292
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 52
 
 
  2318              	.LCFI62:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2365 0008 0024     		movs	r4, #0
  2366 000a 8DF80740 		strb	r4, [sp, #7]
  602:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   int index_input = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 53
 
 
  2367              		.loc 1 602 3 is_stmt 1 view .LVU797
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  613:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rparam = &status;
  2411              		.loc 1 613 3 is_stmt 1 view .LVU818
  2412              		.loc 1 613 13 is_stmt 0 view .LVU819
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 54
 
 
  2413 003a 4696     		str	r6, [sp, #280]
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2460              		@ args = 0, pretend = 0, frame = 288
  2461              		@ frame_needed = 0, uses_anonymous_args = 0
  2462              		.loc 1 621 1 is_stmt 0 view .LVU830
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 55
 
 
  2463 0000 70B5     		push	{r4, r5, r6, lr}
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2507 0028 ADF80A31 		strh	r3, [sp, #266]	@ movhi
  632:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.event = 0x0F;
  2508              		.loc 1 632 3 is_stmt 1 view .LVU847
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 56
 
 
  2509              		.loc 1 632 12 is_stmt 0 view .LVU848
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2554              	.LFE17:
  2556              		.section	.text.aci_gatt_disc_primary_service_by_uuid,"ax",%progbits
  2557              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 57
 
 
  2558              		.global	aci_gatt_disc_primary_service_by_uuid
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2601              		.loc 1 652 3 is_stmt 1 discriminator 4 view .LVU875
  2602              		.loc 1 652 26 is_stmt 0 discriminator 4 view .LVU876
  2603 0014 02AD     		add	r5, sp, #8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 58
 
 
  2604              	.LVL273:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2647              		.loc 1 663 11 is_stmt 0 discriminator 4 view .LVU896
  2648 0048 4594     		str	r4, [sp, #276]
  664:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rparam = &status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 59
 
 
  2649              		.loc 1 664 3 is_stmt 1 discriminator 4 view .LVU897
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2697              		.thumb_func
  2699              	aci_gatt_find_included_services:
  2700              	.LVL283:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 60
 
 
  2701              	.LFB19:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  684:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->End_Handle = End_Handle;
  2741              		.loc 1 684 3 view .LVU924
  2742              		.loc 1 684 19 is_stmt 0 view .LVU925
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 61
 
 
  2743 0018 ADF80C20 		strh	r2, [sp, #12]	@ movhi
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2787 0046 42A8     		add	r0, sp, #264
  2788 0048 FFF7FEFF 		bl	hci_send_req
  2789              	.LVL294:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 62
 
 
  2790              		.loc 1 694 6 view .LVU947
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2837              	.LCFI81:
  2838              		.cfi_def_cfa_offset 304
  703:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   struct hci_request rq;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 63
 
 
  2839              		.loc 1 703 3 is_stmt 1 view .LVU954
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2881              		.loc 1 715 10 is_stmt 0 view .LVU975
  2882 0026 3F23     		movs	r3, #63
  2883 0028 ADF80831 		strh	r3, [sp, #264]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 64
 
 
  716:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ocf = 0x115;
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2928              	.LCFI83:
  2929              		.cfi_restore_state
  723:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     return BLE_STATUS_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 65
 
 
  2930              		.loc 1 723 12 view .LVU994
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  2973 000c 2FD0     		beq	.L128
  2974 000e 0225     		movs	r5, #2
  2975              	.L123:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 66
 
 
  2976              	.LVL312:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3019 0034 42A8     		add	r0, sp, #264
  3020 0036 FFF7FEFF 		bl	Osal_MemSet
  3021              	.LVL323:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 67
 
 
  750:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ogf = 0x3f;
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3065              		.cfi_def_cfa_offset 12
  3066              		@ sp needed
  3067 006c 30BD     		pop	{r4, r5, pc}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 68
 
 
  3068              	.LVL325:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3113              		.loc 1 769 14 is_stmt 0 view .LVU1053
  3114 0004 0DF10706 		add	r6, sp, #7
  3115 0008 0025     		movs	r5, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 69
 
 
  3116 000a 8DF80750 		strb	r5, [sp, #7]
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3159 0034 0F23     		movs	r3, #15
  3160 0036 4393     		str	r3, [sp, #268]
  781:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 70
 
 
  3161              		.loc 1 781 3 is_stmt 1 view .LVU1075
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3208              		.syntax unified
  3209              		.thumb
  3210              		.thumb_func
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 71
 
 
  3212              	aci_gatt_read_char_value:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3253              	.LVL345:
  802:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
  3254              		.loc 1 802 3 view .LVU1105
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 72
 
 
  3255 0018 1822     		movs	r2, #24
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3299              		.loc 1 812 3 is_stmt 1 view .LVU1125
  3300              		.loc 1 812 10 is_stmt 0 view .LVU1126
  3301 004c 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 73
 
 
  3302              	.L134:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3346              		.loc 1 823 3 view .LVU1133
  3347              	.LVL352:
  824:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 74
 
 
  3348              		.loc 1 824 3 view .LVU1134
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3391 0026 0DF10F00 		add	r0, sp, #15
  3392              	.LVL362:
  3393              		.loc 1 835 3 discriminator 4 view .LVU1155
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 75
 
 
  3394 002a FFF7FEFF 		bl	Osal_MemCpy
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3438              		.loc 1 845 6 discriminator 4 view .LVU1175
  3439 0062 0028     		cmp	r0, #0
  3440 0064 05DB     		blt	.L141
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 76
 
 
  846:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     return BLE_STATUS_TIMEOUT;
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3487              		.cfi_offset 6, -8
  3488              		.cfi_offset 14, -4
  3489 0002 C8B0     		sub	sp, sp, #288
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 77
 
 
  3490              	.LCFI101:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3532              	.LVL379:
  866:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ogf = 0x3f;
  3533              		.loc 1 866 3 is_stmt 1 view .LVU1203
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 78
 
 
  3534              		.loc 1 866 10 is_stmt 0 view .LVU1204
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3578 0056 70BD     		pop	{r4, r5, r6, pc}
  3579              	.LVL381:
  3580              	.L146:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 79
 
 
  3581              	.LCFI103:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3626              		.loc 1 886 3 is_stmt 1 view .LVU1231
  3627              	.LVL384:
  887:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Connection_Handle = Connection_Handle;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 80
 
 
  3628              		.loc 1 887 3 view .LVU1232
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  897:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
  3673              		.loc 1 897 3 is_stmt 1 view .LVU1251
  3674              		.loc 1 897 13 is_stmt 0 view .LVU1252
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 81
 
 
  3675 0046 4496     		str	r6, [sp, #272]
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3723              	aci_gatt_write_char_value:
  3724              	.LVL395:
  3725              	.LFB27:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 82
 
 
  905:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3765              		.loc 1 919 3 is_stmt 1 view .LVU1280
  3766              	.LVL400:
  920:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Attribute_Val_Length = Attribute_Val_Length;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 83
 
 
  3767              		.loc 1 920 3 view .LVU1281
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3811 004a 4697     		str	r7, [sp, #280]
  931:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = 1;
  3812              		.loc 1 931 3 is_stmt 1 view .LVU1302
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 84
 
 
  3813              		.loc 1 931 11 is_stmt 0 view .LVU1303
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3857              		.cfi_startproc
  3858              		@ args = 4, pretend = 0, frame = 288
  3859              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 85
 
 
  3860              		.loc 1 942 1 is_stmt 0 view .LVU1312
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3902              		.loc 1 954 3 view .LVU1329
  3903              		.loc 1 954 29 is_stmt 0 view .LVU1330
  3904 001e 8DF80E30 		strb	r3, [sp, #14]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 86
 
 
  955:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 1;
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3949 0050 4697     		str	r7, [sp, #280]
  965:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = 1;
  3950              		.loc 1 965 3 is_stmt 1 view .LVU1351
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 87
 
 
  3951              		.loc 1 965 11 is_stmt 0 view .LVU1352
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  3995              		.cfi_startproc
  3996              		@ args = 4, pretend = 0, frame = 288
  3997              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 88
 
 
  3998              		.loc 1 976 1 is_stmt 0 view .LVU1361
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4040              		.loc 1 988 3 view .LVU1378
  4041              		.loc 1 988 29 is_stmt 0 view .LVU1379
  4042 001e 8DF80E30 		strb	r3, [sp, #14]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 89
 
 
  989:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 1;
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4087 0050 4697     		str	r7, [sp, #280]
  999:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = 1;
  4088              		.loc 1 999 3 is_stmt 1 view .LVU1400
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 90
 
 
  4089              		.loc 1 999 11 is_stmt 0 view .LVU1401
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4133              		.cfi_startproc
  4134              		@ args = 4, pretend = 0, frame = 288
  4135              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 91
 
 
  4136              		.loc 1 1010 1 is_stmt 0 view .LVU1410
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4178              		.loc 1 1022 3 view .LVU1427
  4179              		.loc 1 1022 29 is_stmt 0 view .LVU1428
  4180 001e 8DF80E30 		strb	r3, [sp, #14]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 92
 
 
 1023:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 1;
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4225 0050 4697     		str	r7, [sp, #280]
 1033:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = 1;
  4226              		.loc 1 1033 3 is_stmt 1 view .LVU1449
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 93
 
 
  4227              		.loc 1 1033 11 is_stmt 0 view .LVU1450
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4273              		@ frame_needed = 0, uses_anonymous_args = 0
  4274              		.loc 1 1042 1 is_stmt 0 view .LVU1459
  4275 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 94
 
 
  4276              	.LCFI124:
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4318 001e 2946     		mov	r1, r5
  4319              	.LVL465:
  4320              		.loc 1 1054 3 view .LVU1478
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 95
 
 
  4321 0020 42A8     		add	r0, sp, #264
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1065:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** }
  4365              		.loc 1 1065 1 view .LVU1499
  4366 0054 48B0     		add	sp, sp, #288
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 96
 
 
  4367              	.LCFI126:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1075:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
  4413              		.loc 1 1075 3 view .LVU1506
  4414              		.loc 1 1075 14 is_stmt 0 view .LVU1507
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 97
 
 
  4415 0006 0DF10707 		add	r7, sp, #7
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4458              		.loc 1 1086 10 is_stmt 0 view .LVU1526
  4459 0034 3F23     		movs	r3, #63
  4460 0036 ADF80831 		strh	r3, [sp, #264]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 98
 
 
 1087:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ocf = 0x121;
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4505              		.cfi_restore_state
 1094:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****     return BLE_STATUS_TIMEOUT;
  4506              		.loc 1 1094 12 view .LVU1545
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 99
 
 
  4507 0064 FF20     		movs	r0, #255
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4553 0010 ADF80800 		strh	r0, [sp, #8]	@ movhi
 1107:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 2;
  4554              		.loc 1 1107 3 is_stmt 1 view .LVU1557
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 100
 
 
  4555              	.LVL488:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4598              		.loc 1 1118 8 is_stmt 0 view .LVU1579
  4599 0040 2146     		mov	r1, r4
  4600 0042 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 101
 
 
  4601 0044 FFF7FEFF 		bl	hci_send_req
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4647              		.cfi_offset 6, -12
  4648              		.cfi_offset 7, -8
  4649              		.cfi_offset 14, -4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 102
 
 
  4650 0002 C9B0     		sub	sp, sp, #292
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1140:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += Attribute_Val_Length;
  4692              		.loc 1 1140 3 is_stmt 1 view .LVU1606
  4693              		.loc 1 1140 15 is_stmt 0 view .LVU1607
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 103
 
 
  4694 0028 0534     		adds	r4, r4, #5
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4737 005c 49B0     		add	sp, sp, #292
  4738              	.LCFI138:
  4739              		.cfi_remember_state
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 104
 
 
  4740              		.cfi_def_cfa_offset 20
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4785              		.loc 1 1161 14 is_stmt 0 view .LVU1634
  4786 0006 0DF10707 		add	r7, sp, #7
  4787 000a 0026     		movs	r6, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 105
 
 
  4788 000c 8DF80760 		strb	r6, [sp, #7]
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4831 0036 ADF80831 		strh	r3, [sp, #264]	@ movhi
 1173:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ocf = 0x124;
  4832              		.loc 1 1173 3 is_stmt 1 view .LVU1654
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 106
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 106
 
 
  4833              		.loc 1 1173 10 is_stmt 0 view .LVU1655
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4879              		.section	.text.aci_gatt_confirm_indication,"ax",%progbits
  4880              		.align	1
  4881              		.global	aci_gatt_confirm_indication
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 107
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 107
 
 
  4882              		.syntax unified
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4926 0018 42A8     		add	r0, sp, #264
  4927              	.LVL528:
  4928              		.loc 1 1192 3 is_stmt 0 view .LVU1684
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 108
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 108
 
 
  4929 001a FFF7FEFF 		bl	Osal_MemSet
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  4973              	.LVL531:
  4974              	.L190:
  4975              	.LCFI147:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 109
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 109
 
 
  4976              		.cfi_restore_state
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1215:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   int index_input = 0;
  5019              		.loc 1 1215 3 is_stmt 1 view .LVU1711
  5020              	.LVL534:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 110
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 110
 
 
 1216:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Connection_Handle = Connection_Handle;
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5063 0034 0735     		adds	r5, r5, #7
  5064              	.LVL545:
 1228:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 111
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 111
 
 
  5065              		.loc 1 1228 3 is_stmt 1 view .LVU1734
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5109              		.cfi_def_cfa_offset 20
  5110              		@ sp needed
  5111 006a F0BD     		pop	{r4, r5, r6, r7, pc}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 112
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 112
 
 
  5112              	.LVL548:
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5158              		.loc 1 1247 3 view .LVU1762
  5159              		.loc 1 1247 26 is_stmt 0 view .LVU1763
  5160 000e 02AE     		add	r6, sp, #8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 113
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 113
 
 
  5161              	.LVL552:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1258:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   return status;
  5205              		.loc 1 1258 3 is_stmt 1 view .LVU1783
  5206              		.loc 1 1258 10 is_stmt 0 view .LVU1784
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 114
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 114
 
 
  5207 0044 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5253              		.loc 1 1267 3 view .LVU1791
  5254              	.LVL559:
 1268:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 115
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 115
 
 
  5255              		.loc 1 1268 3 view .LVU1792
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5299 0030 ADF80A31 		strh	r3, [sp, #266]	@ movhi
 1279:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
  5300              		.loc 1 1279 3 is_stmt 1 view .LVU1813
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 116
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 116
 
 
  5301              		.loc 1 1279 13 is_stmt 0 view .LVU1814
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5348              		.thumb
  5349              		.thumb_func
  5351              	aci_gatt_set_desc_value:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 117
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 117
 
 
  5352              	.LVL571:
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5390              		.loc 1 1302 3 view .LVU1840
  5391              		.loc 1 1302 20 is_stmt 0 view .LVU1841
  5392 0018 ADF80A10 		strh	r1, [sp, #10]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 118
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 118
 
 
 1303:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 2;
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1314:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.ocf = 0x129;
  5436              		.loc 1 1314 3 is_stmt 1 view .LVU1861
  5437              		.loc 1 1314 10 is_stmt 0 view .LVU1862
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 119
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 119
 
 
  5438 0046 40F22913 		movw	r3, #297
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5484              		.align	1
  5485              		.global	aci_gatt_read_handle_value
  5486              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 120
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 120
 
 
  5487              		.thumb
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5529              	.LVL592:
  5530              		.loc 1 1335 3 view .LVU1887
  5531 001a FFF7FEFF 		bl	Osal_MemSet
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 121
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 121
 
 
  5532              	.LVL593:
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5573              		.loc 1 1348 3 is_stmt 1 view .LVU1908
  5574              		.loc 1 1348 13 is_stmt 0 view .LVU1909
  5575 004a CDF81092 		str	r9, [sp, #528]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 122
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 122
 
 
 1349:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rlen = sizeof(resp);
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5615 0076 BDF80720 		ldrh	r2, [sp, #7]	@ unaligned
 1355:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   Osal_MemCpy( (void*)Value, (const void*)resp.Value, *Value_Length);
  5616              		.loc 1 1355 17 view .LVU1924
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 123
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 123
 
 
  5617 007a 8E9B     		ldr	r3, [sp, #568]
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5658              		.cfi_offset 6, -12
  5659              		.cfi_offset 7, -8
  5660              		.cfi_offset 14, -4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 124
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 124
 
 
  5661 0002 C9B0     		sub	sp, sp, #292
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5701 0024 BDF83831 		ldrh	r3, [sp, #312]
  5702              	.LVL613:
  5703              		.loc 1 1382 20 view .LVU1953
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 125
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 125
 
 
  5704 0028 ADF80F30 		strh	r3, [sp, #15]	@ unaligned
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1393:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.cparam = cmd_buffer;
  5748              		.loc 1 1393 3 is_stmt 1 view .LVU1972
  5749              		.loc 1 1393 13 is_stmt 0 view .LVU1973
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 126
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 126
 
 
  5750 005c 4494     		str	r4, [sp, #272]
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5798              	aci_gatt_deny_read:
  5799              	.LVL625:
  5800              	.LFB43:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 127
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 127
 
 
 1401:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** 
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5841 0018 1822     		movs	r2, #24
  5842 001a 2146     		mov	r1, r4
  5843              	.LVL631:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 128
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 128
 
 
  5844              		.loc 1 1414 3 is_stmt 0 view .LVU2003
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5888              		.cfi_remember_state
  5889              		.cfi_def_cfa_offset 16
  5890              		@ sp needed
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 129
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 129
 
 
  5891 004e 70BD     		pop	{r4, r5, r6, pc}
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5936              		.loc 1 1434 3 is_stmt 1 view .LVU2031
  5937              	.LVL638:
 1435:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   cp0->Serv_Handle = Serv_Handle;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 130
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 130
 
 
  5938              		.loc 1 1435 3 view .LVU2032
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  5982 0038 4593     		str	r3, [sp, #276]
 1446:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   rq.rparam = &status;
  5983              		.loc 1 1446 3 is_stmt 1 view .LVU2054
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 131
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 131
 
 
  5984              		.loc 1 1446 13 is_stmt 0 view .LVU2055
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6031              		@ args = 0, pretend = 0, frame = 32
  6032              		@ frame_needed = 0, uses_anonymous_args = 0
  6033 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 132
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 132
 
 
  6034              	.LCFI180:
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6078              		.loc 1 1464 10 is_stmt 0 view .LVU2082
  6079 0038 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
  6080              	.L226:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 133
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 133
 
 
 1465:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c **** }
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
 1473:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   aci_gatt_send_mult_notification_cp0 *cp0 = (aci_gatt_send_mult_notification_cp0*)(cmd_buffer);
  6128              		.loc 1 1473 3 view .LVU2089
 1474:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   tBleStatus status = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 134
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 134
 
 
  6129              		.loc 1 1474 3 view .LVU2090
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6173              		.loc 1 1484 3 is_stmt 1 view .LVU2108
  6174              		.loc 1 1484 10 is_stmt 0 view .LVU2109
  6175 003a 40F23113 		movw	r3, #305
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 135
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 135
 
 
  6176 003e ADF80A31 		strh	r3, [sp, #266]	@ movhi
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6222              		.global	aci_gatt_read_multiple_var_char_value
  6223              		.syntax unified
  6224              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 136
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 136
 
 
  6225              		.thumb_func
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6267              		.loc 1 1505 3 view .LVU2137
  6268              		.loc 1 1505 26 is_stmt 0 view .LVU2138
  6269 0018 8DF80A40 		strb	r4, [sp, #10]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 137
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 137
 
 
 1506:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c ****   index_input += 1;
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6313              		.loc 1 1516 3 is_stmt 1 view .LVU2158
  6314              		.loc 1 1516 11 is_stmt 0 view .LVU2159
  6315 004c 0123     		movs	r3, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 138
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 138
 
 
  6316 004e 4793     		str	r3, [sp, #284]
@@ -8263,110 +8263,110 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 1
  6351              		.file 4 "Middlewares/ST/STM32_WPAN/ble/core/template/ble_const.h"
  6352              		.file 5 "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_types.h"
  6353              		.file 6 "Middlewares/ST/STM32_WPAN/ble/core/template/osal.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 139
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 139
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ble_gatt_aci.c
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:20     .text.aci_gatt_init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:26     .text.aci_gatt_init:00000000 aci_gatt_init
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:98     .text.aci_gatt_add_service:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:104    .text.aci_gatt_add_service:00000000 aci_gatt_add_service
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:294    .text.aci_gatt_include_service:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:300    .text.aci_gatt_include_service:00000000 aci_gatt_include_service
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:456    .text.aci_gatt_add_char:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:462    .text.aci_gatt_add_char:00000000 aci_gatt_add_char
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:682    .text.aci_gatt_add_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:688    .text.aci_gatt_add_char_desc:00000000 aci_gatt_add_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:965    .text.aci_gatt_update_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:971    .text.aci_gatt_update_char_value:00000000 aci_gatt_update_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1099   .text.aci_gatt_del_char:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1105   .text.aci_gatt_del_char:00000000 aci_gatt_del_char
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1210   .text.aci_gatt_del_service:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1216   .text.aci_gatt_del_service:00000000 aci_gatt_del_service
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1314   .text.aci_gatt_del_include_service:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1320   .text.aci_gatt_del_include_service:00000000 aci_gatt_del_include_service
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1425   .text.aci_gatt_set_event_mask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1431   .text.aci_gatt_set_event_mask:00000000 aci_gatt_set_event_mask
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1529   .text.aci_gatt_exchange_config:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1535   .text.aci_gatt_exchange_config:00000000 aci_gatt_exchange_config
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1637   .text.aci_att_find_info_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1643   .text.aci_att_find_info_req:00000000 aci_att_find_info_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1759   .text.aci_att_find_by_type_value_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1765   .text.aci_att_find_by_type_value_req:00000000 aci_att_find_by_type_value_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1902   .text.aci_att_read_by_type_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:1908   .text.aci_att_read_by_type_req:00000000 aci_att_read_by_type_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2049   .text.aci_att_read_by_group_type_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2055   .text.aci_att_read_by_group_type_req:00000000 aci_att_read_by_group_type_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2196   .text.aci_att_prepare_write_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2202   .text.aci_att_prepare_write_req:00000000 aci_att_prepare_write_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2334   .text.aci_att_execute_write_req:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2340   .text.aci_att_execute_write_req:00000000 aci_att_execute_write_req
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2449   .text.aci_gatt_disc_all_primary_services:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2455   .text.aci_gatt_disc_all_primary_services:00000000 aci_gatt_disc_all_primary_services
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2557   .text.aci_gatt_disc_primary_service_by_uuid:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2563   .text.aci_gatt_disc_primary_service_by_uuid:00000000 aci_gatt_disc_primary_service_by_uuid
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2693   .text.aci_gatt_find_included_services:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2699   .text.aci_gatt_find_included_services:00000000 aci_gatt_find_included_services
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2815   .text.aci_gatt_disc_all_char_of_service:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2821   .text.aci_gatt_disc_all_char_of_service:00000000 aci_gatt_disc_all_char_of_service
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2937   .text.aci_gatt_disc_char_by_uuid:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:2943   .text.aci_gatt_disc_char_by_uuid:00000000 aci_gatt_disc_char_by_uuid
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3084   .text.aci_gatt_disc_all_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3090   .text.aci_gatt_disc_all_char_desc:00000000 aci_gatt_disc_all_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3206   .text.aci_gatt_read_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3212   .text.aci_gatt_read_char_value:00000000 aci_gatt_read_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3321   .text.aci_gatt_read_using_char_uuid:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3327   .text.aci_gatt_read_using_char_uuid:00000000 aci_gatt_read_using_char_uuid
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3468   .text.aci_gatt_read_long_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3474   .text.aci_gatt_read_long_char_value:00000000 aci_gatt_read_long_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3590   .text.aci_gatt_read_multiple_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3596   .text.aci_gatt_read_multiple_char_value:00000000 aci_gatt_read_multiple_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3717   .text.aci_gatt_write_char_value:00000000 $t
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s 			page 140
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:20     .text.aci_gatt_init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:26     .text.aci_gatt_init:00000000 aci_gatt_init
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:98     .text.aci_gatt_add_service:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:104    .text.aci_gatt_add_service:00000000 aci_gatt_add_service
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:294    .text.aci_gatt_include_service:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:300    .text.aci_gatt_include_service:00000000 aci_gatt_include_service
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:456    .text.aci_gatt_add_char:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:462    .text.aci_gatt_add_char:00000000 aci_gatt_add_char
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:682    .text.aci_gatt_add_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:688    .text.aci_gatt_add_char_desc:00000000 aci_gatt_add_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:965    .text.aci_gatt_update_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:971    .text.aci_gatt_update_char_value:00000000 aci_gatt_update_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1099   .text.aci_gatt_del_char:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1105   .text.aci_gatt_del_char:00000000 aci_gatt_del_char
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1210   .text.aci_gatt_del_service:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1216   .text.aci_gatt_del_service:00000000 aci_gatt_del_service
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1314   .text.aci_gatt_del_include_service:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1320   .text.aci_gatt_del_include_service:00000000 aci_gatt_del_include_service
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1425   .text.aci_gatt_set_event_mask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1431   .text.aci_gatt_set_event_mask:00000000 aci_gatt_set_event_mask
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1529   .text.aci_gatt_exchange_config:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1535   .text.aci_gatt_exchange_config:00000000 aci_gatt_exchange_config
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1637   .text.aci_att_find_info_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1643   .text.aci_att_find_info_req:00000000 aci_att_find_info_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1759   .text.aci_att_find_by_type_value_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1765   .text.aci_att_find_by_type_value_req:00000000 aci_att_find_by_type_value_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1902   .text.aci_att_read_by_type_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:1908   .text.aci_att_read_by_type_req:00000000 aci_att_read_by_type_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2049   .text.aci_att_read_by_group_type_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2055   .text.aci_att_read_by_group_type_req:00000000 aci_att_read_by_group_type_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2196   .text.aci_att_prepare_write_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2202   .text.aci_att_prepare_write_req:00000000 aci_att_prepare_write_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2334   .text.aci_att_execute_write_req:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2340   .text.aci_att_execute_write_req:00000000 aci_att_execute_write_req
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2449   .text.aci_gatt_disc_all_primary_services:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2455   .text.aci_gatt_disc_all_primary_services:00000000 aci_gatt_disc_all_primary_services
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2557   .text.aci_gatt_disc_primary_service_by_uuid:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2563   .text.aci_gatt_disc_primary_service_by_uuid:00000000 aci_gatt_disc_primary_service_by_uuid
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2693   .text.aci_gatt_find_included_services:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2699   .text.aci_gatt_find_included_services:00000000 aci_gatt_find_included_services
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2815   .text.aci_gatt_disc_all_char_of_service:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2821   .text.aci_gatt_disc_all_char_of_service:00000000 aci_gatt_disc_all_char_of_service
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2937   .text.aci_gatt_disc_char_by_uuid:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:2943   .text.aci_gatt_disc_char_by_uuid:00000000 aci_gatt_disc_char_by_uuid
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3084   .text.aci_gatt_disc_all_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3090   .text.aci_gatt_disc_all_char_desc:00000000 aci_gatt_disc_all_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3206   .text.aci_gatt_read_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3212   .text.aci_gatt_read_char_value:00000000 aci_gatt_read_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3321   .text.aci_gatt_read_using_char_uuid:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3327   .text.aci_gatt_read_using_char_uuid:00000000 aci_gatt_read_using_char_uuid
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3468   .text.aci_gatt_read_long_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3474   .text.aci_gatt_read_long_char_value:00000000 aci_gatt_read_long_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3590   .text.aci_gatt_read_multiple_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3596   .text.aci_gatt_read_multiple_char_value:00000000 aci_gatt_read_multiple_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3717   .text.aci_gatt_write_char_value:00000000 $t
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s 			page 140
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3723   .text.aci_gatt_write_char_value:00000000 aci_gatt_write_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3847   .text.aci_gatt_write_long_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3853   .text.aci_gatt_write_long_char_value:00000000 aci_gatt_write_long_char_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3985   .text.aci_gatt_write_char_reliable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:3991   .text.aci_gatt_write_char_reliable:00000000 aci_gatt_write_char_reliable
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4123   .text.aci_gatt_write_long_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4129   .text.aci_gatt_write_long_char_desc:00000000 aci_gatt_write_long_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4261   .text.aci_gatt_read_long_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4267   .text.aci_gatt_read_long_char_desc:00000000 aci_gatt_read_long_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4383   .text.aci_gatt_write_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4389   .text.aci_gatt_write_char_desc:00000000 aci_gatt_write_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4513   .text.aci_gatt_read_char_desc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4519   .text.aci_gatt_read_char_desc:00000000 aci_gatt_read_char_desc
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4628   .text.aci_gatt_write_without_resp:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4634   .text.aci_gatt_write_without_resp:00000000 aci_gatt_write_without_resp
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4754   .text.aci_gatt_signed_write_without_resp:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4760   .text.aci_gatt_signed_write_without_resp:00000000 aci_gatt_signed_write_without_resp
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4880   .text.aci_gatt_confirm_indication:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4886   .text.aci_gatt_confirm_indication:00000000 aci_gatt_confirm_indication
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4984   .text.aci_gatt_write_resp:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:4990   .text.aci_gatt_write_resp:00000000 aci_gatt_write_resp
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5123   .text.aci_gatt_allow_read:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5129   .text.aci_gatt_allow_read:00000000 aci_gatt_allow_read
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5227   .text.aci_gatt_set_security_permission:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5233   .text.aci_gatt_set_security_permission:00000000 aci_gatt_set_security_permission
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5345   .text.aci_gatt_set_desc_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5351   .text.aci_gatt_set_desc_value:00000000 aci_gatt_set_desc_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5484   .text.aci_gatt_read_handle_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5490   .text.aci_gatt_read_handle_value:00000000 aci_gatt_read_handle_value
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5639   .text.aci_gatt_update_char_value_ext:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5645   .text.aci_gatt_update_char_value_ext:00000000 aci_gatt_update_char_value_ext
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5792   .text.aci_gatt_deny_read:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5798   .text.aci_gatt_deny_read:00000000 aci_gatt_deny_read
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5903   .text.aci_gatt_set_access_permission:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:5909   .text.aci_gatt_set_access_permission:00000000 aci_gatt_set_access_permission
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6021   .text.aci_gatt_store_db:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6027   .text.aci_gatt_store_db:00000000 aci_gatt_store_db
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6098   .text.aci_gatt_send_mult_notification:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6104   .text.aci_gatt_send_mult_notification:00000000 aci_gatt_send_mult_notification
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6221   .text.aci_gatt_read_multiple_var_char_value:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccQ67Uv2.s:6227   .text.aci_gatt_read_multiple_var_char_value:00000000 aci_gatt_read_multiple_var_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3723   .text.aci_gatt_write_char_value:00000000 aci_gatt_write_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3847   .text.aci_gatt_write_long_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3853   .text.aci_gatt_write_long_char_value:00000000 aci_gatt_write_long_char_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3985   .text.aci_gatt_write_char_reliable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:3991   .text.aci_gatt_write_char_reliable:00000000 aci_gatt_write_char_reliable
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4123   .text.aci_gatt_write_long_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4129   .text.aci_gatt_write_long_char_desc:00000000 aci_gatt_write_long_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4261   .text.aci_gatt_read_long_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4267   .text.aci_gatt_read_long_char_desc:00000000 aci_gatt_read_long_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4383   .text.aci_gatt_write_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4389   .text.aci_gatt_write_char_desc:00000000 aci_gatt_write_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4513   .text.aci_gatt_read_char_desc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4519   .text.aci_gatt_read_char_desc:00000000 aci_gatt_read_char_desc
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4628   .text.aci_gatt_write_without_resp:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4634   .text.aci_gatt_write_without_resp:00000000 aci_gatt_write_without_resp
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4754   .text.aci_gatt_signed_write_without_resp:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4760   .text.aci_gatt_signed_write_without_resp:00000000 aci_gatt_signed_write_without_resp
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4880   .text.aci_gatt_confirm_indication:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4886   .text.aci_gatt_confirm_indication:00000000 aci_gatt_confirm_indication
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4984   .text.aci_gatt_write_resp:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:4990   .text.aci_gatt_write_resp:00000000 aci_gatt_write_resp
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5123   .text.aci_gatt_allow_read:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5129   .text.aci_gatt_allow_read:00000000 aci_gatt_allow_read
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5227   .text.aci_gatt_set_security_permission:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5233   .text.aci_gatt_set_security_permission:00000000 aci_gatt_set_security_permission
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5345   .text.aci_gatt_set_desc_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5351   .text.aci_gatt_set_desc_value:00000000 aci_gatt_set_desc_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5484   .text.aci_gatt_read_handle_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5490   .text.aci_gatt_read_handle_value:00000000 aci_gatt_read_handle_value
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5639   .text.aci_gatt_update_char_value_ext:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5645   .text.aci_gatt_update_char_value_ext:00000000 aci_gatt_update_char_value_ext
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5792   .text.aci_gatt_deny_read:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5798   .text.aci_gatt_deny_read:00000000 aci_gatt_deny_read
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5903   .text.aci_gatt_set_access_permission:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:5909   .text.aci_gatt_set_access_permission:00000000 aci_gatt_set_access_permission
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6021   .text.aci_gatt_store_db:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6027   .text.aci_gatt_store_db:00000000 aci_gatt_store_db
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6098   .text.aci_gatt_send_mult_notification:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6104   .text.aci_gatt_send_mult_notification:00000000 aci_gatt_send_mult_notification
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6221   .text.aci_gatt_read_multiple_var_char_value:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoA5YCw.s:6227   .text.aci_gatt_read_multiple_var_char_value:00000000 aci_gatt_read_multiple_var_char_value
 
 UNDEFINED SYMBOLS
 Osal_MemSet

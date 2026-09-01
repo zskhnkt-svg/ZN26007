@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
   27:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private typedef -------------------------------------------------------------*/
   28:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** /* Private macro -------------------------------------------------------------*/
   29:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** #define MOD(X,Y) (((X) >= (Y)) ? ((X)-(Y)) : (X))
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 2
 
 
   30:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
   58              		.loc 1 55 3 is_stmt 1 view .LVU15
   59              		.loc 1 55 18 is_stmt 0 view .LVU16
   60 0012 0381     		strh	r3, [r0, #8]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 3
 
 
   56:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   q->optionFlags = optionFlags;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
   70:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  X; pointer on element(s) to be added 
   71:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize:  Size of element to be added to the queue. Only used if the queue manage v
   72:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  nbElements:  number of elements in the in buffer pointed by x
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 4
 
 
   73:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval  pointer on last element just added to the queue, NULL if the element to be added do no
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  137              		.loc 1 91 28 is_stmt 0 view .LVU41
  138 000c 0689     		ldrh	r6, [r0, #8]
  139              		.loc 1 91 24 view .LVU42
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 5
 
 
  140 000e C6B9     		cbnz	r6, .L29
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  188 0048 4FF00008 		mov	r8, #0
  189              	.LVL15:
  190              	.L7:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 6
 
 
   96:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  231              		.loc 1 109 13 is_stmt 0 discriminator 4 view .LVU76
  232 0074 9B45     		cmp	fp, r3
  233 0076 0BD2     		bcs	.L34
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 7
 
 
  234              		.loc 1 109 37 discriminator 1 view .LVU77
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  279              		.loc 1 114 3 is_stmt 1 discriminator 6 view .LVU90
  280              		.loc 1 114 6 is_stmt 0 discriminator 6 view .LVU91
  281 00a2 002E     		cmp	r6, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 8
 
 
  282 00a4 00F0C380 		beq	.L36
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  144:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = 0; 
  145:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set NbCopiedBytes bytes with  ampount copied */
  146:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         NbCopiedBytes = NbBytesToCopy;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 9
 
 
  147:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the rest to copy if wrao , if no wrap will be 0 */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  201:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
  202:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           }
  203:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           else
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 10
 
 
  204:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  325              		.loc 1 144 9 is_stmt 1 view .LVU105
  326              	.LVL32:
  146:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         /* set the rest to copy if wrao , if no wrap will be 0 */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 11
 
 
  327              		.loc 1 146 9 view .LVU106
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  365 00f8 80F08D80 		bcs	.L43
  119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
  366              		.loc 1 119 7 is_stmt 1 view .LVU123
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 12
 
 
  119:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       curBuffPosition = q->last;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
  405              		.loc 1 128 10 discriminator 4 view .LVU140
  406 011e 2068     		ldr	r0, [r4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 13
 
 
  128:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         curBuffPosition = MOD(curBuffPosition, q->queueMaxSize);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  446 0146 002A     		cmp	r2, #0
  447 0148 BBD0     		beq	.L20
  448              	.L21:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 14
 
 
  152:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       {
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  485 016a 2B44     		add	r3, r3, r5
  486 016c 6361     		str	r3, [r4, #20]
  165:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* all element to be copied at the begnning of buffer */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 15
 
 
  487              		.loc 1 165 11 is_stmt 1 view .LVU174
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  524              	.L25:
  211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
  525              		.loc 1 211 9 is_stmt 1 view .LVU192
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 16
 
 
  211:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****         q->last = 0;        
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  562              		.loc 1 186 42 view .LVU210
  563 01b4 8854     		strb	r0, [r1, r2]
  188:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += NbBytesToCopy; 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 17
 
 
  564              		.loc 1 188 14 is_stmt 1 view .LVU211
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  200:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****              q->byteCount += 2;              
  602              		.loc 1 200 15 view .LVU228
  603 01dc 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 18
 
 
  604              	.LVL58:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  645              		.loc 1 219 9 is_stmt 1 view .LVU241
  219:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****       }      
  646              		.loc 1 219 22 is_stmt 0 view .LVU242
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 19
 
 
  647 020e 6369     		ldr	r3, [r4, #20]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  690 0234 F8E7     		b	.L5
  691              		.cfi_endproc
  692              	.LFE1262:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 20
 
 
  694              		.section	.text.CircularQueue_Remove_Copy,"ax",%progbits
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  258:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
  259:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Remove(queue_t *q, uint16_t* elementSize)
  260:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 21
 
 
  728              		.loc 1 260 1 is_stmt 1 view -0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  774 0022 02D3     		bcc	.L49
  775              		.loc 1 268 71 discriminator 3 view .LVU274
  776 0024 A4EB0E04 		sub	r4, r4, lr
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 22
 
 
  777 0028 661C     		adds	r6, r4, #1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  813 0052 B042     		cmp	r0, r6
  814 0054 00D3     		bcc	.L54
  815              		.loc 1 285 23 discriminator 1 view .LVU285
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 23
 
 
  816 0056 801B     		subs	r0, r0, r6
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  855              		.loc 1 300 5 is_stmt 1 view .LVU301
  856              		.loc 1 300 18 is_stmt 0 view .LVU302
  857 007a 0A80     		strh	r2, [r1]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 24
 
 
  301:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
  897              		.loc 1 276 29 view .LVU317
  898 00a2 5C68     		ldr	r4, [r3, #4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 25
 
 
  276:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****           /* Adjust first element pos */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  938              		.loc 1 262 12 view .LVU332
  939 00d0 1046     		mov	r0, r2
  940 00d2 D1E7     		b	.L47
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 26
 
 
  941              		.cfi_endproc
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  325:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @param  elementSize:  Pointer to return Size of element to be removed (ignored if NULL)
  326:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   * @retval Pointer on sensed element. NULL if queue was empty
  327:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 27
 
 
  328:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** uint8_t* CircularQueue_Sense(queue_t *q, uint16_t* elementSize)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1020 0016 1CF80620 		ldrb	r2, [ip, r6]	@ zero_extendqisi2
  1021              		.loc 1 339 71 discriminator 1 view .LVU355
  1022 001a 741C     		adds	r4, r6, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 28
 
 
  1023 001c 4768     		ldr	r7, [r0, #4]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1060 0044 3344     		add	r3, r3, r6
  1061              	.LVL94:
  1062              		.loc 1 355 21 view .LVU367
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 29
 
 
  1063 0046 4068     		ldr	r0, [r0, #4]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1106 0062 B442     		cmp	r4, r6
  1107 0064 EDD2     		bcs	.L73
  344:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 30
 
 
  1108              		.loc 1 344 33 view .LVU381
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1148 0090 D7E7     		b	.L73
  1149              	.L87:
  1150 0092 C4F10104 		rsb	r4, r4, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 31
 
 
  1151 0096 F6E7     		b	.L76
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1191              		.loc 1 373 6 view .LVU405
  1192 0002 0BB1     		cbz	r3, .L90
  372:Middlewares/ST/STM32_WPAN/utilities/stm_queue.c ****   int ret=FALSE;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 32
 
 
  1193              		.loc 1 372 7 view .LVU406
@@ -1915,27 +1915,27 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 1
  1236              		.file 3 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
  1237              		.file 4 "Middlewares/ST/STM32_WPAN/utilities/stm_queue.h"
  1238              		.file 5 "<built-in>"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s 			page 33
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm_queue.c
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:20     .text.CircularQueue_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:26     .text.CircularQueue_Init:00000000 CircularQueue_Init
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:93     .text.CircularQueue_Add:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:99     .text.CircularQueue_Add:00000000 CircularQueue_Add
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:695    .text.CircularQueue_Remove_Copy:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:701    .text.CircularQueue_Remove_Copy:00000000 CircularQueue_Remove_Copy
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:719    .text.CircularQueue_Remove:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:725    .text.CircularQueue_Remove:00000000 CircularQueue_Remove
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:945    .text.CircularQueue_Sense_Copy:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:951    .text.CircularQueue_Sense_Copy:00000000 CircularQueue_Sense_Copy
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:969    .text.CircularQueue_Sense:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:975    .text.CircularQueue_Sense:00000000 CircularQueue_Sense
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1173   .text.CircularQueue_Empty:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1179   .text.CircularQueue_Empty:00000000 CircularQueue_Empty
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1210   .text.CircularQueue_NbElement:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccSThw9L.s:1216   .text.CircularQueue_NbElement:00000000 CircularQueue_NbElement
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:20     .text.CircularQueue_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:26     .text.CircularQueue_Init:00000000 CircularQueue_Init
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:93     .text.CircularQueue_Add:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:99     .text.CircularQueue_Add:00000000 CircularQueue_Add
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:695    .text.CircularQueue_Remove_Copy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:701    .text.CircularQueue_Remove_Copy:00000000 CircularQueue_Remove_Copy
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:719    .text.CircularQueue_Remove:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:725    .text.CircularQueue_Remove:00000000 CircularQueue_Remove
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:945    .text.CircularQueue_Sense_Copy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:951    .text.CircularQueue_Sense_Copy:00000000 CircularQueue_Sense_Copy
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:969    .text.CircularQueue_Sense:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:975    .text.CircularQueue_Sense:00000000 CircularQueue_Sense
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:1173   .text.CircularQueue_Empty:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:1179   .text.CircularQueue_Empty:00000000 CircularQueue_Empty
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:1210   .text.CircularQueue_NbElement:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccoE7nik.s:1216   .text.CircularQueue_NbElement:00000000 CircularQueue_NbElement
 
 UNDEFINED SYMBOLS
 memcpy

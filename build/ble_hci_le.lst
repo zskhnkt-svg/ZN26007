@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
   34              		.loc 1 22 1 is_stmt 0 view .LVU1
   35 0000 70B5     		push	{r4, r5, r6, lr}
   36              	.LCFI0:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 2
 
 
   37              		.cfi_def_cfa_offset 16
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
   80              		.loc 1 33 10 is_stmt 0 view .LVU19
   81 0022 0123     		movs	r3, #1
   82 0024 ADF80831 		strh	r3, [sp, #264]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 3
 
 
   34:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ocf = 0x006;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  127              		.cfi_restore_state
   41:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
  128              		.loc 1 41 12 view .LVU38
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 4
 
 
  129 0050 FF20     		movs	r0, #255
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
   53:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 2;
  176              		.loc 1 53 3 is_stmt 1 view .LVU50
  177              	.LVL15:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 5
 
 
   54:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  221              		.loc 1 64 10 is_stmt 0 view .LVU71
  222 0044 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
  223              	.L6:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 6
 
 
   65:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  271              		.loc 1 72 3 view .LVU79
  272              		.loc 1 72 14 is_stmt 0 view .LVU80
  273 0006 0DF10705 		add	r5, sp, #7
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 7
 
 
  274 000a 0024     		movs	r4, #0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  317              		.loc 1 83 8 is_stmt 0 view .LVU100
  318 003a 2146     		mov	r1, r4
  319 003c 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 8
 
 
  320 003e FFF7FEFF 		bl	hci_send_req
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
   91:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   tBleStatus status = 0;
  368              		.loc 1 91 3 view .LVU108
  369              		.loc 1 91 14 is_stmt 0 view .LVU109
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 9
 
 
  370 0004 0024     		movs	r4, #0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  415              		.cfi_restore_state
   98:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
  416              		.loc 1 98 12 view .LVU125
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 10
 
 
  417 003c FF20     		movs	r0, #255
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  463              	.LVL34:
  464              		.loc 1 110 3 view .LVU134
  465 0014 4046     		mov	r0, r8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 11
 
 
  466              	.LVL35:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  508              		.loc 1 122 11 is_stmt 0 view .LVU156
  509 0042 0423     		movs	r3, #4
  510 0044 4793     		str	r3, [sp, #284]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 12
 
 
  123:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( hci_send_req(&rq, FALSE) < 0 )
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  130:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** 
  131:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** tBleStatus hci_set_controller_to_host_flow_control( uint8_t Flow_Control_Enable )
  132:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 13
 
 
  559              		.loc 1 132 1 is_stmt 1 view -0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  604 0020 ADF80831 		strh	r3, [sp, #264]	@ movhi
  142:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ocf = 0x031;
  605              		.loc 1 142 3 is_stmt 1 view .LVU185
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 14
 
 
  606              		.loc 1 142 10 is_stmt 0 view .LVU186
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  652              		.section	.text.hci_host_buffer_size,"ax",%progbits
  653              		.align	1
  654              		.global	hci_host_buffer_size
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 15
 
 
  655              		.syntax unified
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  696              		.loc 1 164 3 view .LVU214
  697              		.loc 1 164 44 is_stmt 0 view .LVU215
  698 0014 8DF80A10 		strb	r1, [sp, #10]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 16
 
 
  165:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  741              		.loc 1 176 3 is_stmt 1 view .LVU237
  742              		.loc 1 176 11 is_stmt 0 view .LVU238
  743 003e 0123     		movs	r3, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 17
 
 
  744 0040 4793     		str	r3, [sp, #284]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  791              	.LCFI28:
  792              		.cfi_def_cfa_offset 20
  793              		.cfi_offset 4, -20
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 18
 
 
  794              		.cfi_offset 5, -16
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  195:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x03;
  838              		.loc 1 195 3 view .LVU263
  839              		.loc 1 195 10 is_stmt 0 view .LVU264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 19
 
 
  840 002c 0323     		movs	r3, #3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  884 0056 FF20     		movs	r0, #255
  885 0058 FBE7     		b	.L30
  886              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 20
 
 
  887              	.LFE7:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  933 0018 FFF7FEFF 		bl	Osal_MemSet
  934              	.LVL81:
  215:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 21
 
 
  935              		.loc 1 215 3 is_stmt 1 view .LVU290
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  979 0056 3380     		strh	r3, [r6]	@ movhi
  226:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   *LMP_Version = resp.LMP_Version;
  980              		.loc 1 226 3 is_stmt 1 view .LVU311
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 22
 
 
  981              		.loc 1 226 22 is_stmt 0 view .LVU312
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1029              		.loc 1 233 1 is_stmt 0 view .LVU324
  1030 0000 30B5     		push	{r4, r5, lr}
  1031              	.LCFI36:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 23
 
 
  1032              		.cfi_def_cfa_offset 12
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1077              	.LVL89:
  1078              		.loc 1 242 6 view .LVU340
  1079 0036 0028     		cmp	r0, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 24
 
 
  1080 0038 0CDB     		blt	.L39
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  250:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** tBleStatus hci_read_local_supported_features( uint8_t* LMP_Features )
  251:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
  1125              		.loc 1 251 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 25
 
 
  1126              		.cfi_startproc
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  260:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( hci_send_req(&rq, FALSE) < 0 )
  1172              		.loc 1 260 3 is_stmt 1 view .LVU364
  1173              		.loc 1 260 8 is_stmt 0 view .LVU365
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 26
 
 
  1174 002e 0021     		movs	r1, #0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1219              		.thumb
  1220              		.thumb_func
  1222              	hci_read_bd_addr:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 27
 
 
  1223              	.LVL99:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  277:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rlen = sizeof(resp);
  1267              		.loc 1 277 3 is_stmt 1 view .LVU388
  1268              		.loc 1 277 11 is_stmt 0 view .LVU389
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 28
 
 
  1269 002a 0723     		movs	r3, #7
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1312              	.LFE11:
  1314              		.section	.text.hci_read_rssi,"ax",%progbits
  1315              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 29
 
 
  1316              		.global	hci_read_rssi
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1360              		.loc 1 295 26 is_stmt 0 view .LVU412
  1361 0014 02AF     		add	r7, sp, #8
  1362              	.LVL111:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 30
 
 
  1363              		.loc 1 295 26 view .LVU413
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1406              		.loc 1 306 6 view .LVU433
  1407 004a 10B9     		cbnz	r0, .L53
  307:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return resp.Status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 31
 
 
  308:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   *RSSI = resp.RSSI;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1457 0004 0146     		mov	r1, r0
  314:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   struct hci_request rq;
  1458              		.loc 1 314 3 is_stmt 1 view .LVU442
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 32
 
 
  315:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   uint8_t cmd_buffer[BLE_CMD_MAX_PARAM_LEN];
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1501              		.loc 1 326 13 is_stmt 0 view .LVU462
  1502 0034 4695     		str	r5, [sp, #280]
  327:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rlen = 1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 33
 
 
  1503              		.loc 1 327 3 is_stmt 1 view .LVU463
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1550              		.loc 1 335 1 is_stmt 0 view .LVU473
  1551 0000 70B5     		push	{r4, r5, r6, lr}
  1552              	.LCFI56:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 34
 
 
  1553              		.cfi_def_cfa_offset 16
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1598              		.loc 1 344 8 is_stmt 0 view .LVU489
  1599 0030 0021     		movs	r1, #0
  1600 0032 02A8     		add	r0, sp, #8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 35
 
 
  1601 0034 FFF7FEFF 		bl	hci_send_req
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1649              	.LFB15:
  352:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** 
  353:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** tBleStatus hci_le_read_local_supported_features( uint8_t* LE_Features )
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 36
 
 
  354:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1695 002a 0923     		movs	r3, #9
  1696 002c 0993     		str	r3, [sp, #36]
  363:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( hci_send_req(&rq, FALSE) < 0 )
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 37
 
 
  1697              		.loc 1 363 3 is_stmt 1 view .LVU518
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1742              		.global	hci_le_set_random_address
  1743              		.syntax unified
  1744              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 38
 
 
  1745              		.thumb_func
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1789 001a 1822     		movs	r2, #24
  1790 001c 2146     		mov	r1, r4
  1791 001e 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 39
 
 
  1792 0020 FFF7FEFF 		bl	Osal_MemSet
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1836              	.LVL147:
  1837              	.L71:
  1838              	.LCFI67:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 40
 
 
  1839              		.cfi_restore_state
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  405:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   int index_input = 0;
  1880              		.loc 1 405 3 is_stmt 1 view .LVU568
  1881              	.LVL150:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 41
 
 
  406:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Advertising_Interval_Min = Advertising_Interval_Min;
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  417:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 6;
  1925              		.loc 1 417 3 is_stmt 1 view .LVU590
  418:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Advertising_Channel_Map = Advertising_Channel_Map;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 42
 
 
  1926              		.loc 1 418 3 view .LVU591
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  1969 0068 42A8     		add	r0, sp, #264
  1970 006a FFF7FEFF 		bl	hci_send_req
  1971              	.LVL165:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 43
 
 
  1972              		.loc 1 429 6 view .LVU612
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  436:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   struct hci_request rq;
  2021              		.loc 1 436 3 is_stmt 1 view .LVU619
  437:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_read_advertising_physical_channel_tx_power_rp0 resp;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 44
 
 
  2022              		.loc 1 437 3 view .LVU620
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  447:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return resp.Status;
  448:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   *Transmit_Power_Level = resp.Transmit_Power_Level;
  2067              		.loc 1 448 3 is_stmt 1 view .LVU638
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 45
 
 
  2068              		.loc 1 448 31 is_stmt 0 view .LVU639
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2116              		.loc 1 455 3 is_stmt 1 view .LVU646
  456:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   uint8_t cmd_buffer[BLE_CMD_MAX_PARAM_LEN];
  2117              		.loc 1 456 3 view .LVU647
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 46
 
 
  457:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_set_advertising_data_cp0 *cp0 = (hci_le_set_advertising_data_cp0*)(cmd_buffer);
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2160              		.loc 1 468 11 is_stmt 0 view .LVU667
  2161 0034 2023     		movs	r3, #32
  2162 0036 4593     		str	r3, [sp, #276]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 47
 
 
  469:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &status;
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  477:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                           const uint8_t* Scan_Response_Data )
  478:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
  2210              		.loc 1 478 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 48
 
 
  2211              		.cfi_startproc
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2255 0022 42A8     		add	r0, sp, #264
  2256 0024 FFF7FEFF 		bl	Osal_MemSet
  2257              	.LVL190:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 49
 
 
  489:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2302              	.LCFI83:
  2303              		.cfi_restore_state
  496:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 50
 
 
  2304              		.loc 1 496 12 view .LVU713
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2351 0010 8DF80800 		strb	r0, [sp, #8]
  508:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
  2352              		.loc 1 508 3 is_stmt 1 view .LVU725
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 51
 
 
  2353              	.LVL197:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2396              		.loc 1 519 1 view .LVU745
  2397 0044 48B0     		add	sp, sp, #288
  2398              	.LCFI86:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 52
 
 
  2399              		.cfi_remember_state
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2443              		.loc 1 530 14 is_stmt 0 view .LVU753
  2444 0004 0DF10706 		add	r6, sp, #7
  2445 0008 0025     		movs	r5, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 53
 
 
  2446 000a 8DF80750 		strb	r5, [sp, #7]
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2488              	.LVL214:
  2489              		.loc 1 542 3 view .LVU775
  2490 002e FFF7FEFF 		bl	Osal_MemSet
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 54
 
 
  2491              	.LVL215:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2535              	.L95:
  2536              	.LCFI91:
  2537              		.cfi_restore_state
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 55
 
 
  550:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2583              	.LVL221:
  2584              		.loc 1 562 23 view .LVU805
  2585 0010 8DF80800 		strb	r0, [sp, #8]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 56
 
 
  563:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2629 003e FFF7FEFF 		bl	hci_send_req
  2630              	.LVL227:
  2631              		.loc 1 573 6 view .LVU827
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 57
 
 
  2632 0042 A042     		cmp	r0, r4
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2670 0000 70B5     		push	{r4, r5, r6, lr}
  2671              	.LCFI96:
  2672              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 58
 
 
  2673              		.cfi_offset 4, -16
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  604:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemCpy( (void*)&cp0->Peer_Address, (const void*)Peer_Address, 6 );
  2714              		.loc 1 604 3 view .LVU853
  2715 0020 0622     		movs	r2, #6
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 59
 
 
  2716              	.LVL237:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2758              		.loc 1 616 26 is_stmt 0 view .LVU874
  2759 0054 BDF84831 		ldrh	r3, [sp, #328]
  2760 0058 ADF81D30 		strh	r3, [sp, #29]	@ unaligned
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 60
 
 
  617:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 2;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2803 008a 2946     		mov	r1, r5
  2804 008c 42A8     		add	r0, sp, #264
  2805 008e FFF7FEFF 		bl	hci_send_req
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 61
 
 
  2806              	.LVL249:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2853              		.loc 1 636 3 view .LVU903
  2854              		.loc 1 636 14 is_stmt 0 view .LVU904
  2855 0004 0024     		movs	r4, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 62
 
 
  2856 0006 8DF80740 		strb	r4, [sp, #7]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2901              		.cfi_restore_state
  643:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
  2902              		.loc 1 643 12 view .LVU920
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 63
 
 
  2903 003e FF20     		movs	r0, #255
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2951              		.loc 1 653 10 is_stmt 0 view .LVU929
  2952 001c 0823     		movs	r3, #8
  2953 001e ADF80830 		strh	r3, [sp, #8]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 64
 
 
  654:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ocf = 0x00f;
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  2997              		.loc 1 658 12 view .LVU947
  2998 004a FF20     		movs	r0, #255
  2999 004c FBE7     		b	.L110
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 65
 
 
  3000              		.cfi_endproc
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  673:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rlen = 1;
  3047              		.loc 1 673 3 is_stmt 1 view .LVU959
  3048              		.loc 1 673 11 is_stmt 0 view .LVU960
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 66
 
 
  3049 0026 0123     		movs	r3, #1
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3096              	.LCFI112:
  3097              		.cfi_def_cfa_offset 16
  3098              		.cfi_offset 4, -16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 67
 
 
  3099              		.cfi_offset 5, -12
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  693:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ocf = 0x011;
  3142              		.loc 1 693 3 is_stmt 1 view .LVU986
  3143              		.loc 1 693 10 is_stmt 0 view .LVU987
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 68
 
 
  3144 002e 1123     		movs	r3, #17
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3190              		.section	.text.hci_le_remove_device_from_filter_accept_list,"ax",%progbits
  3191              		.align	1
  3192              		.global	hci_le_remove_device_from_filter_accept_list
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 69
 
 
  3193              		.syntax unified
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3236 0016 0DF10900 		add	r0, sp, #9
  3237              	.LVL276:
  3238              		.loc 1 713 3 is_stmt 0 view .LVU1016
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 70
 
 
  3239 001a FFF7FEFF 		bl	Osal_MemCpy
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3282              	.L122:
  725:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** }
  3283              		.loc 1 725 1 view .LVU1036
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 71
 
 
  3284 0050 48B0     		add	sp, sp, #288
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3327              		.loc 1 737 3 view .LVU1042
  3328              	.LVL282:
  738:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   tBleStatus status = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 72
 
 
  3329              		.loc 1 738 3 view .LVU1043
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  751:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 2;
  3371              		.loc 1 751 3 is_stmt 1 view .LVU1065
  3372              	.LVL291:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 73
 
 
  752:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Maximum_CE_Length = Maximum_CE_Length;
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  762:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( hci_send_req(&rq, FALSE) < 0 )
  3417              		.loc 1 762 3 is_stmt 1 view .LVU1087
  3418              		.loc 1 762 8 is_stmt 0 view .LVU1088
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 74
 
 
  3419 005e 2946     		mov	r1, r5
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3468              		.cfi_offset 14, -4
  3469 0002 C8B0     		sub	sp, sp, #288
  3470              	.LCFI125:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 75
 
 
  3471              		.cfi_def_cfa_offset 304
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3513              		.loc 1 780 11 is_stmt 0 view .LVU1114
  3514 0032 0523     		movs	r3, #5
  3515 0034 4593     		str	r3, [sp, #276]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 76
 
 
  781:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &status;
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  789:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                     uint8_t* LE_Channel_Map )
  790:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
  3563              		.loc 1 790 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 77
 
 
  3564              		.cfi_startproc
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3609              	.LVL315:
  800:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
  3610              		.loc 1 800 3 view .LVU1141
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 78
 
 
  3611              		.loc 1 800 10 is_stmt 0 view .LVU1142
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3653 0050 70BD     		pop	{r4, r5, r6, pc}
  3654              	.LVL317:
  3655              	.L137:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 79
 
 
  3656              	.LCFI131:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3702              	.LVL320:
  819:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   tBleStatus status = 0;
  3703              		.loc 1 819 3 view .LVU1169
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 80
 
 
  3704              		.loc 1 819 14 is_stmt 0 view .LVU1170
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  830:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rlen = 1;
  3748              		.loc 1 830 3 is_stmt 1 view .LVU1190
  3749              		.loc 1 830 11 is_stmt 0 view .LVU1191
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 81
 
 
  3750 0036 0123     		movs	r3, #1
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3796              		.loc 1 839 1 is_stmt 0 view .LVU1200
  3797 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
  3798              	.LCFI136:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 82
 
 
  3799              		.cfi_def_cfa_offset 24
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3844 002a 0AA8     		add	r0, sp, #40
  3845 002c FFF7FEFF 		bl	Osal_MemCpy
  3846              	.LVL336:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 83
 
 
  849:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 16;
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3890 0064 1CB1     		cbz	r4, .L146
  3891              	.L143:
  860:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return resp.Status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 84
 
 
  861:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemCpy( (void*)Encrypted_Data, (const void*)resp.Encrypted_Data, 16 );
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3937              		.loc 1 866 1 is_stmt 0 view .LVU1241
  3938 0000 30B5     		push	{r4, r5, lr}
  3939              	.LCFI140:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 85
 
 
  3940              		.cfi_def_cfa_offset 12
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  3985              	.LVL348:
  3986              		.loc 1 875 6 view .LVU1257
  3987 0036 0028     		cmp	r0, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 86
 
 
  3988 0038 0CDB     		blt	.L149
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  883:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** tBleStatus hci_le_enable_encryption( uint16_t Connection_Handle,
  884:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                      const uint8_t* Random_Number,
  885:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                      uint16_t Encrypted_Diversifier,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 87
 
 
  886:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                      const uint8_t* Long_Term_Key )
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4077              		.loc 1 895 3 view .LVU1280
  4078 0020 FFF7FEFF 		bl	Osal_MemCpy
  4079              	.LVL358:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 88
 
 
  896:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 8;
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4121              		.loc 1 908 3 is_stmt 1 view .LVU1300
  4122              		.loc 1 908 11 is_stmt 0 view .LVU1301
  4123 0056 0123     		movs	r3, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 89
 
 
  4124 0058 4793     		str	r3, [sp, #284]
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4171              	.LCFI148:
  4172              		.cfi_def_cfa_offset 20
  4173              		.cfi_offset 4, -20
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 90
 
 
  4174              		.cfi_offset 5, -16
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4217 0028 0021     		movs	r1, #0
  4218 002a 42A8     		add	r0, sp, #264
  4219 002c FFF7FEFF 		bl	Osal_MemSet
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 91
 
 
  4220              	.LVL372:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4262 005a F0BD     		pop	{r4, r5, r6, r7, pc}
  4263              	.LVL374:
  4264              	.L158:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 92
 
 
  4265              	.LCFI151:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4312              	.LVL378:
  948:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   int index_input = 0;
  4313              		.loc 1 948 3 is_stmt 1 view .LVU1353
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 93
 
 
  949:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Connection_Handle = Connection_Handle;
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4358 0044 03DB     		blt	.L162
  959:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
  960:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( resp.Status )
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 94
 
 
  4359              		.loc 1 960 3 is_stmt 1 view .LVU1374
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4406              		.loc 1 968 3 view .LVU1381
  969:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &resp, 0, sizeof(resp) );
  4407              		.loc 1 969 3 view .LVU1382
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 95
 
 
  4408 0006 01AD     		add	r5, sp, #4
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  980:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   return BLE_STATUS_SUCCESS;
  981:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** }
  4452              		.loc 1 981 1 view .LVU1399
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 96
 
 
  4453 0040 2846     		mov	r0, r5
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4502 0002 C8B0     		sub	sp, sp, #288
  4503              	.LCFI161:
  4504              		.cfi_def_cfa_offset 304
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 97
 
 
  985:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   struct hci_request rq;
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  997:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &status;
  4547              		.loc 1 997 3 is_stmt 1 view .LVU1426
  4548              		.loc 1 997 13 is_stmt 0 view .LVU1427
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 98
 
 
  4549 0030 4695     		str	r5, [sp, #280]
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4594              		.cfi_startproc
  4595              		@ args = 0, pretend = 0, frame = 288
  4596              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 99
 
 
  4597              		.loc 1 1007 1 is_stmt 0 view .LVU1438
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4639              	.LVL407:
  4640              		.loc 1 1019 3 is_stmt 0 view .LVU1456
  4641 001e 2946     		mov	r1, r5
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 100
 
 
  4642              	.LVL408:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4686              	.LCFI166:
  4687              		.cfi_remember_state
  4688              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 101
 
 
  4689              		@ sp needed
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4737              		.loc 1 1036 3 is_stmt 1 view .LVU1484
  4738 0012 1822     		movs	r2, #24
  4739 0014 0021     		movs	r1, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 102
 
 
  4740 0016 02A8     		add	r0, sp, #8
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4783              		.cfi_def_cfa_offset 12
  4784              		@ sp needed
  4785 0048 30BD     		pop	{r4, r5, pc}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 103
 
 
  4786              	.LVL418:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4831              		.loc 1 1057 3 view .LVU1511
  4832 000c 0DF10408 		add	r8, sp, #4
  4833 0010 0322     		movs	r2, #3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 104
 
 
  4834              	.LVL421:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4877              		.loc 1 1068 3 is_stmt 1 view .LVU1531
  4878              		.loc 1 1068 13 is_stmt 0 view .LVU1532
  4879 003e 4494     		str	r4, [sp, #272]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 105
 
 
 1069:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.clen = index_input;
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  4925              		.thumb
  4926              		.thumb_func
  4928              	hci_le_read_suggested_default_data_length:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 106
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 106
 
 
  4929              	.LVL432:
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1088:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &resp;
  4973              		.loc 1 1088 3 is_stmt 1 view .LVU1558
  4974              		.loc 1 1088 13 is_stmt 0 view .LVU1559
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 107
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 107
 
 
  4975 0028 CDF818D0 		str	sp, [sp, #24]
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5019 0054 FBE7     		b	.L186
  5020              		.cfi_endproc
  5021              	.LFE44:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 108
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 108
 
 
  5023              		.section	.text.hci_le_write_suggested_default_data_length,"ax",%progbits
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1109:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->SuggestedMaxTxTime = SuggestedMaxTxTime;
  5067              		.loc 1 1109 3 view .LVU1589
  5068              		.loc 1 1109 27 is_stmt 0 view .LVU1590
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 109
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 109
 
 
  5069 0014 ADF80A10 		strh	r1, [sp, #10]	@ movhi
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1120:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   return status;
  5113              		.loc 1 1120 3 is_stmt 1 view .LVU1610
  5114              		.loc 1 1120 10 is_stmt 0 view .LVU1611
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 110
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 110
 
 
  5115 0046 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5163 000e 02A8     		add	r0, sp, #8
  5164 0010 FFF7FEFF 		bl	Osal_MemSet
  5165              	.LVL450:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 111
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 111
 
 
 1128:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5210 0042 FF20     		movs	r0, #255
  5211 0044 FBE7     		b	.L194
  5212              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 112
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 112
 
 
  5213              	.LFE46:
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5260 0016 FFF7FEFF 		bl	Osal_MemCpy
  5261              	.LVL457:
 1146:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 64;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 113
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 113
 
 
  5262              		.loc 1 1146 3 is_stmt 1 view .LVU1647
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5305              		.loc 1 1157 10 is_stmt 0 view .LVU1667
  5306 004c 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
  5307              	.L198:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 114
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 114
 
 
 1158:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** }
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1166:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   uint8_t cmd_buffer[BLE_CMD_MAX_PARAM_LEN];
  5355              		.loc 1 1166 3 view .LVU1673
 1167:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_add_device_to_resolving_list_cp0 *cp0 = (hci_le_add_device_to_resolving_list_cp0*)(cmd_buf
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 115
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 115
 
 
  5356              		.loc 1 1167 3 view .LVU1674
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5399 0040 2146     		mov	r1, r4
  5400 0042 42A8     		add	r0, sp, #264
  5401 0044 FFF7FEFF 		bl	Osal_MemSet
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 116
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 116
 
 
  5402              	.LVL471:
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5446              	.LCFI195:
  5447              		.cfi_restore_state
 1186:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 117
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 117
 
 
  5448              		.loc 1 1186 12 view .LVU1709
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5494              		.loc 1 1198 35 view .LVU1720
  5495 0010 8DF80800 		strb	r0, [sp, #8]
 1199:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 118
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 118
 
 
  5496              		.loc 1 1199 3 is_stmt 1 view .LVU1721
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5540              		.loc 1 1209 6 view .LVU1740
  5541 0048 A042     		cmp	r0, r4
  5542 004a 03DB     		blt	.L207
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 119
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 119
 
 
 1210:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1218:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
  5590              		.loc 1 1218 3 is_stmt 1 view .LVU1749
  5591 000a 1822     		movs	r2, #24
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 120
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 120
 
 
  5592 000c 2146     		mov	r1, r4
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5637 0040 FBE7     		b	.L210
  5638              		.cfi_endproc
  5639              	.LFE50:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 121
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 121
 
 
  5641              		.section	.text.hci_le_read_resolving_list_size,"ax",%progbits
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5687              		.loc 1 1235 3 is_stmt 1 view .LVU1774
  5688              		.loc 1 1235 10 is_stmt 0 view .LVU1775
  5689 0022 2A23     		movs	r3, #42
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 122
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 122
 
 
  5690 0024 ADF80A30 		strh	r3, [sp, #10]	@ movhi
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5734              	.LFE51:
  5736              		.section	.text.hci_le_read_peer_resolvable_address,"ax",%progbits
  5737              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 123
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 123
 
 
  5738              		.global	hci_le_read_peer_resolvable_address
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5782              		.loc 1 1255 3 is_stmt 1 view .LVU1802
 1256:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Peer_Identity_Address_Type = Peer_Identity_Address_Type;
  5783              		.loc 1 1256 3 view .LVU1803
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 124
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 124
 
 
  5784              		.loc 1 1256 35 is_stmt 0 view .LVU1804
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5827 0048 0021     		movs	r1, #0
  5828 004a 42A8     		add	r0, sp, #264
  5829 004c FFF7FEFF 		bl	hci_send_req
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 125
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 125
 
 
  5830              	.LVL502:
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5874              		.global	hci_le_read_local_resolvable_address
  5875              		.syntax unified
  5876              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 126
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 126
 
 
  5877              		.thumb_func
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5920              		.loc 1 1285 35 is_stmt 0 view .LVU1846
  5921 0014 02AF     		add	r7, sp, #8
  5922              	.LVL514:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 127
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 127
 
 
  5923              		.loc 1 1285 35 view .LVU1847
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  5966              	.LVL518:
  5967              		.loc 1 1296 6 view .LVU1866
  5968 0050 0028     		cmp	r0, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 128
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 128
 
 
  5969 0052 0CDB     		blt	.L224
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6013              		.thumb_func
  6015              	hci_le_set_address_resolution_enable:
  6016              	.LVL524:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 129
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 129
 
 
  6017              	.LFB54:
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1314:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
  6060              		.loc 1 1314 3 is_stmt 1 view .LVU1890
  6061              		.loc 1 1314 10 is_stmt 0 view .LVU1891
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 130
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 130
 
 
  6062 001e 0823     		movs	r3, #8
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6106 0048 FF20     		movs	r0, #255
  6107 004a FBE7     		b	.L228
  6108              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 131
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 131
 
 
  6109              	.LFE54:
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1334:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
  6155              		.loc 1 1334 3 view .LVU1921
  6156 0014 1822     		movs	r2, #24
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 132
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 132
 
 
  6157 0016 2146     		mov	r1, r4
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6201              		.cfi_remember_state
  6202              		.cfi_def_cfa_offset 16
  6203              		@ sp needed
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 133
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 133
 
 
  6204 0048 70BD     		pop	{r4, r5, r6, pc}
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6250 0012 0922     		movs	r2, #9
  6251              	.LVL543:
  6252              		.loc 1 1353 3 is_stmt 0 view .LVU1947
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 134
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 134
 
 
  6253 0014 0021     		movs	r1, #0
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6297              		.loc 1 1363 31 is_stmt 0 view .LVU1966
  6298 004c BDF80530 		ldrh	r3, [sp, #5]	@ unaligned
  6299              		.loc 1 1363 25 view .LVU1967
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 135
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 135
 
 
  6300 0050 3B80     		strh	r3, [r7]	@ movhi
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6345              		.loc 1 1373 1 is_stmt 1 view -0
  6346              		.cfi_startproc
  6347              		@ args = 0, pretend = 0, frame = 288
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 136
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 136
 
 
  6348              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6393 001e 42A8     		add	r0, sp, #264
  6394 0020 FFF7FEFF 		bl	Osal_MemSet
  6395              	.LVL558:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 137
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 137
 
 
 1383:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6438              		.loc 1 1394 17 is_stmt 0 view .LVU2018
  6439 0056 9DF80430 		ldrb	r3, [sp, #4]	@ zero_extendqisi2
  6440              		.loc 1 1394 11 view .LVU2019
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 138
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 138
 
 
  6441 005a 2B70     		strb	r3, [r5]
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6487              		.loc 1 1403 3 view .LVU2026
 1404:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_set_default_phy_cp0 *cp0 = (hci_le_set_default_phy_cp0*)(cmd_buffer);
  6488              		.loc 1 1404 3 view .LVU2027
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 139
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 139
 
 
  6489              	.LVL562:
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6532              		.loc 1 1415 10 is_stmt 0 view .LVU2048
  6533 002c 3123     		movs	r3, #49
  6534 002e ADF80A31 		strh	r3, [sp, #266]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 140
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 140
 
 
 1416:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.cparam = cmd_buffer;
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6581              		.global	hci_le_set_phy
  6582              		.syntax unified
  6583              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 141
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 141
 
 
  6584              		.thumb_func
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6624              		.loc 1 1438 17 is_stmt 0 view .LVU2077
  6625 0014 8DF80A10 		strb	r1, [sp, #10]
 1439:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 142
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 142
 
 
  6626              		.loc 1 1439 3 is_stmt 1 view .LVU2078
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1450:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.cparam = cmd_buffer;
  6670              		.loc 1 1450 3 is_stmt 1 view .LVU2099
  6671              		.loc 1 1450 13 is_stmt 0 view .LVU2100
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 143
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 143
 
 
  6672 0042 4494     		str	r4, [sp, #272]
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6719              		.thumb_func
  6721              	hci_le_receiver_test_v2:
  6722              	.LVL590:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 144
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 144
 
 
  6723              	.LFB60:
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1472:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Modulation_Index = Modulation_Index;
  6763              		.loc 1 1472 3 view .LVU2129
  6764              		.loc 1 1472 25 is_stmt 0 view .LVU2130
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 145
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 145
 
 
  6765 0018 8DF80A20 		strb	r2, [sp, #10]
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6810 0048 03DB     		blt	.L253
 1482:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
 1483:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   return status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 146
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 146
 
 
  6811              		.loc 1 1483 3 is_stmt 1 view .LVU2151
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1492:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   uint8_t cmd_buffer[BLE_CMD_MAX_PARAM_LEN];
  6858              		.loc 1 1492 3 view .LVU2158
 1493:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_transmitter_test_v2_cp0 *cp0 = (hci_le_transmitter_test_v2_cp0*)(cmd_buffer);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 147
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 147
 
 
  6859              		.loc 1 1493 3 view .LVU2159
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  6902              	.LVL614:
 1505:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
  6903              		.loc 1 1505 3 is_stmt 1 view .LVU2180
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 148
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 148
 
 
  6904              		.loc 1 1505 10 is_stmt 0 view .LVU2181
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1512:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
  6949              		.loc 1 1512 12 view .LVU2198
  6950 0056 FF20     		movs	r0, #255
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 149
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 149
 
 
  6951 0058 FBE7     		b	.L256
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1525:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
  6997              		.loc 1 1525 3 is_stmt 1 view .LVU2210
  6998              	.LVL621:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 150
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 150
 
 
 1526:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemCpy( (void*)&cp0->Random_Address, (const void*)Random_Address, 6 );
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7043 004a 03DB     		blt	.L261
 1536:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
 1537:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   return status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 151
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 151
 
 
  7044              		.loc 1 1537 3 is_stmt 1 view .LVU2230
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7080 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
  7081              	.LCFI252:
  7082              		.cfi_def_cfa_offset 28
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 152
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 152
 
 
  7083              		.cfi_offset 4, -28
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7127              		.loc 1 1566 3 is_stmt 1 view .LVU2251
  7128              	.LVL635:
 1567:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemCpy( (void*)&cp0->Primary_Adv_Interval_Min, (const void*)Primary_Adv_Interval_Min, 3 );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 153
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 153
 
 
  7129              		.loc 1 1567 3 view .LVU2252
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7171 0064 8DF81A30 		strb	r3, [sp, #26]
 1580:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
  7172              		.loc 1 1580 3 is_stmt 1 view .LVU2269
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 154
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 154
 
 
  7173              	.LVL642:
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7214 009e FFF7FEFF 		bl	Osal_MemSet
  7215              	.LVL649:
 1594:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 155
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 155
 
 
  7216              		.loc 1 1594 3 view .LVU2289
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7259              	.L264:
 1606:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** }
  7260              		.loc 1 1606 1 is_stmt 0 view .LVU2311
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 156
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 156
 
 
  7261 00d6 49B0     		add	sp, sp, #292
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7306              		.loc 1 1616 3 view .LVU2317
  7307              	.LVL653:
 1617:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   tBleStatus status = 0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 157
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 157
 
 
  7308              		.loc 1 1617 3 view .LVU2318
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7351              		.loc 1 1628 15 is_stmt 0 view .LVU2339
  7352 002c 0434     		adds	r4, r4, #4
  7353              	.LVL664:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 158
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 158
 
 
 1629:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   Osal_MemSet( &rq, 0, sizeof(rq) );
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7397              		.cfi_remember_state
  7398              		.cfi_def_cfa_offset 20
  7399              		@ sp needed
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 159
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 159
 
 
  7400 0060 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7444 0006 0DF10707 		add	r7, sp, #7
  7445 000a 0026     		movs	r6, #0
  7446 000c 8DF80760 		strb	r6, [sp, #7]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 160
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 160
 
 
 1651:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   int index_input = 0;
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7489 002e 1822     		movs	r2, #24
  7490 0030 3146     		mov	r1, r6
  7491 0032 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 161
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 161
 
 
  7492 0034 FFF7FEFF 		bl	Osal_MemSet
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7536              	.L273:
  7537              	.LCFI263:
  7538              		.cfi_restore_state
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 162
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 162
 
 
 1670:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1683:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   cp0->Enable = Enable;
  7584              		.loc 1 1683 3 view .LVU2415
  7585              		.loc 1 1683 15 is_stmt 0 view .LVU2416
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 163
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 163
 
 
  7586 0012 02AE     		add	r6, sp, #8
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7630 0042 4594     		str	r4, [sp, #276]
 1694:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &status;
  7631              		.loc 1 1694 3 is_stmt 1 view .LVU2436
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 164
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 164
 
 
  7632              		.loc 1 1694 13 is_stmt 0 view .LVU2437
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7679              		.cfi_startproc
  7680              		@ args = 0, pretend = 0, frame = 32
  7681              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 165
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 165
 
 
  7682              		.loc 1 1702 1 is_stmt 0 view .LVU2448
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7727 002e 0021     		movs	r1, #0
  7728 0030 02A8     		add	r0, sp, #8
  7729 0032 FFF7FEFF 		bl	hci_send_req
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 166
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 166
 
 
  7730              	.LVL701:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7776              		@ frame_needed = 0, uses_anonymous_args = 0
  7777              		.loc 1 1720 1 is_stmt 0 view .LVU2475
  7778 0000 30B5     		push	{r4, r5, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 167
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 167
 
 
  7779              	.LCFI272:
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7824 0032 FFF7FEFF 		bl	hci_send_req
  7825              	.LVL707:
  7826              		.loc 1 1729 6 view .LVU2491
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 168
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 168
 
 
  7827 0036 0028     		cmp	r0, #0
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7873 0000 70B5     		push	{r4, r5, r6, lr}
  7874              	.LCFI276:
  7875              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 169
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 169
 
 
  7876              		.cfi_offset 4, -16
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  7919              		.loc 1 1749 13 is_stmt 0 view .LVU2520
  7920 002a 4496     		str	r6, [sp, #272]
 1750:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.clen = index_input;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 170
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 170
 
 
  7921              		.loc 1 1750 3 is_stmt 1 view .LVU2521
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1757:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** 
 1758:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** tBleStatus hci_le_clear_advertising_sets( void )
 1759:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 171
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 171
 
 
  7970              		.loc 1 1759 1 is_stmt 1 view -0
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8016 0032 A042     		cmp	r0, r4
  8017 0034 03DB     		blt	.L293
 1768:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 172
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 172
 
 
 1769:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   return status;
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1778:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   uint8_t cmd_buffer[BLE_CMD_MAX_PARAM_LEN];
  8064              		.loc 1 1778 3 view .LVU2557
 1779:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   hci_le_set_extended_scan_parameters_cp0 *cp0 = (hci_le_set_extended_scan_parameters_cp0*)(cmd_buf
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 173
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 173
 
 
  8065              		.loc 1 1779 3 view .LVU2558
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8108 002c 42A8     		add	r0, sp, #264
  8109 002e FFF7FEFF 		bl	Osal_MemSet
  8110              	.LVL731:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 174
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 174
 
 
 1791:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8155              	.LCFI287:
  8156              		.cfi_restore_state
 1798:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****     return BLE_STATUS_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 175
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 175
 
 
  8157              		.loc 1 1798 12 view .LVU2596
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8201 000e 02AC     		add	r4, sp, #8
  8202              	.LVL737:
  8203              		.loc 1 1812 15 view .LVU2607
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 176
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 176
 
 
  8204 0010 8DF80800 		strb	r0, [sp, #8]
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8246              		.loc 1 1824 11 is_stmt 0 view .LVU2629
  8247 0038 0623     		movs	r3, #6
  8248 003a 4593     		str	r3, [sp, #276]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 177
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 177
 
 
 1825:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &status;
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1833:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                               uint8_t Own_Address_Type,
 1834:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                               uint8_t Peer_Address_Type,
 1835:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                               const uint8_t* Peer_Address,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 178
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 178
 
 
 1836:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****                                               uint8_t Initiating_PHYs,
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8337 0018 8DF80A20 		strb	r2, [sp, #10]
 1849:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   index_input += 1;
  8338              		.loc 1 1849 3 is_stmt 1 view .LVU2658
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 179
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 179
 
 
  8339              	.LVL754:
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8383 0054 4393     		str	r3, [sp, #268]
 1860:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.cparam = cmd_buffer;
  8384              		.loc 1 1860 3 is_stmt 1 view .LVU2676
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 180
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 180
 
 
  8385              		.loc 1 1860 13 is_stmt 0 view .LVU2677
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8432              		.thumb
  8433              		.thumb_func
  8435              	hci_le_read_transmit_power:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 181
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 181
 
 
  8436              	.LVL764:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8480 0024 4B23     		movs	r3, #75
  8481 0026 ADF80A30 		strh	r3, [sp, #10]	@ movhi
 1878:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.rparam = &resp;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 182
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 182
 
 
  8482              		.loc 1 1878 3 is_stmt 1 view .LVU2703
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8526              		.loc 1 1881 12 view .LVU2721
  8527 0052 FF20     		movs	r0, #255
  8528 0054 FBE7     		b	.L308
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 183
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 183
 
 
  8529              		.cfi_endproc
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8576              		.loc 1 1896 3 view .LVU2730
  8577              		.loc 1 1896 10 is_stmt 0 view .LVU2731
  8578 001c 0823     		movs	r3, #8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 184
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 184
 
 
  8579 001e ADF80830 		strh	r3, [sp, #8]	@ movhi
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8622              		@ sp needed
  8623 0050 30BD     		pop	{r4, r5, pc}
  8624              	.LVL777:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 185
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 185
 
 
  8625              	.L313:
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8670              		.loc 1 1917 3 view .LVU2761
  8671              		.loc 1 1917 32 is_stmt 0 view .LVU2762
  8672 000e 02AD     		add	r5, sp, #8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 186
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 186
 
 
  8673              	.LVL781:
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8716              		.loc 1 1928 8 is_stmt 0 view .LVU2784
  8717 003a 2146     		mov	r1, r4
  8718 003c 42A8     		add	r0, sp, #264
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 187
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 187
 
 
  8719 003e FFF7FEFF 		bl	hci_send_req
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8766              		.cfi_offset 7, -8
  8767              		.cfi_offset 14, -4
  8768 0002 C9B0     		sub	sp, sp, #292
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 188
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 188
 
 
  8769              	.LCFI309:
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8811              	.LVL798:
 1949:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   rq.ogf = 0x08;
  8812              		.loc 1 1949 3 view .LVU2810
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 189
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 189
 
 
  8813              		.loc 1 1949 10 is_stmt 0 view .LVU2811
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8857              		.loc 1 1956 12 view .LVU2828
  8858 0058 FF20     		movs	r0, #255
  8859 005a FBE7     		b	.L320
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 190
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 190
 
 
  8860              		.cfi_endproc
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8906 0014 0146     		mov	r1, r0
  8907              	.LVL805:
  8908              		.loc 1 1968 3 view .LVU2839
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 191
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 191
 
 
  8909 0016 2846     		mov	r0, r5
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
 1980:Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c ****   if ( hci_send_req(&rq, FALSE) < 0 )
  8952              		.loc 1 1980 3 is_stmt 1 view .LVU2860
  8953              		.loc 1 1980 8 is_stmt 0 view .LVU2861
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 192
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 192
 
 
  8954 0046 2146     		mov	r1, r4
@@ -11499,175 +11499,175 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 1
  8986              		.file 4 "Middlewares/ST/STM32_WPAN/ble/core/template/ble_const.h"
  8987              		.file 5 "Middlewares/ST/STM32_WPAN/ble/core/auto/ble_types.h"
  8988              		.file 6 "Middlewares/ST/STM32_WPAN/ble/core/template/osal.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 193
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 193
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ble_hci_le.c
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:20     .text.hci_disconnect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:26     .text.hci_disconnect:00000000 hci_disconnect
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:135    .text.hci_read_remote_version_information:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:141    .text.hci_read_remote_version_information:00000000 hci_read_remote_version_information
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:242    .text.hci_set_event_mask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:248    .text.hci_set_event_mask:00000000 hci_set_event_mask
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:347    .text.hci_reset:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:353    .text.hci_reset:00000000 hci_reset
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:423    .text.hci_read_transmit_power_level:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:429    .text.hci_read_transmit_power_level:00000000 hci_read_transmit_power_level
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:550    .text.hci_set_controller_to_host_flow_control:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:556    .text.hci_set_controller_to_host_flow_control:00000000 hci_set_controller_to_host_flow_control
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:653    .text.hci_host_buffer_size:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:659    .text.hci_host_buffer_size:00000000 hci_host_buffer_size
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:776    .text.hci_host_number_of_completed_packets:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:782    .text.hci_host_number_of_completed_packets:00000000 hci_host_number_of_completed_packets
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:890    .text.hci_read_local_version_information:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:896    .text.hci_read_local_version_information:00000000 hci_read_local_version_information
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1016   .text.hci_read_local_supported_commands:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1022   .text.hci_read_local_supported_commands:00000000 hci_read_local_supported_commands
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1116   .text.hci_read_local_supported_features:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1122   .text.hci_read_local_supported_features:00000000 hci_read_local_supported_features
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1216   .text.hci_read_bd_addr:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1222   .text.hci_read_bd_addr:00000000 hci_read_bd_addr
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1315   .text.hci_read_rssi:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1321   .text.hci_read_rssi:00000000 hci_read_rssi
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1433   .text.hci_le_set_event_mask:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1439   .text.hci_le_set_event_mask:00000000 hci_le_set_event_mask
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1537   .text.hci_le_read_buffer_size:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1543   .text.hci_le_read_buffer_size:00000000 hci_le_read_buffer_size
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1641   .text.hci_le_read_local_supported_features:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1647   .text.hci_le_read_local_supported_features:00000000 hci_le_read_local_supported_features
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1741   .text.hci_le_set_random_address:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1747   .text.hci_le_set_random_address:00000000 hci_le_set_random_address
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1847   .text.hci_le_set_advertising_parameters:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1853   .text.hci_le_set_advertising_parameters:00000000 hci_le_set_advertising_parameters
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:1997   .text.hci_le_read_advertising_physical_channel_tx_power:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2003   .text.hci_le_read_advertising_physical_channel_tx_power:00000000 hci_le_read_advertising_physical_channel_tx_power
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2092   .text.hci_le_set_advertising_data:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2098   .text.hci_le_set_advertising_data:00000000 hci_le_set_advertising_data
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2201   .text.hci_le_set_scan_response_data:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2207   .text.hci_le_set_scan_response_data:00000000 hci_le_set_scan_response_data
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2311   .text.hci_le_set_advertising_enable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2317   .text.hci_le_set_advertising_enable:00000000 hci_le_set_advertising_enable
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2414   .text.hci_le_set_scan_parameters:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2420   .text.hci_le_set_scan_parameters:00000000 hci_le_set_scan_parameters
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2545   .text.hci_le_set_scan_enable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2551   .text.hci_le_set_scan_enable:00000000 hci_le_set_scan_enable
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2656   .text.hci_le_create_connection:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2662   .text.hci_le_create_connection:00000000 hci_le_create_connection
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2832   .text.hci_le_create_connection_cancel:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2838   .text.hci_le_create_connection_cancel:00000000 hci_le_create_connection_cancel
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2909   .text.hci_le_read_filter_accept_list_size:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:2915   .text.hci_le_read_filter_accept_list_size:00000000 hci_le_read_filter_accept_list_size
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3004   .text.hci_le_clear_filter_accept_list:00000000 $t
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 194
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:20     .text.hci_disconnect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:26     .text.hci_disconnect:00000000 hci_disconnect
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:135    .text.hci_read_remote_version_information:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:141    .text.hci_read_remote_version_information:00000000 hci_read_remote_version_information
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:242    .text.hci_set_event_mask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:248    .text.hci_set_event_mask:00000000 hci_set_event_mask
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:347    .text.hci_reset:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:353    .text.hci_reset:00000000 hci_reset
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:423    .text.hci_read_transmit_power_level:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:429    .text.hci_read_transmit_power_level:00000000 hci_read_transmit_power_level
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:550    .text.hci_set_controller_to_host_flow_control:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:556    .text.hci_set_controller_to_host_flow_control:00000000 hci_set_controller_to_host_flow_control
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:653    .text.hci_host_buffer_size:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:659    .text.hci_host_buffer_size:00000000 hci_host_buffer_size
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:776    .text.hci_host_number_of_completed_packets:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:782    .text.hci_host_number_of_completed_packets:00000000 hci_host_number_of_completed_packets
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:890    .text.hci_read_local_version_information:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:896    .text.hci_read_local_version_information:00000000 hci_read_local_version_information
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1016   .text.hci_read_local_supported_commands:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1022   .text.hci_read_local_supported_commands:00000000 hci_read_local_supported_commands
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1116   .text.hci_read_local_supported_features:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1122   .text.hci_read_local_supported_features:00000000 hci_read_local_supported_features
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1216   .text.hci_read_bd_addr:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1222   .text.hci_read_bd_addr:00000000 hci_read_bd_addr
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1315   .text.hci_read_rssi:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1321   .text.hci_read_rssi:00000000 hci_read_rssi
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1433   .text.hci_le_set_event_mask:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1439   .text.hci_le_set_event_mask:00000000 hci_le_set_event_mask
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1537   .text.hci_le_read_buffer_size:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1543   .text.hci_le_read_buffer_size:00000000 hci_le_read_buffer_size
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1641   .text.hci_le_read_local_supported_features:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1647   .text.hci_le_read_local_supported_features:00000000 hci_le_read_local_supported_features
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1741   .text.hci_le_set_random_address:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1747   .text.hci_le_set_random_address:00000000 hci_le_set_random_address
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1847   .text.hci_le_set_advertising_parameters:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1853   .text.hci_le_set_advertising_parameters:00000000 hci_le_set_advertising_parameters
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:1997   .text.hci_le_read_advertising_physical_channel_tx_power:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2003   .text.hci_le_read_advertising_physical_channel_tx_power:00000000 hci_le_read_advertising_physical_channel_tx_power
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2092   .text.hci_le_set_advertising_data:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2098   .text.hci_le_set_advertising_data:00000000 hci_le_set_advertising_data
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2201   .text.hci_le_set_scan_response_data:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2207   .text.hci_le_set_scan_response_data:00000000 hci_le_set_scan_response_data
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2311   .text.hci_le_set_advertising_enable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2317   .text.hci_le_set_advertising_enable:00000000 hci_le_set_advertising_enable
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2414   .text.hci_le_set_scan_parameters:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2420   .text.hci_le_set_scan_parameters:00000000 hci_le_set_scan_parameters
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2545   .text.hci_le_set_scan_enable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2551   .text.hci_le_set_scan_enable:00000000 hci_le_set_scan_enable
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2656   .text.hci_le_create_connection:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2662   .text.hci_le_create_connection:00000000 hci_le_create_connection
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2832   .text.hci_le_create_connection_cancel:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2838   .text.hci_le_create_connection_cancel:00000000 hci_le_create_connection_cancel
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2909   .text.hci_le_read_filter_accept_list_size:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:2915   .text.hci_le_read_filter_accept_list_size:00000000 hci_le_read_filter_accept_list_size
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3004   .text.hci_le_clear_filter_accept_list:00000000 $t
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 194
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3010   .text.hci_le_clear_filter_accept_list:00000000 hci_le_clear_filter_accept_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3081   .text.hci_le_add_device_to_filter_accept_list:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3087   .text.hci_le_add_device_to_filter_accept_list:00000000 hci_le_add_device_to_filter_accept_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3191   .text.hci_le_remove_device_from_filter_accept_list:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3197   .text.hci_le_remove_device_from_filter_accept_list:00000000 hci_le_remove_device_from_filter_accept_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3301   .text.hci_le_connection_update:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3307   .text.hci_le_connection_update:00000000 hci_le_connection_update
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3448   .text.hci_le_set_host_channel_classification:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3454   .text.hci_le_set_host_channel_classification:00000000 hci_le_set_host_channel_classification
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3554   .text.hci_le_read_channel_map:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3560   .text.hci_le_read_channel_map:00000000 hci_le_read_channel_map
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3675   .text.hci_le_read_remote_features:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3681   .text.hci_le_read_remote_features:00000000 hci_le_read_remote_features
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3783   .text.hci_le_encrypt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3789   .text.hci_le_encrypt:00000000 hci_le_encrypt
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3924   .text.hci_le_rand:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:3930   .text.hci_le_rand:00000000 hci_le_rand
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4024   .text.hci_le_enable_encryption:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4030   .text.hci_le_enable_encryption:00000000 hci_le_enable_encryption
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4156   .text.hci_le_long_term_key_request_reply:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4162   .text.hci_le_long_term_key_request_reply:00000000 hci_le_long_term_key_request_reply
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4274   .text.hci_le_long_term_key_request_negative_reply:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4280   .text.hci_le_long_term_key_request_negative_reply:00000000 hci_le_long_term_key_request_negative_reply
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4381   .text.hci_le_read_supported_states:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4387   .text.hci_le_read_supported_states:00000000 hci_le_read_supported_states
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4481   .text.hci_le_receiver_test:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4487   .text.hci_le_receiver_test:00000000 hci_le_receiver_test
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4584   .text.hci_le_transmitter_test:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4590   .text.hci_le_transmitter_test:00000000 hci_le_transmitter_test
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4702   .text.hci_le_test_end:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4708   .text.hci_le_test_end:00000000 hci_le_test_end
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4797   .text.hci_le_set_data_length:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4803   .text.hci_le_set_data_length:00000000 hci_le_set_data_length
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4922   .text.hci_le_read_suggested_default_data_length:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:4928   .text.hci_le_read_suggested_default_data_length:00000000 hci_le_read_suggested_default_data_length
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5024   .text.hci_le_write_suggested_default_data_length:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5030   .text.hci_le_write_suggested_default_data_length:00000000 hci_le_write_suggested_default_data_length
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5135   .text.hci_le_read_local_p256_public_key:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5141   .text.hci_le_read_local_p256_public_key:00000000 hci_le_read_local_p256_public_key
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5216   .text.hci_le_generate_dhkey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5222   .text.hci_le_generate_dhkey:00000000 hci_le_generate_dhkey
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5326   .text.hci_le_add_device_to_resolving_list:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5332   .text.hci_le_add_device_to_resolving_list:00000000 hci_le_add_device_to_resolving_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5455   .text.hci_le_remove_device_from_resolving_list:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5461   .text.hci_le_remove_device_from_resolving_list:00000000 hci_le_remove_device_from_resolving_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5565   .text.hci_le_clear_resolving_list:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5571   .text.hci_le_clear_resolving_list:00000000 hci_le_clear_resolving_list
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5642   .text.hci_le_read_resolving_list_size:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5648   .text.hci_le_read_resolving_list_size:00000000 hci_le_read_resolving_list_size
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5737   .text.hci_le_read_peer_resolvable_address:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5743   .text.hci_le_read_peer_resolvable_address:00000000 hci_le_read_peer_resolvable_address
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5873   .text.hci_le_read_local_resolvable_address:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:5879   .text.hci_le_read_local_resolvable_address:00000000 hci_le_read_local_resolvable_address
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6009   .text.hci_le_set_address_resolution_enable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6015   .text.hci_le_set_address_resolution_enable:00000000 hci_le_set_address_resolution_enable
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6112   .text.hci_le_set_resolvable_private_address_timeout:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6118   .text.hci_le_set_resolvable_private_address_timeout:00000000 hci_le_set_resolvable_private_address_timeout
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s 			page 195
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3010   .text.hci_le_clear_filter_accept_list:00000000 hci_le_clear_filter_accept_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3081   .text.hci_le_add_device_to_filter_accept_list:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3087   .text.hci_le_add_device_to_filter_accept_list:00000000 hci_le_add_device_to_filter_accept_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3191   .text.hci_le_remove_device_from_filter_accept_list:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3197   .text.hci_le_remove_device_from_filter_accept_list:00000000 hci_le_remove_device_from_filter_accept_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3301   .text.hci_le_connection_update:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3307   .text.hci_le_connection_update:00000000 hci_le_connection_update
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3448   .text.hci_le_set_host_channel_classification:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3454   .text.hci_le_set_host_channel_classification:00000000 hci_le_set_host_channel_classification
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3554   .text.hci_le_read_channel_map:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3560   .text.hci_le_read_channel_map:00000000 hci_le_read_channel_map
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3675   .text.hci_le_read_remote_features:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3681   .text.hci_le_read_remote_features:00000000 hci_le_read_remote_features
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3783   .text.hci_le_encrypt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3789   .text.hci_le_encrypt:00000000 hci_le_encrypt
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3924   .text.hci_le_rand:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:3930   .text.hci_le_rand:00000000 hci_le_rand
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4024   .text.hci_le_enable_encryption:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4030   .text.hci_le_enable_encryption:00000000 hci_le_enable_encryption
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4156   .text.hci_le_long_term_key_request_reply:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4162   .text.hci_le_long_term_key_request_reply:00000000 hci_le_long_term_key_request_reply
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4274   .text.hci_le_long_term_key_request_negative_reply:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4280   .text.hci_le_long_term_key_request_negative_reply:00000000 hci_le_long_term_key_request_negative_reply
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4381   .text.hci_le_read_supported_states:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4387   .text.hci_le_read_supported_states:00000000 hci_le_read_supported_states
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4481   .text.hci_le_receiver_test:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4487   .text.hci_le_receiver_test:00000000 hci_le_receiver_test
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4584   .text.hci_le_transmitter_test:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4590   .text.hci_le_transmitter_test:00000000 hci_le_transmitter_test
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4702   .text.hci_le_test_end:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4708   .text.hci_le_test_end:00000000 hci_le_test_end
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4797   .text.hci_le_set_data_length:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4803   .text.hci_le_set_data_length:00000000 hci_le_set_data_length
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4922   .text.hci_le_read_suggested_default_data_length:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:4928   .text.hci_le_read_suggested_default_data_length:00000000 hci_le_read_suggested_default_data_length
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5024   .text.hci_le_write_suggested_default_data_length:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5030   .text.hci_le_write_suggested_default_data_length:00000000 hci_le_write_suggested_default_data_length
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5135   .text.hci_le_read_local_p256_public_key:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5141   .text.hci_le_read_local_p256_public_key:00000000 hci_le_read_local_p256_public_key
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5216   .text.hci_le_generate_dhkey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5222   .text.hci_le_generate_dhkey:00000000 hci_le_generate_dhkey
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5326   .text.hci_le_add_device_to_resolving_list:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5332   .text.hci_le_add_device_to_resolving_list:00000000 hci_le_add_device_to_resolving_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5455   .text.hci_le_remove_device_from_resolving_list:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5461   .text.hci_le_remove_device_from_resolving_list:00000000 hci_le_remove_device_from_resolving_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5565   .text.hci_le_clear_resolving_list:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5571   .text.hci_le_clear_resolving_list:00000000 hci_le_clear_resolving_list
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5642   .text.hci_le_read_resolving_list_size:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5648   .text.hci_le_read_resolving_list_size:00000000 hci_le_read_resolving_list_size
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5737   .text.hci_le_read_peer_resolvable_address:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5743   .text.hci_le_read_peer_resolvable_address:00000000 hci_le_read_peer_resolvable_address
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5873   .text.hci_le_read_local_resolvable_address:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:5879   .text.hci_le_read_local_resolvable_address:00000000 hci_le_read_local_resolvable_address
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6009   .text.hci_le_set_address_resolution_enable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6015   .text.hci_le_set_address_resolution_enable:00000000 hci_le_set_address_resolution_enable
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6112   .text.hci_le_set_resolvable_private_address_timeout:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6118   .text.hci_le_set_resolvable_private_address_timeout:00000000 hci_le_set_resolvable_private_address_timeout
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s 			page 195
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6216   .text.hci_le_read_maximum_data_length:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6222   .text.hci_le_read_maximum_data_length:00000000 hci_le_read_maximum_data_length
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6336   .text.hci_le_read_phy:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6342   .text.hci_le_read_phy:00000000 hci_le_read_phy
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6462   .text.hci_le_set_default_phy:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6468   .text.hci_le_set_default_phy:00000000 hci_le_set_default_phy
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6580   .text.hci_le_set_phy:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6586   .text.hci_le_set_phy:00000000 hci_le_set_phy
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6715   .text.hci_le_receiver_test_v2:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6721   .text.hci_le_receiver_test_v2:00000000 hci_le_receiver_test_v2
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6833   .text.hci_le_transmitter_test_v2:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6839   .text.hci_le_transmitter_test_v2:00000000 hci_le_transmitter_test_v2
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6956   .text.hci_le_set_advertising_set_random_address:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:6962   .text.hci_le_set_advertising_set_random_address:00000000 hci_le_set_advertising_set_random_address
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7066   .text.hci_le_set_extended_advertising_parameters:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7072   .text.hci_le_set_extended_advertising_parameters:00000000 hci_le_set_extended_advertising_parameters
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7278   .text.hci_le_set_extended_advertising_data:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7284   .text.hci_le_set_extended_advertising_data:00000000 hci_le_set_extended_advertising_data
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7412   .text.hci_le_set_extended_scan_response_data:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7418   .text.hci_le_set_extended_scan_response_data:00000000 hci_le_set_extended_scan_response_data
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7546   .text.hci_le_set_extended_advertising_enable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7552   .text.hci_le_set_extended_advertising_enable:00000000 hci_le_set_extended_advertising_enable
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7669   .text.hci_le_read_maximum_advertising_data_length:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7675   .text.hci_le_read_maximum_advertising_data_length:00000000 hci_le_read_maximum_advertising_data_length
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7764   .text.hci_le_read_number_of_supported_advertising_sets:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7770   .text.hci_le_read_number_of_supported_advertising_sets:00000000 hci_le_read_number_of_supported_advertising_sets
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7859   .text.hci_le_remove_advertising_set:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7865   .text.hci_le_remove_advertising_set:00000000 hci_le_remove_advertising_set
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7962   .text.hci_le_clear_advertising_sets:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:7968   .text.hci_le_clear_advertising_sets:00000000 hci_le_clear_advertising_sets
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8039   .text.hci_le_set_extended_scan_parameters:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8045   .text.hci_le_set_extended_scan_parameters:00000000 hci_le_set_extended_scan_parameters
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8164   .text.hci_le_set_extended_scan_enable:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8170   .text.hci_le_set_extended_scan_enable:00000000 hci_le_set_extended_scan_enable
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8287   .text.hci_le_extended_create_connection:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8293   .text.hci_le_extended_create_connection:00000000 hci_le_extended_create_connection
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8429   .text.hci_le_read_transmit_power:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8435   .text.hci_le_read_transmit_power:00000000 hci_le_read_transmit_power
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8533   .text.hci_le_read_rf_path_compensation:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8539   .text.hci_le_read_rf_path_compensation:00000000 hci_le_read_rf_path_compensation
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8635   .text.hci_le_write_rf_path_compensation:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8641   .text.hci_le_write_rf_path_compensation:00000000 hci_le_write_rf_path_compensation
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8746   .text.hci_le_set_privacy_mode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8752   .text.hci_le_set_privacy_mode:00000000 hci_le_set_privacy_mode
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8864   .text.hci_le_generate_dhkey_v2:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccXNP2Gc.s:8870   .text.hci_le_generate_dhkey_v2:00000000 hci_le_generate_dhkey_v2
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6216   .text.hci_le_read_maximum_data_length:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6222   .text.hci_le_read_maximum_data_length:00000000 hci_le_read_maximum_data_length
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6336   .text.hci_le_read_phy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6342   .text.hci_le_read_phy:00000000 hci_le_read_phy
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6462   .text.hci_le_set_default_phy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6468   .text.hci_le_set_default_phy:00000000 hci_le_set_default_phy
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6580   .text.hci_le_set_phy:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6586   .text.hci_le_set_phy:00000000 hci_le_set_phy
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6715   .text.hci_le_receiver_test_v2:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6721   .text.hci_le_receiver_test_v2:00000000 hci_le_receiver_test_v2
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6833   .text.hci_le_transmitter_test_v2:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6839   .text.hci_le_transmitter_test_v2:00000000 hci_le_transmitter_test_v2
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6956   .text.hci_le_set_advertising_set_random_address:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:6962   .text.hci_le_set_advertising_set_random_address:00000000 hci_le_set_advertising_set_random_address
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7066   .text.hci_le_set_extended_advertising_parameters:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7072   .text.hci_le_set_extended_advertising_parameters:00000000 hci_le_set_extended_advertising_parameters
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7278   .text.hci_le_set_extended_advertising_data:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7284   .text.hci_le_set_extended_advertising_data:00000000 hci_le_set_extended_advertising_data
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7412   .text.hci_le_set_extended_scan_response_data:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7418   .text.hci_le_set_extended_scan_response_data:00000000 hci_le_set_extended_scan_response_data
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7546   .text.hci_le_set_extended_advertising_enable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7552   .text.hci_le_set_extended_advertising_enable:00000000 hci_le_set_extended_advertising_enable
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7669   .text.hci_le_read_maximum_advertising_data_length:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7675   .text.hci_le_read_maximum_advertising_data_length:00000000 hci_le_read_maximum_advertising_data_length
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7764   .text.hci_le_read_number_of_supported_advertising_sets:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7770   .text.hci_le_read_number_of_supported_advertising_sets:00000000 hci_le_read_number_of_supported_advertising_sets
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7859   .text.hci_le_remove_advertising_set:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7865   .text.hci_le_remove_advertising_set:00000000 hci_le_remove_advertising_set
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7962   .text.hci_le_clear_advertising_sets:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:7968   .text.hci_le_clear_advertising_sets:00000000 hci_le_clear_advertising_sets
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8039   .text.hci_le_set_extended_scan_parameters:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8045   .text.hci_le_set_extended_scan_parameters:00000000 hci_le_set_extended_scan_parameters
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8164   .text.hci_le_set_extended_scan_enable:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8170   .text.hci_le_set_extended_scan_enable:00000000 hci_le_set_extended_scan_enable
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8287   .text.hci_le_extended_create_connection:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8293   .text.hci_le_extended_create_connection:00000000 hci_le_extended_create_connection
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8429   .text.hci_le_read_transmit_power:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8435   .text.hci_le_read_transmit_power:00000000 hci_le_read_transmit_power
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8533   .text.hci_le_read_rf_path_compensation:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8539   .text.hci_le_read_rf_path_compensation:00000000 hci_le_read_rf_path_compensation
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8635   .text.hci_le_write_rf_path_compensation:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8641   .text.hci_le_write_rf_path_compensation:00000000 hci_le_write_rf_path_compensation
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8746   .text.hci_le_set_privacy_mode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8752   .text.hci_le_set_privacy_mode:00000000 hci_le_set_privacy_mode
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8864   .text.hci_le_generate_dhkey_v2:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccYsx4F7.s:8870   .text.hci_le_generate_dhkey_v2:00000000 hci_le_generate_dhkey_v2
 
 UNDEFINED SYMBOLS
 Osal_MemSet

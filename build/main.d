@@ -23,9 +23,6 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
- Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h \
- Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h \
- Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -54,16 +51,7 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h Core/Inc/app_entry.h \
  Core/Inc/app_common.h Core/Inc/i2c.h Core/Inc/main.h Core/Inc/ipcc.h \
- Core/Inc/rf.h Core/Inc/rtc.h USB_Device/App/usb_device.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- USB_Device/Target/usbd_conf.h Core/Inc/gpio.h \
- USB_Device/App/usbd_cdc_if.h \
- Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+ Core/Inc/rf.h Core/Inc/rtc.h Core/Inc/gpio.h \
  Middlewares/ST/STM32_WPAN/ble/ble.h STM32_WPAN/App/ble_conf.h \
  Core/Inc/app_conf.h STM32_WPAN/App/ble_dbg_conf.h \
  Middlewares/ST/STM32_WPAN/ble/core/ble_core.h \
@@ -138,9 +126,6 @@ Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_hsem.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
-Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd.h:
-Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h:
-Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
@@ -176,17 +161,7 @@ Core/Inc/main.h:
 Core/Inc/ipcc.h:
 Core/Inc/rf.h:
 Core/Inc/rtc.h:
-USB_Device/App/usb_device.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-USB_Device/Target/usbd_conf.h:
 Core/Inc/gpio.h:
-USB_Device/App/usbd_cdc_if.h:
-Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 Middlewares/ST/STM32_WPAN/ble/ble.h:
 STM32_WPAN/App/ble_conf.h:
 Core/Inc/app_conf.h:

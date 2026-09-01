@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
   27:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** /* Private typedef -----------------------------------------------------------*/
   28:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** /* Private defines -----------------------------------------------------------*/
   29:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** /* Private macros ------------------------------------------------------------*/
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 2
 
 
   30:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** /* Private variables ---------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
   55:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   if(p_error_code != 0)
   59              		.loc 1 55 3 is_stmt 1 view .LVU8
   60              		.loc 1 55 5 is_stmt 0 view .LVU9
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 3
 
 
   61 0014 14B1     		cbz	r4, .L2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  103              		.loc 1 69 3 is_stmt 1 view .LVU18
   70:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   TL_EvtPacket_t * p_rsp;
  104              		.loc 1 70 3 view .LVU19
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 4
 
 
   71:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   uint32_t *p_cmd;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  138 0014 6B46     		mov	r3, sp
  139              	.LVL11:
  140              		.loc 1 91 3 is_stmt 0 view .LVU39
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 5
 
 
  141 0016 6A46     		mov	r2, sp
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  186              		.cfi_offset 14, -4
  187 0002 85B0     		sub	sp, sp, #20
  188              	.LCFI8:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 6
 
 
  189              		.cfi_def_cfa_offset 24
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  227              		@ args = 0, pretend = 0, frame = 16
  228              		@ frame_needed = 0, uses_anonymous_args = 0
  229              		.loc 1 118 1 is_stmt 0 view .LVU56
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 7
 
 
  230 0000 00B5     		push	{lr}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  271              	SHCI_C2_FUS_LockAuthKey:
  272              	.LFB957:
  134:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 8
 
 
  135:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** SHCI_CmdStatus_t SHCI_C2_FUS_LockAuthKey( void )
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  311              		.global	SHCI_C2_FUS_StoreUsrKey
  312              		.syntax unified
  313              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 9
 
 
  314              		.thumb_func
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  348 0012 D9B2     		uxtb	r1, r3
  349              	.LVL29:
  350              	.L17:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 10
 
 
  173:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  388              		.cfi_endproc
  389              	.LFE958:
  391              		.section	.text.SHCI_C2_FUS_LoadUsrKey,"ax",%progbits
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 11
 
 
  392              		.align	1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  204:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   return (SHCI_CmdStatus_t)(((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->payload[0]);
  429              		.loc 1 204 3 is_stmt 1 view .LVU108
  205:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 12
 
 
  430              		.loc 1 205 1 is_stmt 0 view .LVU109
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  218:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
  219:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
  220:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              p_rsp );
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 13
 
 
  221:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  515              		.loc 1 235 19 is_stmt 0 view .LVU127
  516 0004 8DF80000 		strb	r0, [sp]
  236:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 14
 
 
  237:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   shci_send( SHCI_OPCODE_C2_FUS_LOCK_USR_KEY,
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  248:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****    * Buffer is large enough to hold command complete without payload
  249:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****    */
  250:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   uint8_t local_buffer[TL_BLEEVT_CC_BUFFER_SIZE];
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 15
 
 
  562              		.loc 1 250 3 is_stmt 1 view .LVU136
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  602              		.cfi_startproc
  603              		@ args = 0, pretend = 0, frame = 16
  604              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 16
 
 
  605 0000 00B5     		push	{lr}
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  646              	.LFB964:
  282:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
  283:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** SHCI_CmdStatus_t SHCI_C2_BLE_Init( SHCI_C2_Ble_Init_Cmd_Packet_t *pCmdPacket )
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 17
 
 
  284:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  686              		.section	.text.SHCI_C2_THREAD_Init,"ax",%progbits
  687              		.align	1
  688              		.global	SHCI_C2_THREAD_Init
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 18
 
 
  689              		.syntax unified
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  726 0018 5DF804FB 		ldr	pc, [sp], #4
  727              		.loc 1 317 1 view .LVU175
  728              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 19
 
 
  729              	.LFE965:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  768              		.loc 1 334 3 is_stmt 1 view .LVU184
  335:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** }
  769              		.loc 1 335 1 is_stmt 0 view .LVU185
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 20
 
 
  770 0012 9DF80E00 		ldrb	r0, [sp, #14]	@ zero_extendqisi2
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  814 000a 4FF67440 		movw	r0, #64628
  815              	.LVL73:
  816              		.loc 1 347 3 view .LVU195
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 21
 
 
  817 000e FFF7FEFF 		bl	shci_send
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  364:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
  365:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   shci_send( SHCI_OPCODE_C2_ZIGBEE_INIT,
  857              		.loc 1 365 3 view .LVU204
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 22
 
 
  858 0004 6B46     		mov	r3, sp
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  379:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   TL_EvtPacket_t * p_rsp;
  901              		.loc 1 379 3 view .LVU212
  380:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 23
 
 
  381:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   p_rsp = (TL_EvtPacket_t *)local_buffer;
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  946 0002 85B0     		sub	sp, sp, #20
  947              	.LCFI54:
  948              		.cfi_def_cfa_offset 24
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 24
 
 
  393:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   /**
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  988              	.LFB971:
  410:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
  411:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** SHCI_CmdStatus_t SHCI_C2_CONCURRENT_SetMode( SHCI_C2_CONCURRENT_Mode_Param_t Mode )
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 25
 
 
  412:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1025              		@ sp needed
  1026 001c 5DF804FB 		ldr	pc, [sp], #4
  1027              		.loc 1 429 1 view .LVU245
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 26
 
 
  1028              		.cfi_endproc
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  444:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              p_rsp );
  445:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   
  446:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   memcpy((void*)&(pParam->relative_time), (void*)&((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->pa
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 27
 
 
  1070              		.loc 1 446 3 is_stmt 1 view .LVU254
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1111 0006 0022     		movs	r2, #0
  1112 0008 1146     		mov	r1, r2
  1113 000a 4FF67740 		movw	r0, #64631
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 28
 
 
  1114 000e FFF7FEFF 		bl	shci_send
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1154              		.loc 1 477 3 view .LVU271
  1155              	.LVL103:
  478:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 29
 
 
  479:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   local_buffer[0] = Ip;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1200              		.cfi_offset 14, -4
  1201 0002 85B0     		sub	sp, sp, #20
  1202              	.LCFI69:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 30
 
 
  1203              		.cfi_def_cfa_offset 24
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1242              	.LVL112:
  1243              	.LFB976:
  508:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 31
 
 
  509:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** SHCI_CmdStatus_t SHCI_C2_RADIO_AllowLowPower( SHCI_C2_FLASH_Ip_t Ip,uint8_t  FlagRadioLowPowerOn)
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1278              		.loc 1 528 1 is_stmt 0 view .LVU306
  1279 001a 9DF80E00 		ldrb	r0, [sp, #14]	@ zero_extendqisi2
  1280 001e 05B0     		add	sp, sp, #20
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 32
 
 
  1281              	.LCFI73:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  544:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
  545:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   return (SHCI_CmdStatus_t)(((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->payload[0]);
  1322              		.loc 1 545 3 view .LVU314
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 33
 
 
  546:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** }
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1366              	.LVL122:
  559:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
  560:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 34
 
 
  561:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              p_rsp );
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  577:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   ((SHCI_C2_EXTPA_CONFIG_Cmd_Param_t*)local_buffer)->gpio_port = gpio_port;
  1407              		.loc 1 577 3 view .LVU332
  1408              		.loc 1 577 64 is_stmt 0 view .LVU333
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 35
 
 
  1409 0004 0090     		str	r0, [sp]
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1453              		.thumb_func
  1455              	SHCI_C2_SetFlashActivityControl:
  1456              	.LVL132:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 36
 
 
  1457              	.LFB980:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1490              	.LCFI85:
  1491              		.cfi_def_cfa_offset 4
  1492              	.LVL136:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 37
 
 
  1493              		.loc 1 609 1 view .LVU360
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  624:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              p_rsp );
  625:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
  626:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   return (SHCI_CmdStatus_t)(((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->payload[0]);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 38
 
 
  1535              		.loc 1 626 3 is_stmt 1 view .LVU369
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1578 000e FFF7FEFF 		bl	shci_send
  1579              	.LVL143:
  640:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 39
 
 
  641:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****              0,
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  657:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   local_buffer[0] = (uint8_t)clockSel;
  1620              		.loc 1 657 3 view .LVU387
  1621              		.loc 1 657 19 is_stmt 0 view .LVU388
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 40
 
 
  1622 0004 8DF80000 		strb	r0, [sp]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1662 0000 30B4     		push	{r4, r5}
  1663              	.LCFI95:
  1664              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 41
 
 
  1665              		.cfi_offset 4, -8
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  693:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   {
  694:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****     /* The FUS is running on CPU2 */
  695:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****     /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 42
 
 
  696:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****      *  Retrieve the WirelessFwInfoTable
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1721              	.LVL160:
  1722              	.L72:
  729:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 43
 
 
  730:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1763 0058 C371     		strb	r3, [r0, #7]
  744:Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c ****   pWirelessInfo->MemorySizeFlash    = ((wireless_firmware_memorySize & INFO_SIZE_FLASH_MASK) >> INF
  1764              		.loc 1 744 3 is_stmt 1 view .LVU450
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 44
 
 
  1765              		.loc 1 744 37 is_stmt 0 view .LVU451
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1802              	.LVL163:
  1803              		.loc 1 761 1 view .LVU473
  1804 0076 30BC     		pop	{r4, r5}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 45
 
 
  1805              	.LCFI96:
@@ -2698,86 +2698,86 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 1
  1849              		.file 2 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h"
  1850              		.file 3 "g:\\arm\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h"
  1851              		.file 4 "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 46
 
 
  1852              		.file 5 "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/mbox_def.h"
  1853              		.file 6 "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.h"
  1854              		.file 7 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h"
  1855              		.file 8 "Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 47
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 shci.c
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:20     .text.SHCI_C2_FUS_GetState:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:26     .text.SHCI_C2_FUS_GetState:00000000 SHCI_C2_FUS_GetState
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:81     .text.SHCI_C2_FUS_FwUpgrade:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:87     .text.SHCI_C2_FUS_FwUpgrade:00000000 SHCI_C2_FUS_FwUpgrade
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:171    .text.SHCI_C2_FUS_FwDelete:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:177    .text.SHCI_C2_FUS_FwDelete:00000000 SHCI_C2_FUS_FwDelete
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:216    .text.SHCI_C2_FUS_UpdateAuthKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:222    .text.SHCI_C2_FUS_UpdateAuthKey:00000000 SHCI_C2_FUS_UpdateAuthKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:265    .text.SHCI_C2_FUS_LockAuthKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:271    .text.SHCI_C2_FUS_LockAuthKey:00000000 SHCI_C2_FUS_LockAuthKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:310    .text.SHCI_C2_FUS_StoreUsrKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:316    .text.SHCI_C2_FUS_StoreUsrKey:00000000 SHCI_C2_FUS_StoreUsrKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:392    .text.SHCI_C2_FUS_LoadUsrKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:398    .text.SHCI_C2_FUS_LoadUsrKey:00000000 SHCI_C2_FUS_LoadUsrKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:444    .text.SHCI_C2_FUS_StartWs:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:450    .text.SHCI_C2_FUS_StartWs:00000000 SHCI_C2_FUS_StartWs
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:489    .text.SHCI_C2_FUS_LockUsrKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:495    .text.SHCI_C2_FUS_LockUsrKey:00000000 SHCI_C2_FUS_LockUsrKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:541    .text.SHCI_C2_FUS_UnloadUsrKey:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:547    .text.SHCI_C2_FUS_UnloadUsrKey:00000000 SHCI_C2_FUS_UnloadUsrKey
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:593    .text.SHCI_C2_FUS_ActivateAntiRollback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:599    .text.SHCI_C2_FUS_ActivateAntiRollback:00000000 SHCI_C2_FUS_ActivateAntiRollback
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:638    .text.SHCI_C2_BLE_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:644    .text.SHCI_C2_BLE_Init:00000000 SHCI_C2_BLE_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:687    .text.SHCI_C2_THREAD_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:693    .text.SHCI_C2_THREAD_Init:00000000 SHCI_C2_THREAD_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:732    .text.SHCI_C2_LLDTESTS_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:738    .text.SHCI_C2_LLDTESTS_Init:00000000 SHCI_C2_LLDTESTS_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:783    .text.SHCI_C2_BLE_LLD_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:789    .text.SHCI_C2_BLE_LLD_Init:00000000 SHCI_C2_BLE_LLD_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:834    .text.SHCI_C2_ZIGBEE_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:840    .text.SHCI_C2_ZIGBEE_Init:00000000 SHCI_C2_ZIGBEE_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:879    .text.SHCI_C2_DEBUG_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:885    .text.SHCI_C2_DEBUG_Init:00000000 SHCI_C2_DEBUG_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:928    .text.SHCI_C2_FLASH_EraseActivity:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:934    .text.SHCI_C2_FLASH_EraseActivity:00000000 SHCI_C2_FLASH_EraseActivity
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:980    .text.SHCI_C2_CONCURRENT_SetMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:986    .text.SHCI_C2_CONCURRENT_SetMode:00000000 SHCI_C2_CONCURRENT_SetMode
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1032   .text.SHCI_C2_CONCURRENT_GetNextBleEvtTime:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1038   .text.SHCI_C2_CONCURRENT_GetNextBleEvtTime:00000000 SHCI_C2_CONCURRENT_GetNextBleEvtTime
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1086   .text.SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1092   .text.SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification:00000000 SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1131   .text.SHCI_C2_FLASH_StoreData:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1137   .text.SHCI_C2_FLASH_StoreData:00000000 SHCI_C2_FLASH_StoreData
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1183   .text.SHCI_C2_FLASH_EraseData:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1189   .text.SHCI_C2_FLASH_EraseData:00000000 SHCI_C2_FLASH_EraseData
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1235   .text.SHCI_C2_RADIO_AllowLowPower:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1241   .text.SHCI_C2_RADIO_AllowLowPower:00000000 SHCI_C2_RADIO_AllowLowPower
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1292   .text.SHCI_C2_MAC_802_15_4_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1298   .text.SHCI_C2_MAC_802_15_4_Init:00000000 SHCI_C2_MAC_802_15_4_Init
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1337   .text.SHCI_C2_Reinit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1343   .text.SHCI_C2_Reinit:00000000 SHCI_C2_Reinit
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1382   .text.SHCI_C2_ExtpaConfig:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1388   .text.SHCI_C2_ExtpaConfig:00000000 SHCI_C2_ExtpaConfig
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1449   .text.SHCI_C2_SetFlashActivityControl:00000000 $t
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s 			page 48
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:20     .text.SHCI_C2_FUS_GetState:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:26     .text.SHCI_C2_FUS_GetState:00000000 SHCI_C2_FUS_GetState
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:81     .text.SHCI_C2_FUS_FwUpgrade:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:87     .text.SHCI_C2_FUS_FwUpgrade:00000000 SHCI_C2_FUS_FwUpgrade
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:171    .text.SHCI_C2_FUS_FwDelete:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:177    .text.SHCI_C2_FUS_FwDelete:00000000 SHCI_C2_FUS_FwDelete
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:216    .text.SHCI_C2_FUS_UpdateAuthKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:222    .text.SHCI_C2_FUS_UpdateAuthKey:00000000 SHCI_C2_FUS_UpdateAuthKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:265    .text.SHCI_C2_FUS_LockAuthKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:271    .text.SHCI_C2_FUS_LockAuthKey:00000000 SHCI_C2_FUS_LockAuthKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:310    .text.SHCI_C2_FUS_StoreUsrKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:316    .text.SHCI_C2_FUS_StoreUsrKey:00000000 SHCI_C2_FUS_StoreUsrKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:392    .text.SHCI_C2_FUS_LoadUsrKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:398    .text.SHCI_C2_FUS_LoadUsrKey:00000000 SHCI_C2_FUS_LoadUsrKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:444    .text.SHCI_C2_FUS_StartWs:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:450    .text.SHCI_C2_FUS_StartWs:00000000 SHCI_C2_FUS_StartWs
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:489    .text.SHCI_C2_FUS_LockUsrKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:495    .text.SHCI_C2_FUS_LockUsrKey:00000000 SHCI_C2_FUS_LockUsrKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:541    .text.SHCI_C2_FUS_UnloadUsrKey:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:547    .text.SHCI_C2_FUS_UnloadUsrKey:00000000 SHCI_C2_FUS_UnloadUsrKey
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:593    .text.SHCI_C2_FUS_ActivateAntiRollback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:599    .text.SHCI_C2_FUS_ActivateAntiRollback:00000000 SHCI_C2_FUS_ActivateAntiRollback
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:638    .text.SHCI_C2_BLE_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:644    .text.SHCI_C2_BLE_Init:00000000 SHCI_C2_BLE_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:687    .text.SHCI_C2_THREAD_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:693    .text.SHCI_C2_THREAD_Init:00000000 SHCI_C2_THREAD_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:732    .text.SHCI_C2_LLDTESTS_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:738    .text.SHCI_C2_LLDTESTS_Init:00000000 SHCI_C2_LLDTESTS_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:783    .text.SHCI_C2_BLE_LLD_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:789    .text.SHCI_C2_BLE_LLD_Init:00000000 SHCI_C2_BLE_LLD_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:834    .text.SHCI_C2_ZIGBEE_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:840    .text.SHCI_C2_ZIGBEE_Init:00000000 SHCI_C2_ZIGBEE_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:879    .text.SHCI_C2_DEBUG_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:885    .text.SHCI_C2_DEBUG_Init:00000000 SHCI_C2_DEBUG_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:928    .text.SHCI_C2_FLASH_EraseActivity:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:934    .text.SHCI_C2_FLASH_EraseActivity:00000000 SHCI_C2_FLASH_EraseActivity
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:980    .text.SHCI_C2_CONCURRENT_SetMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:986    .text.SHCI_C2_CONCURRENT_SetMode:00000000 SHCI_C2_CONCURRENT_SetMode
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1032   .text.SHCI_C2_CONCURRENT_GetNextBleEvtTime:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1038   .text.SHCI_C2_CONCURRENT_GetNextBleEvtTime:00000000 SHCI_C2_CONCURRENT_GetNextBleEvtTime
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1086   .text.SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1092   .text.SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification:00000000 SHCI_C2_CONCURRENT_EnableNext_802154_EvtNotification
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1131   .text.SHCI_C2_FLASH_StoreData:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1137   .text.SHCI_C2_FLASH_StoreData:00000000 SHCI_C2_FLASH_StoreData
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1183   .text.SHCI_C2_FLASH_EraseData:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1189   .text.SHCI_C2_FLASH_EraseData:00000000 SHCI_C2_FLASH_EraseData
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1235   .text.SHCI_C2_RADIO_AllowLowPower:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1241   .text.SHCI_C2_RADIO_AllowLowPower:00000000 SHCI_C2_RADIO_AllowLowPower
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1292   .text.SHCI_C2_MAC_802_15_4_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1298   .text.SHCI_C2_MAC_802_15_4_Init:00000000 SHCI_C2_MAC_802_15_4_Init
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1337   .text.SHCI_C2_Reinit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1343   .text.SHCI_C2_Reinit:00000000 SHCI_C2_Reinit
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1382   .text.SHCI_C2_ExtpaConfig:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1388   .text.SHCI_C2_ExtpaConfig:00000000 SHCI_C2_ExtpaConfig
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1449   .text.SHCI_C2_SetFlashActivityControl:00000000 $t
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s 			page 48
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1455   .text.SHCI_C2_SetFlashActivityControl:00000000 SHCI_C2_SetFlashActivityControl
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1501   .text.SHCI_C2_Config:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1507   .text.SHCI_C2_Config:00000000 SHCI_C2_Config
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1550   .text.SHCI_C2_802_15_4_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1556   .text.SHCI_C2_802_15_4_DeInit:00000000 SHCI_C2_802_15_4_DeInit
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1595   .text.SHCI_C2_SetSystemClock:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1601   .text.SHCI_C2_SetSystemClock:00000000 SHCI_C2_SetSystemClock
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1647   .text.SHCI_GetWirelessFwInfo:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1653   .text.SHCI_GetWirelessFwInfo:00000000 SHCI_GetWirelessFwInfo
-C:\Users\843E~1\AppData\Local\Temp\ccYKtWTc.s:1842   .text.SHCI_GetWirelessFwInfo:00000088 $d
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1455   .text.SHCI_C2_SetFlashActivityControl:00000000 SHCI_C2_SetFlashActivityControl
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1501   .text.SHCI_C2_Config:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1507   .text.SHCI_C2_Config:00000000 SHCI_C2_Config
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1550   .text.SHCI_C2_802_15_4_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1556   .text.SHCI_C2_802_15_4_DeInit:00000000 SHCI_C2_802_15_4_DeInit
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1595   .text.SHCI_C2_SetSystemClock:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1601   .text.SHCI_C2_SetSystemClock:00000000 SHCI_C2_SetSystemClock
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1647   .text.SHCI_GetWirelessFwInfo:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1653   .text.SHCI_GetWirelessFwInfo:00000000 SHCI_GetWirelessFwInfo
+C:\Users\843E~1\AppData\Local\Temp\ccdDufLt.s:1842   .text.SHCI_GetWirelessFwInfo:00000088 $d
 
 UNDEFINED SYMBOLS
 shci_send

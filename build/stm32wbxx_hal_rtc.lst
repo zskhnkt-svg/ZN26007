@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
   27:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   ******************************************************************************
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   @verbatim
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 2
 
 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****  ===============================================================================
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
   84:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   [..] The MCU can be woken up from a low power mode by an RTC alternate
   85:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****        function.
   86:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   [..] The RTC alternate functions are the RTC alarms (Alarm A and Alarm B),
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 3
 
 
   87:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****        RTC wakeup, RTC tamper event detection and RTC time stamp event detection.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  141:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   Exception done for MspInit and MspDeInit callbacks that are reset to the legacy weak function
  142:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   in the HAL_RTC_Init()/HAL_RTC_DeInit() only when these callbacks are null
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   (not registered beforehand).
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 4
 
 
  144:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   If not, MspInit or MspDeInit are not null, HAL_RTC_Init()/HAL_RTC_DeInit()
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  198:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****    [..] This section provides functions allowing to initialize and configure the
  199:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****          RTC Prescaler (Synchronous and Asynchronous), RTC Hour format, disable
  200:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****          RTC registers Write protection, enter and exit the RTC initialization mode,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 5
 
 
  201:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****          RTC registers synchronization check and reference clock detection enable.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  255:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  256:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->AlarmAEventCallback          =  HAL_RTC_AlarmAEventCallback;        /* Legacy weak AlarmA
  257:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->AlarmBEventCallback          =  HAL_RTCEx_AlarmBEventCallback;      /* Legacy weak AlarmB
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 6
 
 
  258:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->TimeStampEventCallback       =  HAL_RTCEx_TimeStampEventCallback;   /* Legacy weak TimeSt
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  312:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
  313:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       /* Clear RTC_CR FMT, OSEL and POL Bits */
  314:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       hrtc->Instance->CR &= ((uint32_t)~(RTC_CR_FMT | RTC_CR_OSEL | RTC_CR_POL));
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 7
 
 
  315:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       /* Set RTC_CR register */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  369:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   return status;
  370:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** }
  371:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 8
 
 
  372:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** /**
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  426:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  427:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* Reset all RTC CR register bits */
  428:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->CR &= (uint32_t)0x00000000U;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 9
 
 
  429:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->WUTR = RTC_WUTR_WUT;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  483:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  484:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   return HAL_OK;
  485:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 10
 
 
  486:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  540:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         break;
  541:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  542:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** #if defined(RTC_TAMPER1_SUPPORT)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 11
 
 
  543:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       case HAL_RTC_TAMPER1_EVENT_CB_ID :
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  597:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   __HAL_UNLOCK(hrtc);
  598:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  599:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   return status;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 12
 
 
  600:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  654:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  655:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       case HAL_RTC_TAMPER2_EVENT_CB_ID :
  656:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         hrtc->Tamper2EventCallback = HAL_RTCEx_Tamper2EventCallback;         /* Legacy weak Tamper2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 13
 
 
  657:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         break;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  711:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @brief  Initialize the RTC MSP.
  712:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @param hrtc RTC handle
  713:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @retval None
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 14
 
 
  714:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
   62              		.section	.text.HAL_RTC_DST_Add1Hour,"ax",%progbits
   63              		.align	1
   64              		.global	HAL_RTC_DST_Add1Hour
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 15
 
 
   65              		.syntax unified
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  787:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     else
  788:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
  789:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       sTime->TimeFormat = 0x00U;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 16
 
 
  790:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       assert_param(IS_RTC_HOUR24(sTime->Hours));
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  844:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  845:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* This interface is deprecated. To manage Daylight Saving Time, please use HAL_RTC_DST_xxx fun
  846:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->CR |= (uint32_t)(sTime->DayLightSaving | sTime->StoreOperation);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 17
 
 
  847:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  901:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** {
  902:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   uint32_t tmpreg;
  903:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 18
 
 
  904:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   /* Check the parameters */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  958:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Month = (uint8_t)((sDate->Month & (uint8_t)~(0x10U)) + (uint8_t)0x0AU);
  959:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
  960:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 19
 
 
  961:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   assert_param(IS_RTC_WEEKDAY(sDate->WeekDay));
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1015:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       {
 1016:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         /* Enable the write protection for RTC registers */
 1017:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         __HAL_RTC_WRITEPROTECTION_ENABLE(hrtc);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 20
 
 
 1018:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1072:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* Convert the date structure parameters to Binary format */
 1073:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Year = (uint8_t)RTC_Bcd2ToByte(sDate->Year);
 1074:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Month = (uint8_t)RTC_Bcd2ToByte(sDate->Month);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 21
 
 
 1075:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Date = (uint8_t)RTC_Bcd2ToByte(sDate->Date);
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  109              		.align	1
  110              		.global	HAL_RTC_DST_Sub1Hour
  111              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 22
 
 
  112              		.thumb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  154              		.section	.text.HAL_RTC_DST_SetStoreOperation,"ax",%progbits
  155              		.align	1
  156              		.global	HAL_RTC_DST_SetStoreOperation
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 23
 
 
  157              		.syntax unified
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  198              	.LFE960:
  200              		.section	.text.HAL_RTC_DST_ClearStoreOperation,"ax",%progbits
  201              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 24
 
 
  202              		.global	HAL_RTC_DST_ClearStoreOperation
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  244              	.LFE961:
  246              		.section	.text.HAL_RTC_DST_ReadStoreOperation,"ax",%progbits
  247              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 25
 
 
  248              		.global	HAL_RTC_DST_ReadStoreOperation
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1152:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *  @brief   RTC Alarm functions
 1153:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *
 1154:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** @verbatim
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 26
 
 
 1155:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****  ===============================================================================
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1209:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
 1210:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       assert_param(IS_RTC_ALARM_DATE_WEEKDAY_DATE(sAlarm->AlarmDateWeekDay));
 1211:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 27
 
 
 1212:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     else
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1266:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   if (sAlarm->Alarm == RTC_ALARM_A)
 1267:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
 1268:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* Disable the Alarm A interrupt */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 28
 
 
 1269:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     __HAL_RTC_ALARMA_DISABLE(hrtc);
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1323:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
 1324:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->ALRMBR = (uint32_t)tmpreg;
 1325:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* Configure the Alarm B Sub Second register */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 29
 
 
 1326:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->ALRMBSSR = subsecondtmpreg;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1380:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       assert_param(IS_RTC_HOURFORMAT12(sAlarm->AlarmTime.TimeFormat));
 1381:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     }
 1382:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     else
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 30
 
 
 1383:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1437:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
 1438:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   /* Configure the Alarm A or Alarm B Sub Second registers */
 1439:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   subsecondtmpreg = (uint32_t)((uint32_t)(sAlarm->AlarmTime.SubSeconds) | (uint32_t)(sAlarm->AlarmS
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 31
 
 
 1440:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1494:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         __HAL_RTC_WRITEPROTECTION_ENABLE(hrtc);
 1495:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
 1496:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         hrtc->State = HAL_RTC_STATE_TIMEOUT;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 32
 
 
 1497:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  297              		.cfi_offset 5, -8
  298              		.cfi_offset 14, -4
 1541:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   uint32_t tickstart;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 33
 
 
  299              		.loc 1 1541 3 is_stmt 1 view .LVU57
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1566:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
 1567:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       if ((HAL_GetTick()  - tickstart) > RTC_TIMEOUT_VALUE)
 1568:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 34
 
 
 1569:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****         /* Enable the write protection for RTC registers */
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  357 004e FFF7FEFF 		bl	HAL_GetTick
  358              	.LVL11:
  359              		.loc 1 1594 26 view .LVU82
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 35
 
 
  360 0052 431B     		subs	r3, r0, r5
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  399 0086 0546     		mov	r5, r0
  400              	.LVL14:
 1565:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 36
 
 
  401              		.loc 1 1565 5 is_stmt 1 view .LVU99
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1605:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       }
 1606:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     }
 1607:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 37
 
 
 1608:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   /* Enable the write protection for RTC registers */
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1622:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @param sAlarm Pointer to Date structure
 1623:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @param Alarm Specifies the Alarm.
 1624:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *          This parameter can be one of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 38
 
 
 1625:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *             @arg RTC_ALARM_A: AlarmA
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1679:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
 1680:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmTime.Hours = RTC_Bcd2ToByte(sAlarm->AlarmTime.Hours);
 1681:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmTime.Minutes = RTC_Bcd2ToByte(sAlarm->AlarmTime.Minutes);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 39
 
 
 1682:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmTime.Seconds = RTC_Bcd2ToByte(sAlarm->AlarmTime.Seconds);
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1736:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** }
 1737:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
 1738:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 40
 
 
 1739:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @brief  Alarm A callback.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  516 000c 03D0     		beq	.L31
 1700:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
  517              		.loc 1 1700 5 is_stmt 1 view .LVU137
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 41
 
 
 1700:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  558 0042 63F4C073 		orn	r3, r3, #384
  559 0046 D360     		str	r3, [r2, #12]
  560 0048 E5E7     		b	.L31
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 42
 
 
  561              	.L35:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  605              		.loc 1 1761 24 is_stmt 0 view .LVU157
  606 0006 FFF7FEFF 		bl	HAL_GetTick
  607              	.LVL26:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 43
 
 
  608              		.loc 1 1761 24 view .LVU158
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  647 0034 D2B2     		uxtb	r2, r2
  648 0036 62F4C072 		orn	r2, r2, #384
  649 003a DA60     		str	r2, [r3, #12]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 44
 
 
 1777:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1809:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *         initialization, calendar update or after wakeup from low power modes
 1810:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *         the software must first clear the RSF flag.
 1811:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *         The software must then wait until it is set again before reading
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 45
 
 
 1812:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   *         the calendar, which means that the calendar registers have been
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1828:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
 1829:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     if ((HAL_GetTick() - tickstart) > RTC_TIMEOUT_VALUE)
  712              		.loc 1 1829 5 is_stmt 1 view .LVU195
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 46
 
 
  713              		.loc 1 1829 10 is_stmt 0 view .LVU196
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1855:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   */
 1856:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** /**
 1857:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @brief  Return the RTC handle state.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 47
 
 
 1858:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   * @param hrtc RTC handle
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  772              		.loc 1 1885 1 is_stmt 0 view .LVU208
  773 0000 38B5     		push	{r3, r4, r5, lr}
  774              	.LCFI4:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 48
 
 
  775              		.cfi_def_cfa_offset 16
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  804              		.loc 1 1894 17 is_stmt 0 view .LVU220
  805 0018 FFF7FEFF 		bl	HAL_GetTick
  806              	.LVL38:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 49
 
 
 1894:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     /* Wait till RTC is in INIT state and if Time out is reached exit */
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  850              		.cfi_startproc
  851              		@ args = 0, pretend = 0, frame = 0
  852              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 50
 
 
  232:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  295:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
  888              		.loc 1 295 6 view .LVU253
  889 0018 13F0100F 		tst	r3, #16
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 51
 
 
  890 001c 09D0     		beq	.L75
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  304:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  929              		.loc 1 304 7 view .LVU269
  930 0046 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 52
 
 
  931 0048 FF22     		movs	r2, #255
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  968 0070 0343     		orrs	r3, r3, r0
  316:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  969              		.loc 1 316 26 view .LVU287
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 53
 
 
  970 0072 1343     		orrs	r3, r3, r2
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1006              		.loc 1 330 26 view .LVU305
  1007 009e CB6C     		ldr	r3, [r1, #76]
  330:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 54
 
 
  1008              		.loc 1 330 50 view .LVU306
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1046              		.loc 1 338 11 is_stmt 1 view .LVU322
  338:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1047              		.loc 1 338 11 view .LVU323
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 55
 
 
  1048 00c6 2368     		ldr	r3, [r4]
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1093              		.loc 1 379 1 is_stmt 1 view -0
  1094              		.cfi_startproc
  1095              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 56
 
 
  1096              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1134              		.loc 1 398 5 view .LVU350
  398:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1135              		.loc 1 398 17 is_stmt 0 view .LVU351
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 57
 
 
  1136 0022 0423     		movs	r3, #4
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1174              		.loc 1 413 5 is_stmt 1 view .LVU367
  1175              	.L82:
  413:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 58
 
 
  1176              		.loc 1 413 11 view .LVU368
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  429:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->PRER = ((uint32_t)(RTC_PRER_PREDIV_A | 0x000000FFU));
  1213              		.loc 1 429 9 is_stmt 0 view .LVU386
  1214 0078 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 59
 
 
  429:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     hrtc->Instance->PRER = ((uint32_t)(RTC_PRER_PREDIV_A | 0x000000FFU));
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1249              		.loc 1 436 5 is_stmt 1 view .LVU406
  436:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1250              		.loc 1 436 9 is_stmt 0 view .LVU407
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 60
 
 
  1251 009a 2368     		ldr	r3, [r4]
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1286              		.loc 1 463 3 view .LVU426
  1287 00bc 2368     		ldr	r3, [r4]
  1288 00be FF22     		movs	r2, #255
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 61
 
 
  1289 00c0 5A62     		str	r2, [r3, #36]
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1328              		.section	.text.RTC_ByteToBcd2,"ax",%progbits
  1329              		.align	1
  1330              		.global	RTC_ByteToBcd2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 62
 
 
  1331              		.syntax unified
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1924:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
 1925:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   return ((uint8_t)(bcdhigh << 4U) | Param);
  1367              		.loc 1 1925 3 view .LVU455
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 63
 
 
  1368              		.loc 1 1925 11 is_stmt 0 view .LVU456
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1416 0012 80F82030 		strb	r3, [r0, #32]
  776:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1417              		.loc 1 776 3 discriminator 2 view .LVU467
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 64
 
 
  778:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1454              	.LVL71:
  795:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****                         ((uint32_t)RTC_ByteToBcd2(sTime->Minutes) << 8U) | \
  1455              		.loc 1 795 73 view .LVU486
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 65
 
 
  1456 003c 45EA0025 		orr	r5, r5, r0, lsl #8
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  840:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1495              		.loc 1 840 26 view .LVU502
  1496 006c 25F0FE45 		bic	r5, r5, #2130706432
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 66
 
 
  840:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1533 0098 13F0200F 		tst	r3, #32
  1534 009c 27D0     		beq	.L104
  1535              	.L100:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 67
 
 
  869:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  812:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     assert_param(IS_RTC_SECONDS(RTC_Bcd2ToByte(sTime->Seconds)));
  1573              		.loc 1 812 5 view .LVU538
  813:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     tmpreg = (((uint32_t)(sTime->Hours) << 16U) | \
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 68
 
 
  1574              		.loc 1 813 5 view .LVU539
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1611 00e6 84F82030 		strb	r3, [r4, #32]
  833:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1612              		.loc 1 833 5 view .LVU557
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 69
 
 
  835:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1651              		.cfi_endproc
  1652              	.LFE954:
  1654              		.section	.text.HAL_RTC_SetDate,"ax",%progbits
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 70
 
 
  1655              		.align	1
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1697 001c 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
  956:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
  1698              		.loc 1 956 34 discriminator 1 view .LVU587
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 71
 
 
  1699 001e 13F0100F 		tst	r3, #16
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  970:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****                   ((uint32_t)RTC_ByteToBcd2(sDate->Date)) | \
  1736              		.loc 1 970 66 view .LVU605
  1737 0048 0543     		orrs	r5, r5, r0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 72
 
 
  972:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1775              		.loc 1 1009 9 is_stmt 0 view .LVU622
  1776 0072 2268     		ldr	r2, [r4]
 1009:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 73
 
 
  1777              		.loc 1 1009 25 view .LVU623
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  978:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1815              		.loc 1 978 5 view .LVU640
  980:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****                   (((uint32_t)sDate->Month) << 8U) | \
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 74
 
 
  1816              		.loc 1 980 5 view .LVU641
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1853              		.loc 1 999 5 view .LVU658
 1001:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
  1854              		.loc 1 1001 5 view .LVU659
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 75
 
 
 1001:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1895              		.section	.text.HAL_RTC_SetAlarm,"ax",%progbits
  1896              		.align	1
  1897              		.global	HAL_RTC_SetAlarm
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 76
 
 
  1898              		.syntax unified
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1938              		.loc 1 1189 3 discriminator 2 view .LVU689
 1191:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  1939              		.loc 1 1191 3 discriminator 2 view .LVU690
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 77
 
 
 1191:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  1975 0036 0704     		lsls	r7, r0, #16
 1218:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****               ((uint32_t)RTC_ByteToBcd2(sAlarm->AlarmTime.Seconds)) | \
  1976              		.loc 1 1218 26 view .LVU710
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 78
 
 
  1977 0038 6878     		ldrb	r0, [r5, #1]	@ zero_extendqisi2
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2015              		.loc 1 1263 3 view .LVU726
  2016 0068 2368     		ldr	r3, [r4]
  2017 006a CA22     		movs	r2, #202
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 79
 
 
  2018 006c 5A62     		str	r2, [r3, #36]
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2057 00a0 FFF7FEFF 		bl	HAL_GetTick
  2058              	.LVL111:
 1310:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****       {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 80
 
 
  2059              		.loc 1 1310 26 view .LVU742
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2096              	.L121:
 1235:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     }
  2097              		.loc 1 1235 7 is_stmt 1 view .LVU760
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 81
 
 
 1238:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     assert_param(IS_RTC_SECONDS(RTC_Bcd2ToByte(sAlarm->AlarmTime.Seconds)));
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1250:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****               ((uint32_t)(sAlarm->AlarmTime.Minutes) << 8U) | \
  2133              		.loc 1 1250 12 view .LVU780
  2134 00f2 B6E7     		b	.L120
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 82
 
 
  2135              	.LVL115:
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2175 0128 5A62     		str	r2, [r3, #36]
 1281:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  2176              		.loc 1 1281 9 view .LVU795
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 83
 
 
 1283:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1328:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   }
  2213              		.loc 1 1328 5 is_stmt 1 view .LVU814
  2214 0150 2268     		ldr	r2, [r4]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 84
 
 
  2215 0152 9368     		ldr	r3, [r2, #8]
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1357:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   uint32_t tickstart;
  2259              		.loc 1 1357 1 is_stmt 1 view -0
  2260              		.cfi_startproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 85
 
 
  2261              		@ args = 0, pretend = 0, frame = 0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1375:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
  2298              		.loc 1 1375 6 is_stmt 0 discriminator 2 view .LVU845
  2299 001c 002A     		cmp	r2, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 86
 
 
  2300 001e 50D1     		bne	.L135
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1400:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****               ((uint32_t)(sAlarm->AlarmTime.TimeFormat) << 16U) | \
  2336              		.loc 1 1400 26 view .LVU864
  2337 0042 A878     		ldrb	r0, [r5, #2]	@ zero_extendqisi2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 87
 
 
  2338 0044 FFF7FEFF 		bl	RTC_ByteToBcd2
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1442:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  2377              		.loc 1 1442 3 view .LVU880
 1445:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 88
 
 
  2378              		.loc 1 1445 3 view .LVU881
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2418 00ac F4D9     		bls	.L143
 1494:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  2419              		.loc 1 1494 9 is_stmt 1 view .LVU896
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 89
 
 
 1494:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2455              		.loc 1 1422 5 view .LVU915
 1422:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     {
  2456              		.loc 1 1422 15 is_stmt 0 view .LVU916
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 90
 
 
  2457 00d0 EE69     		ldr	r6, [r5, #28]
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2494 00f8 9368     		ldr	r3, [r2, #8]
  2495 00fa 23F48073 		bic	r3, r3, #256
  2496 00fe 9360     		str	r3, [r2, #8]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 91
 
 
 1451:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2535 012e 0320     		movs	r0, #3
  2536 0130 84F82100 		strb	r0, [r4, #33]
 1465:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 92
 
 
  2537              		.loc 1 1465 9 is_stmt 1 view .LVU950
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2574              		.loc 1 1509 5 is_stmt 1 view .LVU967
  2575 015e 2268     		ldr	r2, [r4]
  2576 0160 9368     		ldr	r3, [r2, #8]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 93
 
 
  2577 0162 43F40073 		orr	r3, r3, #512
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2617 019c 0220     		movs	r0, #2
  2618              	.LVL142:
 1371:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 94
 
 
  2619              		.loc 1 1371 3 view .LVU982
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2664              		.global	HAL_RTC_GetTime
  2665              		.syntax unified
  2666              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 95
 
 
  2667              		.thumb_func
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2706              		.loc 1 914 37 view .LVU1007
  2707 0016 1D68     		ldr	r5, [r3]
  2708              	.LVL147:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 96
 
 
  917:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   sTime->Minutes = (uint8_t)((tmpreg & (RTC_TR_MNT | RTC_TR_MNU)) >> 8U);
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  927:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sTime->Seconds = (uint8_t)RTC_Bcd2ToByte(sTime->Seconds);
  2744              		.loc 1 927 31 is_stmt 0 view .LVU1027
  2745 003c 3046     		mov	r0, r6
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 97
 
 
  2746 003e FFF7FEFF 		bl	RTC_Bcd2ToByte
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2790              		.loc 1 1061 3 view .LVU1039
 1061:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  2791              		.loc 1 1061 31 is_stmt 0 view .LVU1040
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 98
 
 
  2792 0002 0368     		ldr	r3, [r0]
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1074:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Date = (uint8_t)RTC_Bcd2ToByte(sDate->Date);
  2828              		.loc 1 1074 5 is_stmt 1 view .LVU1059
 1074:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sDate->Date = (uint8_t)RTC_Bcd2ToByte(sDate->Date);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 99
 
 
  2829              		.loc 1 1074 29 is_stmt 0 view .LVU1060
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2874              		.loc 1 1639 3 view .LVU1071
 1640:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c **** 
  2875              		.loc 1 1640 3 view .LVU1072
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 100
 
 
 1642:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****   {
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1670:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmTime.TimeFormat = (uint8_t)((tmpreg & RTC_ALRMBR_PM) >> 16U);
  2912              		.loc 1 1670 5 is_stmt 1 view .LVU1091
 1670:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmTime.TimeFormat = (uint8_t)((tmpreg & RTC_ALRMBR_PM) >> 16U);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 101
 
 
  2913              		.loc 1 1670 33 is_stmt 0 view .LVU1092
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  2948              		.loc 1 1680 31 is_stmt 0 view .LVU1111
  2949 0054 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
  2950 0056 FFF7FEFF 		bl	RTC_Bcd2ToByte
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 102
 
 
  2951              	.LVL171:
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
 1647:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     subsecondtmpreg = (uint32_t)((hrtc->Instance->ALRMASSR) & RTC_ALRMASSR_SS);
  2989              		.loc 1 1647 12 view .LVU1128
  2990 0080 CA69     		ldr	r2, [r1, #28]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 103
 
 
  2991              	.LVL177:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  3025              		.loc 1 1656 32 is_stmt 0 view .LVU1148
  3026 00ac C2F30561 		ubfx	r1, r2, #24, #6
  3027              	.LVL180:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 104
 
 
 1656:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c ****     sAlarm->AlarmDateWeekDaySel = (uint32_t)(tmpreg & RTC_ALRMAR_WDSEL);
@@ -6213,73 +6213,73 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 1
  3051              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc.h"
  3052              		.file 7 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
  3053              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rtc_ex.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 105
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wbxx_hal_rtc.c
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:20     .text.HAL_RTC_MspInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:26     .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:42     .text.HAL_RTC_MspDeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:48     .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:63     .text.HAL_RTC_DST_Add1Hour:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:69     .text.HAL_RTC_DST_Add1Hour:00000000 HAL_RTC_DST_Add1Hour
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:104    .text.HAL_RTC_DST_Add1Hour:00000020 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:109    .text.HAL_RTC_DST_Sub1Hour:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:115    .text.HAL_RTC_DST_Sub1Hour:00000000 HAL_RTC_DST_Sub1Hour
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:150    .text.HAL_RTC_DST_Sub1Hour:00000020 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:155    .text.HAL_RTC_DST_SetStoreOperation:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:161    .text.HAL_RTC_DST_SetStoreOperation:00000000 HAL_RTC_DST_SetStoreOperation
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:196    .text.HAL_RTC_DST_SetStoreOperation:00000020 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:201    .text.HAL_RTC_DST_ClearStoreOperation:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:207    .text.HAL_RTC_DST_ClearStoreOperation:00000000 HAL_RTC_DST_ClearStoreOperation
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:242    .text.HAL_RTC_DST_ClearStoreOperation:00000020 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:247    .text.HAL_RTC_DST_ReadStoreOperation:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:253    .text.HAL_RTC_DST_ReadStoreOperation:00000000 HAL_RTC_DST_ReadStoreOperation
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:273    .text.HAL_RTC_DST_ReadStoreOperation:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:278    .text.HAL_RTC_DeactivateAlarm:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:284    .text.HAL_RTC_DeactivateAlarm:00000000 HAL_RTC_DeactivateAlarm
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:469    .text.HAL_RTC_AlarmAEventCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:475    .text.HAL_RTC_AlarmAEventCallback:00000000 HAL_RTC_AlarmAEventCallback
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:490    .text.HAL_RTC_AlarmIRQHandler:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:496    .text.HAL_RTC_AlarmIRQHandler:00000000 HAL_RTC_AlarmIRQHandler
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:576    .text.HAL_RTC_AlarmIRQHandler:00000060 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:581    .text.HAL_RTC_PollForAlarmAEvent:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:587    .text.HAL_RTC_PollForAlarmAEvent:00000000 HAL_RTC_PollForAlarmAEvent
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:665    .text.HAL_RTC_WaitForSynchro:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:671    .text.HAL_RTC_WaitForSynchro:00000000 HAL_RTC_WaitForSynchro
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:735    .text.HAL_RTC_GetState:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:741    .text.HAL_RTC_GetState:00000000 HAL_RTC_GetState
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:759    .text.RTC_EnterInitMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:765    .text.RTC_EnterInitMode:00000000 RTC_EnterInitMode
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:840    .text.HAL_RTC_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:846    .text.HAL_RTC_Init:00000000 HAL_RTC_Init
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1079   .text.HAL_RTC_Init:000000e0 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1084   .text.HAL_RTC_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1090   .text.HAL_RTC_DeInit:00000000 HAL_RTC_DeInit
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1324   .text.HAL_RTC_DeInit:000000e4 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1329   .text.RTC_ByteToBcd2:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1335   .text.RTC_ByteToBcd2:00000000 RTC_ByteToBcd2
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1382   .text.HAL_RTC_SetTime:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1388   .text.HAL_RTC_SetTime:00000000 HAL_RTC_SetTime
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1655   .text.HAL_RTC_SetDate:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1661   .text.HAL_RTC_SetDate:00000000 HAL_RTC_SetDate
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1896   .text.HAL_RTC_SetAlarm:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:1902   .text.HAL_RTC_SetAlarm:00000000 HAL_RTC_SetAlarm
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2250   .text.HAL_RTC_SetAlarm_IT:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2256   .text.HAL_RTC_SetAlarm_IT:00000000 HAL_RTC_SetAlarm_IT
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2624   .text.HAL_RTC_SetAlarm_IT:000001a0 $d
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2629   .text.RTC_Bcd2ToByte:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2635   .text.RTC_Bcd2ToByte:00000000 RTC_Bcd2ToByte
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2663   .text.HAL_RTC_GetTime:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2669   .text.HAL_RTC_GetTime:00000000 HAL_RTC_GetTime
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s 			page 106
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:20     .text.HAL_RTC_MspInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:26     .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:42     .text.HAL_RTC_MspDeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:48     .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:63     .text.HAL_RTC_DST_Add1Hour:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:69     .text.HAL_RTC_DST_Add1Hour:00000000 HAL_RTC_DST_Add1Hour
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:104    .text.HAL_RTC_DST_Add1Hour:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:109    .text.HAL_RTC_DST_Sub1Hour:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:115    .text.HAL_RTC_DST_Sub1Hour:00000000 HAL_RTC_DST_Sub1Hour
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:150    .text.HAL_RTC_DST_Sub1Hour:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:155    .text.HAL_RTC_DST_SetStoreOperation:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:161    .text.HAL_RTC_DST_SetStoreOperation:00000000 HAL_RTC_DST_SetStoreOperation
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:196    .text.HAL_RTC_DST_SetStoreOperation:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:201    .text.HAL_RTC_DST_ClearStoreOperation:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:207    .text.HAL_RTC_DST_ClearStoreOperation:00000000 HAL_RTC_DST_ClearStoreOperation
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:242    .text.HAL_RTC_DST_ClearStoreOperation:00000020 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:247    .text.HAL_RTC_DST_ReadStoreOperation:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:253    .text.HAL_RTC_DST_ReadStoreOperation:00000000 HAL_RTC_DST_ReadStoreOperation
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:273    .text.HAL_RTC_DST_ReadStoreOperation:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:278    .text.HAL_RTC_DeactivateAlarm:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:284    .text.HAL_RTC_DeactivateAlarm:00000000 HAL_RTC_DeactivateAlarm
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:469    .text.HAL_RTC_AlarmAEventCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:475    .text.HAL_RTC_AlarmAEventCallback:00000000 HAL_RTC_AlarmAEventCallback
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:490    .text.HAL_RTC_AlarmIRQHandler:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:496    .text.HAL_RTC_AlarmIRQHandler:00000000 HAL_RTC_AlarmIRQHandler
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:576    .text.HAL_RTC_AlarmIRQHandler:00000060 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:581    .text.HAL_RTC_PollForAlarmAEvent:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:587    .text.HAL_RTC_PollForAlarmAEvent:00000000 HAL_RTC_PollForAlarmAEvent
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:665    .text.HAL_RTC_WaitForSynchro:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:671    .text.HAL_RTC_WaitForSynchro:00000000 HAL_RTC_WaitForSynchro
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:735    .text.HAL_RTC_GetState:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:741    .text.HAL_RTC_GetState:00000000 HAL_RTC_GetState
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:759    .text.RTC_EnterInitMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:765    .text.RTC_EnterInitMode:00000000 RTC_EnterInitMode
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:840    .text.HAL_RTC_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:846    .text.HAL_RTC_Init:00000000 HAL_RTC_Init
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1079   .text.HAL_RTC_Init:000000e0 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1084   .text.HAL_RTC_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1090   .text.HAL_RTC_DeInit:00000000 HAL_RTC_DeInit
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1324   .text.HAL_RTC_DeInit:000000e4 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1329   .text.RTC_ByteToBcd2:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1335   .text.RTC_ByteToBcd2:00000000 RTC_ByteToBcd2
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1382   .text.HAL_RTC_SetTime:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1388   .text.HAL_RTC_SetTime:00000000 HAL_RTC_SetTime
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1655   .text.HAL_RTC_SetDate:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1661   .text.HAL_RTC_SetDate:00000000 HAL_RTC_SetDate
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1896   .text.HAL_RTC_SetAlarm:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:1902   .text.HAL_RTC_SetAlarm:00000000 HAL_RTC_SetAlarm
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2250   .text.HAL_RTC_SetAlarm_IT:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2256   .text.HAL_RTC_SetAlarm_IT:00000000 HAL_RTC_SetAlarm_IT
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2624   .text.HAL_RTC_SetAlarm_IT:000001a0 $d
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2629   .text.RTC_Bcd2ToByte:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2635   .text.RTC_Bcd2ToByte:00000000 RTC_Bcd2ToByte
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2663   .text.HAL_RTC_GetTime:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2669   .text.HAL_RTC_GetTime:00000000 HAL_RTC_GetTime
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s 			page 106
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2767   .text.HAL_RTC_GetDate:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2773   .text.HAL_RTC_GetDate:00000000 HAL_RTC_GetDate
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2852   .text.HAL_RTC_GetAlarm:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccZjV6EC.s:2858   .text.HAL_RTC_GetAlarm:00000000 HAL_RTC_GetAlarm
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2767   .text.HAL_RTC_GetDate:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2773   .text.HAL_RTC_GetDate:00000000 HAL_RTC_GetDate
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2852   .text.HAL_RTC_GetAlarm:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccewWMfj.s:2858   .text.HAL_RTC_GetAlarm:00000000 HAL_RTC_GetAlarm
 
 UNDEFINED SYMBOLS
 HAL_GetTick

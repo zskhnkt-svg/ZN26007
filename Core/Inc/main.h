@@ -57,7 +57,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void APP_SaveDeviceName(const char *name, uint8_t len);
+void APP_LoadDeviceName(char *out_name, uint8_t max_len);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

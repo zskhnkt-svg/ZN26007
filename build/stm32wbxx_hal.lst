@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****          (+) Services HAL APIs
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   @endverbatim
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 2
 
 
   31:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   85:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
   86:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /* Private function prototypes -----------------------------------------------*/
   87:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /* Exported functions --------------------------------------------------------*/
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 3
 
 
   88:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  142:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** HAL_StatusTypeDef HAL_Init(void)
  143:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  144:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   HAL_StatusTypeDef  status = HAL_OK;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 4
 
 
  145:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   /* Configure Flash prefetch, Instruction cache, Data cache */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  199:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  200:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   __HAL_RCC_AHB2_FORCE_RESET();
  201:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   __HAL_RCC_AHB2_RELEASE_RESET();
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 5
 
 
  202:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   53              		.loc 1 233 1 view .LVU3
   54 0000 7047     		bx	lr
   55              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 6
 
 
   56              	.LFE953:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   28:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****       Workarounds:
   29:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****       (#) For AHB & APB peripherals, a dummy read to the peripheral register has been
   30:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****           inserted in each LL_{BUS}_GRP{x}_EnableClock() function.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 7
 
 
   31:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   85:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* TSC */
   86:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
   87:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 8
 
 
   88:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  142:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_SPI2           RCC_APB1ENR1_SPI2EN
  143:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* SPI2 */
  144:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_I2C1           RCC_APB1ENR1_I2C1EN
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 9
 
 
  145:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(I2C3)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  199:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
  200:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB3_GRP1_PERIPH_ALL            (0xFFFFFFFFU)
  201:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB3_GRP1_PERIPH_RF             RCC_APB3RSTR_RFRST
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 10
 
 
  202:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  256:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_AHB3_GRP1_PERIPH_SRAM2        RCC_C2AHB3SMENR_SRAM2SMEN
  257:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
  258:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 11
 
 
  259:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  313:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_SAI1         RCC_C2APB2ENR_SAI1EN
  314:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* SAI1 */
  315:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 12
 
 
  316:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @}
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  370:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
  371:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  372:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 13
 
 
  373:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  427:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_CRC
  428:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_TSC
  429:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 14
 
 
  430:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  484:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  485:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  486:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 15
 
 
  487:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Disable AHB1 peripherals clock during Low Power (Sleep) mode.
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  541:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   __IO uint32_t tmpreg;
  542:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->AHB2ENR, Periphs);
  543:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 16
 
 
  544:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB2ENR, Periphs);
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  598:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  599:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2ENR, Periphs);
  600:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 17
 
 
  601:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  655:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2RSTR, Periphs);
  656:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  657:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 18
 
 
  658:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  712:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  713:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2SMENR, Periphs);
  714:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 19
 
 
  715:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  769:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_FLASH
  770:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
  771:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval uint32_t
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 20
 
 
  772:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  826:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->AHB3RSTR, Periphs);
  827:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
  828:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 21
 
 
  829:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  883:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Disable AHB3 peripherals clock during Low Power (Sleep) mode.
  884:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll AHB3SMENR    QUADSPISMEN   LL_AHB3_GRP1_DisableClockSleep\n
  885:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB3SMENR    PKASMEN       LL_AHB3_GRP1_DisableClockSleep\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 22
 
 
  886:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB3SMENR    AES2SMEN      LL_AHB3_GRP1_DisableClockSleep\n
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  940:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
  941:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   __IO uint32_t tmpreg;
  942:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   SET_BIT(RCC->APB1ENR1, Periphs);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 23
 
 
  943:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  997:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  998:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /**
  999:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Check if APB1 peripheral clock is enabled or not
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 24
 
 
 1000:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll APB1ENR2     LPUART1EN     LL_APB1_GRP2_IsEnabledClock\n
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1054:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
 1055:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->APB1ENR2, Periphs);
 1056:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 25
 
 
 1057:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1096:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
 1097:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB1_GRP2_ForceReset(uint32_t Periphs)
   96              		.loc 2 1097 22 view .LVU11
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 26
 
 
   97              	.LBB79:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  118              	.LBE81:
  119              	.LBE80:
  189:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 27
 
 
  120              		.loc 1 189 3 is_stmt 1 view .LVU20
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1164:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_I2C1
 1165:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_I2C3 (*)
 1166:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_CRS (*)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 28
 
 
 1167:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_USB (*)
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1221:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_USB (*)
 1222:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_LPTIM1
 1223:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 29
 
 
 1224:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1278:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
 1279:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->APB2ENR, Periphs);
 1280:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   (void)tmpreg;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 30
 
 
 1281:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** }
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1335:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll APB2RSTR     ADCRST        LL_APB2_GRP1_ForceReset\n
 1336:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2RSTR     TIM1RST       LL_APB2_GRP1_ForceReset\n
 1337:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2RSTR     SPI1RST       LL_APB2_GRP1_ForceReset\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 31
 
 
 1338:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB2RSTR     USART1RST     LL_APB2_GRP1_ForceReset\n
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1379:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
 1380:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE void LL_APB2_GRP1_ReleaseReset(uint32_t Periphs)
  148              		.loc 2 1380 22 view .LVU30
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 32
 
 
  149              	.LBB87:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1423:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
 1424:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB2_GRP1_PERIPH_ADC (*)
 1425:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB2_GRP1_PERIPH_TIM1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 33
 
 
 1426:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB2_GRP1_PERIPH_SPI1
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  172              		.loc 2 1466 22 view .LVU38
  173              	.LBB91:
 1467:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 34
 
 
 1468:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   CLEAR_BIT(RCC->APB3RSTR, Periphs);
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  215              	.LBE97:
  216              	.LBE96:
  201:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 35
 
 
  217              		.loc 1 201 3 is_stmt 1 view .LVU53
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  257              		.loc 1 211 1 is_stmt 0 view .LVU67
  258 0048 2046     		mov	r0, r4
  259 004a 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 36
 
 
  260              		.cfi_endproc
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  266:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       else
  267:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       {
  268:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****         status = HAL_ERROR;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 37
 
 
  269:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       }
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  315              		.loc 1 261 7 is_stmt 1 view .LVU83
  261:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****       {
  316              		.loc 1 261 10 is_stmt 0 view .LVU84
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 38
 
 
  317 0028 0F2C     		cmp	r4, #15
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  365              		@ args = 0, pretend = 0, frame = 0
  366              		@ frame_needed = 0, uses_anonymous_args = 0
  367 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 39
 
 
  368              	.LCFI2:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  411              	.LFE950:
  413              		.section	.text.HAL_IncTick,"ax",%progbits
  414              		.align	1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 40
 
 
  415              		.weak	HAL_IncTick
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  432 0004 034A     		ldr	r2, .L26+4
  433 0006 1168     		ldr	r1, [r2]
  434 0008 0B44     		add	r3, r3, r1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 41
 
 
  435 000a 1360     		str	r3, [r2]
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  481              	.LFB957:
  334:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  335:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 42
 
 
  336:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief This function returns a tick priority.
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  352:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  353:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   assert_param(IS_TICKFREQ(Freq));
  522              		.loc 1 353 3 view .LVU122
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 43
 
 
  354:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  549 0014 FFF7FEFF 		bl	HAL_InitTick
  550              	.LVL35:
  366:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****     {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 44
 
 
  551              		.loc 1 366 5 is_stmt 1 view .LVU135
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  595              		.align	1
  596              		.weak	HAL_Delay
  597              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 45
 
 
  598              		.thumb
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  632 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  633              		.loc 1 405 10 view .LVU152
  634 0014 1C44     		add	r4, r4, r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 46
 
 
  635              	.LVL39:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  667              		.loc 1 425 1 is_stmt 1 view -0
  668              		.cfi_startproc
  669              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 47
 
 
  670              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  708              		.global	HAL_GetHalVersion
  709              		.syntax unified
  710              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 48
 
 
  711              		.thumb_func
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
    3:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @file    stm32wbxx_ll_system.h
    4:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @author  MCD Application Team
    5:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief   Header file of SYSTEM LL module.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 49
 
 
    6:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   ******************************************************************************
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
   60:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
   61:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
   62:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief VREFBUF VREF_SC0 & VREF_SC1 calibration values
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 50
 
 
   63:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  117:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
  118:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
  119:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 51
 
 
  120:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  174:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE10               SYSCFG_SWPR1_PAGE10      /*!< SRAM2A Write protecti
  175:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE11               SYSCFG_SWPR1_PAGE11      /*!< SRAM2A Write protecti
  176:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE12               SYSCFG_SWPR1_PAGE12      /*!< SRAM2A Write protecti
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 52
 
 
  177:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_SYSCFG_SRAM2WRP_PAGE13               SYSCFG_SWPR1_PAGE13      /*!< SRAM2A Write protecti
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  231:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
  232:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
  233:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 53
 
 
  234:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  288:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_EXTI2                 SYSCFG_C2IMR1_EXTI2IM    /*!< Enabling of interrupt
  289:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_EXTI3                 SYSCFG_C2IMR1_EXTI3IM    /*!< Enabling of interrupt
  290:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_EXTI4                 SYSCFG_C2IMR1_EXTI4IM    /*!< Enabling of interrupt
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 54
 
 
  291:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_C2_SYSCFG_GRP1_EXTI5                 SYSCFG_C2IMR1_EXTI5IM    /*!< Enabling of interrupt
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  345:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
  346:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  347:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 55
 
 
  348:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /** @defgroup SYSTEM_LL_EC_APB1_GRP1_STOP_IP DBGMCU CPU1 APB1 GRP1 STOP IP
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  402:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #if defined(TIM17)
  403:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #define LL_DBGMCU_APB2_GRP1_TIM17_STOP     DBGMCU_APB2FZR_DBG_TIM17_STOP  /*!< The counter clock of
  404:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** #endif /* TIM17 */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 56
 
 
  405:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  459:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  460:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
  461:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 57
 
 
  462:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Set memory mapping at address 0x00000000
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  516:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         However, COMP inputs have a high impedance and
  517:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         voltage booster do not impact performance significantly.
  518:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         Therefore, the voltage booster is mainly intended for
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 58
 
 
  519:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         usage with ADC.
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  573:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Disable the I2C fast mode plus driving capability.
  574:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_CFGR1 I2C_PBx_FMP   LL_SYSCFG_DisableFastModePlus\n
  575:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_CFGR1 I2Cx_FMP      LL_SYSCFG_DisableFastModePlus
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 59
 
 
  576:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  ConfigFastModePlus This parameter can be a combination of the following values:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  630:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
  631:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Enable Floating Point Unit Input denormal Interrupt
  632:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_CFGR1 FPU_IE_4      LL_SYSCFG_EnableIT_FPU_IDC
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 60
 
 
  633:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  687:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   CLEAR_BIT(SYSCFG->CFGR1, SYSCFG_CFGR1_FPU_IE_3);
  688:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
  689:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 61
 
 
  690:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  744:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
  745:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsEnabledIT_FPU_OFC(void)
  746:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 62
 
 
  747:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   return ((READ_BIT(SYSCFG->CFGR1, SYSCFG_CFGR1_FPU_IE_3) == (SYSCFG_CFGR1_FPU_IE_3)) ? 1UL : 0UL);
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  801:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE15
  802:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
  803:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 63
 
 
  804:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_SetEXTISource(uint32_t Port, uint32_t Line)
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  858:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
  859:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Check if SRAM2 erase operation is on going
  860:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_SCSR  SRAM2BSY      LL_SYSCFG_IsSRAM2EraseOngoing
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 64
 
 
  861:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval State of bit (1 or 0).
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  915:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_TIMBREAK_ECC
  916:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_TIMBREAK_PVD
  917:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_TIMBREAK_SRAM2_PARITY
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 65
 
 
  918:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_TIMBREAK_LOCKUP
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  972:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE22
  973:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE23
  974:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE24
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 66
 
 
  975:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SRAM2WRP_PAGE25
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1029:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
 1030:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_EnableSRAM2PageWRP_32_63(uint32_t SRAM2WRP)
 1031:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 67
 
 
 1032:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   SET_BIT(SYSCFG->SWPR2, SRAM2WRP);
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1086:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
 1087:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Enable CPU1 Interrupt Mask
 1088:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll SYSCFG_IMR1  PVM1IM      LL_SYSCFG_GRP2_EnableIT\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 68
 
 
 1089:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_IMR1  PVM3IM      LL_SYSCFG_GRP2_EnableIT\n
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1143:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   SET_BIT(SYSCFG->IMR2, Interrupt);
 1144:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1145:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 69
 
 
 1146:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1200:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR1  COMPIM      LL_C2_SYSCFG_GRP1_EnableIT\n
 1201:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR1  ADCIM       LL_C2_SYSCFG_GRP1_EnableIT\n
 1202:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         SYSCFG_C2IMR1  EXTIxIM     LL_C2_SYSCFG_GRP1_EnableIT
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 70
 
 
 1203:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  Interrupt This parameter can be a combination of the following values:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1257:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA2CH4
 1258:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA2CH5
 1259:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA2CH6
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 71
 
 
 1260:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA2CH7
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1314:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
 1315:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
 1316:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_C2_SYSCFG_GRP1_DisableIT(uint32_t Interrupt)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 72
 
 
 1317:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1371:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  Interrupt This parameter can be one of the following values:
 1372:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_RTCSTAMP_RTCTAMP_LSECSS
 1373:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_RTCWKUP
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 73
 
 
 1374:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP1_RTCALARM
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1428:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMA2CH7
 1429:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_DMAMUX1
 1430:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_PVM1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 74
 
 
 1431:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_C2_SYSCFG_GRP2_PVM3
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1485:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SECURE_ACCESS_AES1
 1486:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SECURE_ACCESS_AES2
 1487:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SECURE_ACCESS_PKA
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 75
 
 
 1488:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_SYSCFG_SECURE_ACCESS_RNG
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  763 0008 002004E0 		.word	-536600576
  764              		.cfi_endproc
  765              	.LFE964:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 76
 
 
  767              		.section	.text.HAL_GetDEVID,"ax",%progbits
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  473:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /**
  474:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief  Return the first word of the unique device identifier (UID based on 96 bits)
  475:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval Device identifier
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 77
 
 
  476:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  854              		.section	.text.HAL_GetUIDw2,"ax",%progbits
  855              		.align	1
  856              		.global	HAL_GetUIDw2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 78
 
 
  857              		.syntax unified
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  515:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  516:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** @endverbatim
  517:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @{
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 79
 
 
  518:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  529:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** /**
  530:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief  Disable the Debug Module during SLEEP mode
  531:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval None
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 80
 
 
  532:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   */
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  543:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  959              		.loc 1 543 1 is_stmt 1 view -0
  960              		.cfi_startproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 81
 
 
  961              		@ args = 0, pretend = 0, frame = 0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  998              		@ link register save eliminated.
  553:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   LL_DBGMCU_DisableDBGStopMode();
  999              		.loc 1 553 3 view .LVU206
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 82
 
 
  1000              	.LBB114:
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1567:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1568:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1569:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 83
 
 
 1570:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Enable the Debug Module during STANDBY mode
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1582:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
 1583:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
 1584:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_DBGMCU_DisableDBGStandbyMode(void)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 84
 
 
  1072              		.loc 3 1584 22 view .LVU217
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  599:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @brief  Start a hardware SRAM2 erase operation.
  600:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @note   As long as SRAM2 is not erased the SRAM2ER bit will be set.
  601:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         This bit is automatically reset at the end of the SRAM2 erase operation.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 85
 
 
  602:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval None
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1140              		.global	HAL_SYSCFG_DisableSRAMFetch
  1141              		.syntax unified
  1142              		.thumb
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 86
 
 
  1143              		.thumb_func
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  627:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** uint32_t HAL_SYSCFG_IsEnabledSRAMFetch(void)
  628:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  1182              		.loc 1 628 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 87
 
 
  1183              		.cfi_startproc
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  640:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *                                                This requires VDDA equal to or higher than 2.8 V
  641:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @note   Retrieve the TrimmingValue from factory located at
  642:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   *         VREFBUF_SC0_CAL_ADDR or VREFBUF_SC1_CAL_ADDR addresses.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 88
 
 
  643:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   * @retval None
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1237 000c 7047     		bx	lr
  1238              	.L101:
  1239 000e 00BF     		.align	2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 89
 
 
  1240              	.L100:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1600:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll DBGMCU_CR TRACE_CLKEN         LL_DBGMCU_DisableTraceClock\n
 1601:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @retval None
 1602:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 90
 
 
 1603:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_DBGMCU_DisableTraceClock(void)
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1657:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll DBGMCU_APB1FZR1 DBG_xxxx_STOP  LL_DBGMCU_APB1_GRP1_FreezePeriph
 1658:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  Periphs This parameter can be a combination of the following values:
 1659:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_TIM2_STOP
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 91
 
 
 1660:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_RTC_STOP
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1714:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
 1715:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Unfreeze CPU1 APB1 peripherals (group1 peripherals)
 1716:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @rmtoll DBGMCU_APB1FZR1 DBG_xxxx_STOP  LL_DBGMCU_APB1_GRP1_UnFreezePeriph
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 92
 
 
 1717:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @param  Periphs This parameter can be a combination of the following values:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1771:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
 1772:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1773:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 93
 
 
 1774:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Freeze CPU1 APB2 peripherals
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1828:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** 
 1829:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** /**
 1830:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 94
 
 
 1831:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1885:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   */
 1886:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** __STATIC_INLINE void LL_VREFBUF_SetVoltageScaling(uint32_t Scale)
 1887:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 95
 
 
 1888:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   MODIFY_REG(VREFBUF->CSR, VREFBUF_CSR_VRS, Scale);
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
 1942:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @brief  Set the trimming code for VREFBUF calibration (Tune the internal reference buffer volta
 1943:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   * @note   Each VrefBuf voltage scale is calibrated in production for each device,
 1944:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         data stored in flash memory.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 96
 
 
 1945:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h ****   *         Functions @ref LL_VREFBUF_SC0_GetCalibration and
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  652:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** 
  1304              		.loc 1 652 3 view .LVU256
  1305              	.LVL46:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 97
 
 
  1306              	.LBB130:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1346 0026 00F03F00 		and	r0, r0, #63
  1347              	.LVL53:
  661:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 98
 
 
  1348              		.loc 1 661 19 view .LVU271
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1389              		.loc 1 717 3 view .LVU277
  1390              		.loc 1 717 15 is_stmt 0 view .LVU278
  1391 000c FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 99
 
 
  1392              	.LVL54:
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1435              		.thumb
  1436              		.thumb_func
  1438              	HAL_SYSCFG_DisableVREFBUF:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 100
 
 
  1439              	.LFB982:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  748:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c **** {
  1475              		.loc 1 748 1 is_stmt 1 view -0
  1476              		.cfi_startproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 101
 
 
  1477              		@ args = 0, pretend = 0, frame = 0
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1519              	.LBB139:
  525:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h **** }
  1520              		.loc 3 525 3 view .LVU304
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 102
 
 
  1521 0000 024A     		ldr	r2, .L127
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1563 000a 7047     		bx	lr
  1564              	.L131:
  1565              		.align	2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 103
 
 
  1566              	.L130:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1611              		.thumb_func
  1613              	HAL_SYSCFG_EnableSecurityAccess:
  1614              	.LVL58:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 104
 
 
  1615              	.LFB987:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1644              		.cfi_endproc
  1645              	.LFE987:
  1647              		.section	.text.HAL_SYSCFG_DisableSecurityAccess,"ax",%progbits
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 105
 
 
  1648              		.align	1
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1680              		.align	2
  1681              	.L139:
  1682 0010 00000140 		.word	1073807360
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 106
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 106
 
 
  1683              		.cfi_endproc
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1720              	.LVL65:
  1721              	.L144:
  1722              	.LBB151:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 107
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 107
 
 
  1723              	.LBB150:
@@ -6404,137 +6404,137 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 1
  1768              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
  1769              		.file 10 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_rcc.h"
  1770              		.file 11 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_cortex.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 108
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 108
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wbxx_hal.c
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:20     .text.HAL_MspInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:26     .text.HAL_MspInit:00000000 HAL_MspInit
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:40     .text.HAL_MspDeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:46     .text.HAL_MspDeInit:00000000 HAL_MspDeInit
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:59     .text.HAL_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:65     .text.HAL_DeInit:00000000 HAL_DeInit
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:264    .text.HAL_InitTick:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:270    .text.HAL_InitTick:00000000 HAL_InitTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:349    .text.HAL_InitTick:00000048 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:355    .text.HAL_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:361    .text.HAL_Init:00000000 HAL_Init
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:409    .text.HAL_Init:00000028 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:414    .text.HAL_IncTick:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:420    .text.HAL_IncTick:00000000 HAL_IncTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:441    .text.HAL_IncTick:00000010 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:447    .text.HAL_GetTick:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:453    .text.HAL_GetTick:00000000 HAL_GetTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:469    .text.HAL_GetTick:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:474    .text.HAL_GetTickPrio:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:480    .text.HAL_GetTickPrio:00000000 HAL_GetTickPrio
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:495    .text.HAL_GetTickPrio:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:500    .text.HAL_SetTickFreq:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:506    .text.HAL_SetTickFreq:00000000 HAL_SetTickFreq
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:563    .text.HAL_SetTickFreq:00000024 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:569    .text.HAL_GetTickFreq:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:575    .text.HAL_GetTickFreq:00000000 HAL_GetTickFreq
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:590    .text.HAL_GetTickFreq:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:595    .text.HAL_Delay:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:601    .text.HAL_Delay:00000000 HAL_Delay
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:654    .text.HAL_Delay:00000024 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:659    .text.HAL_SuspendTick:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:665    .text.HAL_SuspendTick:00000000 HAL_SuspendTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:683    .text.HAL_ResumeTick:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:689    .text.HAL_ResumeTick:00000000 HAL_ResumeTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:707    .text.HAL_GetHalVersion:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:713    .text.HAL_GetHalVersion:00000000 HAL_GetHalVersion
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:727    .text.HAL_GetHalVersion:00000004 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:732    .text.HAL_GetREVID:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:738    .text.HAL_GetREVID:00000000 HAL_GetREVID
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:763    .text.HAL_GetREVID:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:768    .text.HAL_GetDEVID:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:774    .text.HAL_GetDEVID:00000000 HAL_GetDEVID
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:798    .text.HAL_GetDEVID:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:803    .text.HAL_GetUIDw0:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:809    .text.HAL_GetUIDw0:00000000 HAL_GetUIDw0
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:824    .text.HAL_GetUIDw0:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:829    .text.HAL_GetUIDw1:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:835    .text.HAL_GetUIDw1:00000000 HAL_GetUIDw1
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:850    .text.HAL_GetUIDw1:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:855    .text.HAL_GetUIDw2:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:861    .text.HAL_GetUIDw2:00000000 HAL_GetUIDw2
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:876    .text.HAL_GetUIDw2:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:881    .text.HAL_DBGMCU_EnableDBGSleepMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:887    .text.HAL_DBGMCU_EnableDBGSleepMode:00000000 HAL_DBGMCU_EnableDBGSleepMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:911    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000c $d
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 109
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:20     .text.HAL_MspInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:26     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:40     .text.HAL_MspDeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:46     .text.HAL_MspDeInit:00000000 HAL_MspDeInit
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:59     .text.HAL_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:65     .text.HAL_DeInit:00000000 HAL_DeInit
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:264    .text.HAL_InitTick:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:270    .text.HAL_InitTick:00000000 HAL_InitTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:349    .text.HAL_InitTick:00000048 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:355    .text.HAL_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:361    .text.HAL_Init:00000000 HAL_Init
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:409    .text.HAL_Init:00000028 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:414    .text.HAL_IncTick:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:420    .text.HAL_IncTick:00000000 HAL_IncTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:441    .text.HAL_IncTick:00000010 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:447    .text.HAL_GetTick:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:453    .text.HAL_GetTick:00000000 HAL_GetTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:469    .text.HAL_GetTick:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:474    .text.HAL_GetTickPrio:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:480    .text.HAL_GetTickPrio:00000000 HAL_GetTickPrio
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:495    .text.HAL_GetTickPrio:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:500    .text.HAL_SetTickFreq:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:506    .text.HAL_SetTickFreq:00000000 HAL_SetTickFreq
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:563    .text.HAL_SetTickFreq:00000024 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:569    .text.HAL_GetTickFreq:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:575    .text.HAL_GetTickFreq:00000000 HAL_GetTickFreq
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:590    .text.HAL_GetTickFreq:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:595    .text.HAL_Delay:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:601    .text.HAL_Delay:00000000 HAL_Delay
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:654    .text.HAL_Delay:00000024 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:659    .text.HAL_SuspendTick:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:665    .text.HAL_SuspendTick:00000000 HAL_SuspendTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:683    .text.HAL_ResumeTick:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:689    .text.HAL_ResumeTick:00000000 HAL_ResumeTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:707    .text.HAL_GetHalVersion:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:713    .text.HAL_GetHalVersion:00000000 HAL_GetHalVersion
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:727    .text.HAL_GetHalVersion:00000004 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:732    .text.HAL_GetREVID:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:738    .text.HAL_GetREVID:00000000 HAL_GetREVID
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:763    .text.HAL_GetREVID:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:768    .text.HAL_GetDEVID:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:774    .text.HAL_GetDEVID:00000000 HAL_GetDEVID
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:798    .text.HAL_GetDEVID:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:803    .text.HAL_GetUIDw0:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:809    .text.HAL_GetUIDw0:00000000 HAL_GetUIDw0
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:824    .text.HAL_GetUIDw0:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:829    .text.HAL_GetUIDw1:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:835    .text.HAL_GetUIDw1:00000000 HAL_GetUIDw1
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:850    .text.HAL_GetUIDw1:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:855    .text.HAL_GetUIDw2:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:861    .text.HAL_GetUIDw2:00000000 HAL_GetUIDw2
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:876    .text.HAL_GetUIDw2:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:881    .text.HAL_DBGMCU_EnableDBGSleepMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:887    .text.HAL_DBGMCU_EnableDBGSleepMode:00000000 HAL_DBGMCU_EnableDBGSleepMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:911    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000c $d
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 109
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:916    .text.HAL_DBGMCU_DisableDBGSleepMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:922    .text.HAL_DBGMCU_DisableDBGSleepMode:00000000 HAL_DBGMCU_DisableDBGSleepMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:946    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:951    .text.HAL_DBGMCU_EnableDBGStopMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:957    .text.HAL_DBGMCU_EnableDBGStopMode:00000000 HAL_DBGMCU_EnableDBGStopMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:981    .text.HAL_DBGMCU_EnableDBGStopMode:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:986    .text.HAL_DBGMCU_DisableDBGStopMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:992    .text.HAL_DBGMCU_DisableDBGStopMode:00000000 HAL_DBGMCU_DisableDBGStopMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1016   .text.HAL_DBGMCU_DisableDBGStopMode:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1021   .text.HAL_DBGMCU_EnableDBGStandbyMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1027   .text.HAL_DBGMCU_EnableDBGStandbyMode:00000000 HAL_DBGMCU_EnableDBGStandbyMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1051   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1056   .text.HAL_DBGMCU_DisableDBGStandbyMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1062   .text.HAL_DBGMCU_DisableDBGStandbyMode:00000000 HAL_DBGMCU_DisableDBGStandbyMode
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1086   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1091   .text.HAL_SYSCFG_SRAM2Erase:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1097   .text.HAL_SYSCFG_SRAM2Erase:00000000 HAL_SYSCFG_SRAM2Erase
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1134   .text.HAL_SYSCFG_SRAM2Erase:00000014 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1139   .text.HAL_SYSCFG_DisableSRAMFetch:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1145   .text.HAL_SYSCFG_DisableSRAMFetch:00000000 HAL_SYSCFG_DisableSRAMFetch
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1169   .text.HAL_SYSCFG_DisableSRAMFetch:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1174   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1180   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000000 HAL_SYSCFG_IsEnabledSRAMFetch
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1210   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000010 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1215   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1221   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1241   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000010 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1246   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1252   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1278   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1283   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1289   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:00000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1353   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000002c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1359   .text.HAL_SYSCFG_EnableVREFBUF:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1365   .text.HAL_SYSCFG_EnableVREFBUF:00000000 HAL_SYSCFG_EnableVREFBUF
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1427   .text.HAL_SYSCFG_EnableVREFBUF:00000030 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1432   .text.HAL_SYSCFG_DisableVREFBUF:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1438   .text.HAL_SYSCFG_DisableVREFBUF:00000000 HAL_SYSCFG_DisableVREFBUF
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1462   .text.HAL_SYSCFG_DisableVREFBUF:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1467   .text.HAL_SYSCFG_EnableIOBooster:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1473   .text.HAL_SYSCFG_EnableIOBooster:00000000 HAL_SYSCFG_EnableIOBooster
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1497   .text.HAL_SYSCFG_EnableIOBooster:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1502   .text.HAL_SYSCFG_DisableIOBooster:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1508   .text.HAL_SYSCFG_DisableIOBooster:00000000 HAL_SYSCFG_DisableIOBooster
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1532   .text.HAL_SYSCFG_DisableIOBooster:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1537   .text.HAL_SYSCFG_EnableIOVdd:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1543   .text.HAL_SYSCFG_EnableIOVdd:00000000 HAL_SYSCFG_EnableIOVdd
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1567   .text.HAL_SYSCFG_EnableIOVdd:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1572   .text.HAL_SYSCFG_DisableIOVdd:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1578   .text.HAL_SYSCFG_DisableIOVdd:00000000 HAL_SYSCFG_DisableIOVdd
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1602   .text.HAL_SYSCFG_DisableIOVdd:0000000c $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1607   .text.HAL_SYSCFG_EnableSecurityAccess:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1613   .text.HAL_SYSCFG_EnableSecurityAccess:00000000 HAL_SYSCFG_EnableSecurityAccess
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1643   .text.HAL_SYSCFG_EnableSecurityAccess:00000010 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1648   .text.HAL_SYSCFG_DisableSecurityAccess:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1654   .text.HAL_SYSCFG_DisableSecurityAccess:00000000 HAL_SYSCFG_DisableSecurityAccess
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1682   .text.HAL_SYSCFG_DisableSecurityAccess:00000010 $d
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s 			page 110
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:916    .text.HAL_DBGMCU_DisableDBGSleepMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:922    .text.HAL_DBGMCU_DisableDBGSleepMode:00000000 HAL_DBGMCU_DisableDBGSleepMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:946    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:951    .text.HAL_DBGMCU_EnableDBGStopMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:957    .text.HAL_DBGMCU_EnableDBGStopMode:00000000 HAL_DBGMCU_EnableDBGStopMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:981    .text.HAL_DBGMCU_EnableDBGStopMode:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:986    .text.HAL_DBGMCU_DisableDBGStopMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:992    .text.HAL_DBGMCU_DisableDBGStopMode:00000000 HAL_DBGMCU_DisableDBGStopMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1016   .text.HAL_DBGMCU_DisableDBGStopMode:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1021   .text.HAL_DBGMCU_EnableDBGStandbyMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1027   .text.HAL_DBGMCU_EnableDBGStandbyMode:00000000 HAL_DBGMCU_EnableDBGStandbyMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1051   .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1056   .text.HAL_DBGMCU_DisableDBGStandbyMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1062   .text.HAL_DBGMCU_DisableDBGStandbyMode:00000000 HAL_DBGMCU_DisableDBGStandbyMode
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1086   .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1091   .text.HAL_SYSCFG_SRAM2Erase:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1097   .text.HAL_SYSCFG_SRAM2Erase:00000000 HAL_SYSCFG_SRAM2Erase
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1134   .text.HAL_SYSCFG_SRAM2Erase:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1139   .text.HAL_SYSCFG_DisableSRAMFetch:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1145   .text.HAL_SYSCFG_DisableSRAMFetch:00000000 HAL_SYSCFG_DisableSRAMFetch
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1169   .text.HAL_SYSCFG_DisableSRAMFetch:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1174   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1180   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000000 HAL_SYSCFG_IsEnabledSRAMFetch
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1210   .text.HAL_SYSCFG_IsEnabledSRAMFetch:00000010 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1215   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1221   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1241   .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:00000010 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1246   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1252   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1278   .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1283   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1289   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:00000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1353   .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000002c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1359   .text.HAL_SYSCFG_EnableVREFBUF:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1365   .text.HAL_SYSCFG_EnableVREFBUF:00000000 HAL_SYSCFG_EnableVREFBUF
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1427   .text.HAL_SYSCFG_EnableVREFBUF:00000030 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1432   .text.HAL_SYSCFG_DisableVREFBUF:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1438   .text.HAL_SYSCFG_DisableVREFBUF:00000000 HAL_SYSCFG_DisableVREFBUF
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1462   .text.HAL_SYSCFG_DisableVREFBUF:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1467   .text.HAL_SYSCFG_EnableIOBooster:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1473   .text.HAL_SYSCFG_EnableIOBooster:00000000 HAL_SYSCFG_EnableIOBooster
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1497   .text.HAL_SYSCFG_EnableIOBooster:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1502   .text.HAL_SYSCFG_DisableIOBooster:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1508   .text.HAL_SYSCFG_DisableIOBooster:00000000 HAL_SYSCFG_DisableIOBooster
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1532   .text.HAL_SYSCFG_DisableIOBooster:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1537   .text.HAL_SYSCFG_EnableIOVdd:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1543   .text.HAL_SYSCFG_EnableIOVdd:00000000 HAL_SYSCFG_EnableIOVdd
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1567   .text.HAL_SYSCFG_EnableIOVdd:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1572   .text.HAL_SYSCFG_DisableIOVdd:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1578   .text.HAL_SYSCFG_DisableIOVdd:00000000 HAL_SYSCFG_DisableIOVdd
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1602   .text.HAL_SYSCFG_DisableIOVdd:0000000c $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1607   .text.HAL_SYSCFG_EnableSecurityAccess:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1613   .text.HAL_SYSCFG_EnableSecurityAccess:00000000 HAL_SYSCFG_EnableSecurityAccess
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1643   .text.HAL_SYSCFG_EnableSecurityAccess:00000010 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1648   .text.HAL_SYSCFG_DisableSecurityAccess:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1654   .text.HAL_SYSCFG_DisableSecurityAccess:00000000 HAL_SYSCFG_DisableSecurityAccess
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1682   .text.HAL_SYSCFG_DisableSecurityAccess:00000010 $d
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s 			page 110
 
 
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1687   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1693   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000000 HAL_SYSCFG_IsEnabledSecurityAccess
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1732   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000014 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1752   .data.uwTickFreq:00000000 uwTickFreq
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1759   .data.uwTickPrio:00000000 uwTickPrio
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1746   .bss.uwTick:00000000 uwTick
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1742   .bss.uwTick:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\ccOcpV1f.s:1755   .data.uwTickPrio:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1687   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1693   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000000 HAL_SYSCFG_IsEnabledSecurityAccess
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1732   .text.HAL_SYSCFG_IsEnabledSecurityAccess:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1752   .data.uwTickFreq:00000000 uwTickFreq
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1759   .data.uwTickPrio:00000000 uwTickPrio
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1746   .bss.uwTick:00000000 uwTick
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1742   .bss.uwTick:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\cc5DY7jS.s:1755   .data.uwTickPrio:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RCC_GetHCLKFreq

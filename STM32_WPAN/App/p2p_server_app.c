@@ -25,7 +25,7 @@
 #include "ble.h"
 #include "p2p_server_app.h"
 #include "stm32_seq.h"
-extern void Dbg_Print(const char *fmt, ...);
+#include "app_ble.h"      /* ← добавить, если ещё нет */
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -72,22 +72,37 @@ void P2PS_STM_App_Notification(P2PS_STM_App_Notification_evt_t *pNotification)
 
     case P2PS_STM__NOTIFY_ENABLED_EVT:
 /* USER CODE BEGIN P2PS_STM__NOTIFY_ENABLED_EVT */
-			Notification_Status = 1;
-      Dbg_Print("BLE: Notification ENABLED\r\n");
+      Notification_Status = 1;
+      APP_DBG_MSG("BLE: Notification ENABLED\r\n");
+      /* форсируем немедленное измерение и отправку, не дожидаясь минутного тика */
+      extern uint8_t force_measure_now;
+      force_measure_now = 1;
 /* USER CODE END P2PS_STM__NOTIFY_ENABLED_EVT */
       break;
 
     case P2PS_STM_NOTIFY_DISABLED_EVT:
 /* USER CODE BEGIN P2PS_STM_NOTIFY_DISABLED_EVT */
-			Notification_Status = 0;
-      Dbg_Print("BLE: Notification DISABLED\r\n");
+      Notification_Status = 0;
+      APP_DBG_MSG("BLE: Notification DISABLED\r\n");
 /* USER CODE END P2PS_STM_NOTIFY_DISABLED_EVT */
       break;
 
     case P2PS_STM_WRITE_EVT:
 /* USER CODE BEGIN P2PS_STM_WRITE_EVT */
-		led_blink_en = pNotification->DataTransfered.pPayload[0];
-		APP_DBG_MSG("0x%x%x\r\n",pNotification->DataTransfered.pPayload[0],pNotification->DataTransfered.pPayload[1]);
+      if (pNotification->DataTransfered.pPayload[0] == 0x02)
+      {
+        /* команда переименования: байты со 2-го — само имя */
+        uint8_t len = pNotification->DataTransfered.Length - 1;
+        if (len > CFG_GAP_DEVICE_NAME_LENGTH) len = CFG_GAP_DEVICE_NAME_LENGTH;
+
+        APP_BLE_RenameDevice(&pNotification->DataTransfered.pPayload[1], len);
+        APP_DBG_MSG("BLE: rename cmd received, len=%d\r\n", len);
+      }
+      else
+      {
+        led_blink_en = pNotification->DataTransfered.pPayload[0];
+        APP_DBG_MSG("0x%x\r\n", pNotification->DataTransfered.pPayload[0]);
+      }
 /* USER CODE END P2PS_STM_WRITE_EVT */
       break;
 

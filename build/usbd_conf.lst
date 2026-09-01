@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   28:USB_Device/Target/usbd_conf.c **** #include "usbd_cdc.h"
   29:USB_Device/Target/usbd_conf.c **** 
   30:USB_Device/Target/usbd_conf.c **** /* USER CODE BEGIN Includes */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 2
 
 
   31:USB_Device/Target/usbd_conf.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   85:USB_Device/Target/usbd_conf.c ****   */
   86:USB_Device/Target/usbd_conf.c ****     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USB;
   87:USB_Device/Target/usbd_conf.c ****     PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 3
 
 
   88:USB_Device/Target/usbd_conf.c ****     if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  142:USB_Device/Target/usbd_conf.c ****   /* USER CODE END USB_MspDeInit 1 */
  143:USB_Device/Target/usbd_conf.c ****   }
  144:USB_Device/Target/usbd_conf.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 4
 
 
  145:USB_Device/Target/usbd_conf.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  199:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_DataInStageCallback_PreTreatment */
  200:USB_Device/Target/usbd_conf.c **** 
  201:USB_Device/Target/usbd_conf.c ****   /* USER CODE END HAL_PCD_DataInStageCallback_PreTreatment */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 5
 
 
  202:USB_Device/Target/usbd_conf.c ****   USBD_LL_DataInStage((USBD_HandleTypeDef*)hpcd->pData, epnum, hpcd->IN_ep[epnum].xfer_buff);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  256:USB_Device/Target/usbd_conf.c **** }
  257:USB_Device/Target/usbd_conf.c **** 
  258:USB_Device/Target/usbd_conf.c **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 6
 
 
  259:USB_Device/Target/usbd_conf.c ****   * @brief  Suspend callback.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  313:USB_Device/Target/usbd_conf.c ****   USBD_LL_Resume((USBD_HandleTypeDef*)hpcd->pData);
  314:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_ResumeCallback_PostTreatment */
  315:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 7
 
 
  316:USB_Device/Target/usbd_conf.c ****   /* USER CODE END HAL_PCD_ResumeCallback_PostTreatment */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  370:USB_Device/Target/usbd_conf.c **** #endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
  371:USB_Device/Target/usbd_conf.c **** {
  372:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_ConnectCallback_PreTreatment */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 8
 
 
  373:USB_Device/Target/usbd_conf.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  427:USB_Device/Target/usbd_conf.c ****   hpcd_USB_FS.Init.Sof_enable = DISABLE;
  428:USB_Device/Target/usbd_conf.c ****   hpcd_USB_FS.Init.low_power_enable = DISABLE;
  429:USB_Device/Target/usbd_conf.c ****   hpcd_USB_FS.Init.lpm_enable = DISABLE;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 9
 
 
  430:USB_Device/Target/usbd_conf.c ****   hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  484:USB_Device/Target/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
  485:USB_Device/Target/usbd_conf.c **** 
  486:USB_Device/Target/usbd_conf.c ****   hal_status = HAL_PCD_DeInit(pdev->pData);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 10
 
 
  487:USB_Device/Target/usbd_conf.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  541:USB_Device/Target/usbd_conf.c **** 
  542:USB_Device/Target/usbd_conf.c ****   usb_status =  USBD_Get_USB_Status(hal_status);
  543:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 11
 
 
  544:USB_Device/Target/usbd_conf.c ****   return usb_status;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  598:USB_Device/Target/usbd_conf.c ****   return usb_status;
  599:USB_Device/Target/usbd_conf.c **** }
  600:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 12
 
 
  601:USB_Device/Target/usbd_conf.c **** /**
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  655:USB_Device/Target/usbd_conf.c **** }
  656:USB_Device/Target/usbd_conf.c **** 
  657:USB_Device/Target/usbd_conf.c **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 13
 
 
  658:USB_Device/Target/usbd_conf.c ****   * @brief  Transmits data over an endpoint.
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  712:USB_Device/Target/usbd_conf.c ****   * @retval None
  713:USB_Device/Target/usbd_conf.c ****   */
  714:USB_Device/Target/usbd_conf.c **** #if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 14
 
 
  715:USB_Device/Target/usbd_conf.c **** static void PCDEx_LPM_Callback(PCD_HandleTypeDef *hpcd, PCD_LPM_MsgTypeDef msg)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  769:USB_Device/Target/usbd_conf.c **** 
  770:USB_Device/Target/usbd_conf.c **** /**
  771:USB_Device/Target/usbd_conf.c ****   * @brief  Dummy memory free
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 15
 
 
  772:USB_Device/Target/usbd_conf.c ****   * @param  p: Pointer to allocated  memory address
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  809:USB_Device/Target/usbd_conf.c ****     case HAL_BUSY :
  810:USB_Device/Target/usbd_conf.c ****       usb_status = USBD_BUSY;
   46              		.loc 1 810 7 view .LVU3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 16
 
 
   47              	.LVL1:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   88              		.cfi_endproc
   89              	.LFE1293:
   91              		.section	.text.HAL_PCD_MspInit,"ax",%progbits
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 17
 
 
   92              		.align	1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  137 001e 9A42     		cmp	r2, r3
  138 0020 01D0     		beq	.L14
  139              	.LVL9:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 18
 
 
  140              	.L10:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   17:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   @verbatim
   18:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****                       ##### RCC Limitations #####
   19:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   ==============================================================================
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 19
 
 
   20:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****     [..]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   74:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB1_GRP1_PERIPH_ALL            (0xFFFFFFFFU)
   75:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
   76:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_AHB1_GRP1_PERIPH_DMA1           RCC_AHB1ENR_DMA1EN
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 20
 
 
   77:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(DMA2)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  131:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_APB1_GRP1_PERIPH  APB1 GRP1 PERIPH
  132:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
  133:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 21
 
 
  134:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_ALL            (0xFFFFFFFFU)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  188:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_TIM17          RCC_APB2ENR_TIM17EN
  189:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* TIM17 */
  190:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #if defined(SAI1)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 22
 
 
  191:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_SAI1           RCC_APB2ENR_SAI1EN
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  245:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  246:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** 
  247:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** /** @defgroup BUS_LL_EC_C2_AHB3_GRP1_PERIPH  C2 AHB3 GRP1 PERIPH
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 23
 
 
  248:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @{
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  302:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #endif /* ADC_SUPPORT_5_MSPS */
  303:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_TIM1         RCC_C2APB2ENR_TIM1EN
  304:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_SPI1         RCC_C2APB2ENR_SPI1EN
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 24
 
 
  305:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_USART1       RCC_C2APB2ENR_USART1EN
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  359:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_CRC
  360:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_TSC
  361:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 25
 
 
  362:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  416:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Force AHB1 peripherals reset.
  417:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll AHB1RSTR     DMA1RST       LL_AHB1_GRP1_ForceReset\n
  418:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1RSTR     DMA2RST       LL_AHB1_GRP1_ForceReset\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 26
 
 
  419:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB1RSTR     DMAMUX1RST     LL_AHB1_GRP1_ForceReset\n
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  473:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_TSC
  474:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
  475:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 27
 
 
  476:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  530:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOC
  531:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOD (*)
  532:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOE
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 28
 
 
  533:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOH
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  204              		.loc 1 101 5 is_stmt 1 view .LVU46
  101:USB_Device/Target/usbd_conf.c ****     GPIO_InitStruct.Alternate = GPIO_AF10_USB;
  205              		.loc 1 101 27 is_stmt 0 view .LVU47
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 29
 
 
  206 0058 1A95     		str	r5, [sp, #104]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  583:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      ADCEN         LL_AHB2_GRP1_DisableClock\n
  584:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2ENR      AES1EN        LL_AHB2_GRP1_DisableClock
  585:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 30
 
 
  586:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOA
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  640:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
  641:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_ALL
  642:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOA
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 31
 
 
  643:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOB
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  697:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2SMENR    ADCSMEN       LL_AHB2_GRP1_DisableClockSleep\n
  698:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB2SMENR    AES1SMEN      LL_AHB2_GRP1_DisableClockSleep
  699:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 32
 
 
  700:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB2_GRP1_PERIPH_GPIOA
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  754:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @brief  Check if AHB3 peripheral clock is enabled or not
  755:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll AHB3ENR      QUADSPIEN     LL_AHB3_GRP1_IsEnabledClock\n
  756:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB3ENR      PKAEN         LL_AHB3_GRP1_IsEnabledClock\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 33
 
 
  757:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB3ENR      AES2EN        LL_AHB3_GRP1_IsEnabledClock\n
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  811:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         AHB3RSTR     FLASHRST      LL_AHB3_GRP1_ForceReset
  812:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
  813:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_ALL
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 34
 
 
  814:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_QUADSPI (*)
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  868:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_SRAM2
  869:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @note  (*) Not supported by all the devices
  870:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_FLASH
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 35
 
 
  871:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @retval None
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  925:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
  926:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_TIM2
  927:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_LCD (*)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 36
 
 
  928:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_RTCAPB
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
   90:USB_Device/Target/usbd_conf.c ****     }
  252              		.loc 1 90 7 is_stmt 1 view .LVU63
  253 008c FFF7FEFF 		bl	Error_Handler
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 37
 
 
  254              	.LVL20:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  950:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @rmtoll APB1ENR2     LPUART1EN     LL_APB1_GRP2_EnableClock\n
  951:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         APB1ENR2     LPTIM2EN      LL_APB1_GRP2_EnableClock
  952:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 38
 
 
  953:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP2_PERIPH_LPUART1 (*)
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
 1007:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   */
 1008:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** __STATIC_INLINE uint32_t LL_APB1_GRP2_IsEnabledClock(uint32_t Periphs)
 1009:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 39
 
 
 1010:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h ****   return ((READ_BIT(RCC->APB1ENR2, Periphs) == (Periphs)) ? 1UL : 0UL);
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  319 0026 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
  320              	.LVL27:
  144:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 40
 
 
  321              		.loc 1 144 1 is_stmt 0 view .LVU77
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  373              		.cfi_startproc
  374              		@ args = 0, pretend = 0, frame = 0
  375              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 41
 
 
  177:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_DataOutStageCallback_PreTreatment */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  424              	.LVL36:
  206:USB_Device/Target/usbd_conf.c **** 
  425              		.loc 1 206 1 view .LVU92
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 42
 
 
  426 0014 08BD     		pop	{r3, pc}
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  477              	.LCFI10:
  478              		.cfi_def_cfa_offset 8
  479              		.cfi_offset 4, -8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 43
 
 
  480              		.cfi_offset 14, -4
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  526              		@ frame_needed = 0, uses_anonymous_args = 0
  269:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_SuspendCallback_PreTreatment */
  527              		.loc 1 269 1 is_stmt 0 view .LVU110
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 44
 
 
  528 0000 10B5     		push	{r4, lr}
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  574              		.cfi_startproc
  575              		@ args = 0, pretend = 0, frame = 0
  576              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 45
 
 
  299:USB_Device/Target/usbd_conf.c ****   /* USER CODE BEGIN HAL_PCD_ResumeCallback_PreTreatment */
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  622              		.thumb_func
  624              	HAL_PCD_ISOOUTIncompleteCallback:
  625              	.LVL56:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 46
 
 
  626              	.LFB1271:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  673              	.LVL61:
  359:USB_Device/Target/usbd_conf.c **** 
  674              		.loc 1 359 1 view .LVU140
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 47
 
 
  675 000a 08BD     		pop	{r3, pc}
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  726              	.LCFI16:
  727              		.cfi_def_cfa_offset 8
  728              		.cfi_offset 3, -8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 48
 
 
  729              		.cfi_offset 14, -4
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  774              		.loc 1 423 3 view .LVU158
  423:USB_Device/Target/usbd_conf.c ****   hpcd_USB_FS.Init.dev_endpoints = 8;
  775              		.loc 1 423 24 is_stmt 0 view .LVU159
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 49
 
 
  776 0012 1E4B     		ldr	r3, .L59+4
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  812 0034 0022     		movs	r2, #0
  813 0036 1146     		mov	r1, r2
  814 0038 D5F8C802 		ldr	r0, [r5, #712]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 50
 
 
  815 003c FFF7FEFF 		bl	HAL_PCDEx_PMAConfig
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  863              		.section	.text.USBD_LL_DeInit,"ax",%progbits
  864              		.align	1
  865              		.global	USBD_LL_DeInit
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 51
 
 
  866              		.syntax unified
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  912              	.LFB1277:
  499:USB_Device/Target/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
  913              		.loc 1 499 1 is_stmt 1 view -0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 52
 
 
  914              		.cfi_startproc
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  958 0000 08B5     		push	{r3, lr}
  959              	.LCFI20:
  960              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 53
 
 
  961              		.cfi_offset 3, -8
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  537:USB_Device/Target/usbd_conf.c ****   USBD_StatusTypeDef usb_status = USBD_OK;
  1006              		.loc 1 537 3 is_stmt 1 view .LVU220
  538:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 54
 
 
  1007              		.loc 1 538 3 view .LVU221
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  558:USB_Device/Target/usbd_conf.c **** 
  1051              		.loc 1 558 3 view .LVU234
  558:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 55
 
 
  1052              		.loc 1 558 16 is_stmt 0 view .LVU235
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1096 0006 FFF7FEFF 		bl	HAL_PCD_EP_Flush
  1097              	.LVL107:
  578:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 56
 
 
  1098              		.loc 1 578 3 is_stmt 1 view .LVU248
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  598:USB_Device/Target/usbd_conf.c **** }
  1142              		.loc 1 598 3 is_stmt 1 view .LVU261
  599:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 57
 
 
  1143              		.loc 1 599 1 is_stmt 0 view .LVU262
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1189              		.align	1
  1190              		.global	USBD_LL_IsStallEP
  1191              		.syntax unified
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 58
 
 
  1192              		.thumb
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1234 002a 7047     		bx	lr
  1235              		.cfi_endproc
  1236              	.LFE1284:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 59
 
 
  1238              		.section	.text.USBD_LL_SetUSBAddress,"ax",%progbits
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1283              		.thumb_func
  1285              	USBD_LL_Transmit:
  1286              	.LVL131:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 60
 
 
  1287              	.LFB1286:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1331              		@ frame_needed = 0, uses_anonymous_args = 0
  686:USB_Device/Target/usbd_conf.c ****   HAL_StatusTypeDef hal_status = HAL_OK;
  1332              		.loc 1 686 1 is_stmt 0 view .LVU310
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 61
 
 
  1333 0000 08B5     		push	{r3, lr}
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  705:USB_Device/Target/usbd_conf.c **** }
  1378              		.loc 1 705 3 is_stmt 1 view .LVU322
  705:USB_Device/Target/usbd_conf.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 62
 
 
  1379              		.loc 1 705 10 is_stmt 0 view .LVU323
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1426              	.LVL147:
  1427              	.L93:
  731:USB_Device/Target/usbd_conf.c ****     break;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 63
 
 
  1428              		.loc 1 731 5 is_stmt 1 view .LVU333
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1470              	.L96:
  1471 0044 00ED00E0 		.word	-536810240
  1472              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 64
 
 
  1473              	.LFE1289:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1522 0000 0048     		ldr	r0, .L101
  1523              	.LVL157:
  768:USB_Device/Target/usbd_conf.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 65
 
 
  1524              		.loc 1 768 1 view .LVU355
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1574              		.file 6 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h"
  1575              		.file 7 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wbxx.h"
  1576              		.file 8 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 66
 
 
  1577              		.file 9 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_gpio.h"
@@ -3913,93 +3913,93 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 1
  1586              		.file 18 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pcd_ex.h"
  1587              		.file 19 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_cortex.h"
  1588              		.file 20 "<built-in>"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 67
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_conf.c
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:20     .text.USBD_Get_USB_Status:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:25     .text.USBD_Get_USB_Status:00000000 USBD_Get_USB_Status
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:40     .text.USBD_Get_USB_Status:00000008 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:44     .text.USBD_Get_USB_Status:0000000c $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:67     .text.SystemClockConfig_Resume:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:72     .text.SystemClockConfig_Resume:00000000 SystemClockConfig_Resume
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:92     .text.HAL_PCD_MspInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:98     .text.HAL_PCD_MspInit:00000000 HAL_PCD_MspInit
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:259    .text.HAL_PCD_MspInit:00000094 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:264    .text.HAL_PCD_MspDeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:270    .text.HAL_PCD_MspDeInit:00000000 HAL_PCD_MspDeInit
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:326    .text.HAL_PCD_MspDeInit:0000002c $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:331    .text.HAL_PCD_SetupStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:337    .text.HAL_PCD_SetupStageCallback:00000000 HAL_PCD_SetupStageCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:363    .text.HAL_PCD_DataOutStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:369    .text.HAL_PCD_DataOutStageCallback:00000000 HAL_PCD_DataOutStageCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:397    .text.HAL_PCD_DataInStageCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:403    .text.HAL_PCD_DataInStageCallback:00000000 HAL_PCD_DataInStageCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:431    .text.HAL_PCD_SOFCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:437    .text.HAL_PCD_SOFCallback:00000000 HAL_PCD_SOFCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:462    .text.HAL_PCD_ResetCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:468    .text.HAL_PCD_ResetCallback:00000000 HAL_PCD_ResetCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:514    .text.HAL_PCD_SuspendCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:520    .text.HAL_PCD_SuspendCallback:00000000 HAL_PCD_SuspendCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:559    .text.HAL_PCD_SuspendCallback:0000001c $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:564    .text.HAL_PCD_ResumeCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:570    .text.HAL_PCD_ResumeCallback:00000000 HAL_PCD_ResumeCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:613    .text.HAL_PCD_ResumeCallback:00000024 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:618    .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:624    .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 HAL_PCD_ISOOUTIncompleteCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:649    .text.HAL_PCD_ISOINIncompleteCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:655    .text.HAL_PCD_ISOINIncompleteCallback:00000000 HAL_PCD_ISOINIncompleteCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:680    .text.HAL_PCD_ConnectCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:686    .text.HAL_PCD_ConnectCallback:00000000 HAL_PCD_ConnectCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:711    .text.HAL_PCD_DisconnectCallback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:717    .text.HAL_PCD_DisconnectCallback:00000000 HAL_PCD_DisconnectCallback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:742    .text.USBD_LL_Init:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:748    .text.USBD_LL_Init:00000000 USBD_LL_Init
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:858    .text.USBD_LL_Init:00000088 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:864    .text.USBD_LL_DeInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:870    .text.USBD_LL_DeInit:00000000 USBD_LL_DeInit
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:904    .text.USBD_LL_Start:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:910    .text.USBD_LL_Start:00000000 USBD_LL_Start
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:944    .text.USBD_LL_Stop:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:950    .text.USBD_LL_Stop:00000000 USBD_LL_Stop
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:984    .text.USBD_LL_OpenEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:990    .text.USBD_LL_OpenEP:00000000 USBD_LL_OpenEP
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1029   .text.USBD_LL_CloseEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1035   .text.USBD_LL_CloseEP:00000000 USBD_LL_CloseEP
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1069   .text.USBD_LL_FlushEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1075   .text.USBD_LL_FlushEP:00000000 USBD_LL_FlushEP
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1109   .text.USBD_LL_StallEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1115   .text.USBD_LL_StallEP:00000000 USBD_LL_StallEP
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1149   .text.USBD_LL_ClearStallEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1155   .text.USBD_LL_ClearStallEP:00000000 USBD_LL_ClearStallEP
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 68
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:20     .text.USBD_Get_USB_Status:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:25     .text.USBD_Get_USB_Status:00000000 USBD_Get_USB_Status
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:40     .text.USBD_Get_USB_Status:00000008 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:44     .text.USBD_Get_USB_Status:0000000c $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:67     .text.SystemClockConfig_Resume:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:72     .text.SystemClockConfig_Resume:00000000 SystemClockConfig_Resume
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:92     .text.HAL_PCD_MspInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:98     .text.HAL_PCD_MspInit:00000000 HAL_PCD_MspInit
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:259    .text.HAL_PCD_MspInit:00000094 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:264    .text.HAL_PCD_MspDeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:270    .text.HAL_PCD_MspDeInit:00000000 HAL_PCD_MspDeInit
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:326    .text.HAL_PCD_MspDeInit:0000002c $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:331    .text.HAL_PCD_SetupStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:337    .text.HAL_PCD_SetupStageCallback:00000000 HAL_PCD_SetupStageCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:363    .text.HAL_PCD_DataOutStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:369    .text.HAL_PCD_DataOutStageCallback:00000000 HAL_PCD_DataOutStageCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:397    .text.HAL_PCD_DataInStageCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:403    .text.HAL_PCD_DataInStageCallback:00000000 HAL_PCD_DataInStageCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:431    .text.HAL_PCD_SOFCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:437    .text.HAL_PCD_SOFCallback:00000000 HAL_PCD_SOFCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:462    .text.HAL_PCD_ResetCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:468    .text.HAL_PCD_ResetCallback:00000000 HAL_PCD_ResetCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:514    .text.HAL_PCD_SuspendCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:520    .text.HAL_PCD_SuspendCallback:00000000 HAL_PCD_SuspendCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:559    .text.HAL_PCD_SuspendCallback:0000001c $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:564    .text.HAL_PCD_ResumeCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:570    .text.HAL_PCD_ResumeCallback:00000000 HAL_PCD_ResumeCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:613    .text.HAL_PCD_ResumeCallback:00000024 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:618    .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:624    .text.HAL_PCD_ISOOUTIncompleteCallback:00000000 HAL_PCD_ISOOUTIncompleteCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:649    .text.HAL_PCD_ISOINIncompleteCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:655    .text.HAL_PCD_ISOINIncompleteCallback:00000000 HAL_PCD_ISOINIncompleteCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:680    .text.HAL_PCD_ConnectCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:686    .text.HAL_PCD_ConnectCallback:00000000 HAL_PCD_ConnectCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:711    .text.HAL_PCD_DisconnectCallback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:717    .text.HAL_PCD_DisconnectCallback:00000000 HAL_PCD_DisconnectCallback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:742    .text.USBD_LL_Init:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:748    .text.USBD_LL_Init:00000000 USBD_LL_Init
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:858    .text.USBD_LL_Init:00000088 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:864    .text.USBD_LL_DeInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:870    .text.USBD_LL_DeInit:00000000 USBD_LL_DeInit
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:904    .text.USBD_LL_Start:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:910    .text.USBD_LL_Start:00000000 USBD_LL_Start
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:944    .text.USBD_LL_Stop:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:950    .text.USBD_LL_Stop:00000000 USBD_LL_Stop
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:984    .text.USBD_LL_OpenEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:990    .text.USBD_LL_OpenEP:00000000 USBD_LL_OpenEP
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1029   .text.USBD_LL_CloseEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1035   .text.USBD_LL_CloseEP:00000000 USBD_LL_CloseEP
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1069   .text.USBD_LL_FlushEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1075   .text.USBD_LL_FlushEP:00000000 USBD_LL_FlushEP
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1109   .text.USBD_LL_StallEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1115   .text.USBD_LL_StallEP:00000000 USBD_LL_StallEP
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1149   .text.USBD_LL_ClearStallEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1155   .text.USBD_LL_ClearStallEP:00000000 USBD_LL_ClearStallEP
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 68
 
 
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1189   .text.USBD_LL_IsStallEP:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1195   .text.USBD_LL_IsStallEP:00000000 USBD_LL_IsStallEP
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1239   .text.USBD_LL_SetUSBAddress:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1245   .text.USBD_LL_SetUSBAddress:00000000 USBD_LL_SetUSBAddress
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1279   .text.USBD_LL_Transmit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1285   .text.USBD_LL_Transmit:00000000 USBD_LL_Transmit
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1319   .text.USBD_LL_PrepareReceive:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1325   .text.USBD_LL_PrepareReceive:00000000 USBD_LL_PrepareReceive
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1359   .text.USBD_LL_GetRxDataSize:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1365   .text.USBD_LL_GetRxDataSize:00000000 USBD_LL_GetRxDataSize
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1391   .text.HAL_PCDEx_LPM_Callback:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1397   .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1471   .text.HAL_PCDEx_LPM_Callback:00000044 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1476   .text.USBD_LL_Delay:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1482   .text.USBD_LL_Delay:00000000 USBD_LL_Delay
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1504   .text.USBD_static_malloc:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1510   .text.USBD_static_malloc:00000000 USBD_static_malloc
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1529   .text.USBD_static_malloc:00000004 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1534   .text.USBD_static_free:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1540   .text.USBD_static_free:00000000 USBD_static_free
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1560   .bss.hpcd_USB_FS:00000000 hpcd_USB_FS
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1556   .bss.hpcd_USB_FS:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1563   .bss.mem.0:00000000 $d
-C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s:1567   .bss.mem.0:00000000 mem.0
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1189   .text.USBD_LL_IsStallEP:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1195   .text.USBD_LL_IsStallEP:00000000 USBD_LL_IsStallEP
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1239   .text.USBD_LL_SetUSBAddress:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1245   .text.USBD_LL_SetUSBAddress:00000000 USBD_LL_SetUSBAddress
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1279   .text.USBD_LL_Transmit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1285   .text.USBD_LL_Transmit:00000000 USBD_LL_Transmit
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1319   .text.USBD_LL_PrepareReceive:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1325   .text.USBD_LL_PrepareReceive:00000000 USBD_LL_PrepareReceive
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1359   .text.USBD_LL_GetRxDataSize:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1365   .text.USBD_LL_GetRxDataSize:00000000 USBD_LL_GetRxDataSize
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1391   .text.HAL_PCDEx_LPM_Callback:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1397   .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1471   .text.HAL_PCDEx_LPM_Callback:00000044 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1476   .text.USBD_LL_Delay:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1482   .text.USBD_LL_Delay:00000000 USBD_LL_Delay
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1504   .text.USBD_static_malloc:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1510   .text.USBD_static_malloc:00000000 USBD_static_malloc
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1529   .text.USBD_static_malloc:00000004 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1534   .text.USBD_static_free:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1540   .text.USBD_static_free:00000000 USBD_static_free
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1560   .bss.hpcd_USB_FS:00000000 hpcd_USB_FS
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1556   .bss.hpcd_USB_FS:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1563   .bss.mem.0:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s:1567   .bss.mem.0:00000000 mem.0
 
 UNDEFINED SYMBOLS
 SystemClock_Config
@@ -4033,7 +4033,7 @@ HAL_PCD_EP_Open
 HAL_PCD_EP_Close
 HAL_PCD_EP_Flush
 HAL_PCD_EP_SetStall
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc9AXn4R.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc7igWbl.s 			page 69
 
 
 HAL_PCD_EP_ClrStall

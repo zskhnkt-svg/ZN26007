@@ -190,6 +190,10 @@ typedef struct
 /* Private variables ---------------------------------------------------------*/
 PLACE_IN_SECTION("MB_MEM1") ALIGN(4) static TL_CmdPacket_t BleCmdBuffer;
 
+static uint16_t s_gap_service_handle;
+static uint16_t s_gap_dev_name_char_handle;
+static char s_device_name[CFG_GAP_DEVICE_NAME_LENGTH + 1];
+
 static const uint8_t a_MBdAddr[BD_ADDR_SIZE_LOCAL] =
 {
   (uint8_t)((CFG_ADV_BD_ADDRESS & 0x0000000000FF)),
@@ -767,7 +771,24 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *p_Pckt)
         break;
 
         /* USER CODE BEGIN BLUE_EVT */
+    case ACI_GATT_ATTRIBUTE_MODIFIED_VSEVT_CODE:
+    {
+      aci_gatt_attribute_modified_event_rp0 *p_attr_mod =
+          (aci_gatt_attribute_modified_event_rp0*) p_blecore_evt->data;
 
+      if (p_attr_mod->Attr_Handle == (s_gap_dev_name_char_handle + 1))
+      {
+        uint8_t len = p_attr_mod->Attr_Data_Length;
+        if (len > CFG_GAP_DEVICE_NAME_LENGTH) len = CFG_GAP_DEVICE_NAME_LENGTH;
+
+        memcpy(s_device_name, p_attr_mod->Attr_Data, len);
+        s_device_name[len] = '\0';
+
+        APP_SaveDeviceName(s_device_name, len);
+        APP_DBG_MSG("BLE: Device name changed and saved: %s\n", s_device_name);
+      }
+      break;
+    }
         /* USER CODE END BLUE_EVT */
       }
       break; /* HCI_VENDOR_SPECIFIC_DEBUG_EVT_CODE */
@@ -1342,6 +1363,19 @@ static void Connection_Interval_Update_Req(void)
  * WRAP FUNCTIONS
  *
  *************************************************************/
+
+void APP_BLE_RenameDevice(const uint8_t *p_name, uint8_t len)
+{
+  memset(s_device_name, 0, sizeof(s_device_name));
+  memcpy(s_device_name, p_name, len);
+  s_device_name[len] = '\0';
+
+  APP_SaveDeviceName(s_device_name, len);
+
+  aci_gatt_update_char_value(s_gap_service_handle, s_gap_dev_name_char_handle,
+                              0, len, (uint8_t*)s_device_name);
+}
+
 void hci_notify_asynch_evt(void* p_Data)
 {
   UTIL_SEQ_SetTask(1 << CFG_TASK_HCI_ASYNCH_EVT_ID, CFG_SCH_PRIO_0);

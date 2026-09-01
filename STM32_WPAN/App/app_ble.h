@@ -68,6 +68,7 @@ typedef enum
 
 /* Exported functions ---------------------------------------------*/
 void APP_BLE_Init(void);
+void APP_BLE_RenameDevice(const uint8_t *p_name, uint8_t len);
 APP_BLE_ConnStatus_t APP_BLE_Get_Server_Connection_Status(void);
 
 /* USER CODE BEGIN EF */

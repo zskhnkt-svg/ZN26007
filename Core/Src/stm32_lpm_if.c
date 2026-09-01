@@ -309,7 +309,27 @@ static void ExitLowPower(void)
   {
 /* Restore the clock configuration of the application in this user section */
 /* USER CODE BEGIN ExitLowPower_1 */
+    /* Включаем HSE — источник для PLL и радио-стека (см. SystemClock_Config в main.c) */
+    LL_RCC_HSE_Enable();
+    while (!LL_RCC_HSE_IsReady());
 
+    /* PLL не теряет конфигурацию (M/N/P/Q/R) во время STOP2 — просто включаем обратно */
+    LL_RCC_PLL_Enable();
+    LL_RCC_PLL_EnableDomain_SYS();
+    while (!LL_RCC_PLL_IsReady());
+
+    /* Восстанавливаем задержку Flash ДО переключения на более высокую частоту */
+    __HAL_FLASH_SET_LATENCY(FLASH_LATENCY_3);
+    while (__HAL_FLASH_GET_LATENCY() != FLASH_LATENCY_3);
+
+    LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL);
+    while (LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL);
+
+    /* SMPS тоже был переключен на HSI при входе в сон (см. Switch_On_HSI) — возвращаем на HSE */
+    LL_RCC_SetSMPSClockSource(LL_RCC_SMPS_CLKSOURCE_HSE);
+
+    /* Обновляем переменную SystemCoreClock, от неё зависит HAL_Delay/SysTick */
+    SystemCoreClockUpdate();
 /* USER CODE END ExitLowPower_1 */
   }
   else
@@ -344,4 +364,3 @@ static void Switch_On_HSI(void)
 /* USER CODE BEGIN Private_Functions */
 
 /* USER CODE END Private_Functions */
-

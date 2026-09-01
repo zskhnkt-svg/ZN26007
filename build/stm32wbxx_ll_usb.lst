@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
   27:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****                     ##### How to use this driver #####
   28:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   ==============================================================================
   29:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****     [..]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 2
 
 
   30:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       (#) Fill parameters of Init structure in USB_CfgTypeDef structure.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
   71:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****               only by USB OTG FS peripheral.
   72:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             - This function is added to ensure compatibility across platforms.
   73:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****    */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 3
 
 
   74:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
   80              		.loc 1 92 3 is_stmt 1 view .LVU13
   81              	.LVL4:
   93:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****                    USB_CNTR_SUSPM | USB_CNTR_ERRM |
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 4
 
 
   94:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****                    USB_CNTR_SOFM | USB_CNTR_ESOFM |
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  111 0000 B0F84030 		ldrh	r3, [r0, #64]
  112 0004 23F47E53 		bic	r3, r3, #16256
  113 0008 5B04     		lsls	r3, r3, #17
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 5
 
 
  114 000a 5B0C     		lsrs	r3, r3, #17
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  146              		.loc 1 144 1 view .LVU31
  147 0002 7047     		bx	lr
  148              		.cfi_endproc
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 6
 
 
  149              	.LFE953:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  166:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   /* Clear pending interrupts */
  167:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   USBx->ISTR = 0U;
  184              		.loc 1 167 3 is_stmt 1 view .LVU40
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 7
 
 
  185              		.loc 1 167 14 is_stmt 0 view .LVU41
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  192:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****    */
  193:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
  194:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   return HAL_OK;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 8
 
 
  217              		.loc 1 194 3 view .LVU49
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  255              		.thumb
  256              		.thumb_func
  258              	USB_ActivateEndpoint:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 9
 
 
  259              	.LVL15:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  295 0024 56       		.byte	(.L16-.L13)/2
  296 0025 5D       		.byte	(.L15-.L13)/2
  297 0026 02       		.byte	(.L14-.L13)/2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 10
 
 
  298 0027 59       		.byte	(.L12-.L13)/2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  327              	.LBE2:
  328              		.loc 1 256 3 is_stmt 1 view .LVU75
  257:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 11
 
 
  258:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   if (ep->doublebuffer == 0U)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  376 008e 33F82420 		ldrh	r2, [r3, r4, lsl #2]
  377              	.LVL27:
  378              		.loc 1 264 7 is_stmt 0 discriminator 1 view .LVU97
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 12
 
 
  379 0092 92B2     		uxth	r2, r2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  428              	.L16:
  234:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       break;
  429              		.loc 1 234 7 view .LVU116
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 13
 
 
  234:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       break;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  466              	.LVL39:
  467              		.loc 1 274 9 is_stmt 0 view .LVU133
  468 00ec 33F82120 		ldrh	r2, [r3, r1, lsl #2]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 14
 
 
  469 00f0 92B2     		uxth	r2, r2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  514              		.loc 1 283 7 is_stmt 0 view .LVU151
  515 012a 13FA82F2 		uxtah	r2, r3, r2
  516              	.LVL47:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 15
 
 
  517              		.loc 1 283 7 is_stmt 1 view .LVU152
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  570 017a 0CD0     		beq	.L27
  571              		.loc 1 284 7 discriminator 1 view .LVU172
  572              	.LBB13:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 16
 
 
  573              		.loc 1 284 7 discriminator 1 view .LVU173
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  622              		.loc 1 289 9 is_stmt 1 view .LVU193
  623 01b8 A2E0     		b	.L21
  624              	.LVL60:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 17
 
 
  625              	.L22:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  665              	.LBB16:
  666              		.loc 1 294 9 view .LVU204
  667              		.loc 1 294 9 view .LVU205
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 18
 
 
  668 01f6 33F82120 		ldrh	r2, [r3, r1, lsl #2]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  706 022c 42F40042 		orr	r2, r2, #32768
  707              	.LVL70:
  708              		.loc 1 310 7 is_stmt 0 view .LVU219
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 19
 
 
  709 0230 42F08002 		orr	r2, r2, #128
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  759 0274 A2F804C4 		strh	ip, [r2, #1028]	@ movhi
  760              	.LBE19:
  761              		.loc 1 314 5 discriminator 1 view .LVU241
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 20
 
 
  762              		.loc 1 314 5 discriminator 1 view .LVU242
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  810              	.LVL83:
  811              		.loc 1 320 7 discriminator 3 view .LVU263
  812 02aa 12F0400F 		tst	r2, #64
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 21
 
 
  813 02ae 0CD0     		beq	.L33
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  864              		.loc 1 323 7 discriminator 3 view .LVU285
  865 02ea 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
  866              	.LVL90:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 22
 
 
  867              		.loc 1 323 7 is_stmt 0 discriminator 3 view .LVU286
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  893 0302 0C78     		ldrb	r4, [r1]	@ zero_extendqisi2
  894 0304 33F82420 		ldrh	r2, [r3, r4, lsl #2]
  895 0308 92B2     		uxth	r2, r2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 23
 
 
  896 030a 22F4E042 		bic	r2, r2, #28672
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  328:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_CLEAR_TX_DTOG(USBx, ep->num);
  937              		.loc 1 328 7 discriminator 1 view .LVU311
  938              	.LBE28:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 24
 
 
  328:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_CLEAR_TX_DTOG(USBx, ep->num);
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  976              		.loc 1 331 13 is_stmt 0 discriminator 3 view .LVU328
  977 036c CA78     		ldrb	r2, [r1, #3]	@ zero_extendqisi2
  331:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 25
 
 
  978              		.loc 1 331 10 discriminator 3 view .LVU329
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  342:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****     }
  1018              		.loc 1 342 7 is_stmt 1 discriminator 7 view .LVU344
  342:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****     }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 26
 
 
  1019              		.loc 1 342 7 discriminator 7 view .LVU345
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  350:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** /**
  351:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @brief  De-activate and de-initialize an endpoint
  352:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  USBx Selected device
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 27
 
 
  353:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  ep pointer to endpoint structure
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1108              		.loc 1 362 7 discriminator 1 view .LVU373
  1109              	.LBE35:
  1110              		.loc 1 362 7 is_stmt 1 discriminator 3 view .LVU374
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 28
 
 
  1111              	.LBE34:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  394:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       /* Clear the data toggle bits for the endpoint IN/OUT*/
  395:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_CLEAR_RX_DTOG(USBx, ep->num);
  396:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_CLEAR_TX_DTOG(USBx, ep->num);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 29
 
 
  397:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_RX_DTOG(USBx, ep->num);
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1167              		.loc 1 370 7 is_stmt 0 discriminator 1 view .LVU397
  1168 006e 43F08003 		orr	r3, r3, #128
  1169 0072 20F82230 		strh	r3, [r0, r2, lsl #2]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 30
 
 
  1170              	.L46:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1207              		.loc 1 383 7 view .LVU414
  1208 009a 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
  1209 009c 30F82230 		ldrh	r3, [r0, r2, lsl #2]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 31
 
 
  1210              	.LVL128:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  384:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
  1249              		.loc 1 384 7 discriminator 1 view .LVU430
  384:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 32
 
 
  1250              		.loc 1 384 7 discriminator 1 view .LVU431
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1290              		.loc 1 389 7 discriminator 3 view .LVU445
  389:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_SET_EP_TX_STATUS(USBx, ep->num, USB_EP_TX_DIS);
  1291              		.loc 1 389 7 discriminator 3 view .LVU446
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 33
 
 
  1292 0102 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1331              		.loc 1 395 7 view .LVU461
  395:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_CLEAR_TX_DTOG(USBx, ep->num);
  1332              		.loc 1 395 7 view .LVU462
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 34
 
 
  1333 0138 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1372              		.loc 1 396 7 discriminator 1 view .LVU477
  1373              	.LBB50:
  396:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_RX_DTOG(USBx, ep->num);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 35
 
 
  1374              		.loc 1 396 7 discriminator 1 view .LVU478
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1414              	.LBB52:
  400:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_SET_EP_RX_STATUS(USBx, ep->num, USB_EP_RX_DIS);
  1415              		.loc 1 400 7 discriminator 3 view .LVU493
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 36
 
 
  400:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_SET_EP_RX_STATUS(USBx, ep->num, USB_EP_RX_DIS);
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1458              		.syntax unified
  1459              		.thumb
  1460              		.thumb_func
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 37
 
 
  1462              	USB_EPSetStall:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  459:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             /* Set the Double buffer counter for pmabuffer1 */
  460:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             PCD_SET_EP_DBUF1_CNT(USBx, ep->num, ep->is_in, len);
  461:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 38
 
 
  462:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  516:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
  517:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           /* disable double buffer mode for Bulk endpoint */
  518:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           PCD_CLEAR_BULK_EP_DBUF(USBx, ep->num);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 39
 
 
  519:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  573:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       /* configure and validate Rx endpoint */
  574:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       PCD_SET_EP_RX_CNT(USBx, ep->num, len);
  575:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****     }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 40
 
 
  576:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** #if (USE_USB_DOUBLE_BUFFER == 1U)
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  630:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @brief  USB_EPSetStall set a stall condition over an EP
  631:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  USBx Selected device
  632:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  ep pointer to endpoint structure
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 41
 
 
  633:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @retval HAL status
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1504              		.loc 1 647 1 discriminator 7 view .LVU523
  1505 0026 7047     		bx	lr
  1506              	.LVL161:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 42
 
 
  1507              	.L53:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1546              		@ args = 0, pretend = 0, frame = 0
  1547              		@ frame_needed = 0, uses_anonymous_args = 0
  1548              		@ link register save eliminated.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 43
 
 
  657:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   if (ep->doublebuffer == 0U)
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1596              		.loc 1 663 10 discriminator 3 view .LVU554
  1597 0032 012B     		cmp	r3, #1
  1598 0034 33D0     		beq	.L56
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 44
 
 
  664:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1645              		.loc 1 671 7 is_stmt 1 discriminator 1 view .LVU572
  1646 0072 43F44043 		orr	r3, r3, #49152
  1647              	.LVL176:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 45
 
 
  1648              		.loc 1 671 7 is_stmt 0 discriminator 1 view .LVU573
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1695              		.syntax unified
  1696              		.thumb
  1697              		.thumb_func
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 46
 
 
  1699              	USB_EPStopXfer:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1722 000c 012B     		cmp	r3, #1
  1723 000e 37D0     		beq	.L64
  711:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 47
 
 
  712:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****         /* Configure NAK status for the Endpoint */
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1762 0038 FAD1     		bne	.L62
  694:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
  1763              		.loc 1 694 7 is_stmt 1 view .LVU617
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 48
 
 
  694:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  702:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
  1804              		.loc 1 702 9 view .LVU632
  702:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 49
 
 
  1805              		.loc 1 702 9 view .LVU633
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  727:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** /**
  728:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @brief  USB_StopDevice Stop the usb device mode
  729:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  USBx Selected device
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 50
 
 
  730:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @retval HAL status
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  749:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @param  address new device address to be assigned
  750:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   *          This parameter can be a value from 0 to 255
  751:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   * @retval HAL status
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 51
 
 
  752:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   */
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  771:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   /* Enabling DP Pull-UP bit to Connect internal PU resistor on USB DP line */
  772:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   USBx->BCDR |= (uint16_t)USB_BCDR_DPPU;
  1923              		.loc 1 772 3 view .LVU664
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 52
 
 
  1924              		.loc 1 772 14 is_stmt 0 view .LVU665
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  1964 000e 7047     		bx	lr
  1965              		.cfi_endproc
  1966              	.LFE966:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 53
 
 
  1968              		.section	.text.USB_ReadInterrupts,"ax",%progbits
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  807:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   */
  808:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** HAL_StatusTypeDef USB_ActivateRemoteWakeup(USB_TypeDef *USBx)
  809:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 54
 
 
  2007              		.loc 1 809 1 is_stmt 1 view -0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  824:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   return HAL_OK;
  2049              		.loc 1 824 3 is_stmt 1 view .LVU691
  825:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 55
 
 
  2050              		.loc 1 825 1 is_stmt 0 view .LVU692
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  843:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
  844:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   pdwVal = (__IO uint16_t *)(BaseAddr + 0x400U + ((uint32_t)wPMABufAddr * PMA_ACCESS));
  2089              		.loc 1 844 3 view .LVU704
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 56
 
 
  2090              		.loc 1 844 48 is_stmt 0 view .LVU705
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  846:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   {
  2127              		.loc 1 846 3 is_stmt 0 discriminator 1 view .LVU723
  2128 001e 002C     		cmp	r4, #0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 57
 
 
  2129 0020 F5D1     		bne	.L76
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2174              		.loc 1 560 5 is_stmt 1 view .LVU734
  560:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****     {
  2175              		.loc 1 560 11 is_stmt 0 view .LVU735
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 58
 
 
  2176 000c 0B7B     		ldrb	r3, [r1, #12]	@ zero_extendqisi2
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2213              		.loc 1 574 7 view .LVU752
  2214 0030 B3F80614 		ldrh	r1, [r3, #1030]
  2215 0034 C1F30901 		ubfx	r1, r1, #0, #10
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 59
 
 
  2216 0038 A3F80614 		strh	r1, [r3, #1030]	@ movhi
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2257 006c 23F07003 		bic	r3, r3, #112
  2258              	.LVL231:
  622:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 60
 
 
  2259              		.loc 1 622 5 view .LVU766
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2297              		.loc 1 446 7 is_stmt 1 view .LVU782
  446:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       {
  2298              		.loc 1 446 13 is_stmt 0 view .LVU783
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 61
 
 
  2299 0092 E378     		ldrb	r3, [r4, #3]	@ zero_extendqisi2
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  537:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr1;
  2337              		.loc 1 537 11 discriminator 1 view .LVU800
  537:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 62
 
 
  2338              		.loc 1 537 11 discriminator 1 view .LVU801
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2380 00f2 3346     		mov	r3, r6
  2381 00f4 E288     		ldrh	r2, [r4, #6]
  2382 00f6 6169     		ldr	r1, [r4, #20]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 63
 
 
  2383 00f8 2846     		mov	r0, r5
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  556:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****   }
  2422              		.loc 1 556 5 view .LVU829
  2423 0124 43F40043 		orr	r3, r3, #32768
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 64
 
 
  2424              	.LVL254:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  457:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           {
  2464              		.loc 1 457 11 is_stmt 1 view .LVU844
  457:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 65
 
 
  2465              		.loc 1 457 16 is_stmt 0 view .LVU845
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2503              		.loc 1 460 13 discriminator 3 view .LVU861
  460:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
  2504              		.loc 1 460 13 discriminator 3 view .LVU862
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 66
 
 
  2505 018c 7109     		lsrs	r1, r6, #5
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  460:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
  2548              		.loc 1 460 13 discriminator 14 view .LVU874
  2549 01cc B3F80614 		ldrh	r1, [r3, #1030]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 67
 
 
  2550 01d0 89B2     		uxth	r1, r1
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  467:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             {
  2591              		.loc 1 467 16 discriminator 18 view .LVU888
  2592 01f8 9342     		cmp	r3, r2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 68
 
 
  2593 01fa 2DD9     		bls	.L92
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2631              		.loc 1 478 13 discriminator 3 view .LVU904
  2632 0226 16F01F0F 		tst	r6, #31
  2633 022a 00D1     		bne	.L96
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 69
 
 
  478:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr0;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2675              		.loc 1 474 31 is_stmt 0 view .LVU917
  2676 0258 0022     		movs	r2, #0
  2677 025a 2262     		str	r2, [r4, #32]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 70
 
 
  473:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****               ep->xfer_len_db = 0U;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2721              		.loc 1 478 13 is_stmt 1 discriminator 2 view .LVU928
  2722 0292 012B     		cmp	r3, #1
  2723 0294 06D0     		beq	.L167
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 71
 
 
  2724              	.L97:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  487:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr0;
  2764              		.loc 1 487 13 discriminator 1 view .LVU943
  2765              	.LBB87:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 72
 
 
  487:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr0;
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2805 02ec 89B2     		uxth	r1, r1
  2806 02ee 0A43     		orrs	r2, r2, r1
  2807 02f0 42F40042 		orr	r2, r2, #32768
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 73
 
 
  2808 02f4 A3F80224 		strh	r2, [r3, #1026]	@ movhi
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2851              	.L103:
  487:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr0;
  2852              		.loc 1 487 13 discriminator 18 view .LVU970
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 74
 
 
  487:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr0;
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2891 0352 45D1     		bne	.L108
  505:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
  2892              		.loc 1 505 13 discriminator 1 view .LVU987
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 75
 
 
  2893              	.LBB90:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2933 0386 0A43     		orrs	r2, r2, r1
  2934 0388 42F40042 		orr	r2, r2, #32768
  2935 038c A3F80624 		strh	r2, [r3, #1030]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 76
 
 
  505:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  2976              	.LBB93:
  2977              	.LBB92:
  505:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****             pmabuffer = ep->pmaaddr1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 77
 
 
  2978              		.loc 1 505 13 is_stmt 1 discriminator 4 view .LVU1016
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3021              		.loc 1 505 13 is_stmt 1 discriminator 18 view .LVU1027
  506:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
  3022              		.loc 1 506 13 discriminator 18 view .LVU1028
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 78
 
 
  509:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           }
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3065              		.loc 1 518 11 is_stmt 0 view .LVU1040
  3066 041c 42F08002 		orr	r2, r2, #128
  3067 0420 25F82120 		strh	r2, [r5, r1, lsl #2]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 79
 
 
  3068              	.LBE97:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3107              	.LBB99:
  3108              	.LBB74:
  3109              	.LBB73:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 80
 
 
  537:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr1;
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3152 047e 02EBC303 		add	r3, r2, r3, lsl #3
  3153              	.LVL348:
  537:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr1;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 81
 
 
  3154              		.loc 1 537 11 discriminator 16 view .LVU1068
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3193              		.loc 1 546 11 discriminator 1 view .LVU1083
  3194              	.LBB101:
  546:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 82
 
 
  3195              		.loc 1 546 11 discriminator 1 view .LVU1084
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3237 04e8 16E0     		b	.L124
  3238              	.L125:
  546:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr0;
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 83
 
 
  3239              		.loc 1 546 11 discriminator 10 view .LVU1097
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  546:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****           pmabuffer = ep->pmaaddr0;
  3280              		.loc 1 546 11 is_stmt 0 discriminator 16 view .LVU1111
  3281 0514 A3F80224 		strh	r2, [r3, #1026]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 84
 
 
  3282              	.LVL368:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3322 053c 92B2     		uxth	r2, r2
  3323 053e A3F80624 		strh	r2, [r3, #1030]	@ movhi
  3324 0542 8DE5     		b	.L133
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 85
 
 
  3325              	.LVL374:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3365              		.loc 1 603 9 is_stmt 1 view .LVU1139
  603:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****         {
  3366              		.loc 1 603 15 is_stmt 0 view .LVU1140
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 86
 
 
  3367 056c 8969     		ldr	r1, [r1, #24]
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  613:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
  3405              		.loc 1 613 9 discriminator 1 view .LVU1157
  3406 0596 3E2B     		cmp	r3, #62
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 87
 
 
  3407 0598 40F2D780 		bls	.L152
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3446              	.LBB108:
  613:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
  3447              		.loc 1 613 9 discriminator 19 view .LVU1173
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 88
 
 
  3448              	.LVL389:
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3488 05f6 0B43     		orrs	r3, r3, r1
  3489 05f8 43F40043 		orr	r3, r3, #32768
  3490 05fc A2F80634 		strh	r3, [r2, #1030]	@ movhi
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 89
 
 
  613:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3529 0624 5109     		lsrs	r1, r2, #5
  3530              	.LVL400:
  583:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 90
 
 
  3531              		.loc 1 583 9 discriminator 3 view .LVU1204
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3570 0648 B5F85030 		ldrh	r3, [r5, #80]
  3571 064c 15FA83F3 		uxtah	r3, r5, r3
  3572              	.LVL405:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 91
 
 
  583:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3614              	.LBE117:
  3615              	.LBE116:
  3616              	.LBE115:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 92
 
 
  3617              	.LBB120:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3660              		.loc 1 583 9 discriminator 27 view .LVU1243
  3661 06bc B3F80624 		ldrh	r2, [r3, #1030]
  3662 06c0 6FEA4242 		mvn	r2, r2, lsl #17
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 93
 
 
  3663 06c4 6FEA5242 		mvn	r2, r2, lsr #17
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3704              		.loc 1 586 12 discriminator 36 view .LVU1256
  3705 06f2 002B     		cmp	r3, #0
  3706 06f4 3FF4B4AC 		beq	.L133
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 94
 
 
  589:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c **** 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3746              		.loc 1 583 9 discriminator 34 view .LVU1271
  3747 072c B5F85030 		ldrh	r3, [r5, #80]
  3748 0730 15FA83F3 		uxtah	r3, r5, r3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 95
 
 
  3749              	.LVL423:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  613:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
  3791              		.loc 1 613 9 discriminator 12 view .LVU1284
  3792 0768 0131     		adds	r1, r1, #1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 96
 
 
  3793              	.LVL428:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3836 079a 0131     		adds	r1, r1, #1
  3837              	.LVL435:
  3838              	.L160:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 97
 
 
  613:Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c ****       }
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3883              		.section	.text.USB_ReadPMA,"ax",%progbits
  3884              		.align	1
  3885              		.global	USB_ReadPMA
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 98
 
 
  3886              		.syntax unified
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3920              		.loc 1 881 3 is_stmt 0 view .LVU1320
  3921 000a 07E0     		b	.L173
  3922              	.LVL447:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 99
 
 
  3923              	.L174:
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3957              		.loc 1 897 5 is_stmt 1 view .LVU1338
  3958              		.loc 1 897 13 is_stmt 0 view .LVU1339
  3959 0026 0388     		ldrh	r3, [r0]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 100
 
 
  3960              	.LVL453:
@@ -5967,56 +5967,56 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 1
  3981              		.file 4 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/stm32wb55xx.h"
  3982              		.file 5 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h"
  3983              		.file 6 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_usb.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s 			page 101
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wbxx_ll_usb.c
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:20     .text.USB_CoreInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:26     .text.USB_CoreInit:00000000 USB_CoreInit
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:57     .text.USB_EnableGlobalInt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:63     .text.USB_EnableGlobalInt:00000000 USB_EnableGlobalInt
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:93     .text.USB_DisableGlobalInt:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:99     .text.USB_DisableGlobalInt:00000000 USB_DisableGlobalInt
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:126    .text.USB_SetCurrentMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:132    .text.USB_SetCurrentMode:00000000 USB_SetCurrentMode
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:152    .text.USB_DevInit:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:158    .text.USB_DevInit:00000000 USB_DevInit
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:201    .text.USB_FlushTxFifo:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:207    .text.USB_FlushTxFifo:00000000 USB_FlushTxFifo
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:227    .text.USB_FlushRxFifo:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:233    .text.USB_FlushRxFifo:00000000 USB_FlushRxFifo
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:252    .text.USB_ActivateEndpoint:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:258    .text.USB_ActivateEndpoint:00000000 USB_ActivateEndpoint
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:295    .text.USB_ActivateEndpoint:00000024 $d
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:299    .text.USB_ActivateEndpoint:00000028 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1055   .text.USB_DeactivateEndpoint:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1061   .text.USB_DeactivateEndpoint:00000000 USB_DeactivateEndpoint
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1456   .text.USB_EPSetStall:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1462   .text.USB_EPSetStall:00000000 USB_EPSetStall
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1535   .text.USB_EPClearStall:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1541   .text.USB_EPClearStall:00000000 USB_EPClearStall
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1693   .text.USB_EPStopXfer:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1699   .text.USB_EPStopXfer:00000000 USB_EPStopXfer
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1840   .text.USB_StopDevice:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1846   .text.USB_StopDevice:00000000 USB_StopDevice
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1877   .text.USB_SetDevAddress:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1883   .text.USB_SetDevAddress:00000000 USB_SetDevAddress
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1909   .text.USB_DevConnect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1915   .text.USB_DevConnect:00000000 USB_DevConnect
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1940   .text.USB_DevDisconnect:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1946   .text.USB_DevDisconnect:00000000 USB_DevDisconnect
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1969   .text.USB_ReadInterrupts:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1975   .text.USB_ReadInterrupts:00000000 USB_ReadInterrupts
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:1998   .text.USB_ActivateRemoteWakeup:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2004   .text.USB_ActivateRemoteWakeup:00000000 USB_ActivateRemoteWakeup
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2028   .text.USB_DeActivateRemoteWakeup:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2034   .text.USB_DeActivateRemoteWakeup:00000000 USB_DeActivateRemoteWakeup
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2059   .text.USB_WritePMA:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2065   .text.USB_WritePMA:00000000 USB_WritePMA
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2142   .text.USB_EPStartXfer:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:2148   .text.USB_EPStartXfer:00000000 USB_EPStartXfer
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:3884   .text.USB_ReadPMA:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\cc2sKqd0.s:3890   .text.USB_ReadPMA:00000000 USB_ReadPMA
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:20     .text.USB_CoreInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:26     .text.USB_CoreInit:00000000 USB_CoreInit
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:57     .text.USB_EnableGlobalInt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:63     .text.USB_EnableGlobalInt:00000000 USB_EnableGlobalInt
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:93     .text.USB_DisableGlobalInt:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:99     .text.USB_DisableGlobalInt:00000000 USB_DisableGlobalInt
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:126    .text.USB_SetCurrentMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:132    .text.USB_SetCurrentMode:00000000 USB_SetCurrentMode
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:152    .text.USB_DevInit:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:158    .text.USB_DevInit:00000000 USB_DevInit
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:201    .text.USB_FlushTxFifo:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:207    .text.USB_FlushTxFifo:00000000 USB_FlushTxFifo
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:227    .text.USB_FlushRxFifo:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:233    .text.USB_FlushRxFifo:00000000 USB_FlushRxFifo
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:252    .text.USB_ActivateEndpoint:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:258    .text.USB_ActivateEndpoint:00000000 USB_ActivateEndpoint
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:295    .text.USB_ActivateEndpoint:00000024 $d
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:299    .text.USB_ActivateEndpoint:00000028 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1055   .text.USB_DeactivateEndpoint:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1061   .text.USB_DeactivateEndpoint:00000000 USB_DeactivateEndpoint
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1456   .text.USB_EPSetStall:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1462   .text.USB_EPSetStall:00000000 USB_EPSetStall
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1535   .text.USB_EPClearStall:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1541   .text.USB_EPClearStall:00000000 USB_EPClearStall
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1693   .text.USB_EPStopXfer:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1699   .text.USB_EPStopXfer:00000000 USB_EPStopXfer
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1840   .text.USB_StopDevice:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1846   .text.USB_StopDevice:00000000 USB_StopDevice
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1877   .text.USB_SetDevAddress:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1883   .text.USB_SetDevAddress:00000000 USB_SetDevAddress
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1909   .text.USB_DevConnect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1915   .text.USB_DevConnect:00000000 USB_DevConnect
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1940   .text.USB_DevDisconnect:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1946   .text.USB_DevDisconnect:00000000 USB_DevDisconnect
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1969   .text.USB_ReadInterrupts:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1975   .text.USB_ReadInterrupts:00000000 USB_ReadInterrupts
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:1998   .text.USB_ActivateRemoteWakeup:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2004   .text.USB_ActivateRemoteWakeup:00000000 USB_ActivateRemoteWakeup
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2028   .text.USB_DeActivateRemoteWakeup:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2034   .text.USB_DeActivateRemoteWakeup:00000000 USB_DeActivateRemoteWakeup
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2059   .text.USB_WritePMA:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2065   .text.USB_WritePMA:00000000 USB_WritePMA
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2142   .text.USB_EPStartXfer:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:2148   .text.USB_EPStartXfer:00000000 USB_EPStartXfer
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:3884   .text.USB_ReadPMA:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\ccj3grOA.s:3890   .text.USB_ReadPMA:00000000 USB_ReadPMA
 
 NO UNDEFINED SYMBOLS

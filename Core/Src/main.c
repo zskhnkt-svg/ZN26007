@@ -44,13 +44,6 @@ static volatile uint8_t led_state = 0;
 void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 
-/* USER CODE BEGIN PFP */
-static void I2C_Lines_To_AF(void);
-static void Sensor_PowerOn(void);
-static void LED_Process(void);
-static void Sensor_Process(void);
-/* USER CODE END PFP */
-
 /* USER CODE BEGIN 0 */
 static inline void SENSOR_PWR_ON(void)
 {
@@ -80,6 +73,7 @@ static void Sensor_PowerOn(void)
   I2C_Lines_To_AF();
   SENSOR_PWR_ON();
   HAL_Delay(2);
+  HAL_I2C_DeInit(&hi2c1);
   MX_I2C1_Init();
   HAL_Delay(1);
 }
@@ -99,8 +93,6 @@ static void Sensor_Process(void)
   if (SHT41_Read(&hi2c1, &sensor_data) == HAL_OK)
   {
     sensor_data_valid = 1;
-    /* BLE characteristic update is intentionally kept in the existing
-       P2P service callback/API so the Flutter payload format is unchanged. */
   }
   else
   {
@@ -175,12 +167,13 @@ void SystemClock_Config(void)
   __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_MEDIUMHIGH);
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI1|RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE;
+  /* These settings match the working main branch and are required by BLE. */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48|RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV2;
@@ -204,7 +197,7 @@ void PeriphCommonClock_Config(void)
 {
   RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
   PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_SMPS|RCC_PERIPHCLK_RFWAKEUP;
-  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_LSE;
+  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_HSE_DIV1024;
   PeriphClkInitStruct.SmpsClockSelection = RCC_SMPSCLKSOURCE_HSE;
   PeriphClkInitStruct.SmpsDivSelection = RCC_SMPSCLKDIV_RANGE1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK) Error_Handler();

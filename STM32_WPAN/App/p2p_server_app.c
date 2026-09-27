@@ -5,16 +5,6 @@
   * @author  MCD Application Team
   * @brief   Peer to peer Server Application
   ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
   */
 /* USER CODE END Header */
 
@@ -25,37 +15,33 @@
 #include "ble.h"
 #include "p2p_server_app.h"
 #include "stm32_seq.h"
-#include "app_ble.h"      /* ← добавить, если ещё нет */
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
 /* USER CODE END PTD */
 
 /* Private defines ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
 /* USER CODE END PD */
 
 /* Private macros -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-
+volatile uint8_t led_blink_en = 1;
+volatile uint8_t Notification_Status = 0;
+extern volatile uint8_t force_measure_now;
+extern volatile uint8_t device_sleep_mode;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-uint8_t led_blink_en = 1;
-uint8_t Notification_Status = 0;
 /* USER CODE END PFP */
 
 /* Functions Definition ------------------------------------------------------*/
@@ -72,37 +58,19 @@ void P2PS_STM_App_Notification(P2PS_STM_App_Notification_evt_t *pNotification)
 
     case P2PS_STM__NOTIFY_ENABLED_EVT:
 /* USER CODE BEGIN P2PS_STM__NOTIFY_ENABLED_EVT */
-      Notification_Status = 1;
-      APP_DBG_MSG("BLE: Notification ENABLED\r\n");
-      /* форсируем немедленное измерение и отправку, не дожидаясь минутного тика */
-      extern uint8_t force_measure_now;
-      force_measure_now = 1;
+
 /* USER CODE END P2PS_STM__NOTIFY_ENABLED_EVT */
       break;
 
     case P2PS_STM_NOTIFY_DISABLED_EVT:
 /* USER CODE BEGIN P2PS_STM_NOTIFY_DISABLED_EVT */
-      Notification_Status = 0;
-      APP_DBG_MSG("BLE: Notification DISABLED\r\n");
+
 /* USER CODE END P2PS_STM_NOTIFY_DISABLED_EVT */
       break;
 
     case P2PS_STM_WRITE_EVT:
 /* USER CODE BEGIN P2PS_STM_WRITE_EVT */
-      if (pNotification->DataTransfered.pPayload[0] == 0x02)
-      {
-        /* команда переименования: байты со 2-го — само имя */
-        uint8_t len = pNotification->DataTransfered.Length - 1;
-        if (len > CFG_GAP_DEVICE_NAME_LENGTH) len = CFG_GAP_DEVICE_NAME_LENGTH;
 
-        APP_BLE_RenameDevice(&pNotification->DataTransfered.pPayload[1], len);
-        APP_DBG_MSG("BLE: rename cmd received, len=%d\r\n", len);
-      }
-      else
-      {
-        led_blink_en = pNotification->DataTransfered.pPayload[0];
-        APP_DBG_MSG("0x%x\r\n", pNotification->DataTransfered.pPayload[0]);
-      }
 /* USER CODE END P2PS_STM_WRITE_EVT */
       break;
 

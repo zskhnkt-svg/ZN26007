@@ -23,6 +23,7 @@ build/p2p_server_app.o: STM32_WPAN/App/p2p_server_app.c Core/Inc/main.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_iwdg.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -98,10 +99,7 @@ build/p2p_server_app.o: STM32_WPAN/App/p2p_server_app.c Core/Inc/main.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/template_stm.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h \
- STM32_WPAN/App/p2p_server_app.h Utilities/sequencer/stm32_seq.h \
- STM32_WPAN/App/app_ble.h \
- Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
- Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
+ STM32_WPAN/App/p2p_server_app.h Utilities/sequencer/stm32_seq.h
 Core/Inc/main.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 Core/Inc/stm32wbxx_hal_conf.h:
@@ -129,6 +127,7 @@ Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_hsem.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_iwdg.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
@@ -211,6 +210,3 @@ Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h:
 Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h:
 STM32_WPAN/App/p2p_server_app.h:
 Utilities/sequencer/stm32_seq.h:
-STM32_WPAN/App/app_ble.h:
-Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
-Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:

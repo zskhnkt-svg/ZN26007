@@ -1,0 +1,23 @@
+поменял sht41.h  
+#define SHT41_CMD_RESET             0x94BA  /* Soft reset */
+//#define SHT41_CMD_RESET             0x94    /* Soft reset (1 byte) */
+
+app_conf.h
+#define CFG_USE_SMPS    0
+
+
+
+sht41.c 
+HAL_StatusTypeDef SHT41_Reset(I2C_HandleTypeDef *hi2c)
+{
+    uint8_t cmd[2] = {0x94, 0xBA};  /* Reset command */
+    HAL_StatusTypeDef status;
+    
+    status = HAL_I2C_Master_Transmit(hi2c, SHT41_ADDR_7BIT, cmd, 2, 100);
+    
+    if (status == HAL_OK) {
+        HAL_Delay(1);  /* Wait for reset to complete */
+    }
+    
+    return status;
+}

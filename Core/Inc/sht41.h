@@ -29,7 +29,8 @@ extern "C" {
 
 /* SHT41 Commands */
 #define SHT41_CMD_READ_SERIAL       0x3682  /* Read serial number */
-#define SHT41_CMD_RESET             0x94BA  /* Soft reset */
+//#define SHT41_CMD_RESET             0x94BA  /* Soft reset */
+#define SHT41_CMD_RESET             0x94    /* Soft reset (1 byte) */
 #define SHT41_CMD_MEASURE_HIGH      0xFD    /* Measure with high precision */
 #define SHT41_CMD_MEASURE_MEDIUM    0xF6    /* Measure with medium precision */
 #define SHT41_CMD_MEASURE_LOW       0xE0    /* Measure with low precision */

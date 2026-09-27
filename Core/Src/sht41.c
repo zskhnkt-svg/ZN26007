@@ -50,15 +50,9 @@ HAL_StatusTypeDef SHT41_Init(I2C_HandleTypeDef *hi2c)
   */
 HAL_StatusTypeDef SHT41_Reset(I2C_HandleTypeDef *hi2c)
 {
-    uint8_t cmd[2] = {0x94, 0xBA};  /* Reset command */
-    HAL_StatusTypeDef status;
-    
-    status = HAL_I2C_Master_Transmit(hi2c, SHT41_ADDR_7BIT, cmd, 2, 100);
-    
-    if (status == HAL_OK) {
-        HAL_Delay(1);  /* Wait for reset to complete */
-    }
-    
+    uint8_t cmd = 0x94; /* SHT41 soft reset: один байт */
+    HAL_StatusTypeDef status = HAL_I2C_Master_Transmit(hi2c, SHT41_ADDR_7BIT, &cmd, 1, 100);
+    if (status == HAL_OK) HAL_Delay(1);
     return status;
 }
 
@@ -69,44 +63,40 @@ HAL_StatusTypeDef SHT41_Reset(I2C_HandleTypeDef *hi2c)
   * @param  humid_raw pointer to raw humidity value
   * @retval HAL status
   */
-HAL_StatusTypeDef SHT41_ReadRaw(I2C_HandleTypeDef *hi2c, uint16_t *temp_raw, uint16_t *humid_raw)
-{
-    HAL_StatusTypeDef status;
-    uint8_t cmd = SHT41_CMD_MEASURE_HIGH;  /* Measurement command (high precision) */
-    uint8_t rx_data[6];  /* 2 bytes temperature + 1 CRC + 2 bytes humidity + 1 CRC */
-    
-    /* Send measurement command */
-    status = HAL_I2C_Master_Transmit(hi2c, SHT41_ADDR_7BIT, &cmd, 1, 100);
-    if (status != HAL_OK) {
-        return status;
-    }
-    
-    /* Wait for measurement to complete (max 10ms for high precision) */
-    HAL_Delay(10);
-    
-    /* Read measurement data */
-    status = HAL_I2C_Master_Receive(hi2c, SHT41_ADDR_7BIT, rx_data, 6, 100);
-    if (status != HAL_OK) {
-        return status;
-    }
-    
-    /* Verify CRC for temperature */
-    uint8_t crc_temp = SHT41_Crc8(&rx_data[0], 2);
-    if (crc_temp != rx_data[2]) {
-        return HAL_ERROR;
-    }
-    
-    /* Verify CRC for humidity */
-    uint8_t crc_humid = SHT41_Crc8(&rx_data[3], 2);
-    if (crc_humid != rx_data[5]) {
-        return HAL_ERROR;
-    }
-    
-    /* Extract raw values (big-endian) */
-    *temp_raw = (rx_data[0] << 8) | rx_data[1];
-    *humid_raw = (rx_data[3] << 8) | rx_data[4];
-    
-    return HAL_OK;
+HAL_StatusTypeDef SHT41_ReadRaw(I2C_HandleTypeDef *hi2c, uint16_t *temp_raw, uint16_t *humid_raw)  
+{  
+    HAL_StatusTypeDef status;  
+    uint8_t cmd = SHT41_CMD_MEASURE_HIGH;  
+    uint8_t rx_data[6];  
+      
+    /* Send measurement command */  
+    status = HAL_I2C_Master_Transmit(hi2c, SHT41_ADDR_7BIT, &cmd, 1, 100);  
+    if (status != HAL_OK) return status;  
+      
+    /* Wait for measurement (макс 10мс, но если раньше готово — лучше) */  
+    HAL_Delay(8);   /* было 10, пробуйте 8 */  
+      
+    /* Read measurement data */  
+    status = HAL_I2C_Master_Receive(hi2c, SHT41_ADDR_7BIT, rx_data, 6, 100);  
+    if (status != HAL_OK) return status;  
+      
+    /* Verify CRC for temperature */  
+    uint8_t crc_temp = SHT41_Crc8(&rx_data[0], 2);  
+    if (crc_temp != rx_data[2]) {  
+        return HAL_ERROR;  
+    }  
+      
+    /* Verify CRC for humidity */  
+    uint8_t crc_humid = SHT41_Crc8(&rx_data[3], 2);  
+    if (crc_humid != rx_data[5]) {  
+        return HAL_ERROR;  
+    }  
+      
+    /* Extract raw values (big-endian) */  
+    *temp_raw = (rx_data[0] << 8) | rx_data[1];  
+    *humid_raw = (rx_data[3] << 8) | rx_data[4];  
+      
+    return HAL_OK;  
 }
 
 /**

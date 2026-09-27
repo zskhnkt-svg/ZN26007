@@ -4,22 +4,13 @@
   * @file           : main.c
   * @brief          : Main program body
   ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
 #include "ipcc.h"
+#include "iwdg.h"
 #include "rf.h"
 #include "rtc.h"
 #include "gpio.h"
@@ -28,54 +19,143 @@
 /* USER CODE BEGIN Includes */
 #include "ble.h"
 #include "sht41.h"
+#include "app_ble.h"   /* <-- ДОБАВИТЬ */
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define NAME_STORAGE_PAGE_ADDR   0x080CD000   /* последняя страница CPU1-области перед CPU2 */
-#define NAME_STORAGE_MAX_LEN     20
+
+
+#define SENSOR_PERIOD_MS         10000U   /* 10 сек для теста, в релизе 60000U */
+#define LED_BLINK_MS             15U
+#define LED_BOOT_BLINK_MS        100U
+
+/* P-MOSFET: LOW = ON (датчик запитан), HIGH = OFF */
+#define SENSOR_PWR_GPIO_Port     GPIOA
+#define SENSOR_PWR_Pin           GPIO_PIN_4
+
+/* I2C1 пины (WB55): PB8=SCL, PB9=SDA — измените если у вас другие! */
+#define SENSOR_I2C_SCL_PORT      GPIOB
+#define SENSOR_I2C_SCL_PIN       GPIO_PIN_8
+#define SENSOR_I2C_SDA_PORT      GPIOB
+#define SENSOR_I2C_SDA_PIN       GPIO_PIN_9
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint16_t adc_inp;
+volatile uint8_t force_measure_now = 0;
+volatile uint8_t device_sleep_mode = 0;   /* 0 = NORMAL, 1 = SLEEP */
 
+static char     last_text[64];      /* буфер последнего измерения */
+static int      last_text_len = 0;
+static uint8_t  last_text_ready = 0; /* 1 = есть свежие данные для отправки */
+
+RTC_DateTypeDef sdatestructureget;
+RTC_TimeTypeDef stimestructureget;
+
+/* Неблокирующий LED */
+static volatile uint32_t led_off_tick = 0;
+static volatile uint8_t  led_state    = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 /* USER CODE BEGIN PFP */
+static void LED_Process(void);
+static void I2C_Lines_To_GND(void);
+static void I2C_Lines_To_AF(void);
+static void Sensor_PowerOn(void);
+static void Sensor_PowerOff(void);
 
+extern APP_BLE_ConnStatus_t APP_BLE_Get_Server_Connection_Status(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint16_t adc_inp;
-uint8_t force_measure_now = 0;
-RTC_DateTypeDef sdatestructureget;
-RTC_TimeTypeDef stimestructureget;
 
-#define SENSOR_PERIOD_MS   60000U  /* опрос датчика и отправка раз в минуту */
-#define LED_BLINK_MS       15U     /* короткий блик после отправки */
-#define LED_BOOT_BLINK_MS  100U    /* длительность каждого блика при старте */
+static inline void SENSOR_PWR_ON(void)
+{
+    HAL_GPIO_WritePin(SENSOR_PWR_GPIO_Port, SENSOR_PWR_Pin, GPIO_PIN_RESET);
+}
 
-/* Управление P-MOSFET ключом питания датчика SHT41.
-   HIGH = закрыт (датчик выключен), LOW = открыт (датчик включен) */
-#define SENSOR_PWR_GPIO_Port  GPIOA
-#define SENSOR_PWR_Pin        GPIO_PIN_4
-#define SENSOR_PWR_ON()   HAL_GPIO_WritePin(SENSOR_PWR_GPIO_Port, SENSOR_PWR_Pin, GPIO_PIN_RESET)
-#define SENSOR_PWR_OFF()  HAL_GPIO_WritePin(SENSOR_PWR_GPIO_Port, SENSOR_PWR_Pin, GPIO_PIN_SET)
+static inline void SENSOR_PWR_OFF(void)
+{
+    HAL_GPIO_WritePin(SENSOR_PWR_GPIO_Port, SENSOR_PWR_Pin, GPIO_PIN_SET);
+}
+
+/* Переводим I2C в GPIO LOW перед отключением питания — иначе back-powering */
+static void I2C_Lines_To_GND(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    HAL_GPIO_WritePin(SENSOR_I2C_SDA_PORT, SENSOR_I2C_SDA_PIN, GPIO_PIN_RESET);
+    GPIO_InitStruct.Pin       = SENSOR_I2C_SDA_PIN;
+    GPIO_InitStruct.Mode      = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull      = GPIO_NOPULL;
+    GPIO_InitStruct.Speed     = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(SENSOR_I2C_SDA_PORT, &GPIO_InitStruct);
+
+    HAL_GPIO_WritePin(SENSOR_I2C_SCL_PORT, SENSOR_I2C_SCL_PIN, GPIO_PIN_RESET);
+    GPIO_InitStruct.Pin       = SENSOR_I2C_SCL_PIN;
+    HAL_GPIO_Init(SENSOR_I2C_SCL_PORT, &GPIO_InitStruct);
+}
+
+/* Возвращаем I2C в Alternate Function */
+static void I2C_Lines_To_AF(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    GPIO_InitStruct.Mode      = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull      = GPIO_PULLUP;
+    GPIO_InitStruct.Speed     = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
+
+    GPIO_InitStruct.Pin = SENSOR_I2C_SDA_PIN;
+    HAL_GPIO_Init(SENSOR_I2C_SDA_PORT, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = SENSOR_I2C_SCL_PIN;
+    HAL_GPIO_Init(SENSOR_I2C_SCL_PORT, &GPIO_InitStruct);
+}
+
+static void Sensor_PowerOn(void)
+{
+    I2C_Lines_To_AF();
+    SENSOR_PWR_ON();
+    HAL_Delay(2);                 /* t_POWER_UP SHT41 */
+    MX_I2C1_Init();
+    HAL_Delay(1);
+}
+
+static void Sensor_PowerOff(void)
+{
+    HAL_I2C_DeInit(&hi2c1);
+    I2C_Lines_To_GND();
+    HAL_Delay(1);
+    SENSOR_PWR_OFF();
+    HAL_Delay(1);
+}
+
+static void LED_Process(void)  
+{  
+    uint32_t now = HAL_GetTick();
+    // Правильное сравнение с учётом переполнения
+    if (led_state && (int32_t)(now - led_off_tick) >= 0)  
+    {  
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);  
+        led_state = 0;  
+    }  
+}
 /* USER CODE END 0 */
 
 /**
@@ -86,8 +166,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	uint32_t tick,tick_now = 0;
-	tick = 0;
+    uint32_t last_sensor_tick = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -118,49 +197,39 @@ int main(void)
   MX_GPIO_Init();
   MX_RTC_Init();
   MX_I2C1_Init();
+  MX_IWDG_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
-  /* HSEM 5 = CFG_HW_CLK48_CONFIG_SEMID (см. AN5289 §4.3) — общий клок CLK48
-     между USB (CPU1) и RNG радио-стека (CPU2). Берём только на время
-     критической секции (ADC calibration/DMA start) и сразу отпускаем,
-     иначе CPU2 не может договориться о клоке и BLE-стек не поднимается. */
-  LL_HSEM_1StepLock( HSEM, 5 );
+    /* HSEM 5 = CFG_HW_CLK48_CONFIG_SEMID */
+    LL_HSEM_1StepLock(HSEM, 5);
+    LL_HSEM_ReleaseLock(HSEM, 5, 0);
 
-	//HAL_ADCEx_Calibration_Start(&hadc1,ADC_SINGLE_ENDED);
-	//HAL_ADC_Start_DMA(&hadc1,(uint32_t *)&adc_inp,1);
+    /* Настройка пина питания датчика */
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    SENSOR_PWR_OFF();
+    {
+        GPIO_InitTypeDef GPIO_InitStruct = {0};
+        GPIO_InitStruct.Pin       = SENSOR_PWR_Pin;
+        GPIO_InitStruct.Mode      = GPIO_MODE_OUTPUT_PP;
+        GPIO_InitStruct.Pull      = GPIO_NOPULL;
+        GPIO_InitStruct.Speed     = GPIO_SPEED_FREQ_LOW;
+        HAL_GPIO_Init(SENSOR_PWR_GPIO_Port, &GPIO_InitStruct);
+    }
 
-  LL_HSEM_ReleaseLock( HSEM, 5, 0 );
+    /* Включаем датчик, инициализируем */
+    Sensor_PowerOn();
+    SHT41_Init(&hi2c1);
 
-	extern uint8_t led_blink_en;
-	extern uint8_t Notification_Status;
+    /* 5 коротких бликов при старте — только HAL_Delay, без __WFI! */
+    for (uint8_t i = 0; i < 5; i++)
+    {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
+        HAL_Delay(LED_BOOT_BLINK_MS);
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+        HAL_Delay(LED_BOOT_BLINK_MS);
+    }
 
-  /* Настройка ключа питания датчика (PA4).
-     Сначала выставляем безопасное состояние (выключено), потом настраиваем режим —
-     так не будет короткого "мигания" в неопределённом состоянии при инициализации. */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  SENSOR_PWR_OFF();
-  {
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
-    GPIO_InitStruct.Pin = SENSOR_PWR_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(SENSOR_PWR_GPIO_Port, &GPIO_InitStruct);
-  }
-
-  SENSOR_PWR_ON();
-  HAL_Delay(2000); /* дать сенсору время на power-up */
-  SHT41_Init(&hi2c1);
-
-  /* 5 бликов при старте — визуальное подтверждение, что плата включилась */
-  for (uint8_t i = 0; i < 5; i++)
-  {
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
-      HAL_Delay(LED_BOOT_BLINK_MS);
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
-      HAL_Delay(LED_BOOT_BLINK_MS);
-  }
-
+    MX_APPE_Init();
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
@@ -174,56 +243,6 @@ int main(void)
     MX_APPE_Process();
 
     /* USER CODE BEGIN 3 */
-		tick_now = HAL_GetTick();
-		if(tick_now >= tick || force_measure_now)
-		{
-      force_measure_now = 0;
-			tick = tick_now + SENSOR_PERIOD_MS;
-
-			uint8_t text[60];
-			int text_lenth;
-			memset(text, 0, sizeof(text));
-
-			/* Get the RTC current Time */
-			HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
-			/* Get the RTC current Date */
-			HAL_RTC_GetDate(&hrtc, &sdatestructureget, RTC_FORMAT_BIN);
-
-			SENSOR_PWR_ON();
-			HAL_Delay(2); /* время на старт SHT41 после подачи VDD */
-
-			SHT41_Data_t sht_data;
-			HAL_StatusTypeDef sht_status = SHT41_Read(&hi2c1, &sht_data);
-
-			SENSOR_PWR_OFF();
-
-			if (sht_status == HAL_OK) {
-			    int16_t t_int = (int16_t)(sht_data.temperature * 10.0f);
-			    uint16_t h_int = (uint16_t)(sht_data.humidity * 10.0f);
-			    text_lenth = sprintf((char *)&text,
-			        "20%02d.%02d.%02d %02d:%02d:%02d T=%d.%d H=%d.%d\r\n",
-			        sdatestructureget.Year, sdatestructureget.Month, sdatestructureget.Date,
-			        stimestructureget.Hours, stimestructureget.Minutes, stimestructureget.Seconds,
-			        t_int / 10, t_int % 10, h_int / 10, h_int % 10);
-
-      
-			} else {
-			    text_lenth = sprintf((char *)&text, "SHT41 err=%d\r\n", sht_status);
-			}
-
-			if(Notification_Status)
-			{
-			    P2PS_STM_App_Update_Char(P2P_NOTIFY_CHAR_UUID, text, (uint8_t)text_lenth);
-
-			    /* короткий блик — только когда реально ушла отправка на телефон */
-			    if(led_blink_en)
-			    {
-			        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_SET);
-			        HAL_Delay(LED_BLINK_MS);
-			        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_RESET);
-			    }
-			}
-		}
   }
   /* USER CODE END 3 */
 }
@@ -249,12 +268,13 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE
-                              |RCC_OSCILLATORTYPE_LSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI1
+                              |RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV2;
@@ -310,49 +330,9 @@ void PeriphCommonClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
-/**
-  * @brief  No-op stub for APP_DBG_MSG in the power-optimized build.
-  *         Keeps link compatibility with any leftover diagnostic calls
-  *         (e.g. in app_entry.c) without touching USB/CDC or burning cycles.
-  * @param  fmt: unused
-  * @retval None
-  */
 void Dbg_Print(const char *fmt, ...)
 {
   (void)fmt;
-}
-
-void APP_SaveDeviceName(const char *name, uint8_t len)
-{
-  uint64_t data = 0;
-  FLASH_EraseInitTypeDef erase = {0};
-  uint32_t page_error;
-
-  HAL_FLASH_Unlock();
-
-  erase.TypeErase = FLASH_TYPEERASE_PAGES;
-  erase.Page = (NAME_STORAGE_PAGE_ADDR - FLASH_BASE) / FLASH_PAGE_SIZE;
-  erase.NbPages = 1;
-  HAL_FLASHEx_Erase(&erase, &page_error);
-
-  for (uint32_t i = 0; i < NAME_STORAGE_MAX_LEN; i += 8)
-  {
-    memcpy(&data, name + i, 8);
-    HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD,
-                       NAME_STORAGE_PAGE_ADDR + i, data);
-  }
-
-  HAL_FLASH_Lock();
-}
-
-void APP_LoadDeviceName(char *out_name, uint8_t max_len)
-{
-  memcpy(out_name, (void*)NAME_STORAGE_PAGE_ADDR, max_len);
-  if ((uint8_t)out_name[0] == 0xFF)
-  {
-    strcpy(out_name, "Numa-Sensor");
-  }
 }
 
 /* USER CODE END 4 */

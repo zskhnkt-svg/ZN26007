@@ -57,14 +57,19 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-void APP_SaveDeviceName(const char *name, uint8_t len);
-void APP_LoadDeviceName(char *out_name, uint8_t max_len);
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
 
 /* USER CODE BEGIN Private defines */
+void APP_SaveDeviceName(const char *name, uint8_t len);
+void APP_LoadDeviceName(char *out_name, uint8_t max_len);
 
+extern void APP_BLE_Led_Blink(uint16_t duration_ms);
+extern volatile uint8_t led_blink_en;
+extern volatile uint8_t device_sleep_mode;
+extern volatile uint8_t Notification_Status;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

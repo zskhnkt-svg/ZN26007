@@ -23,6 +23,7 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h \
+ Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_iwdg.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h \
@@ -51,7 +52,7 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h Core/Inc/app_entry.h \
  Core/Inc/app_common.h Core/Inc/i2c.h Core/Inc/main.h Core/Inc/ipcc.h \
- Core/Inc/rf.h Core/Inc/rtc.h Core/Inc/gpio.h \
+ Core/Inc/iwdg.h Core/Inc/rf.h Core/Inc/rtc.h Core/Inc/gpio.h \
  Middlewares/ST/STM32_WPAN/ble/ble.h STM32_WPAN/App/ble_conf.h \
  Core/Inc/app_conf.h STM32_WPAN/App/ble_dbg_conf.h \
  Middlewares/ST/STM32_WPAN/ble/core/ble_core.h \
@@ -98,7 +99,9 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/template_stm.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h \
  Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h Core/Inc/sht41.h \
- Core/Inc/i2c.h
+ Core/Inc/i2c.h STM32_WPAN/App/app_ble.h \
+ Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h \
+ Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
 Core/Inc/main.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 Core/Inc/stm32wbxx_hal_conf.h:
@@ -126,6 +129,7 @@ Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_hsem.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c_ex.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_ipcc.h:
+Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_iwdg.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h:
 Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_exti.h:
@@ -159,6 +163,7 @@ Core/Inc/app_common.h:
 Core/Inc/i2c.h:
 Core/Inc/main.h:
 Core/Inc/ipcc.h:
+Core/Inc/iwdg.h:
 Core/Inc/rf.h:
 Core/Inc/rtc.h:
 Core/Inc/gpio.h:
@@ -212,3 +217,6 @@ Middlewares/ST/STM32_WPAN/ble/svc/Inc/svc_ctl.h:
 Middlewares/ST/STM32_WPAN/ble/svc/Inc/uuid.h:
 Core/Inc/sht41.h:
 Core/Inc/i2c.h:
+STM32_WPAN/App/app_ble.h:
+Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.h:
+Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:

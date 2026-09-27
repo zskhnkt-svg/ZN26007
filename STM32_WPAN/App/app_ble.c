@@ -37,7 +37,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -190,10 +190,6 @@ typedef struct
 /* Private variables ---------------------------------------------------------*/
 PLACE_IN_SECTION("MB_MEM1") ALIGN(4) static TL_CmdPacket_t BleCmdBuffer;
 
-static uint16_t s_gap_service_handle;
-static uint16_t s_gap_dev_name_char_handle;
-static char s_device_name[CFG_GAP_DEVICE_NAME_LENGTH + 1];
-
 static const uint8_t a_MBdAddr[BD_ADDR_SIZE_LOCAL] =
 {
   (uint8_t)((CFG_ADV_BD_ADDRESS & 0x0000000000FF)),
@@ -238,23 +234,10 @@ uint8_t index_con_int, mutex;
 /**
  * Advertising Data
  */
-#if (P2P_SERVER1 != 0)
-static const char a_LocalName[] = {AD_TYPE_COMPLETE_LOCAL_NAME , 'P', '2', 'P', 'S', 'R', 'V', '1'};
-uint8_t a_ManufData[14] = {sizeof(a_ManufData)-1,
-                           AD_TYPE_MANUFACTURER_SPECIFIC_DATA,
-                           0x01,                               /*SKD version */
-                           CFG_DEV_ID_P2P_SERVER1,             /* STM32WB - P2P Server 1*/
-                           0x00,                               /* GROUP A Feature */
-                           0x00,                               /* GROUP A Feature */
-                           0x00,                               /* GROUP B Feature */
-                           0x00,                               /* GROUP B Feature */
-                           0x00,                               /* BLE MAC start -MSB */
-                           0x00,
-                           0x00,
-                           0x00,
-                           0x00,
-                           0x00,                               /* BLE MAC stop */
-                          };
+#if (P2P_SERVER1 != 0) 
+static uint8_t a_LocalName[10] = {AD_TYPE_COMPLETE_LOCAL_NAME, 'P', '2', 'P', 'S', 'R', 'V', '1', 0, 0};  
+static uint8_t a_LocalName_len = 8;
+
 #endif /* P2P_SERVER1 != 0 */
 /**
  * Advertising Data
@@ -511,7 +494,21 @@ void APP_BLE_Init(void)
    */
   P2PS_APP_Init();
 
-  /* USER CODE BEGIN APP_BLE_Init_3 */
+  /* USER CODE BEGIN APP_BLE_Init_3 */  
+  #if (P2P_SERVER1 != 0)
+  {  
+      char name[APPBLE_GAP_DEVICE_NAME_LENGTH + 1];  
+      uint8_t name_len = (uint8_t)snprintf(name, sizeof(name),  
+                                          "Numa-%02X%02X",  
+                                          a_bd_addr[1], a_bd_addr[0]);  
+      if (name_len > APPBLE_GAP_DEVICE_NAME_LENGTH)  
+        name_len = APPBLE_GAP_DEVICE_NAME_LENGTH;
+
+      a_LocalName[0] = AD_TYPE_COMPLETE_LOCAL_NAME;  
+      memcpy(&a_LocalName[1], name, name_len);  
+      a_LocalName_len = name_len + 1;  
+  }
+  #endif
 
   /* USER CODE END APP_BLE_Init_3 */
 
@@ -540,7 +537,13 @@ void APP_BLE_Init(void)
   Adv_Request(APP_BLE_FAST_ADV);
 
   /* USER CODE BEGIN APP_BLE_Init_2 */
-
+  /* Временная диагностика: 3 коротких блика = Advertising стартовал */
+  for (int i = 0; i < 3; i++) {
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
+      HAL_Delay(50);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+      HAL_Delay(50);
+  }
   /* USER CODE END APP_BLE_Init_2 */
 
   return;
@@ -771,24 +774,7 @@ SVCCTL_UserEvtFlowStatus_t SVCCTL_App_Notification(void *p_Pckt)
         break;
 
         /* USER CODE BEGIN BLUE_EVT */
-    case ACI_GATT_ATTRIBUTE_MODIFIED_VSEVT_CODE:
-    {
-      aci_gatt_attribute_modified_event_rp0 *p_attr_mod =
-          (aci_gatt_attribute_modified_event_rp0*) p_blecore_evt->data;
 
-      if (p_attr_mod->Attr_Handle == (s_gap_dev_name_char_handle + 1))
-      {
-        uint8_t len = p_attr_mod->Attr_Data_Length;
-        if (len > CFG_GAP_DEVICE_NAME_LENGTH) len = CFG_GAP_DEVICE_NAME_LENGTH;
-
-        memcpy(s_device_name, p_attr_mod->Attr_Data, len);
-        s_device_name[len] = '\0';
-
-        APP_SaveDeviceName(s_device_name, len);
-        APP_DBG_MSG("BLE: Device name changed and saved: %s\n", s_device_name);
-      }
-      break;
-    }
         /* USER CODE END BLUE_EVT */
       }
       break; /* HCI_VENDOR_SPECIFIC_DEBUG_EVT_CODE */
@@ -1301,7 +1287,7 @@ static void Adv_Cancel_Req(void)
 static void Switch_OFF_GPIO()
 {
   /* USER CODE BEGIN Switch_OFF_GPIO */
-
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
   /* USER CODE END Switch_OFF_GPIO */
 }
 
@@ -1363,19 +1349,6 @@ static void Connection_Interval_Update_Req(void)
  * WRAP FUNCTIONS
  *
  *************************************************************/
-
-void APP_BLE_RenameDevice(const uint8_t *p_name, uint8_t len)
-{
-  memset(s_device_name, 0, sizeof(s_device_name));
-  memcpy(s_device_name, p_name, len);
-  s_device_name[len] = '\0';
-
-  APP_SaveDeviceName(s_device_name, len);
-
-  aci_gatt_update_char_value(s_gap_service_handle, s_gap_dev_name_char_handle,
-                              0, len, (uint8_t*)s_device_name);
-}
-
 void hci_notify_asynch_evt(void* p_Data)
 {
   UTIL_SEQ_SetTask(1 << CFG_TASK_HCI_ASYNCH_EVT_ID, CFG_SCH_PRIO_0);

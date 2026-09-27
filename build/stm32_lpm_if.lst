@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   29:Core/Src/stm32_lpm_if.c **** /* Exported variables --------------------------------------------------------*/
   30:Core/Src/stm32_lpm_if.c **** const struct UTIL_LPM_Driver_s UTIL_PowerDriver =
   31:Core/Src/stm32_lpm_if.c **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 2
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 2
 
 
   32:Core/Src/stm32_lpm_if.c ****   PWR_EnterSleepMode,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   86:Core/Src/stm32_lpm_if.c ****    * ENTER OFF MODE
   87:Core/Src/stm32_lpm_if.c ****    ***********************************************************************************/
   88:Core/Src/stm32_lpm_if.c ****   /*
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 3
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 3
 
 
   89:Core/Src/stm32_lpm_if.c ****    * There is no risk to clear all the WUF here because in the current implementation, this API is 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  143:Core/Src/stm32_lpm_if.c **** /* USER CODE END PWR_EnterStopMode_1 */
  144:Core/Src/stm32_lpm_if.c ****   /**
  145:Core/Src/stm32_lpm_if.c ****    * When HAL_DBGMCU_EnableDBGStopMode() is called to keep the debugger active in Stop Mode,
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 4
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 4
 
 
  146:Core/Src/stm32_lpm_if.c ****    * the systick shall be disabled otherwise the cpu may crash when moving out from stop mode
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  200:Core/Src/stm32_lpm_if.c **** /* USER CODE END PWR_ExitStopMode_2 */
  201:Core/Src/stm32_lpm_if.c ****   return;
  202:Core/Src/stm32_lpm_if.c **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 5
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 5
 
 
  203:Core/Src/stm32_lpm_if.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  257:Core/Src/stm32_lpm_if.c ****  * LOCAL FUNCTIONS
  258:Core/Src/stm32_lpm_if.c ****  *
  259:Core/Src/stm32_lpm_if.c ****  *************************************************************/
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 6
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 6
 
 
  260:Core/Src/stm32_lpm_if.c **** /**
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  314:Core/Src/stm32_lpm_if.c ****     while (!LL_RCC_HSE_IsReady());
  315:Core/Src/stm32_lpm_if.c **** 
  316:Core/Src/stm32_lpm_if.c ****     /* PLL не теряет конфигурацию (M/N/P/Q/R) во время STOP2 — про�
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 7
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 7
 
 
  317:Core/Src/stm32_lpm_if.c ****     LL_RCC_PLL_Enable();
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
    6:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   ******************************************************************************
    7:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @attention
    8:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 8
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 8
 
 
    9:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * Copyright (c) 2019 STMicroelectronics.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   63:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /* Exported types ------------------------------------------------------------*/
   64:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #if defined(USE_FULL_LL_DRIVER)
   65:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_Exported_Types RCC Exported Types
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 9
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 9
 
 
   66:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  120:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #endif /* STM32WB5Mxx */
  121:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #endif /* !LSE_VALUE */
  122:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 10
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 10
 
 
  123:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #if !defined  (LSI_VALUE)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  177:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_CIFR_LSECSSF                RCC_CIFR_LSECSSF     /*!< LSE Clock Security System Inte
  178:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_CIFR_CSSF                   RCC_CIFR_CSSF        /*!< Clock Security System Interrup
  179:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_CSR_LPWRRSTF                RCC_CSR_LPWRRSTF     /*!< Low-Power reset flag          
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 11
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 11
 
 
  180:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_CSR_OBLRSTF                 RCC_CSR_OBLRSTF      /*!< OBL reset flag                
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  234:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_MSIRANGE_8                  RCC_CR_MSIRANGE_8  /*!< MSI = 16 MHz   */
  235:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_MSIRANGE_9                  RCC_CR_MSIRANGE_9  /*!< MSI = 24 MHz   */
  236:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_MSIRANGE_10                 RCC_CR_MSIRANGE_10 /*!< MSI = 32 MHz   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 12
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 12
 
 
  237:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_MSIRANGE_11                 RCC_CR_MSIRANGE_11 /*!< MSI = 48 MHz   */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  291:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_SYS_CLKSOURCE_STATUS_HSI    RCC_CFGR_SWS_0                    /*!< HSI used as syste
  292:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_SYS_CLKSOURCE_STATUS_HSE    RCC_CFGR_SWS_1                    /*!< HSE used as syste
  293:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_SYS_CLKSOURCE_STATUS_PLL    (RCC_CFGR_SWS_1 | RCC_CFGR_SWS_0) /*!< PLL used as syste
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 13
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 13
 
 
  294:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  348:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
  349:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @}
  350:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 14
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 14
 
 
  351:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  405:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
  406:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  407:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_SMPS_CLKSOURCE_STATUS_HSI       0x00000000U                                   /*!< H
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 15
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 15
 
 
  408:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_SMPS_CLKSOURCE_STATUS_MSI       RCC_SMPSCR_SMPSSWS_0                          /*!< M
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  462:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EC_I2Cx_CLKSOURCE I2Cx CLKSOURCE
  463:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
  464:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 16
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 16
 
 
  465:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_I2C1_CLKSOURCE_PCLK1        (uint32_t)((RCC_CCIPR_I2C1SEL << 4) | (0x00000000U >> 4)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  519:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
  520:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EC_USB_CLKSOURCE USB CLKSOURCE
  521:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 17
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 17
 
 
  522:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  576:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  577:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #endif /* LPUART1 */
  578:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 18
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 18
 
 
  579:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EC_I2C1 I2C1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  633:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  634:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_ADC_CLKSOURCE               RCC_CCIPR_ADCSEL   /*!< ADC clock source selection bits 
  635:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 19
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 19
 
 
  636:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @}
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  690:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @}
  691:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  692:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 20
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 20
 
 
  693:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EC_PLLR_DIV  PLL division factor (PLLR)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  747:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  748:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLQ_DIV_2                  (RCC_PLLCFGR_PLLQ_0)                    /*!< Main PLL di
  749:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLQ_DIV_3                  (RCC_PLLCFGR_PLLQ_1)                    /*!< Main PLL di
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 21
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 21
 
 
  750:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLQ_DIV_4                  (RCC_PLLCFGR_PLLQ_1|RCC_PLLCFGR_PLLQ_0) /*!< Main PLL di
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  804:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLSAI1P_DIV_28                 (RCC_PLLSAI1CFGR_PLLP_0|RCC_PLLSAI1CFGR_PLLP_1|RCC_P
  805:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLSAI1P_DIV_29                 (RCC_PLLSAI1CFGR_PLLP_2|RCC_PLLSAI1CFGR_PLLP_3|RCC_P
  806:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLSAI1P_DIV_30                 (RCC_PLLSAI1CFGR_PLLP_0|RCC_PLLSAI1CFGR_PLLP_2|RCC_P
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 22
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 22
 
 
  807:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define LL_RCC_PLLSAI1P_DIV_31                 (RCC_PLLSAI1CFGR_PLLP_1|RCC_PLLSAI1CFGR_PLLP_2|RCC_P
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  861:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
  862:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
  863:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 23
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 23
 
 
  864:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Helper macro to calculate the PLLRCLK frequency on system domain
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  918:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_12
  919:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_13
  920:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_14
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 24
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 24
 
 
  921:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_15
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  975:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_17
  976:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_18
  977:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_19
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 25
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 25
 
 
  978:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_20
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1032:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_1
 1033:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_2
 1034:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 26
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 26
 
 
 1035:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1089:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_5
 1090:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_6
 1091:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_7
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 27
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 27
 
 
 1092:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLM_DIV_8
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1146:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_5
 1147:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_6
 1148:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_8
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 28
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 28
 
 
 1149:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_10
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1203:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1204:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #define __LL_RCC_CALC_HCLK4_FREQ(__SYSCLKFREQ__, __AHB4PRESCALER__) ((__SYSCLKFREQ__) / AHBPrescTab
 1205:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****                                                                      & RCC_EXTCFGR_SHDHPRE) >>  RCC
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 29
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 29
 
 
 1206:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1260:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 1261:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @}
 1262:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 30
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 30
 
 
 1263:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1317:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1318:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSE_Enable(void)
 1319:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 31
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 31
 
 
 1320:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   SET_BIT(RCC->CR, RCC_CR_HSEON);
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1374:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 1375:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 1376:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Set HSE current control
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 32
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 32
 
 
 1377:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll HSECR        HSEGMC       LL_RCC_HSE_SetCurrentControl
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1431:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1432:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_HSE_GetSenseAmplifier(void)
 1433:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 33
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 33
 
 
 1434:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   return (uint32_t)(READ_BIT(RCC->HSECR, RCC_HSECR_HSES));
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   42 0006 43F48073 		orr	r3, r3, #256
   43 000a 1360     		str	r3, [r2]
   44              	.L2:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 34
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 34
 
 
   45              	.LBE61:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1514:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 1515:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 1516:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Disable HSI Automatic from stop mode
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 35
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 35
 
 
 1517:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CR           HSIASFS       LL_RCC_HSI_DisableAutoFromStop
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1571:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CRRCR          HSI48ON       LL_RCC_HSI48_Enable
 1572:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
 1573:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 36
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 36
 
 
 1574:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSI48_Enable(void)
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1628:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 1629:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Disable  Low Speed External (LSE) crystal.
 1630:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll BDCR         LSEON         LL_RCC_LSE_Disable
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 37
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 37
 
 
 1631:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1685:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Get LSE oscillator drive capability
 1686:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll BDCR         LSEDRV        LL_RCC_LSE_GetDriveCapability
 1687:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval Returned value can be one of the following values:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 38
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 38
 
 
 1688:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_LSEDRIVE_LOW
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1742:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1743:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 1744:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EF_LSI1 LSI1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 39
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 39
 
 
 1745:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1799:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
 1800:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1801:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_LSI2_Disable(void)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 40
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 40
 
 
 1802:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1856:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Disable MSI oscillator
 1857:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CR           MSION         LL_RCC_MSI_Disable
 1858:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 41
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 41
 
 
 1859:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1913:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_MSIRANGE_7
 1914:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_MSIRANGE_8
 1915:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_MSIRANGE_9
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 42
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 42
 
 
 1916:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_MSIRANGE_10
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1970:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
 1971:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 1972:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_MSI_SetCalibTrimming(uint32_t Value)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 43
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 43
 
 
 1973:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2027:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 2028:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 2029:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Get Low speed clock selection
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 44
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 44
 
 
 2030:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll BDCR         LSCOSEL       LL_RCC_LSCO_GetSource
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2068:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_HSI
 2069:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_HSE
 2070:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_PLL
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 45
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 45
 
 
 2071:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2125:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval State of bit (1 or 0).
 2126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 2127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_IsRFUnderReset(void)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 46
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 46
 
 
 2128:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2182:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 2183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Set AHB4 prescaler
 2184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll EXTCFGR         SHDHPRE          LL_RCC_SetAHB4Prescaler
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 47
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 47
 
 
 2185:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @param  Prescaler This parameter can be one of the following values:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2239:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 2240:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Get AHB prescaler
 2241:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CFGR         HPRE          LL_RCC_GetAHBPrescaler
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 48
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 48
 
 
 2242:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval Returned value can be one of the following values:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2296:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_6
 2297:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_8
 2298:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_10
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 49
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 49
 
 
 2299:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYSCLK_DIV_16
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2353:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 2354:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 2355:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Get Clock After Wake-Up From Stop mode
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 50
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 50
 
 
 2356:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CFGR         STOPWUCK      LL_RCC_GetClkAfterWakeFromStop
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2074:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
   98              		.loc 2 2074 3 discriminator 1 view .LVU21
 2074:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 51
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 51
 
 
   99              		.loc 2 2074 21 is_stmt 0 discriminator 1 view .LVU22
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   12:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * This software is licensed under terms that can be found in the LICENSE file
   13:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * in the root directory of this software component.
   14:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * If no LICENSE file comes with this software, it is provided AS-IS.
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 52
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 52
 
 
   15:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   *
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   69:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** #define LL_HSEM_SEMAPHORE_0                HSEM_C1IER_ISE0
   70:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** #define LL_HSEM_SEMAPHORE_1                HSEM_C1IER_ISE1
   71:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** #define LL_HSEM_SEMAPHORE_2                HSEM_C1IER_ISE2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 53
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 53
 
 
   72:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** #define LL_HSEM_SEMAPHORE_3                HSEM_C1IER_ISE3
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** #define LL_HSEM_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__->__REG__, (__VALU
  127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** 
  128:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 54
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 54
 
 
  129:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * @brief  Read a value in HSEM register
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * @param  HSEMx HSEM Instance.
  184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * @param  Semaphore Semaphore number. Value between Min_Data=0 and Max_Data=31
  185:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   * @retval Process number. Value between Min_Data=0 and Max_Data=255
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 55
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 55
 
 
  186:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   */
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  142 0002 184B     		ldr	r3, .L13
  143 0004 D3F88C20 		ldr	r2, [r3, #140]
  144              		.loc 3 235 75 discriminator 1 view .LVU32
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 56
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 56
 
 
  145 0008 174B     		ldr	r3, .L13+4
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  182              		.loc 3 247 22 view .LVU43
  183              	.LBB75:
  248:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 57
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 57
 
 
  249:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h ****   WRITE_REG(HSEMx->R[Semaphore], (LL_HSEM_COREID | process));
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   34:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #if defined(PWR)
   35:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
   36:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /** @defgroup PWR_LL PWR
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 58
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 58
 
 
   37:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @{
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   91:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SCR_CC2HF                   PWR_SCR_CC2HF
   92:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SCR_CBLEAF                  PWR_SCR_CBLEAF
   93:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SCR_CCRPEF                  PWR_SCR_CCRPEF
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 59
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 59
 
 
   94:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #if defined(PWR_CR3_E802A)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  148:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_FLAG_BLEWU                  PWR_SR1_BLEWUF  /* BLE wakeup interrupt flag */
  149:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
  150:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_FLAG_BLEA                   PWR_SR1_BLEAF   /* BLE end of activity interrupt flag */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 60
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 60
 
 
  151:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #if defined(PWR_CR3_E802A)
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  205:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @{
  206:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
  207:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_FLASH_SLEEP_MODE_IDLE       (0x000000000U)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 61
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 61
 
 
  208:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_FLASH_SLEEP_MODE_POWER_DOWN (PWR_CR1_FPDS)
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  262:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  263:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @}
  264:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 62
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 62
 
 
  265:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  319:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  320:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @}
  321:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 63
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 63
 
 
  322:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  376:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SMPS_OUTPUT_VOLTAGE_1V60  (PWR_CR5_SMPSVOS_3                                        
  377:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SMPS_OUTPUT_VOLTAGE_1V65  (PWR_CR5_SMPSVOS_3 |                                      
  378:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SMPS_OUTPUT_VOLTAGE_1V70  (PWR_CR5_SMPSVOS_3 |                     PWR_CR5_SMPSVOS_1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 64
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 64
 
 
  379:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #define LL_PWR_SMPS_OUTPUT_VOLTAGE_1V75  (PWR_CR5_SMPSVOS_3 |                     PWR_CR5_SMPSVOS_1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  433:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  434:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Switch from run main mode to run low-power mode.
  435:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll CR1          LPR           LL_PWR_EnterLowPowerRunMode
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 65
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 65
 
 
  436:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval None
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  490:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   return (uint32_t)(READ_BIT(PWR->CR1, PWR_CR1_VOS));
  491:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
  492:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #endif /* PWR_CR1_VOS */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 66
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 66
 
 
  493:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  547:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_MODE_STOP1
  548:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_MODE_STOP2 (*)
  549:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_MODE_STANDBY
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 67
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 67
 
 
  550:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_MODE_SHUTDOWN
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  604:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval Returned value can be one of the following values:
  605:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_FLASH_SLEEP_MODE_IDLE
  606:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_FLASH_SLEEP_MODE_POWER_DOWN
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 68
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 68
 
 
  607:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  661:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  662:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Disable the Power Voltage Monitoring on a peripheral
  663:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll CR2          PVME1         LL_PWR_DisablePVM\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 69
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 69
 
 
  664:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         CR2          PVME3         LL_PWR_DisablePVM
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  718:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_PVDLEVEL_2
  719:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_PVDLEVEL_3
  720:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_PVDLEVEL_4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 70
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 70
 
 
  721:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_PVDLEVEL_5
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  775:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_PWR_DisableInternWU(void)
  776:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
  777:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   CLEAR_BIT(PWR->CR3, PWR_CR3_EIWUL);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 71
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 71
 
 
  778:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  832:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  833:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Disable SRAM2a content retention in Standby mode
  834:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @note   On devices STM32WB15xx, STM32WB10xx, STM32WB1Mxx, retention is extended
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 72
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 72
 
 
  835:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         to SRAM1, SRAM2a and SRAM2b.
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  889:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN4
  890:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN5 (*)
  891:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 73
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 73
 
 
  892:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         (*) Not available on devices STM32WB50xx, STM32WB35xx, STM32WB30xx, STM32WB15xx, STM32W
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  946:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
  947:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
  948:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Enable battery charging
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 74
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 74
 
 
  949:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll CR4          VBE           LL_PWR_EnableBatteryCharging
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1003:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         CR4          WP3           LL_PWR_SetWakeUpPinPolarityHigh\n
 1004:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         CR4          WP4           LL_PWR_SetWakeUpPinPolarityHigh\n
 1005:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         CR4          WP5           LL_PWR_SetWakeUpPinPolarityHigh
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 75
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 75
 
 
 1006:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @param  WakeUpPin This parameter can be one of the following values:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1060:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @param  GPIONumber This parameter can be one of the following values:
 1061:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_0
 1062:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 76
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 76
 
 
 1063:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_2
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1117:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_15
 1118:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval None
 1119:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 77
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 77
 
 
 1120:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_PWR_DisableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber)
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1174:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @param  GPIO This parameter can be one of the following values:
 1175:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_A
 1176:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_B
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 78
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 78
 
 
 1177:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_C
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1231:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_8
 1232:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_9
 1233:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_10
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 79
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 79
 
 
 1234:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_GPIO_BIT_11
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1288:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll CR5          BORHC         LL_PWR_SetBORConfig
 1289:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @param  BORConfiguration This parameter can be one of the following values:
 1290:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_BOR_SYSTEM_RESET
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 80
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 80
 
 
 1291:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_BOR_SMPS_FORCE_BYPASS
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1345:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_PWR_SMPS_SetMode(uint32_t OperatingMode)
 1346:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
 1347:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   /* Note: Operation on bits performed to keep compatibility of literals      */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 81
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 81
 
 
 1348:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   /*       for all SMPS operating mode functions:                             */
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1402:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
 1403:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   return (uint32_t)(READ_BIT(PWR->SR2, (PWR_SR2_SMPSF | PWR_SR2_SMPSBF)));
 1404:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 82
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 82
 
 
 1405:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1459:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
 1460:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
 1461:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 83
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 83
 
 
 1462:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Get SMPS step down converter supply startup current selection
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1516:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   else
 1517:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   {
 1518:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****     /* Device with SMPS output voltage calibrated in production: Apply output voltage value after c
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 84
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 84
 
 
 1519:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1573:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
 1574:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****     return (uint32_t)(READ_BIT(PWR->CR5, PWR_CR5_SMPSVOS));
 1575:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 85
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 85
 
 
 1576:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   else
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1630:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
 1631:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
 1632:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Check if bit to boot CPU2 after reset or wakeup from stop or standby
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 86
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 86
 
 
 1633:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         modes is set
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1687:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll C2CR1        FPDR          LL_C2_PWR_SetFlashPowerModeLPRun
 1688:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @param  FlashLowPowerMode This parameter can be one of the following values:
 1689:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_FLASH_LPRUN_MODE_IDLE
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 87
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 87
 
 
 1690:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_FLASH_LPRUN_MODE_POWER_DOWN
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1744:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
 1745:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_C2_PWR_EnableInternWU(void)
 1746:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 88
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 88
 
 
 1747:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   SET_BIT(PWR->C2CR3, PWR_C2CR3_EIWUL);
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1801:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN2 (*)
 1802:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN3 (*)
 1803:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN4
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 89
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 89
 
 
 1804:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   *         @arg @ref LL_PWR_WAKEUP_PIN5 (*)
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1858:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll C2CR3        APC           LL_C2_PWR_IsEnabledPUPDCfg
 1859:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval State of bit (1 or 0).
 1860:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 90
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 90
 
 
 1861:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE uint32_t LL_C2_PWR_IsEnabledPUPDCfg(void)
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1915:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
 1916:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE uint32_t LL_C2_PWR_IsWokenUp_802_15_4(void)
 1917:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 91
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 91
 
 
 1918:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   return ((READ_BIT(PWR->C2CR1, PWR_C2CR1_802EWKUP) == (PWR_C2CR1_802EWKUP)) ? 1UL : 0UL);
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 1972:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #endif /* PWR_CR3_EWUP3 */
 1973:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
 1974:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** #if defined(PWR_CR3_EWUP2)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 92
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 92
 
 
 1975:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2029:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
 2030:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Clear Wake-up Flag 3
 2031:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll SCR          CWUF3         LL_PWR_ClearFlag_WU3
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 93
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 93
 
 
 2032:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval None
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2086:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Indicate whether VDD voltage is below or above the selected PVD threshold
 2087:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll SR2          PVDO          LL_PWR_IsActiveFlag_PVDO
 2088:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval State of bit (1 or 0).
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 94
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 94
 
 
 2089:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2143:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_PWR_ClearFlag_BORH(void)
 2144:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
 2145:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   WRITE_REG(PWR->SCR, PWR_SCR_CBORHF);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 95
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 95
 
 
 2146:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2200:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** {
 2201:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   return ((READ_BIT(PWR->SR1, PWR_SR1_BLEWUF) == (PWR_SR1_BLEWUF)) ? 1UL : 0UL);
 2202:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** }
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 96
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 96
 
 
 2203:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2257:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** 
 2258:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** /**
 2259:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  Clear BLE wakeup interrupt flag
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 97
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 97
 
 
 2260:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll SCR          BLEWU         LL_PWR_ClearFlag_BLEWU
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2314:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll EXTSCR       CCRP          LL_PWR_ClearFlag_CRP
 2315:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval None
 2316:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 98
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 98
 
 
 2317:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h **** __STATIC_INLINE void LL_PWR_ClearFlag_CRP(void)
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2371:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @brief  System stop flag for CPU2
 2372:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @rmtoll EXTSCR       C2STOPF       LL_PWR_IsActiveFlag_C2STOP
 2373:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   * @retval State of bit (1 or 0).
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 99
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 99
 
 
 2374:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_pwr.h ****   */
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  226              		.loc 1 278 7 is_stmt 1 view .LVU57
  227              	.LVL10:
  228              	.LBB80:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 100
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 100
 
 
  229              	.LBI80:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   83:Core/Src/stm32_lpm_if.c **** 
  280              		.loc 1 83 3 view .LVU65
  281 0006 FFF7FEFF 		bl	EnterLowPower
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 101
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 101
 
 
  282              	.LVL14:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   16:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   ******************************************************************************
   17:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   @verbatim
   18:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   ==============================================================================
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 102
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 102
 
 
   19:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****                      ##### How to use this driver #####
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
   73:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   * @}
   74:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   */
   75:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 103
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 103
 
 
   76:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** /** @defgroup CORTEX_LL_EC_FAULT Handler Fault type
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  130:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** #define LL_MPU_REGION_SIZE_128KB           (0x10U << MPU_RASR_SIZE_Pos) /*!< 128KB Size of the MPU 
  131:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** #define LL_MPU_REGION_SIZE_256KB           (0x11U << MPU_RASR_SIZE_Pos) /*!< 256KB Size of the MPU 
  132:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** #define LL_MPU_REGION_SIZE_512KB           (0x12U << MPU_RASR_SIZE_Pos) /*!< 512KB Size of the MPU 
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 104
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 104
 
 
  133:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** #define LL_MPU_REGION_SIZE_1MB             (0x13U << MPU_RASR_SIZE_Pos) /*!< 1MB Size of the MPU pr
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  187:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** #define LL_MPU_ACCESS_NOT_SHAREABLE        0x00U            /*!< Not Shareable memory attribute */
  188:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** /**
  189:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   * @}
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 105
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 105
 
 
  190:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   */
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  244:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** __STATIC_INLINE void LL_SYSTICK_SetClkSource(uint32_t Source)
  245:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** {
  246:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   if (Source == LL_SYSTICK_CLKSOURCE_HCLK)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 106
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 106
 
 
  247:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   {
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  301:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** 
  302:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h **** /** @defgroup CORTEX_LL_EF_LOW_POWER_MODE LOW POWER MODE
  303:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   * @{
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 107
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 107
 
 
  304:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_cortex.h ****   */
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  343              		.syntax unified
  344              		.thumb
  345              		.thumb_func
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 108
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 108
 
 
  347              	PWR_EnterStopMode:
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  391              		.loc 1 173 3 view .LVU89
  392              		.syntax unified
  393              	@ 173 "Core/Src/stm32_lpm_if.c" 1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 109
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 109
 
 
  394 0022 30BF     		wfi
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  442              		.loc 1 230 3 view .LVU97
  443              		.syntax unified
  444              	@ 230 "Core/Src/stm32_lpm_if.c" 1
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 110
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 110
 
 
  445 0010 30BF     		wfi
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  496              		.cfi_startproc
  497              		@ args = 0, pretend = 0, frame = 0
  498              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 111
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 111
 
 
  499 0000 08B5     		push	{r3, lr}
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  547              	.LBB96:
  548              	.LBI96:
  233:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_hsem.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 112
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 112
 
 
  549              		.loc 3 233 26 discriminator 1 view .LVU115
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  590 002a DA60     		str	r2, [r3, #12]
  591              	.LVL27:
  592              		.loc 3 249 3 is_stmt 0 view .LVU130
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 113
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 113
 
 
  593              	.LBE101:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2396:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval Returned value can be one of the following values:
 2397:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SMPS_CLKSOURCE_HSI
 2398:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SMPS_CLKSOURCE_MSI
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 114
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 114
 
 
 2399:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_SMPS_CLKSOURCE_HSE
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2453:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #endif /* RCC_SMPS_SUPPORT */
 2454:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 2455:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /** @defgroup RCC_LL_EF_MCO MCO
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 115
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 115
 
 
 2456:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @{
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2510:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
 2511:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
 2512:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #if defined(LPUART1)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 116
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 116
 
 
 2513:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2567:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** /**
 2568:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Configure SAIx clock source
 2569:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll CCIPR        SAI1SEL       LL_RCC_SetSAIClockSource
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 117
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 117
 
 
 2570:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @param  SAIxSource This parameter can be one of the following values:
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2624:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 2625:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_SetUSBClockSource(uint32_t USBxSource)
 2626:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 118
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 118
 
 
 2627:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   LL_RCC_SetCLK48ClockSource(USBxSource);
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2681:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_USART1_CLKSOURCE
 2682:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval Returned value can be one of the following values:
 2683:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_USART1_CLKSOURCE_PCLK2
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 119
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 119
 
 
 2684:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_USART1_CLKSOURCE_SYSCLK
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2738:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_LPTIM1_CLKSOURCE_PCLK1
 2739:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_LPTIM1_CLKSOURCE_LSI
 2740:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_LPTIM1_CLKSOURCE_HSI
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 120
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 120
 
 
 2741:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_LPTIM1_CLKSOURCE_LSE
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2795:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @note   (*) Value not defined for all devices
 2796:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 2797:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_GetCLK48ClockSource(uint32_t CLK48x)
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 121
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 121
 
 
 2798:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2852:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @param  Source This parameter can be one of the following values:
 2853:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_RTC_CLKSOURCE_NONE
 2854:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_RTC_CLKSOURCE_LSE
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 122
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 122
 
 
 2855:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_RTC_CLKSOURCE_LSI
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2909:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @brief  Force the Backup domain reset
 2910:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll BDCR         BDRST         LL_RCC_ForceBackupDomainReset
 2911:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 123
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 123
 
 
 2912:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 2953:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_PLL_Disable(void)
 2954:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
 2955:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   CLEAR_BIT(RCC->CR, RCC_CR_PLLON);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 124
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 124
 
 
 2956:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3010:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @note PLLN/PLLP can be written only when PLL is disabled
 3011:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll PLLCFGR      PLLSRC        LL_RCC_PLL_ConfigDomain_SAI\n
 3012:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         PLLCFGR      PLLM          LL_RCC_PLL_ConfigDomain_SAI\n
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 125
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 125
 
 
 3013:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         PLLCFGR      PLLN          LL_RCC_PLL_ConfigDomain_SAI\n
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3067:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****              Source | PLLM | (PLLN << RCC_PLLCFGR_PLLN_Pos) | PLLP);
 3068:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
 3069:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** #endif /* SAI1 */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 126
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 126
 
 
 3070:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** 
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3124:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_30
 3125:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_31
 3126:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLP_DIV_32
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 127
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 127
 
 
 3127:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3181:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_PLL_GetN(void)
 3182:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
 3183:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   return (uint32_t)(READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >>  RCC_PLLCFGR_PLLN_Pos);
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 128
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 128
 
 
 3184:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3238:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLQ_DIV_7
 3239:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLLQ_DIV_8
 3240:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 129
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 129
 
 
 3241:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_PLL_GetQ(void)
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3295:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @note In order to save power, when the PLLCLK  of the PLL is
 3296:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   *       not used,  should be 0
 3297:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @rmtoll PLLCFGR      PLLPEN        LL_RCC_PLL_DisableDomain_SAI
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 130
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 130
 
 
 3298:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   * @retval None
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
 3352:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   */
 3353:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_PLL_EnableDomain_48M(void)
 3354:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 131
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 131
 
 
 3355:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h ****   SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQEN);
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  658              		.loc 2 2965 12 is_stmt 0 discriminator 1 view .LVU152
  659 005a 4FF0B043 		mov	r3, #1476395008
  660 005e 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 132
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 132
 
 
 2965:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** }
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  702              	.LBI114:
 2072:Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h **** {
  703              		.loc 2 2072 26 discriminator 1 view .LVU166
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 133
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 133
 
 
  704              	.LBB115:
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  750              		.thumb_func
  752              	PWR_ExitStopMode:
  753              	.LFB1261:
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 134
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 134
 
 
  188:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PWR_ExitStopMode_1 */
@@ -8026,36 +8026,36 @@ ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 1
  794              		.file 11 "Drivers/CMSIS/Device/ST/STM32WBxx/Include/system_stm32wbxx.h"
  795              		.file 12 "Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h"
  796              		.file 13 "Core/Inc/app_conf.h"
-ARM GAS  C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s 			page 135
+ARM GAS  C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s 			page 135
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32_lpm_if.c
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:20     .text.Switch_On_HSI:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:25     .text.Switch_On_HSI:00000000 Switch_On_HSI
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:115    .text.EnterLowPower:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:120    .text.EnterLowPower:00000000 EnterLowPower
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:252    .text.EnterLowPower:00000064 $d
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:260    .text.PWR_EnterOffMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:266    .text.PWR_EnterOffMode:00000000 PWR_EnterOffMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:335    .text.PWR_EnterOffMode:0000002c $d
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:341    .text.PWR_EnterStopMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:347    .text.PWR_EnterStopMode:00000000 PWR_EnterStopMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:404    .text.PWR_EnterStopMode:00000028 $d
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:410    .text.PWR_EnterSleepMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:416    .text.PWR_EnterSleepMode:00000000 PWR_EnterSleepMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:455    .text.PWR_EnterSleepMode:00000014 $d
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:460    .text.PWR_ExitOffMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:466    .text.PWR_ExitOffMode:00000000 PWR_ExitOffMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:487    .text.PWR_ExitSleepMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:493    .text.PWR_ExitSleepMode:00000000 PWR_ExitSleepMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:514    .text.ExitLowPower:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:519    .text.ExitLowPower:00000000 ExitLowPower
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:739    .text.ExitLowPower:000000b0 $d
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:746    .text.PWR_ExitStopMode:00000000 $t
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:752    .text.PWR_ExitStopMode:00000000 PWR_ExitStopMode
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:780    .rodata.UTIL_PowerDriver:00000000 UTIL_PowerDriver
-C:\Users\843E~1\AppData\Local\Temp\ccdAqJKo.s:777    .rodata.UTIL_PowerDriver:00000000 $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:20     .text.Switch_On_HSI:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:25     .text.Switch_On_HSI:00000000 Switch_On_HSI
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:115    .text.EnterLowPower:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:120    .text.EnterLowPower:00000000 EnterLowPower
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:252    .text.EnterLowPower:00000064 $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:260    .text.PWR_EnterOffMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:266    .text.PWR_EnterOffMode:00000000 PWR_EnterOffMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:335    .text.PWR_EnterOffMode:0000002c $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:341    .text.PWR_EnterStopMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:347    .text.PWR_EnterStopMode:00000000 PWR_EnterStopMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:404    .text.PWR_EnterStopMode:00000028 $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:410    .text.PWR_EnterSleepMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:416    .text.PWR_EnterSleepMode:00000000 PWR_EnterSleepMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:455    .text.PWR_EnterSleepMode:00000014 $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:460    .text.PWR_ExitOffMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:466    .text.PWR_ExitOffMode:00000000 PWR_ExitOffMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:487    .text.PWR_ExitSleepMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:493    .text.PWR_ExitSleepMode:00000000 PWR_ExitSleepMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:514    .text.ExitLowPower:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:519    .text.ExitLowPower:00000000 ExitLowPower
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:739    .text.ExitLowPower:000000b0 $d
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:746    .text.PWR_ExitStopMode:00000000 $t
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:752    .text.PWR_ExitStopMode:00000000 PWR_ExitStopMode
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:780    .rodata.UTIL_PowerDriver:00000000 UTIL_PowerDriver
+C:\Users\843E~1\AppData\Local\Temp\cczgexSG.s:777    .rodata.UTIL_PowerDriver:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SuspendTick

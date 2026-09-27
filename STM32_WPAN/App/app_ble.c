@@ -172,7 +172,7 @@ typedef struct
 /* USER CODE END PTD */
 
 /* Private defines -----------------------------------------------------------*/
-#define APPBLE_GAP_DEVICE_NAME_LENGTH 7
+#define APPBLE_GAP_DEVICE_NAME_LENGTH 9
 #define FAST_ADV_TIMEOUT               (30*1000*1000/CFG_TS_TICK_VAL) /**< 30s */
 #define INITIAL_ADV_TIMEOUT            (60*1000*1000/CFG_TS_TICK_VAL) /**< 60s */
 
@@ -234,9 +234,24 @@ uint8_t index_con_int, mutex;
 /**
  * Advertising Data
  */
-#if (P2P_SERVER1 != 0) 
-static uint8_t a_LocalName[10] = {AD_TYPE_COMPLETE_LOCAL_NAME, 'P', '2', 'P', 'S', 'R', 'V', '1', 0, 0};  
-static uint8_t a_LocalName_len = 8;
+#if (P2P_SERVER1 != 0)
+static uint8_t a_LocalName[10] = {AD_TYPE_COMPLETE_LOCAL_NAME, 'N', 'U', 'M', 'A', '-', '0', '0', '0', '0'};
+static uint8_t a_LocalName_len = 10;
+uint8_t a_ManufData[14] = {sizeof(a_ManufData)-1,
+                           AD_TYPE_MANUFACTURER_SPECIFIC_DATA,
+                           0x01,                               /*SKD version */
+                           CFG_DEV_ID_P2P_SERVER1,             /* STM32WB - P2P Server 1*/
+                           0x00,                               /* GROUP A Feature */
+                           0x00,                               /* GROUP A Feature */
+                           0x00,                               /* GROUP B Feature */
+                           0x00,                               /* GROUP B Feature */
+                           0x00,                               /* BLE MAC start -MSB */
+                           0x00,
+                           0x00,
+                           0x00,
+                           0x00,
+                           0x00,                               /* BLE MAC stop */
+                          };
 
 #endif /* P2P_SERVER1 != 0 */
 /**
@@ -494,19 +509,20 @@ void APP_BLE_Init(void)
    */
   P2PS_APP_Init();
 
-  /* USER CODE BEGIN APP_BLE_Init_3 */  
+  /* USER CODE BEGIN APP_BLE_Init_3 */
   #if (P2P_SERVER1 != 0)
-  {  
-      char name[APPBLE_GAP_DEVICE_NAME_LENGTH + 1];  
-      uint8_t name_len = (uint8_t)snprintf(name, sizeof(name),  
-                                          "Numa-%02X%02X",  
-                                          a_bd_addr[1], a_bd_addr[0]);  
-      if (name_len > APPBLE_GAP_DEVICE_NAME_LENGTH)  
+  {
+      const uint8_t *p_bd_addr = BleGetBdAddress();
+      char name[APPBLE_GAP_DEVICE_NAME_LENGTH + 1];
+      uint8_t name_len = (uint8_t)snprintf(name, sizeof(name),
+                                          "NUMA-%02X%02X",
+                                          p_bd_addr[1], p_bd_addr[0]);
+      if (name_len > APPBLE_GAP_DEVICE_NAME_LENGTH)
         name_len = APPBLE_GAP_DEVICE_NAME_LENGTH;
 
-      a_LocalName[0] = AD_TYPE_COMPLETE_LOCAL_NAME;  
-      memcpy(&a_LocalName[1], name, name_len);  
-      a_LocalName_len = name_len + 1;  
+      a_LocalName[0] = AD_TYPE_COMPLETE_LOCAL_NAME;
+      memcpy(&a_LocalName[1], name, name_len);
+      a_LocalName_len = name_len + 1;
   }
   #endif
 
@@ -973,7 +989,8 @@ static void Ble_Hci_Gap_Gatt_Init(void)
 
   if (role > 0)
   {
-    const char *name = "P2PSRV1";
+    char name[APPBLE_GAP_DEVICE_NAME_LENGTH + 1];
+    snprintf(name, sizeof(name), "NUMA-%02X%02X", p_bd_addr[1], p_bd_addr[0]);
     ret = aci_gap_init(role,
                        CFG_PRIVACY,
                        APPBLE_GAP_DEVICE_NAME_LENGTH,
